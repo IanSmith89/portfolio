@@ -1,10 +1,8 @@
 import type { Metadata } from 'next'
-import { Changa } from 'next/font/google'
 import './globals.css'
 import Image from 'next/image'
 import Link from 'next/link'
-
-const changa = Changa({ subsets: ['latin'], display: 'swap', variable: '--font-changa' })
+import PrelineScript from './components/PrelineScript'
 
 export const metadata: Metadata = {
 	title: 'Ian J. Smith | UX Engineer & Designer',
@@ -14,7 +12,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html className="h-full" lang="en">
-			<body className={`${changa.variable} h-full flex flex-col`}>
+			<PrelineScript />
+			<body className="h-full flex flex-col">
 				<main className="grow">{children}</main>
 				<footer className="flex items-center justify-between px-4 py-2">
 					<small className="font-sans font-extralight text-gray-300">Copyright &copy; 2023 Ian Smith</small>

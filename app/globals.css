@@ -1,3 +1,6 @@
+/* Scandia font import */
+@import url('https://use.typekit.net/zlk8cju.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
