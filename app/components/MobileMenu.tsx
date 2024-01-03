@@ -55,13 +55,40 @@ export default function MobileMenu() {
 					viewBox="0 0 24 24"
 					fill="none"
 					stroke="currentColor"
-					strokeWidth="2"
 					strokeLinecap="round"
 					strokeLinejoin="round"
 				>
-					<line x1="2" y1="12" x2="22" y2="12" />
-					<line x1="8.4" y1="18" x2="22" y2="18" />
-					<line x1="2" y1="6" x2="15.6" y2="6" />
+					<line
+						className={`stroke-2 transition-transform origin-center ${
+							isOpen ? 'transform -rotate-45' : ''
+						}`}
+						x1="2"
+						y1="12"
+						x2="22"
+						y2="12"
+					/>
+					<line
+						className={`stroke-2 transition-transform origin-bottom ${
+							isOpen
+								? '[transform:translate3d(-4px,-6px,0)rotate(45deg)]'
+								: '[transform:translate3d(0,0,0)rotate(0)]'
+						}`}
+						x1="8.4"
+						y1="18"
+						x2="22"
+						y2="18"
+					/>
+					<line
+						className={`stroke-2 transition-transform origin-top ${
+							isOpen
+								? '[transform:translate3d(3px,8px,0)rotate(45deg)]'
+								: '[transform:translate3d(0,0,0)rotate(0)]'
+						}`}
+						x1="2"
+						y1="6"
+						x2="15.6"
+						y2="6"
+					/>
 				</svg>
 			</button>
 		</div>
