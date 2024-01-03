@@ -1,9 +1,12 @@
 'use client'
 
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useState } from 'react'
 import { ROUTES } from '../utils/constants'
 import EyeJayEsLogo from './EyeJayEsLogo'
+
+const DarkModeSwitch = dynamic(() => import('./DarkModeSwitch'), { ssr: false })
 
 export default function MobileMenu() {
 	const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -16,22 +19,23 @@ export default function MobileMenu() {
 	}
 
 	return (
-		<div className="sm:hidden">
+		<div className="fixed inset-0 z-50 sm:hidden">
 			<div
-				className={`absolute inset-0 flex flex-col gap-8 justify-center pl-6 bg-indigo transition-opacity ${
+				className={`absolute w-full h-full flex flex-col justify-between pt-[55%] pb-6 pl-6 bg-teal dark:bg-indigo transition-opacity ${
 					isOpen ? 'opacity-1' : 'opacity-0 pointer-events-none'
 				}`}
 			>
-				{ROUTES.map(({ href, title }) => (
-					<Link key={title} className="text-teal text-6xl font-bold" href={href}>
-						{title}
-					</Link>
-				))}
+				<div className="h-auto flex flex-col gap-8 justify-center">
+					{ROUTES.map(({ href, title }) => (
+						<Link key={title} className="text-indigo dark:text-teal text-6xl font-bold" href={href}>
+							{title}
+						</Link>
+					))}
+				</div>
+				<DarkModeSwitch />
 			</div>
 			<Link
-				className={`absolute top-[22px] left-4 flex items-center gap-3 text-lg font-bold ${
-					isOpen ? 'text-white' : 'text-indigo'
-				}`}
+				className="absolute top-[22px] left-4 flex items-center gap-3 text-lg font-bold text-indigo dark:text-white"
 				href="/"
 			>
 				<EyeJayEsLogo width={80} />
@@ -40,9 +44,7 @@ export default function MobileMenu() {
 			<button
 				aria-label="Mobile navigation"
 				type="button"
-				className={`absolute top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 ${
-					isOpen ? 'text-white' : 'text-indigo'
-				}`}
+				className="absolute top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
 				onClick={handleClick}
 			>
 				<svg
