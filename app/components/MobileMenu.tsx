@@ -29,7 +29,7 @@ export default function MobileMenu() {
 				))}
 			</div>
 			<Link
-				className={`absolute top-[22px] left-4 flex items-center gap-3 text-lg font-bold transition-colors ${
+				className={`absolute top-[22px] left-4 flex items-center gap-3 text-lg font-bold ${
 					isOpen ? 'text-white' : 'text-indigo'
 				}`}
 				href="/"
