@@ -1,8 +1,8 @@
-import type { Metadata } from 'next'
 import './globals.css'
-import Image from 'next/image'
 import Link from 'next/link'
-import Nav from './components/Nav'
+import Header from './components/Header'
+
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Ian J. Smith | UX Engineer & Designer',
@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="en">
 			<body className="h-full flex flex-col">
-				<Nav />
+				<Header />
 				<main>{children}</main>
 				<footer className="flex items-center justify-between px-4 py-2">
 					<small className="font-sans font-extralight text-gray-300">Copyright &copy; 2023 Ian Smith</small>

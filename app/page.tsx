@@ -4,7 +4,7 @@ export default function Home() {
 	return (
 		<div className="w-full bg-teal pt-8">
 			<div className="container h-[80vh] flex flex-col md:flex-row gap-8">
-				<div className="relative w-full md:w-8/12 h-3/5 sm:h-1/2 md:h-full">
+				<div className="relative w-full md:w-8/12 h-3/5 sm:h-1/2 md:h-auto">
 					<Image
 						alt=""
 						src="/collage-light.png"
@@ -12,6 +12,7 @@ export default function Home() {
 						priority
 						style={{
 							objectFit: 'contain',
+							objectPosition: 'top center',
 						}}
 					/>
 				</div>

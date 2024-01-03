@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { ROUTES } from '../utils/constants'
+import EyeJayEsLogo from './EyeJayEsLogo'
 
 export default function MobileMenu() {
 	const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -15,9 +16,9 @@ export default function MobileMenu() {
 	}
 
 	return (
-		<>
+		<div className="sm:hidden">
 			<div
-				className={`absolute inset-0 flex flex-col gap-4 justify-center pl-6 bg-indigo transition-opacity ${
+				className={`absolute inset-0 flex flex-col gap-8 justify-center pl-6 bg-indigo transition-opacity ${
 					isOpen ? 'opacity-1' : 'opacity-0 pointer-events-none'
 				}`}
 			>
@@ -27,6 +28,15 @@ export default function MobileMenu() {
 					</Link>
 				))}
 			</div>
+			<Link
+				className={`absolute top-[22px] left-4 flex items-center gap-3 text-lg font-bold transition-colors ${
+					isOpen ? 'text-white' : 'text-indigo'
+				}`}
+				href="/"
+			>
+				<EyeJayEsLogo width={80} />
+				Ian J. Smith
+			</Link>
 			<button
 				aria-label="Mobile navigation"
 				type="button"
@@ -52,6 +62,6 @@ export default function MobileMenu() {
 					<line x1="2" y1="6" x2="15.6" y2="6" />
 				</svg>
 			</button>
-		</>
+		</div>
 	)
 }
