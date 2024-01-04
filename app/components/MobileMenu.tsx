@@ -21,13 +21,17 @@ export default function MobileMenu() {
 	return (
 		<div className="fixed inset-0 z-50 md:hidden">
 			<div
-				className={`absolute w-full h-full flex flex-col justify-between pt-[55%] pb-6 pl-6 bg-teal dark:bg-indigo transition-opacity ${
+				className={`transition-all absolute w-full h-full flex flex-col justify-between pt-[55%] pb-6 pl-6 bg-teal dark:bg-indigo ${
 					isOpen ? 'opacity-1' : 'opacity-0 pointer-events-none'
 				}`}
 			>
 				<div className="h-auto flex flex-col gap-8 justify-center">
 					{ROUTES.map(({ href, title }) => (
-						<Link key={title} className="text-indigo dark:text-teal text-6xl font-bold" href={href}>
+						<Link
+							key={title}
+							className="transition-colors text-indigo dark:text-teal text-6xl font-bold"
+							href={href}
+						>
 							{title}
 						</Link>
 					))}
@@ -35,7 +39,7 @@ export default function MobileMenu() {
 				<DarkModeSwitch />
 			</div>
 			<Link
-				className="absolute top-[22px] left-4 flex items-center gap-3 text-lg font-bold text-indigo dark:text-white"
+				className="transition-colors absolute top-[22px] left-4 flex items-center gap-3 text-lg font-bold text-indigo dark:text-white"
 				href="/"
 			>
 				<EyeJayEsLogo width={80} />
@@ -44,7 +48,7 @@ export default function MobileMenu() {
 			<button
 				aria-label="Mobile navigation"
 				type="button"
-				className="absolute top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
+				className="transition-colors absolute top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
 				onClick={handleClick}
 			>
 				<svg
