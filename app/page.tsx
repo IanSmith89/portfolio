@@ -50,7 +50,7 @@ export default function Home() {
 			</section> */}
 			<section
 				id="resume-section"
-				className="transition-colors w-full h-auto min-h-[66vh] bg-white dark:bg-grey-blue py-12 md:py-16"
+				className="transition-colors w-full h-auto bg-white dark:bg-grey-blue py-12 md:py-32"
 			>
 				<div className="container h-full flex flex-col gap-16 items-center justify-center">
 					<h2 className="text-xl md:text-2xl font-bold text-center mx-auto max-w-lg">
