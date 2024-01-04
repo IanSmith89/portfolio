@@ -1,6 +1,6 @@
-export default function EyeJayEsLogo({ width = 100 }) {
+export default function EyeJayEsLogo({ className = '', width = 100 }) {
 	return (
-		<svg fill="none" viewBox="0 0 723 241" width={width} xmlns="http://www.w3.org/2000/svg">
+		<svg className={className} fill="none" viewBox="0 0 723 241" width={width} xmlns="http://www.w3.org/2000/svg">
 			<g>
 				<rect className="fill-orange" x="679.33" y="64.18" width="38.67" height="7.82" />
 				<path

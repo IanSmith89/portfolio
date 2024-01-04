@@ -19,36 +19,38 @@ export default function MobileMenu() {
 	}
 
 	return (
-		<div className="fixed inset-0 z-50 md:hidden">
-			<div
-				className={`transition-all absolute w-full h-full flex flex-col justify-between pt-[55%] pb-6 pl-6 bg-teal dark:bg-indigo ${
-					isOpen ? 'opacity-1' : 'opacity-0 pointer-events-none'
-				}`}
-			>
-				<div className="h-auto flex flex-col gap-8 justify-center">
-					{ROUTES.map(({ href, title }) => (
-						<Link
-							key={title}
-							className="transition-colors text-indigo dark:text-teal text-6xl font-bold"
-							href={href}
-						>
-							{title}
-						</Link>
-					))}
+		<>
+			<div className={`fixed inset-0 h-screen z-50 md:hidden${isOpen ? '' : ' pointer-events-none'}`}>
+				<div
+					className={`transition-all absolute inset-0 flex flex-col justify-end pb-6 pl-6 bg-teal dark:bg-indigo ${
+						isOpen ? 'opacity-1' : 'opacity-0'
+					}`}
+				>
+					<div className="absolute m-auto inset-0 left-6 flex flex-col gap-8 justify-center">
+						{ROUTES.map(({ href, title }) => (
+							<Link
+								key={title}
+								className="transition-colors text-indigo dark:text-teal text-6xl font-bold"
+								href={href}
+							>
+								{title}
+							</Link>
+						))}
+					</div>
+					<DarkModeSwitch />
 				</div>
-				<DarkModeSwitch />
+				<Link
+					className="transition-colors absolute top-[22px] left-4 flex items-center gap-3 text-lg font-bold text-indigo dark:text-white"
+					href="/"
+				>
+					<EyeJayEsLogo width={80} />
+					Ian J. Smith
+				</Link>
 			</div>
-			<Link
-				className="transition-colors absolute top-[22px] left-4 flex items-center gap-3 text-lg font-bold text-indigo dark:text-white"
-				href="/"
-			>
-				<EyeJayEsLogo width={80} />
-				Ian J. Smith
-			</Link>
 			<button
 				aria-label="Mobile navigation"
 				type="button"
-				className="transition-colors absolute top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
+				className="z-50 transition-colors fixed top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
 				onClick={handleClick}
 			>
 				<svg
@@ -95,6 +97,6 @@ export default function MobileMenu() {
 					/>
 				</svg>
 			</button>
-		</div>
+		</>
 	)
 }

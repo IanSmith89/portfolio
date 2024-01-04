@@ -12,9 +12,9 @@ export type ButtonProps = {
 export default function Button({ children, className = '', type = 'button', variant = 'solid' }: ButtonProps) {
 	const buttonClasses = useMemo<string>(() => {
 		if (variant === 'outline')
-			return 'border-indigo dark:border-white bg-transparent hover:bg-indigo dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-10 text-indigo dark:text-white'
+			return 'border-indigo dark:border-white opacity-65 bg-transparent hover:bg-indigo dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-20 dark:hover:opacity-100 text-indigo dark:text-white'
 
-		return 'border-transparent bg-orange dark:bg-yellow text-indigo hover:bg-orange-500 dark:hover:bg-opacity-90'
+		return 'border-transparent bg-orange dark:bg-yellow text-indigo hover:bg-orange-500 dark:hover:bg-yellow dark:hover:bg-opacity-90'
 	}, [variant])
 
 	return (
