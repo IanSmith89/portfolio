@@ -50,7 +50,7 @@ export default function MobileMenu() {
 			<button
 				aria-label="Mobile navigation"
 				type="button"
-				className="z-50 transition-colors fixed top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
+				className="md:hidden z-50 transition-colors fixed top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
 				onClick={handleClick}
 			>
 				<svg

@@ -5,6 +5,7 @@ import starbucksLogo from '../public/starbucks.png'
 import microsoftLogo from '../public/microsoft.png'
 import boeingLogo from '../public/boeing.png'
 import highSeasLogo from '../public/high-seas.png'
+import Link from 'next/link'
 
 export default function Home() {
 	return (
@@ -53,12 +54,22 @@ export default function Home() {
 						I&apos;m grateful to have worked alongside amazing people at industry-leading, world-changing
 						companies:
 					</h2>
-					<div className="flex items-center justify-center flex-wrap gap-6">
-						<Image alt="" src={tpcLogo} loading="lazy" />
-						<Image alt="" src={starbucksLogo} loading="lazy" />
-						<Image alt="" src={microsoftLogo} loading="lazy" />
-						<Image alt="" src={boeingLogo} loading="lazy" />
-						<Image alt="" src={highSeasLogo} loading="lazy" />
+					<div className="flex items-center justify-center flex-wrap gap-12">
+						<Link href="https://www.theproscloset.com" target="_blank">
+							<Image alt="" src={tpcLogo} loading="lazy" />
+						</Link>
+						<Link href="https://www.starbucks.com" target="_blank">
+							<Image alt="" src={starbucksLogo} loading="lazy" />
+						</Link>
+						<Link href="https://www.microsoft.com" target="_blank">
+							<Image alt="" src={microsoftLogo} loading="lazy" />
+						</Link>
+						<Link href="https://www.boeing.com" target="_blank">
+							<Image alt="" src={boeingLogo} loading="lazy" />
+						</Link>
+						<Link href="https://highseas.com" target="_blank">
+							<Image alt="" src={highSeasLogo} loading="lazy" />
+						</Link>
 					</div>
 					<Button>VIEW MY FULL RÉSUMÉ</Button>
 				</div>
