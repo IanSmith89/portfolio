@@ -19,7 +19,7 @@ export default function MobileMenu() {
 	}
 
 	return (
-		<div className="fixed inset-0 z-50 sm:hidden">
+		<div className="fixed inset-0 z-50 md:hidden">
 			<div
 				className={`absolute w-full h-full flex flex-col justify-between pt-[55%] pb-6 pl-6 bg-teal dark:bg-indigo transition-opacity ${
 					isOpen ? 'opacity-1' : 'opacity-0 pointer-events-none'
