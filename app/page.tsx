@@ -71,7 +71,9 @@ export default function Home() {
 							<Image alt="" src={highSeasLogo} loading="lazy" />
 						</Link>
 					</div>
-					<Button>VIEW MY FULL RÉSUMÉ</Button>
+					<Button href="https://drive.google.com/file/d/1LKmlhusey6vC3NRcg_3iTnJ5NARl46lv/view?usp=sharing">
+						VIEW MY FULL RÉSUMÉ
+					</Button>
 				</div>
 			</section>
 		</>
