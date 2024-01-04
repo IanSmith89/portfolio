@@ -6,6 +6,7 @@ export type ButtonProps = {
 	children: React.ReactNode
 	className?: string
 	href?: string
+	target?: '_blank' | '_parent' | '_self' | '_top'
 	type?: 'button' | 'submit' | 'reset'
 	variant?: 'solid' | 'outline' | 'ghost' | 'link'
 }
@@ -14,6 +15,7 @@ export default function Button({
 	children,
 	className = '',
 	href = '',
+	target = '_self',
 	type = 'button',
 	variant = 'solid',
 }: ButtonProps) {
@@ -35,7 +37,7 @@ export default function Button({
 
 	if (href)
 		return (
-			<a className={buttonClasses} href={href} target="_blank">
+			<a className={buttonClasses} href={href} target={target}>
 				{children}
 			</a>
 		)
