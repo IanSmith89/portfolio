@@ -13,7 +13,7 @@ export default forwardRef(function TextArea(
 	ref: React.LegacyRef<HTMLTextAreaElement> | undefined
 ) {
 	const borderClasses = error
-		? 'focus:border-red focus:ring-red'
+		? 'border-red focus:border-red focus:ring-red'
 		: 'focus:border-indigo focus:ring-indigo dark:focus:border-white dark:focus:ring-white'
 
 	return (

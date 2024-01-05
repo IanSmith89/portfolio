@@ -46,17 +46,27 @@ export default function ContactForm() {
 			<Controller
 				name="email"
 				control={control}
-				render={({ field }) => <Input type="email" label="Email" {...field} />}
+				render={({ field, fieldState: { error, invalid } }) => (
+					<Input error={invalid} helperText={error?.message} type="email" label="Email" {...field} />
+				)}
 				rules={{
-					required: true,
+					required: {
+						value: true,
+						message: 'Please provide a valid email.',
+					},
 				}}
 			/>
 			<Controller
 				name="message"
 				control={control}
-				render={({ field }) => <Textarea label="Message" rows={4} {...field} />}
+				render={({ field, fieldState: { error, invalid } }) => (
+					<Textarea error={invalid} helperText={error?.message} label="Message" rows={4} {...field} />
+				)}
 				rules={{
-					required: true,
+					required: {
+						value: true,
+						message: 'Please provide a message.',
+					},
 				}}
 			/>
 

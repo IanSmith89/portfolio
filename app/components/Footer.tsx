@@ -35,7 +35,7 @@ export default function Footer() {
 						</Link>
 					</div>
 				</div>
-				<EyeJayEsLogo className="w-full max-w-[800px]" width={800} />
+				<EyeJayEsLogo className="w-3/4 md:w-2/3" width={800} />
 				<p className="font-medium text-2xl">(eye - jay - es)</p>
 			</div>
 		</footer>
