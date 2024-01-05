@@ -1,11 +1,16 @@
+import { forwardRef } from 'react'
+
 export interface InputProps
 	extends React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {
 	label?: string
 }
 
-export default function Input({ className, label, name, type, ...rest }: InputProps) {
+export default forwardRef(function Input(
+	{ className, label, name, required, type, ...rest }: InputProps,
+	ref: React.LegacyRef<HTMLInputElement> | undefined
+) {
 	return type === 'hidden' ? (
-		<input name={name} type={type} {...rest} />
+		<input ref={ref} name={name} type={type} {...rest} />
 	) : (
 		<div className={`mb-4 ${className}`}>
 			<label htmlFor={`${name}`} className="block text-sm font-medium mb-2 dark:text-white">
@@ -13,6 +18,7 @@ export default function Input({ className, label, name, type, ...rest }: InputPr
 			</label>
 			<div className="relative">
 				<input
+					ref={ref}
 					{...rest}
 					aria-describedby={`${name}-helper`}
 					className="py-3 px-4 block w-full border-red-500 rounded-lg text-sm focus:border-red-500 focus:ring-red-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
@@ -29,9 +35,9 @@ export default function Input({ className, label, name, type, ...rest }: InputPr
 						viewBox="0 0 24 24"
 						fill="none"
 						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
+						strokeWidth="2"
+						strokeLinecap="round"
+						strokeLinejoin="round"
 					>
 						<circle cx="12" cy="12" r="10" />
 						<line x1="12" x2="12" y1="8" y2="12" />
@@ -44,4 +50,4 @@ export default function Input({ className, label, name, type, ...rest }: InputPr
 			</p>
 		</div>
 	)
-}
+})
