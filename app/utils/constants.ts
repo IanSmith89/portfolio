@@ -1,14 +1,18 @@
 export const NAV_ROUTES = [
 	{
-		href: '/about',
+		href: '/#recent-work',
+		title: 'WORK',
+	},
+	{
+		href: '/#about-me',
 		title: 'ABOUT',
 	},
 	{
-		href: '#resume-section',
+		href: '/#resume-section',
 		title: 'RÉSUMÉ',
 	},
 	{
-		href: '#',
+		href: '/#contact',
 		title: 'CONTACT',
 	},
 ]
@@ -61,3 +65,5 @@ export const PROJECT_ROUTES = [
 		title: "ianjsmith.com: How It's Made",
 	},
 ]
+
+export const WEB_FORM_KEY = '5602ac20-bcd3-48da-bd9e-51ddde3b01df'
