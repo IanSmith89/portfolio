@@ -6,18 +6,18 @@
 @tailwind utilities;
 
 :root {
-  --text-rgb: 21, 23, 55;
-  --background-rgb: 95, 217, 221;
+    --text-rgb: 21, 23, 55;
+    --dark-text-rgb: 255, 255, 255;
+    --background-rgb: 178, 238, 239;
+    --dark-background-rgb: 21, 23, 55;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-rgb: 255, 255, 255;
-    --background-rgb: 21, 23, 55;
-  }
+html {
+    color: rgb(var(--text-rgb));
+    background: rgb(var(--background-rgb));
 }
 
-body {
-  color: rgb(var(--text-rgb));
-  background: rgb(var(--background-rgb));
+html.dark {
+    color: rgb(var(--dark-text-rgb));
+    background: rgb(var(--dark-background-rgb));
 }
