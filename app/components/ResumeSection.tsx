@@ -16,7 +16,7 @@ export default function ResumeSection() {
 	return (
 		<section
 			id="resume-section"
-			className="transition-colors w-full h-auto bg-white dark:bg-grey-blue py-18 md:py-32"
+			className="transition-colors w-full h-auto bg-white dark:bg-grey-blue py-16 md:py-32"
 		>
 			<div className="container w-full h-full flex flex-col gap-16 items-center justify-center">
 				<h2 className="text-xl md:text-2xl font-bold text-center mx-auto max-w-lg">
