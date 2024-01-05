@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { ROUTES } from '../utils/constants'
+import { NAV_ROUTES } from '../utils/constants'
 import EyeJayEsLogo from './EyeJayEsLogo'
 import { throttle } from '../utils/helpers'
 
@@ -45,7 +45,7 @@ export default function MobileMenu() {
 					}`}
 				>
 					<div className="absolute m-auto inset-0 left-6 flex flex-col gap-8 justify-center">
-						{ROUTES.map(({ href, title }) => (
+						{NAV_ROUTES.map(({ href, title }) => (
 							<Link
 								key={title}
 								className="transition-colors text-indigo dark:text-teal text-6xl font-bold"
