@@ -4,6 +4,7 @@ import { useForm, Controller, SubmitHandler } from 'react-hook-form'
 import { WEB_FORM_KEY } from '../utils/constants'
 import Input from './Input'
 import Button from './Button'
+import Textarea from './Textarea'
 
 export interface ContactFormFields {
 	email: string
@@ -40,16 +41,28 @@ export default function ContactForm() {
 	}
 
 	return (
-		<form onSubmit={handleSubmit(onSubmit)}>
+		<form className="flex flex-col w-full items-end" onSubmit={handleSubmit(onSubmit)}>
 			<Input type="checkbox" name="botcheck" id="" className="hidden" />
 			<Controller
 				name="email"
 				control={control}
 				render={({ field }) => <Input type="email" label="Email" {...field} />}
+				rules={{
+					required: true,
+				}}
 			/>
-			<textarea name="message" cols={30} rows={10} required></textarea>
+			<Controller
+				name="message"
+				control={control}
+				render={({ field }) => <Textarea label="Message" rows={4} {...field} />}
+				rules={{
+					required: true,
+				}}
+			/>
 
-			<Button type="submit">SEND MESSAGE</Button>
+			<Button className="mt-4" type="submit">
+				SEND MESSAGE
+			</Button>
 		</form>
 	)
 }

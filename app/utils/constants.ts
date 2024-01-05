@@ -21,47 +21,47 @@ export const PROJECTS_URL = '/projects'
 
 export const PROJECT_ROUTES = [
 	{
-		href: '/tpc-rebrand',
+		href: `${PROJECTS_URL}/tpc-rebrand`,
 		title: 'TPC: E-commerce Rebrand',
 	},
 	{
-		href: '/tpc-component-library',
+		href: `${PROJECTS_URL}/tpc-component-library`,
 		title: 'TPC: Component Library',
 	},
 	{
-		href: '/starbucks-s4-apps',
+		href: `${PROJECTS_URL}/starbucks-s4-apps`,
 		title: 'Starbucks: Web Apps',
 	},
 	{
-		href: '/wa-doh-vaccine-locator',
+		href: `${PROJECTS_URL}/wa-doh-vaccine-locator`,
 		title: 'WA DOH: Vaccine Locator',
 	},
 	{
-		href: '/astarte-inventory-management',
+		href: `${PROJECTS_URL}/astarte-inventory-management`,
 		title: 'Astarte: Inventory Management System',
 	},
 	{
-		href: '/paragon',
+		href: `${PROJECTS_URL}/paragon`,
 		title: 'Paragon: Luxury Real Estate Website',
 	},
 	{
-		href: '/paragon-property-management',
+		href: `${PROJECTS_URL}/paragon-property-management`,
 		title: 'Paragon: Property Management System',
 	},
 	{
-		href: '/mighty-vet-ux',
+		href: `${PROJECTS_URL}/mighty-vet-ux`,
 		title: 'Mighty Vet: Website Concept',
 	},
 	{
-		href: '/wa-state-parks-camping-reservations',
+		href: `${PROJECTS_URL}/wa-state-parks-camping-reservations`,
 		title: 'WA State Parks: Camping Reservation System',
 	},
 	{
-		href: '/high-seas-portfolio',
+		href: `${PROJECTS_URL}/high-seas-portfolio`,
 		title: 'High Seas: Portfolio Website',
 	},
 	{
-		href: '/ian-j-smith-portfolio',
+		href: `${PROJECTS_URL}/ian-j-smith-portfolio`,
 		title: "ianjsmith.com: How It's Made",
 	},
 ]

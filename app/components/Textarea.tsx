@@ -2,35 +2,29 @@ import { forwardRef } from 'react'
 import FormLabel from './FormLabel'
 
 export interface InputProps
-	extends React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {
+	extends React.DetailedHTMLProps<React.TextareaHTMLAttributes<HTMLTextAreaElement>, HTMLTextAreaElement> {
 	error?: boolean
 	helperText?: string
 	label?: string
 }
 
-export default forwardRef(function Input(
-	{ className, error, helperText, label, name, required, type, ...rest }: InputProps,
-	ref: React.LegacyRef<HTMLInputElement> | undefined
+export default forwardRef(function TextArea(
+	{ className, error, helperText, label, name, required, ...rest }: InputProps,
+	ref: React.LegacyRef<HTMLTextAreaElement> | undefined
 ) {
 	const borderClasses = error
 		? 'focus:border-red focus:ring-red'
 		: 'focus:border-indigo focus:ring-indigo dark:focus:border-white dark:focus:ring-white'
 
-	return type === 'hidden' ? (
-		<input ref={ref} name={name} type={type} {...rest} />
-	) : (
+	return (
 		<div className={`w-full mb-4 ${className}`}>
-			<FormLabel htmlFor={`${name}`}>{label}</FormLabel>
+			<FormLabel htmlFor={name}>{label}</FormLabel>
 			<div className="relative">
-				<input
+				<textarea
 					ref={ref}
 					{...rest}
-					aria-describedby={`${name}-helper`}
 					className={`py-3 px-4 block w-full rounded-lg text-sm border-transparent bg-white/60 hover:bg-white/75 focus:bg-white/75 focus:border dark:bg-white/20 dark:hover:bg-white/25 dark:focus:bg-white/25 ${borderClasses}`}
-					id={`${name}`}
-					name={`${name}`}
-					type={type}
-				/>
+				></textarea>
 				{error ? (
 					<div className="absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3">
 						<svg
