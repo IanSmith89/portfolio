@@ -2,14 +2,16 @@
 
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ROUTES } from '../utils/constants'
 import EyeJayEsLogo from './EyeJayEsLogo'
+import { throttle } from '../utils/helpers'
 
 const DarkModeSwitch = dynamic(() => import('./DarkModeSwitch'), { ssr: false })
 
 export default function MobileMenu() {
 	const [isOpen, setIsOpen] = useState<boolean>(false)
+	const [isTransparent, setIsTransparent] = useState<boolean>(true)
 
 	const handleClick = () => {
 		setIsOpen((prevIsOpen) => {
@@ -18,11 +20,27 @@ export default function MobileMenu() {
 		})
 	}
 
+	useEffect(() => {
+		const handleScroll = throttle(() => {
+			setIsTransparent(window.scrollY < 72)
+		}, 150)
+
+		window.addEventListener('scroll', handleScroll)
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll)
+		}
+	}, [])
+
 	return (
-		<>
-			<div className={`fixed inset-0 h-screen z-50 md:hidden${isOpen ? '' : ' pointer-events-none'}`}>
+		<div
+			className={`md:hidden transition-colors fixed top-0 left-0 z-50 w-full h-[72px] ${
+				isTransparent ? 'bg-transparent' : 'shadow-md bg-white dark:bg-grey-blue'
+			}`}
+		>
+			<div className={`fixed inset-0 h-full ${isOpen ? '' : ' pointer-events-none'}`}>
 				<div
-					className={`transition-all absolute inset-0 flex flex-col justify-end pb-6 pl-6 bg-teal dark:bg-indigo ${
+					className={`transition-all absolute inset-0 flex flex-col justify-end pb-6 pl-6 bg-teal-100 dark:bg-grey-blue ${
 						isOpen ? 'opacity-1' : 'opacity-0'
 					}`}
 				>
@@ -50,7 +68,7 @@ export default function MobileMenu() {
 			<button
 				aria-label="Mobile navigation"
 				type="button"
-				className="md:hidden z-50 transition-colors fixed top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
+				className="transition-colors fixed top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
 				onClick={handleClick}
 			>
 				<svg
@@ -97,6 +115,6 @@ export default function MobileMenu() {
 					/>
 				</svg>
 			</button>
-		</>
+		</div>
 	)
 }
