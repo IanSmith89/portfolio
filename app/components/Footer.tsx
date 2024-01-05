@@ -5,9 +5,9 @@ export default function Footer() {
 	const currentYear = new Date().getFullYear()
 
 	return (
-		<footer className="bg-teal-100 dark:bg-grey-blue text-indigo dark:text-white pt-4 pb-8">
+		<footer className="bg-teal-100 dark:bg-grey-blue text-indigo dark:text-white pt-6 pb-8">
 			<div className="container flex flex-col items-center gap-8">
-				<div className="w-full flex flex-col gap-2 sm:flex-row items-center justify-between">
+				<div className="w-full flex flex-col gap-4 sm:flex-row items-center justify-between">
 					<small className="text-[10px] font-sans opacity-75 max-w-[216px] text-center sm:text-left">
 						&copy; {currentYear} Ian J. Smith, All Rights Reserved. Website designed and built by me.
 						Inspired by{' '}
@@ -21,24 +21,16 @@ export default function Footer() {
 						.
 					</small>
 					<div className="flex items-center gap-4">
-						<Link className="text-sm hover:underline" href="mailto:iansmith1026@gmail.com" target="_blank">
+						<Link className="hover:underline" href="mailto:iansmith1026@gmail.com" target="_blank">
 							Email
 						</Link>
-						<Link
-							className="text-sm hover:underline"
-							href="https://www.linkedin.com/in/ian-smith"
-							target="_blank"
-						>
+						<Link className="hover:underline" href="https://www.linkedin.com/in/ian-smith" target="_blank">
 							LinkedIn
 						</Link>
-						<Link className="text-sm hover:underline" href="https://github.com/IanSmith89" target="_blank">
+						<Link className="hover:underline" href="https://github.com/IanSmith89" target="_blank">
 							GitHub
 						</Link>
-						<Link
-							className="text-sm hover:underline"
-							href="https://medium.com/@iansmith1026"
-							target="_blank"
-						>
+						<Link className="hover:underline" href="https://medium.com/@iansmith1026" target="_blank">
 							Blog
 						</Link>
 					</div>

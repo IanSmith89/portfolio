@@ -16,7 +16,7 @@ export default function ResumeSection() {
 	return (
 		<section
 			id="resume-section"
-			className="transition-colors w-full h-auto bg-white dark:bg-grey-blue py-12 md:py-32"
+			className="transition-colors w-full h-auto bg-white dark:bg-grey-blue py-16 md:py-32"
 		>
 			<div className="container w-full h-full flex flex-col gap-16 items-center justify-center">
 				<h2 className="text-xl md:text-2xl font-bold text-center mx-auto max-w-lg">
@@ -25,19 +25,14 @@ export default function ResumeSection() {
 				</h2>
 				<div className="flex items-center justify-center flex-wrap gap-8 md:gap-12">
 					<Link href="https://www.theproscloset.com" target="_blank">
-						<ThemeImage
-							alt="TPC logo"
-							srcLight={tpcLight}
-							srcDark={tpcDark}
-							className="w-72 md:w-48 h-auto"
-						/>
+						<ThemeImage alt="TPC logo" srcLight={tpcLight} srcDark={tpcDark} className="w-48 h-auto" />
 					</Link>
 					<Link href="https://www.starbucks.com" target="_blank">
 						<ThemeImage
 							alt="Starbucks logo"
 							srcLight={starbucksLight}
 							srcDark={starbucksDark}
-							className="w-72 md:w-48 h-auto"
+							className="w-48 h-auto"
 						/>
 					</Link>
 					<Link href="https://www.microsoft.com" target="_blank">
@@ -45,7 +40,7 @@ export default function ResumeSection() {
 							alt="Microsoft logo"
 							srcLight={microsoftLight}
 							srcDark={microsoftDark}
-							className="w-72 md:w-48 h-auto"
+							className="w-48 h-auto"
 						/>
 					</Link>
 					<Link href="https://www.boeing.com" target="_blank">
@@ -53,7 +48,7 @@ export default function ResumeSection() {
 							alt="Boeing logo"
 							srcLight={boeingLight}
 							srcDark={boeingDark}
-							className="w-72 md:w-48 h-auto"
+							className="w-48 h-auto"
 						/>
 					</Link>
 					<Link href="https://highseas.com" target="_blank">
@@ -61,7 +56,7 @@ export default function ResumeSection() {
 							alt="High Seas logo"
 							srcLight={highSeasLight}
 							srcDark={highSeasDark}
-							className="w-72 md:w-48 h-auto"
+							className="w-48 h-auto"
 						/>
 					</Link>
 				</div>
