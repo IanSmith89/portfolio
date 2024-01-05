@@ -34,11 +34,11 @@ export default function MobileMenu() {
 
 	return (
 		<div
-			className={`transition-colors fixed top-0 left-0 z-50 w-full h-[72px] ${
+			className={`md:hidden transition-colors fixed top-0 left-0 z-50 w-full h-[72px] ${
 				isTransparent ? 'bg-transparent' : 'shadow-md bg-white dark:bg-grey-blue'
 			}`}
 		>
-			<div className={`fixed inset-0 h-full md:hidden${isOpen ? '' : ' pointer-events-none'}`}>
+			<div className={`fixed inset-0 h-full ${isOpen ? '' : ' pointer-events-none'}`}>
 				<div
 					className={`transition-all absolute inset-0 flex flex-col justify-end pb-6 pl-6 bg-teal-100 dark:bg-grey-blue ${
 						isOpen ? 'opacity-1' : 'opacity-0'
@@ -68,7 +68,7 @@ export default function MobileMenu() {
 			<button
 				aria-label="Mobile navigation"
 				type="button"
-				className="md:hidden z-50 transition-colors fixed top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
+				className="transition-colors fixed top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
 				onClick={handleClick}
 			>
 				<svg
