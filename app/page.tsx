@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import Link from 'next/link'
+// import Link from 'next/link'
 import collage from '../public/collage-light.png'
-import Button from './components/Button'
-import { PROJECT_ROUTES } from './utils/constants'
+// import Button from './components/Button'
+// import { PROJECT_ROUTES } from './utils/constants'
 import ResumeSection from './components/ResumeSection'
 import ContactSection from './components/ContactSection'
 
@@ -31,9 +31,9 @@ export default function Home() {
 							I like to create <span className="font-light">interactive</span> things{' '}
 							<span className="font-light">on the web</span>.
 						</h1>
-						<div className="flex gap-2 flex-wrap">
+						{/* <div className="flex gap-2 flex-wrap">
 							<Button href="#recent-work">VIEW MY WORK</Button>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>
