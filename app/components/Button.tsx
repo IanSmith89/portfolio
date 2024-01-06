@@ -2,12 +2,10 @@
 
 import { useMemo } from 'react'
 
-export type ButtonProps = {
-	children: React.ReactNode
-	className?: string
+export interface ButtonProps
+	extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
 	href?: string
 	target?: '_blank' | '_parent' | '_self' | '_top'
-	type?: 'button' | 'submit' | 'reset'
 	variant?: 'solid' | 'outline' | 'ghost' | 'link'
 }
 
@@ -16,8 +14,8 @@ export default function Button({
 	className = '',
 	href = '',
 	target = '_self',
-	type = 'button',
 	variant = 'solid',
+	...rest
 }: ButtonProps) {
 	const buttonClasses = useMemo<string>(() => {
 		let classes =
@@ -43,7 +41,7 @@ export default function Button({
 		)
 
 	return (
-		<button className={buttonClasses} type={type}>
+		<button className={buttonClasses} {...rest}>
 			{children}
 		</button>
 	)

@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { ROUTES } from '../utils/constants'
+import { NAV_ROUTES } from '../utils/constants'
 import EyeJayEsLogo from './EyeJayEsLogo'
 import { throttle } from '../utils/helpers'
 
@@ -13,11 +13,18 @@ export default function MobileMenu() {
 	const [isOpen, setIsOpen] = useState<boolean>(false)
 	const [isTransparent, setIsTransparent] = useState<boolean>(true)
 
-	const handleClick = () => {
+	const handleHamburgerClick = () => {
 		setIsOpen((prevIsOpen) => {
 			document.body.style.overflow = prevIsOpen ? '' : 'hidden'
 			return !prevIsOpen
 		})
+	}
+
+	const handleLinkClick = () => {
+		setTimeout(() => {
+			document.body.style.overflow = ''
+			setIsOpen(false)
+		}, 200)
 	}
 
 	useEffect(() => {
@@ -45,11 +52,12 @@ export default function MobileMenu() {
 					}`}
 				>
 					<div className="absolute m-auto inset-0 left-6 flex flex-col gap-8 justify-center">
-						{ROUTES.map(({ href, title }) => (
+						{NAV_ROUTES.map(({ href, title }) => (
 							<Link
 								key={title}
 								className="transition-colors text-indigo dark:text-teal text-6xl font-bold"
 								href={href}
+								onClick={handleLinkClick}
 							>
 								{title}
 							</Link>
@@ -69,7 +77,7 @@ export default function MobileMenu() {
 				aria-label="Mobile navigation"
 				type="button"
 				className="transition-colors fixed top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
-				onClick={handleClick}
+				onClick={handleHamburgerClick}
 			>
 				<svg
 					className="w-6 h-6"

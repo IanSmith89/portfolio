@@ -1,3 +1,4 @@
+import plugin from 'tailwindcss/plugin'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -13,6 +14,20 @@ const config: Config = {
 			current: 'currentColor',
 			black: '#000000',
 			white: '#ffffff',
+			red: {
+				'50': '#fff1f2',
+				'100': '#ffe3e5',
+				'200': '#ffccd1',
+				'300': '#ffa2ad',
+				'400': '#fe6e81',
+				'500': '#f95670',
+				DEFAULT: '#f95670',
+				'600': '#e51944',
+				'700': '#c20e38',
+				'800': '#a20f36',
+				'900': '#8b1035',
+				'950': '#4e0317',
+			},
 			orange: {
 				'50': '#fef5f2',
 				'100': '#fde9e3',
@@ -149,14 +164,40 @@ const config: Config = {
 			},
 		},
 		extend: {
+			animation: {
+				'scale-up-down': 'scale-up-down 1050ms infinite ease-in-out',
+			},
 			fontFamily: {
 				sans: ['scandia-web', 'sans-serif'],
+			},
+			keyframes: {
+				'scale-up-down': {
+					'0%, 40%, 100%': {
+						transform: 'scaleY(0.1)',
+					},
+					'20%': {
+						transform: 'scaleY(1.0)',
+					},
+				},
 			},
 			strokeWidth: {
 				4: '4px',
 			},
 		},
 	},
-	plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+	plugins: [
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/typography'),
+		plugin(({ matchUtilities, theme }) => {
+			matchUtilities(
+				{
+					'animate-delay': (value) => ({
+						animationDelay: value,
+					}),
+				},
+				{ values: theme('transitionDelay') }
+			)
+		}),
+	],
 }
 export default config
