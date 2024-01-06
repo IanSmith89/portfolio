@@ -1,3 +1,4 @@
+import plugin from 'tailwindcss/plugin'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -163,14 +164,40 @@ const config: Config = {
 			},
 		},
 		extend: {
+			animation: {
+				'scale-up-down': 'scale-up-down 1050ms infinite ease-in-out',
+			},
 			fontFamily: {
 				sans: ['scandia-web', 'sans-serif'],
+			},
+			keyframes: {
+				'scale-up-down': {
+					'0%, 40%, 100%': {
+						transform: 'scaleY(0.1)',
+					},
+					'20%': {
+						transform: 'scaleY(1.0)',
+					},
+				},
 			},
 			strokeWidth: {
 				4: '4px',
 			},
 		},
 	},
-	plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+	plugins: [
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/typography'),
+		plugin(({ matchUtilities, theme }) => {
+			matchUtilities(
+				{
+					'animate-delay': (value) => ({
+						animationDelay: value,
+					}),
+				},
+				{ values: theme('transitionDelay') }
+			)
+		}),
+	],
 }
 export default config

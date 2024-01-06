@@ -14,7 +14,7 @@ export default forwardRef(function TextArea(
 ) {
 	const borderClasses = error
 		? 'border-red focus:border-red focus:ring-red'
-		: 'focus:border-indigo focus:ring-indigo dark:focus:border-white dark:focus:ring-white'
+		: 'border-transparent focus:border-indigo focus:ring-indigo dark:focus:border-white dark:focus:ring-white'
 
 	return (
 		<div className={`w-full mb-4 ${className}`}>
@@ -23,7 +23,7 @@ export default forwardRef(function TextArea(
 				<textarea
 					ref={ref}
 					{...rest}
-					className={`py-3 px-4 block w-full rounded-lg text-sm border-transparent bg-white/60 hover:bg-white/75 focus:bg-white/75 focus:border dark:bg-white/20 dark:hover:bg-white/25 dark:focus:bg-white/25 ${borderClasses}`}
+					className={`py-3 px-4 block w-full rounded-lg text-sm bg-white/60 hover:bg-white/75 focus:bg-white/75 focus:border dark:bg-white/20 dark:hover:bg-white/25 dark:focus:bg-white/25 ${borderClasses}`}
 				></textarea>
 				{error ? (
 					<div className="absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3">
@@ -48,7 +48,9 @@ export default forwardRef(function TextArea(
 			</div>
 			{helperText ? (
 				<p
-					className={`text-xs mt-1${error ? ' text-red' : 'text-indigo/70 dark:text-white/70'}`}
+					className={`text-xs mt-1${
+						error ? ' text-red-700 dark:text-red-300' : 'text-indigo/70 dark:text-white/70'
+					}`}
 					id={`${name}-helper`}
 				>
 					{helperText}
