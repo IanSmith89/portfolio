@@ -11,13 +11,20 @@ const DarkModeSwitch = dynamic(() => import('./DarkModeSwitch'), { ssr: false })
 
 export default function MobileMenu() {
 	const [isOpen, setIsOpen] = useState<boolean>(false)
-	const [isTransparent, setIsTransparent] = useState<boolean>(true)
+	const [isTransparent, setIsTransparent] = useState<boolean>(window.scrollY < 72)
 
-	const handleClick = () => {
+	const handleHamburgerClick = () => {
 		setIsOpen((prevIsOpen) => {
 			document.body.style.overflow = prevIsOpen ? '' : 'hidden'
 			return !prevIsOpen
 		})
+	}
+
+	const handleLinkClick = () => {
+		setTimeout(() => {
+			document.body.style.overflow = ''
+			setIsOpen(false)
+		}, 200)
 	}
 
 	useEffect(() => {
@@ -50,6 +57,7 @@ export default function MobileMenu() {
 								key={title}
 								className="transition-colors text-indigo dark:text-teal text-6xl font-bold"
 								href={href}
+								onClick={handleLinkClick}
 							>
 								{title}
 							</Link>
@@ -69,7 +77,7 @@ export default function MobileMenu() {
 				aria-label="Mobile navigation"
 				type="button"
 				className="transition-colors fixed top-4 right-4 flex justify-center items-center gap-2 h-10 w-10 rounded-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 text-indigo dark:text-white"
-				onClick={handleClick}
+				onClick={handleHamburgerClick}
 			>
 				<svg
 					className="w-6 h-6"

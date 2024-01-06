@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import collage from '../public/collage-light.png'
 import Button from './components/Button'
-import ResumeSection from './components/ResumeSection'
 import { PROJECT_ROUTES } from './utils/constants'
+import ResumeSection from './components/ResumeSection'
 import ContactSection from './components/ContactSection'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
 							fill
 							blurDataURL="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
 							placeholder="blur"
+							priority
 							sizes="(max-width: 768px) 100vw, 66vw"
 						/>
 					</div>
@@ -35,7 +37,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section
+			{/* <section
 				id="recent-work"
 				className="transition-colors w-full min-h-[66vh] bg-white dark:bg-grey-blue pt-8 pb-12 md:pt-12 md:pb-20"
 			>
@@ -57,11 +59,11 @@ export default function Home() {
 							if (i === 10) className = 'lg:col-span-2 xl:col-auto'
 
 							return (
-								<a key={title} href={href} className={className}>
+								<Link key={title} href={href} className={className}>
 									<div className="h-full rounded-2xl bg-black bg-opacity-10 flex items-center justify-center p-4">
 										<h3 className="text-center opacity-20">COMING SOON</h3>
 									</div>
-								</a>
+								</Link>
 							)
 						})}
 					</div>
@@ -74,7 +76,7 @@ export default function Home() {
 				<div className="container">
 					<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">About Me</h2>
 				</div>
-			</section>
+			</section> */}
 			<ResumeSection />
 			<ContactSection />
 		</>
