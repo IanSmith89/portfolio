@@ -11,7 +11,7 @@ const DarkModeSwitch = dynamic(() => import('./DarkModeSwitch'), { ssr: false })
 
 export default function MobileMenu() {
 	const [isOpen, setIsOpen] = useState<boolean>(false)
-	const [isTransparent, setIsTransparent] = useState<boolean>(Boolean(window?.scrollY < 72))
+	const [isTransparent, setIsTransparent] = useState<boolean>(window ? window.scrollY < 72 : true)
 
 	const handleHamburgerClick = () => {
 		setIsOpen((prevIsOpen) => {
