@@ -69,7 +69,7 @@ export default function LandingSection() {
 						<TiltImage
 							className="absolute top-[34%] left-[5.06%] w-[22.8%]"
 							imageProps={{
-								className: 'filter grayscale dark:invert',
+								className: 'filter grayscale',
 								priority: true,
 								src: microphone,
 							}}
