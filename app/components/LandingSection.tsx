@@ -20,6 +20,7 @@ import keyboard from '../../public/keyboard.png'
 import stickman from '../../public/stickman.png'
 import spatula from '../../public/spatula.png'
 import me from '../../public/me.png'
+import TiltImage from './TiltImage'
 
 export default function LandingSection() {
 	return (
@@ -28,42 +29,58 @@ export default function LandingSection() {
 				<div className="relative w-full md:w-2/3 h-full">
 					<div className="w-full aspect-square">
 						<GridLines className="absolute top-[11%] left-[11%] w-[78%]" />
-						<Image priority alt="" src={eye} className="absolute top-[15.5%] left-[19%] w-[21.12%]" />
+						<TiltImage
+							className="absolute top-[15.5%] left-[19%] w-[21.12%]"
+							imageProps={{
+								priority: true,
+								src: eye,
+							}}
+						/>
 						<Blob className="absolute top-[9%] left-[7.4%] w-[49.2%]" />
 						<Flash className="absolute top-[1.06%] left-[38.5%] w-[43.3%]" />
-						<Image
-							priority
-							alt=""
-							src={keyboard}
-							className="absolute top-[80%] left-[16%] w-[21%] filter grayscale dark:invert"
+						<TiltImage
+							className="absolute top-[80%] left-[16%] w-[21%]"
+							imageProps={{
+								className: 'filter grayscale dark:invert',
+								priority: true,
+								src: keyboard,
+							}}
 						/>
 						<Circle
 							className="absolute top-[63.2%] left-[20.3%] w-[28.6%]"
 							circleClassName="fill-red mix-blend-hard-light opacity-70 dark:opacity-50"
 						/>
-						<Image
-							priority
-							alt=""
-							src={knight}
-							className="absolute top-[29.45%] left-[31.23%] h-[34.2%] w-auto filter grayscale dark:invert"
+						<TiltImage
+							className="absolute top-[29.45%] left-[31.23%] h-[34.2%] w-auto"
+							imageProps={{
+								className: 'h-full w-auto filter grayscale dark:invert',
+								priority: true,
+								src: knight,
+							}}
 						/>
-						<Image
-							priority
-							alt=""
-							src={snowboard}
-							className="absolute top-[20%] left-[27%] h-[60%] w-auto"
+						<TiltImage
+							className="absolute top-[20%] left-[27%] h-[60%]"
+							imageProps={{
+								className: 'h-full w-auto',
+								priority: true,
+								src: snowboard,
+							}}
 						/>
-						<Image
-							priority
-							alt=""
-							src={microphone}
-							className="absolute top-[34%] left-[5.06%] w-[22.8%] filter grayscale"
+						<TiltImage
+							className="absolute top-[34%] left-[5.06%] w-[22.8%]"
+							imageProps={{
+								className: 'filter grayscale dark:invert',
+								priority: true,
+								src: microphone,
+							}}
 						/>
-						<Image
-							priority
-							alt=""
-							src={arm}
-							className="absolute top-[38%] left-[19.77%] h-[32.18%] w-auto"
+						<TiltImage
+							className="absolute top-[38%] left-[19.77%] h-[32.18%]"
+							imageProps={{
+								className: 'h-full w-auto',
+								priority: true,
+								src: arm,
+							}}
 						/>
 						<LinedBlob className="absolute top-[22%] left-[17.45%] w-[75.4%]" />
 						<Image priority alt="" src={macbook} className="absolute top-[22.23%] left-[5%] w-[90%]" />
@@ -72,37 +89,64 @@ export default function LandingSection() {
 							className="absolute top-[36.45%] left-[63.77%] w-[15.2%]"
 							circleClassName="fill-orange dark:fill-yellow"
 						/>
-						<Image
-							priority
-							alt=""
-							src={stickman}
-							className="absolute top-[54.37%] left-[5.18%] h-[19.54%] w-auto"
+						<TiltImage
+							className="absolute top-[54.37%] left-[5.18%] h-[19.54%]"
+							imageProps={{
+								className: 'h-full w-auto',
+								priority: true,
+								src: stickman,
+							}}
 						/>
-						<Image
-							priority
-							alt=""
-							src={spatula}
-							className="absolute top-[49.14%] left-[88%] h-[23.22%] w-auto"
+						<TiltImage
+							className="absolute top-[49.14%] left-[88%] h-[23.22%]"
+							imageProps={{
+								className: 'h-full w-auto',
+								priority: true,
+								src: spatula,
+							}}
 						/>
-						<Image
-							priority
-							alt=""
-							src={sunglasses}
+						<TiltImage
 							className="absolute top-[25.12%] left-[45.94%] w-[8.17%]"
+							imageProps={{
+								priority: true,
+								src: sunglasses,
+							}}
 						/>
-						<Image priority alt="" src={mouth} className="absolute top-[29%] left-[47.17%] w-[5.71%]" />
-						<Image
-							alt=""
-							src={boot}
-							className="absolute top-[13.42%] left-[42.46%] w-[10.32%] filter grayscale"
+						<TiltImage
+							className="absolute top-[29%] left-[47.17%] w-[5.71%]"
+							imageProps={{
+								priority: true,
+								src: mouth,
+							}}
 						/>
-						<Image priority alt="" src={guitar} className="absolute top-[7.83%] left-[53.35%] w-[41.6%]" />
-						<Image priority alt="" src={housePlantTall} className="absolute top-0 left-[11.35%] w-[16%]" />
-						<Image
-							priority
-							alt=""
-							src={housePlantShort}
+						<TiltImage
+							className="absolute top-[13.42%] left-[42.46%] w-[10.32%]"
+							imageProps={{
+								className: 'filter grayscale',
+								priority: true,
+								src: boot,
+							}}
+						/>
+						<TiltImage
+							className="absolute top-[7.83%] left-[53.35%] w-[41.6%]"
+							imageProps={{
+								priority: true,
+								src: guitar,
+							}}
+						/>
+						<TiltImage
+							className="absolute top-0 left-[11.35%] w-[16%]"
+							imageProps={{
+								priority: true,
+								src: housePlantTall,
+							}}
+						/>
+						<TiltImage
 							className="absolute top-[75.74%] left-[36.64%] w-[10%]"
+							imageProps={{
+								priority: true,
+								src: housePlantShort,
+							}}
 						/>
 					</div>
 				</div>
