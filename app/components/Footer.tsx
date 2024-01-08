@@ -9,8 +9,8 @@ export default function Footer() {
 			<div className="container flex flex-col items-center gap-8">
 				<div className="w-full flex flex-col gap-4 sm:flex-row items-center justify-between">
 					<small className="text-[10px] font-sans opacity-75 max-w-[216px] text-center sm:text-left">
-						&copy; {currentYear} Ian J. Smith, All Rights Reserved. Website designed and built by me.
-						Inspired by{' '}
+						&copy; {currentYear} Ian J. Smith, All Rights Reserved. Website designed and built by me &mdash;
+						inspired by{' '}
 						<Link className="underline" href="https://www.madeinspace.la/" target="_blank">
 							April Greiman
 						</Link>{' '}
