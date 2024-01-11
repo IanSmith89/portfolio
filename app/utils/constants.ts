@@ -1,8 +1,8 @@
 export const NAV_ROUTES = [
-	// {
-	// 	href: '/#recent-work',
-	// 	title: 'WORK',
-	// },
+	{
+		href: '/#recent-work',
+		title: 'WORK',
+	},
 	// {
 	// 	href: '/#about-me',
 	// 	title: 'ABOUT',

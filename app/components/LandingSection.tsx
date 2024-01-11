@@ -1,26 +1,27 @@
 import Image from 'next/image'
-import GridLines from './GridLines'
-import Blob from './Blob'
-import Flash from './Flash'
-import LinedBlob from './LinedBlob'
-import Circle from './Circle'
-import macbook from '../../public/macbook.svg'
-import housePlantTall from '../../public/house-plant-tall.svg'
-import housePlantShort from '../../public/house-plant-short.svg'
-import eye from '../../public/eye.png'
-import boot from '../../public/boot.png'
-import guitar from '../../public/guitar.png'
-import sunglasses from '../../public/sunglasses.png'
-import mouth from '../../public/mouth.png'
-import microphone from '../../public/microphone.png'
-import arm from '../../public/arm.png'
-import knight from '../../public/knight.png'
-import snowboard from '../../public/snowboard.png'
-import keyboard from '../../public/keyboard.png'
-import stickman from '../../public/stickman.png'
-import spatula from '../../public/spatula.png'
-import me from '../../public/me.png'
-import TiltImage from './TiltImage'
+import GridLines from '@/components/GridLines'
+import Blob from '@/components/Blob'
+import Flash from '@/components/Flash'
+import LinedBlob from '@/components/LinedBlob'
+import Circle from '@/components/Circle'
+import macbook from '@public/macbook.svg'
+import housePlantTall from '@public/house-plant-tall.svg'
+import housePlantShort from '@public/house-plant-short.svg'
+import eye from '@public/eye.png'
+import boot from '@public/boot.png'
+import guitar from '@public/guitar.png'
+import sunglasses from '@public/sunglasses.png'
+import mouth from '@public/mouth.png'
+import microphone from '@public/microphone.png'
+import arm from '@public/arm.png'
+import knight from '@public/knight.png'
+import snowboard from '@public/snowboard.png'
+import keyboard from '@public/keyboard.png'
+import stickman from '@public/stickman.png'
+import spatula from '@public/spatula.png'
+import me from '@public/me.png'
+import TiltImage from '@/lib/TiltImage'
+import Button from '@/lib/Button'
 
 export default function LandingSection() {
 	return (
@@ -158,9 +159,9 @@ export default function LandingSection() {
 						I like to create <span className="font-light">interactive</span> things{' '}
 						<span className="font-light">on the web</span>.
 					</h1>
-					{/* <div className="flex gap-2 flex-wrap">
-							<Button href="#recent-work">VIEW MY WORK</Button>
-						</div> */}
+					<div className="flex gap-2 flex-wrap">
+						<Button href="#recent-work">VIEW MY WORK</Button>
+					</div>
 				</div>
 			</div>
 		</section>

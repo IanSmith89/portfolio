@@ -1,9 +1,9 @@
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
-import EyeJayEsLogo from './EyeJayEsLogo'
-import { NAV_ROUTES } from '../utils/constants'
+import EyeJayEsLogo from '@/lib/EyeJayEsLogo'
+import { NAV_ROUTES } from '@/utils/constants'
 
-const DarkModeSwitch = dynamic(() => import('./DarkModeSwitch'), { ssr: false })
+const DarkModeSwitch = dynamic(() => import('../lib/DarkModeSwitch'), { ssr: false })
 
 export default function DesktopMenu() {
 	return (

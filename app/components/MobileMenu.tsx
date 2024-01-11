@@ -3,11 +3,11 @@
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { NAV_ROUTES } from '../utils/constants'
-import EyeJayEsLogo from './EyeJayEsLogo'
-import { throttle } from '../utils/helpers'
+import { NAV_ROUTES } from '@/utils/constants'
+import EyeJayEsLogo from '@/lib/EyeJayEsLogo'
+import { throttle } from '@/utils/helpers'
 
-const DarkModeSwitch = dynamic(() => import('./DarkModeSwitch'), { ssr: false })
+const DarkModeSwitch = dynamic(() => import('@/lib/DarkModeSwitch'), { ssr: false })
 
 export default function MobileMenu() {
 	const [isOpen, setIsOpen] = useState<boolean>(false)

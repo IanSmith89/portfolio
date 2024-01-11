@@ -1,15 +1,14 @@
-// import Link from 'next/link'
-// import Button from './components/Button'
-// import { PROJECT_ROUTES } from './utils/constants'
-import ResumeSection from './components/ResumeSection'
-import ContactSection from './components/ContactSection'
-import LandingSection from './components/LandingSection'
+import Link from 'next/link'
+import { PROJECT_ROUTES } from '@/utils/constants'
+import ResumeSection from '@/components/ResumeSection'
+import ContactSection from '@/components/ContactSection'
+import LandingSection from '@/components/LandingSection'
 
 export default function Home() {
 	return (
 		<>
 			<LandingSection />
-			{/* <section
+			<section
 				id="recent-work"
 				className="transition-colors w-full min-h-[66vh] bg-white dark:bg-grey-blue pt-8 pb-12 md:pt-12 md:pb-20"
 			>
@@ -33,14 +32,14 @@ export default function Home() {
 							return (
 								<Link key={title} href={href} className={className}>
 									<div className="h-full rounded-2xl bg-black bg-opacity-10 flex items-center justify-center p-4">
-										<h3 className="text-center opacity-20">COMING SOON</h3>
+										<h3 className="text-center opacity-20">{title}</h3>
 									</div>
 								</Link>
 							)
 						})}
 					</div>
 				</div>
-			</section> */}
+			</section>
 			{/* <section
 				id="about-me"
 				className="transition-colors w-full min-h-[66vh] bg-teal dark:bg-indigo py-6 md:py-12"
