@@ -1,10 +1,10 @@
 import Link from 'next/link'
-import { PROJECT_ROUTES } from '@/utils/constants'
+import { PROJECTS, PROJECTS_URL } from '@/utils/projects'
 import ResumeSection from '@/components/ResumeSection'
 import ContactSection from '@/components/ContactSection'
 import LandingSection from '@/components/LandingSection'
 
-export default function Home() {
+export default function HomePage() {
 	return (
 		<>
 			<LandingSection />
@@ -15,7 +15,7 @@ export default function Home() {
 				<div className="container">
 					<h2 className="text-4xl lg:text-5xl font-bold mb-6">Recent Work</h2>
 					<div className="grid auto-rows-[240px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-						{PROJECT_ROUTES.map(({ href, title }, i) => {
+						{PROJECTS.map(({ handle, shortTitle }, i) => {
 							let className = ''
 
 							if (i === 0) className = 'md:row-span-2'
@@ -30,9 +30,9 @@ export default function Home() {
 							if (i === 10) className = 'lg:col-span-2 xl:col-auto'
 
 							return (
-								<Link key={title} href={href} className={className}>
+								<Link key={handle} href={`${PROJECTS_URL}/${handle}`} className={className}>
 									<div className="h-full rounded-2xl bg-black bg-opacity-10 flex items-center justify-center p-4">
-										<h3 className="text-center opacity-20">{title}</h3>
+										<h3 className="text-center opacity-20">{shortTitle}</h3>
 									</div>
 								</Link>
 							)
