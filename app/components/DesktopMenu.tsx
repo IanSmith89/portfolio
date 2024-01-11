@@ -7,7 +7,7 @@ const DarkModeSwitch = dynamic(() => import('../lib/DarkModeSwitch'), { ssr: fal
 
 export default function DesktopMenu() {
 	return (
-		<div className="hidden md:flex items-center justify-between">
+		<div className="hidden md:flex items-center justify-between py-4">
 			<Link
 				className="transition-colors flex items-center gap-4 text-xl font-bold text-indigo dark:text-white"
 				href="/"
