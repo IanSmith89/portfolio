@@ -19,7 +19,7 @@ export default function DarkModeSwitch() {
 				onChange={handleChange}
 				type="checkbox"
 				id="dark-mode-switch"
-				className="relative w-11 h-6 py-0.5 border-0 text-transparent rounded-full cursor-pointer pl-1 dark:pl-[7px] bg-white dark:checked:bg-white dark:checked:bg-none bg-opacity-40 dark:checked:bg-opacity-40 dark:checked:hover:bg-white dark:checked:hover:bg-opacity-40 dark:checked:focus:bg-white dark:checked:focus:bg-opacity-40 focus:ring-transparent focus:ring-offset-0
+				className="relative w-11 h-6 py-0.5 border-0 text-transparent rounded-full cursor-pointer pl-1 dark:pl-[7px] bg-white/60 dark:checked:bg-white/40 dark:checked:bg-none dark:checked:hover:bg-white/40 dark:checked:focus:bg-white/40 focus:ring-transparent focus:ring-offset-0
                 
                 before:inline-block before:w-4 before:h-4 before:bg-orange before:translate-x-0 dark:before:translate-x-full before:rounded-full before:transform before:transition before:ease-in-out before:duration-200 dark:before:bg-yellow"
 			/>

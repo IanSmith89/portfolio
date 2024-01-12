@@ -10,7 +10,7 @@ export default function Header() {
 
 	useEffect(() => {
 		const handleScroll = throttle(() => {
-			setIsTransparent(window.scrollY < 160)
+			setIsTransparent(window.scrollY < 200)
 		}, 150)
 
 		window.addEventListener('scroll', handleScroll)
@@ -23,8 +23,10 @@ export default function Header() {
 	return (
 		<>
 			<header
-				className={`fixed z-50 top-0 transition-colors w-full filter backdrop-blur-md min-h-16 ${
-					isTransparent ? 'bg-transparent' : 'bg-white/50 dark:bg-indigo/50'
+				className={`fixed z-50 top-0 transition-colors w-full filter backdrop-blur-md min-h-16 border-b-[1px] ${
+					isTransparent
+						? 'bg-transparent border-transparent'
+						: 'bg-white/50 dark:bg-grey-blue/50 border-b-indigo/5 dark:border-b-white/5'
 				}`}
 			>
 				<div className="container">

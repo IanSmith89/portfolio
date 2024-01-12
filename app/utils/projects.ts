@@ -2,8 +2,9 @@ export type Project = {
 	backgroundImage?: string
 	handle: string
 	longTitle?: string
+	shortSubtitle?: string
 	shortTitle: string
-	subTitle?: string
+	longSubtitle?: string
 }
 
 export const PROJECTS_URL: string = '/projects'
@@ -12,68 +13,82 @@ export const PROJECTS: Project[] = [
 	{
 		backgroundImage: 'cyclists.jpg',
 		handle: 'tpc-rebrand',
+		longSubtitle: 'Leading the technical efforts to rebrand, optimize, and modernize the TPC e-commerce website',
 		longTitle: 'Rebranding TPC: A Lesson in Engineering Leadership',
-		shortTitle: 'TPC: E-commerce Rebrand',
-		subTitle: 'Leading the technical efforts to rebrand, optimize, and modernize the TPC e-commerce website',
+		shortSubtitle: 'E-Commerce Rebrand',
+		shortTitle: 'TPC',
 	},
 	{
-		backgroundImage: '',
-		handle: 'tpc-component-library',
-		longTitle: '',
-		shortTitle: 'TPC: Component Library',
-	},
-	{
-		backgroundImage: '',
+		backgroundImage: 'coffee.jpg',
 		handle: 'starbucks-s4-apps',
-		longTitle: '',
-		shortTitle: 'Starbucks: Web Apps',
+		longSubtitle: 'Developing a design system and component library for internal Starbucks web apps',
+		longTitle: 'Transforming HR at Starbucks: Building a Data-Driven Component Library',
+		shortSubtitle: 'HR Apps & Design System',
+		shortTitle: 'Starbucks',
 	},
 	{
-		backgroundImage: '',
+		backgroundImage: 'vaccines.jpg',
 		handle: 'wa-doh-vaccine-locator',
-		longTitle: '',
-		shortTitle: 'WA DOH: Vaccine Locator',
+		longSubtitle:
+			'Providing the public a user-friendly website to locate vaccines during a pivotal time in the Covid pandemic',
+		longTitle: 'Lifesaving Solutions: Vaccine Finder for the WA Department of Health',
+		shortSubtitle: 'Vaccine Locator',
+		shortTitle: 'WA Department of Health',
 	},
 	{
-		backgroundImage: '',
-		handle: 'astarte-inventory-management',
-		longTitle: '',
-		shortTitle: 'Astarte: Inventory Management System',
-	},
-	{
-		backgroundImage: '',
+		backgroundImage: 'golden-gate.jpg',
 		handle: 'paragon',
-		longTitle: '',
-		shortTitle: 'Paragon: Luxury Real Estate Website',
+		longSubtitle: 'Telling a story and adding life to a public-facing Bay Area real estate company website',
+		longTitle: 'Elevating Luxury Real Estate: Animations and Immersive Interactions',
+		shortSubtitle: 'Luxury Real Estate Website',
+		shortTitle: 'Paragon',
 	},
 	{
-		backgroundImage: '',
+		backgroundImage: 'biotech-lab.jpg',
+		handle: 'astarte-inventory-management',
+		longSubtitle: 'Modernizing the operations and data management system for a biotechnology company',
+		longTitle: 'Streamlining Lab Operations: Custom Biotech Inventory Management',
+		shortSubtitle: 'Biotech Inventory Management',
+		shortTitle: 'Astarte Biologics',
+	},
+	{
+		backgroundImage: 'houses.jpg',
 		handle: 'paragon-property-management',
-		longTitle: '',
-		shortTitle: 'Paragon: Property Management System',
+		longSubtitle: 'Centralizing data maintenance and inventory management into a custom internal website',
+		longTitle: 'Empowering Efficiency: Developing Custom Real Estate Property Management Software',
+		shortSubtitle: 'Property Management System',
+		shortTitle: 'Paragon',
 	},
 	{
-		backgroundImage: '',
-		handle: 'mighty-vet-ux',
-		longTitle: '',
-		shortTitle: 'Mighty Vet: Website Concept',
-	},
-	{
-		backgroundImage: '',
-		handle: 'wa-state-parks-camping-reservations',
-		longTitle: '',
-		shortTitle: 'WA State Parks: Camping Reservation System',
-	},
-	{
-		backgroundImage: '',
+		backgroundImage: 'sketchbook.jpg',
 		handle: 'high-seas-portfolio',
-		longTitle: '',
-		shortTitle: 'High Seas: Portfolio Website',
+		longSubtitle: 'Showcasing the values and demonstrating the projects of a Bay Area consulting company',
+		longTitle: 'Elevating Online Presence: Building a Dynamic Consulting Portfolio',
+		shortSubtitle: 'Consulting Portfolio Website',
+		shortTitle: 'High Seas',
 	},
 	{
-		backgroundImage: '',
+		backgroundImage: 'vet.jpg',
+		handle: 'mighty-vet-ux',
+		longSubtitle: 'Creating concepts and prototypes for a knowledge-sharing and networking website',
+		longTitle: 'Pioneering a Network: Designing an Online Community for Veterinarians',
+		shortSubtitle: 'Online Veterinary Community',
+		shortTitle: 'Mighty Vet',
+	},
+	{
+		backgroundImage: 'camping.jpg',
+		handle: 'wa-state-parks-camping-reservations',
+		longSubtitle: 'Designing a user-centric platform to improve the reservation systems for WA State Parks',
+		longTitle: 'Seamless Adventure Planning: Prototyping a Camping Reservation System',
+		shortSubtitle: 'Camping Reservation System',
+		shortTitle: 'WA State Parks',
+	},
+	{
+		backgroundImage: 'portfolio.jpg',
 		handle: 'ian-j-smith-portfolio',
-		longTitle: '',
-		shortTitle: "ianjsmith.com: How It's Made",
+		longSubtitle: 'My process for designing and building some of the features of this site',
+		longTitle: 'Crafting a Personal Showcase: How I Made My Portfolio',
+		shortSubtitle: "How It's Made",
+		shortTitle: 'ianjsmith.com',
 	},
 ]

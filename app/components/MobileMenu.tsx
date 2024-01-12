@@ -26,8 +26,8 @@ export default function MobileMenu() {
 	}
 
 	return (
-		<div className="md:hidden h-full">
-			<div className={`fixed inset-0 w-full h-lvh ${isOpen ? '' : ' pointer-events-none'}`}>
+		<div className="md:hidden">
+			<div className={`fixed inset-0 w-full h-svh ${isOpen ? '' : ' pointer-events-none'}`}>
 				<div
 					className={`transition-all absolute inset-0 flex flex-col justify-end pb-6 pl-6 bg-teal-100 dark:bg-grey-blue ${
 						isOpen ? 'opacity-1' : 'opacity-0'
@@ -47,14 +47,14 @@ export default function MobileMenu() {
 					</div>
 					<DarkModeSwitch />
 				</div>
-				<Link
-					className="transition-colors absolute top-[18px] left-4 flex items-center gap-3 text-lg font-bold text-indigo dark:text-white"
-					href="/"
-				>
-					<EyeJayEsLogo width={80} />
-					Ian J. Smith
-				</Link>
 			</div>
+			<Link
+				className="transition-colors absolute top-[18px] left-4 flex items-center gap-3 text-lg font-bold text-indigo dark:text-white"
+				href="/"
+			>
+				<EyeJayEsLogo width={80} />
+				Ian J. Smith
+			</Link>
 			<button
 				aria-label="Mobile navigation"
 				type="button"
