@@ -22,6 +22,7 @@ import spatula from '@public/spatula.png'
 import me from '@public/me.png'
 import TiltImage from '@/lib/TiltImage'
 import Button from '@/lib/Button'
+import DownArrowIcon from '@/lib/DownArrowIcon'
 
 export default function LandingSection() {
 	return (
@@ -160,7 +161,9 @@ export default function LandingSection() {
 						<span className="font-light">on the web</span>.
 					</h1>
 					<div className="flex gap-2 flex-wrap">
-						<Button href="#recent-work">VIEW MY WORK</Button>
+						<Button href="#featured-projects" size="large" EndIcon={<DownArrowIcon />}>
+							VIEW MY WORK
+						</Button>
 					</div>
 				</div>
 			</div>

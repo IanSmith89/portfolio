@@ -1,5 +1,5 @@
 export type Project = {
-	backgroundImage?: string
+	backgroundImage: string
 	handle: string
 	longTitle?: string
 	shortSubtitle?: string
@@ -30,7 +30,7 @@ export const PROJECTS: Project[] = [
 		backgroundImage: 'vaccines.jpg',
 		handle: 'wa-doh-vaccine-locator',
 		longSubtitle:
-			'Providing the public a user-friendly website to locate vaccines during a pivotal time in the Covid pandemic',
+			'Providing all Washingtonians a user-friendly website to locate vaccines during a pivotal time in the Covid pandemic',
 		longTitle: 'Lifesaving Solutions: Vaccine Finder for the WA Department of Health',
 		shortSubtitle: 'Vaccine Locator',
 		shortTitle: 'WA Department of Health',

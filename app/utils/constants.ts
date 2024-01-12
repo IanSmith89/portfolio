@@ -1,6 +1,6 @@
 export const NAV_ROUTES = [
 	{
-		href: '/#recent-work',
+		href: '/#featured-projects',
 		title: 'WORK',
 	},
 	// {
@@ -8,7 +8,7 @@ export const NAV_ROUTES = [
 	// 	title: 'ABOUT',
 	// },
 	{
-		href: '/#resume-section',
+		href: '/#resume',
 		title: 'RÉSUMÉ',
 	},
 	{

@@ -15,11 +15,11 @@ import Button from '@/lib/Button'
 export default function ResumeSection() {
 	return (
 		<section
-			id="resume-section"
-			className="transition-colors w-full h-auto bg-white dark:bg-grey-blue py-16 md:py-32"
+			id="resume"
+			className="transition-colors w-full h-auto bg-white dark:bg-grey-blue py-16 md:py-32 scroll-mt-16"
 		>
 			<div className="container w-full h-full flex flex-col gap-16 items-center justify-center">
-				<h2 className="text-xl md:text-2xl font-bold text-center mx-auto max-w-lg">
+				<h2 className="text-xl md:text-2xl font-medium text-center mx-auto max-w-lg">
 					I&apos;m grateful to have worked alongside amazing people at industry-leading, world-changing
 					companies:
 				</h2>
@@ -60,7 +60,11 @@ export default function ResumeSection() {
 						/>
 					</Link>
 				</div>
-				<Button href="https://drive.google.com/file/d/1LKmlhusey6vC3NRcg_3iTnJ5NARl46lv/view" target="_blank">
+				<Button
+					href="https://drive.google.com/file/d/1LKmlhusey6vC3NRcg_3iTnJ5NARl46lv/view"
+					size="large"
+					target="_blank"
+				>
 					VIEW MY FULL RÉSUMÉ
 				</Button>
 			</div>
