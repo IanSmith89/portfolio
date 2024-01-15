@@ -1,13 +1,13 @@
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
-import EyeJayEsLogo from './EyeJayEsLogo'
-import { NAV_ROUTES } from '../utils/constants'
+import EyeJayEsLogo from '@/lib/EyeJayEsLogo'
+import { NAV_ROUTES } from '@/utils/constants'
 
-const DarkModeSwitch = dynamic(() => import('./DarkModeSwitch'), { ssr: false })
+const DarkModeSwitch = dynamic(() => import('../lib/DarkModeSwitch'), { ssr: false })
 
 export default function DesktopMenu() {
 	return (
-		<div className="hidden md:flex items-center justify-between">
+		<div className="hidden md:flex items-center justify-between py-4">
 			<Link
 				className="transition-colors flex items-center gap-4 text-xl font-bold text-indigo dark:text-white"
 				href="/"

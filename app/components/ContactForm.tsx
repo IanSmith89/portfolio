@@ -2,11 +2,11 @@
 
 import { useState } from 'react'
 import { useForm, Controller, SubmitHandler } from 'react-hook-form'
-import { WEB_FORM_KEY } from '../utils/constants'
-import Input from './Input'
-import Button from './Button'
-import Textarea from './Textarea'
-import Loading from './Loading'
+import { WEB_FORM_KEY } from '@/utils/constants'
+import Input from '@/lib/Input'
+import Button from '@/lib/Button'
+import Textarea from '@/lib/Textarea'
+import Loading from '@/lib/Loading'
 
 export interface ContactFormFields {
 	email: string

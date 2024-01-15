@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import EyeJayEsLogo from './EyeJayEsLogo'
+import EyeJayEsLogo from '@/lib/EyeJayEsLogo'
 
 export default function Footer() {
 	const currentYear = new Date().getFullYear()
