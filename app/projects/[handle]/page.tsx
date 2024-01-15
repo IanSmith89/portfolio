@@ -1,22 +1,24 @@
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
-import { PROJECTS, PROJECTS_URL, Project } from '@/utils/projects'
+import projects from '@/data/projects.json'
+import { Project } from '@/utils/types'
 import Button from '@/lib/Button'
 import BackArrowIcon from '@/lib/BackArrowIcon'
 import ForwardArrowIcon from '@/lib/ForwardArrowIcon'
+import { PROJECTS_URL } from '@/utils/constants'
 
 export default function ProjectPage({ params }: { params: { handle: string } }) {
 	let nextProjectIndex: number = 0
-	const project: Project | undefined = PROJECTS.find(({ handle }, i) => {
+	const project: Project | undefined = (projects as Project[]).find(({ handle }, i) => {
 		if (handle === params.handle) {
-			if (i + 1 !== PROJECTS.length) nextProjectIndex = i + 1
+			if (i + 1 !== projects.length) nextProjectIndex = i + 1
 			return true
 		}
 	})
 
 	if (!project) notFound()
 
-	const { backgroundImage, longTitle, longSubtitle, sections } = project
+	const { backgroundImage, longTitle, longSubtitle, sections, website } = project
 
 	return (
 		<>
@@ -29,7 +31,7 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 							Back to All Projects
 						</Button>
 						<Button
-							href={`${PROJECTS_URL}/${PROJECTS[nextProjectIndex].handle}`}
+							href={`${PROJECTS_URL}/${projects[nextProjectIndex].handle}`}
 							size="small"
 							variant="ghost"
 							EndIcon={<ForwardArrowIcon />}
@@ -38,9 +40,14 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 						</Button>
 					</div>
 					<div className="grid md:grid-cols-2 gap-8 flex-grow">
-						<div className="h-full flex flex-col justify-center gap-4">
+						<div className="h-full flex flex-col justify-center items-center md:items-start gap-4">
 							<h1 className="text-3xl md:text-5xl font-medium">{longTitle}</h1>
 							<h2 className="md:text-xl">{longSubtitle}</h2>
+							{website ? (
+								<Button href={website.href} target="_blank" variant="outline">
+									{website.text}
+								</Button>
+							) : null}
 						</div>
 					</div>
 				</div>

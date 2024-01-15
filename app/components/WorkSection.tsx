@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { PROJECTS, PROJECTS_URL } from '@/utils/projects'
+import projects from '@/data/projects.json'
+import { PROJECTS_URL } from '@/utils/constants'
 
 export default function WorkSection() {
 	return (
@@ -11,7 +12,7 @@ export default function WorkSection() {
 			<div className="container">
 				<h2 className="text-4xl lg:text-5xl font-bold mb-6 md:mb-12">Featured Projects</h2>
 				<div className="grid auto-rows-[240px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-					{PROJECTS.map(({ backgroundImage, handle, shortTitle, shortSubtitle }, i) => {
+					{projects.map(({ backgroundImage, handle, shortTitle, shortSubtitle }, i) => {
 						let className = 'relative rounded-2xl overflow-hidden'
 
 						if (i === 0) className += ' md:row-span-2'
