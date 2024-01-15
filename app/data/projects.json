@@ -1,6 +1,10 @@
 [
 	{
 		"backgroundImage": "cyclists.jpg",
+		"bgColor": {
+			"light": "bg-green-300",
+			"dark": "dark:bg-green-900"
+		},
 		"handle": "tpc-rebrand",
 		"longSubtitle": "Leading the technical efforts to rebrand, optimize, and modernize the TPC e-commerce website",
 		"longTitle": "Rebranding TPC: A Lesson in Engineering Leadership",
@@ -185,6 +189,10 @@
 	},
 	{
 		"backgroundImage": "coffee.jpg",
+		"bgColor": {
+			"light": "bg-orange-300",
+			"dark": "dark:bg-orange-900"
+		},
 		"handle": "starbucks-s4-apps",
 		"longSubtitle": "Developing a design system and component library for internal Starbucks web apps",
 		"longTitle": "Transforming HR at Starbucks: Building a Data-Driven Component Library",
@@ -365,6 +373,10 @@
 	},
 	{
 		"backgroundImage": "vaccines.jpg",
+		"bgColor": {
+			"light": "bg-dark-blue-300",
+			"dark": "dark:bg-dark-blue-950"
+		},
 		"handle": "wa-doh-vaccine-locator",
 		"longSubtitle": "Providing all Washingtonians a user-friendly website to locate vaccines during a pivotal time in the Covid pandemic",
 		"longTitle": "Lifesaving Solutions: Vaccine Finder for the WA Department of Health",
@@ -549,6 +561,10 @@
 	},
 	{
 		"backgroundImage": "golden-gate.jpg",
+		"bgColor": {
+			"light": "bg-yellow-200",
+			"dark": "dark:bg-yellow-900"
+		},
 		"handle": "paragon",
 		"longSubtitle": "Telling a story and adding life to a public-facing Bay Area real estate company website",
 		"longTitle": "Elevating Luxury Real Estate: Animations and Immersive Interactions",
@@ -729,6 +745,10 @@
 	},
 	{
 		"backgroundImage": "biotech-lab.jpg",
+		"bgColor": {
+			"light": "bg-purple-300",
+			"dark": "dark:bg-purple-900"
+		},
 		"handle": "astarte-inventory-management",
 		"longSubtitle": "Modernizing the operations and data management system for a biotechnology company",
 		"longTitle": "Streamlining Lab Operations: Custom Biotech Inventory Management",
@@ -909,6 +929,10 @@
 	},
 	{
 		"backgroundImage": "houses.jpg",
+		"bgColor": {
+			"light": "bg-red-300",
+			"dark": "dark:bg-red-900"
+		},
 		"handle": "paragon-property-management",
 		"longSubtitle": "Centralizing data maintenance and inventory management into a custom internal website",
 		"longTitle": "Empowering Efficiency: Developing Custom Real Estate Property Management Software",
@@ -1089,6 +1113,10 @@
 	},
 	{
 		"backgroundImage": "sketchbook.jpg",
+		"bgColor": {
+			"light": "bg-green-300",
+			"dark": "dark:bg-green-900"
+		},
 		"handle": "high-seas-portfolio",
 		"longSubtitle": "Showcasing the values and demonstrating the projects of a Bay Area consulting company",
 		"longTitle": "Elevating Online Presence: Building a Dynamic Consulting Portfolio",
@@ -1273,6 +1301,10 @@
 	},
 	{
 		"backgroundImage": "vet.jpg",
+		"bgColor": {
+			"light": "bg-dark-blue-300",
+			"dark": "dark:bg-dark-blue-900"
+		},
 		"handle": "mighty-vet-ux",
 		"longSubtitle": "Creating concepts and prototypes for a knowledge-sharing and networking website",
 		"longTitle": "Pioneering a Network: Designing an Online Community for Veterinarians",
@@ -1442,6 +1474,10 @@
 	},
 	{
 		"backgroundImage": "camping.jpg",
+		"bgColor": {
+			"light": "bg-yellow-200",
+			"dark": "dark:bg-yellow-900"
+		},
 		"handle": "wa-state-parks-camping-reservations",
 		"longSubtitle": "Designing a user-centric platform to improve the reservation systems for WA State Parks",
 		"longTitle": "Seamless Adventure Planning: Prototyping a Camping Reservation System",
@@ -1604,6 +1640,10 @@
 	},
 	{
 		"backgroundImage": "portfolio.jpg",
+		"bgColor": {
+			"light": "bg-teal-300",
+			"dark": "dark:bg-teal-900"
+		},
 		"handle": "ian-j-smith-portfolio",
 		"longSubtitle": "My process for designing and building some of the features of this site",
 		"longTitle": "Crafting a Personal Showcase: How I Made My Portfolio",

@@ -30,8 +30,8 @@ export default function Button({
 
 		if (variant === 'outline')
 			classes +=
-				' border-indigo dark:border-white opacity-65 bg-transparent hover:bg-indigo dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-20 dark:hover:opacity-100 text-indigo dark:text-white'
-		else if (variant === 'ghost') classes += ' border-transparent hover:bg-black/5 dark:hover:bg-white/15'
+				' border-indigo/70 dark:border-white/70 hover:border-indigo dark:hover:border-white bg-transparent hover:bg-indigo hover:bg-indigo/5 dark:hover:bg-white/15 text-indigo dark:text-white'
+		else if (variant === 'ghost') classes += ' border-transparent hover:bg-indigo/10 dark:hover:bg-white/15'
 		else
 			classes +=
 				' border-transparent bg-orange dark:bg-yellow text-indigo hover:bg-orange-500 dark:hover:bg-yellow/90'

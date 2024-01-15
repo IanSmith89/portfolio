@@ -12,8 +12,8 @@ export default function WorkSection() {
 			<div className="container">
 				<h2 className="text-4xl lg:text-5xl font-bold mb-6 md:mb-12">Featured Projects</h2>
 				<div className="grid auto-rows-[240px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-					{projects.map(({ backgroundImage, handle, shortTitle, shortSubtitle }, i) => {
-						let className = 'relative rounded-2xl overflow-hidden'
+					{projects.map(({ backgroundImage, bgColor, handle, shortTitle, shortSubtitle }, i) => {
+						let className = 'relative rounded-2xl overflow-hidden group'
 
 						if (i === 0) className += ' md:row-span-2'
 						if (i === 1) className += ' lg:col-span-2 xl:col-auto'
@@ -29,14 +29,28 @@ export default function WorkSection() {
 								<Image
 									alt=""
 									src={`/${backgroundImage}`}
-									className="object-cover h-full"
+									className="transition-transform object-cover h-full group-hover:scale-105"
 									fill
 									sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
 								/>
-								<div className="absolute w-full h-full filter backdrop-blur-sm transition-colors bg-green-200 dark:bg-green-900 mix-blend-hard-light" />
+								<div
+									className={`transition-all absolute -inset-1 filter backdrop-blur-sm mix-blend-hard-light ${bgColor.light} ${bgColor.dark} group-hover:backdrop-blur-0`}
+								/>
 								<div className="absolute w-full h-full flex flex-col items-center justify-center p-6">
-									<h3 className="font-medium text-3xl text-center">{shortTitle}</h3>
-									<h4 className="font-light text-center">{shortSubtitle}</h4>
+									<h3 className="font-medium text-3xl text-center">
+										<span
+											className={`transition-all ${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-lg`}
+										>
+											{shortTitle}
+										</span>
+									</h3>
+									<h4 className="font-light text-center">
+										<span
+											className={`transition-all ${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-2 group-hover:shadow-lg`}
+										>
+											{shortSubtitle}
+										</span>
+									</h4>
 								</div>
 							</Link>
 						)

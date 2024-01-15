@@ -21,35 +21,39 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 
 	if (!project) notFound()
 
-	const { backgroundImage, longTitle, longSubtitle, sections, website } = project
+	const { backgroundImage, bgColor, longTitle, longSubtitle, sections, website } = project
 	const previousProject = projects[previousProjectIndex]
 	const nextProject = projects[nextProjectIndex]
 
 	return (
 		<>
-			<section className="relative w-full h-[66vh] -mt-16">
+			<section className="relative w-full h-[75vh] md:h-[66vh] -mt-16">
 				<Image alt="" src={`/${backgroundImage}`} className="object-cover h-full" fill priority sizes="100vw" />
-				<div className="absolute w-full h-full transition-colors bg-green-200 dark:bg-green-900 mix-blend-hard-light filter backdrop-blur-sm" />
+				<div
+					className={`absolute w-full h-full transition-colors filter backdrop-blur-sm mix-blend-screen dark:mix-blend-hard-light ${bgColor.light} ${bgColor.dark}`}
+				/>
 				<div className="relative container w-full h-full flex flex-col">
-					<div className="pt-20 flex justify-between">
-						<Button href="/#featured-projects" size="small" variant="ghost" StartIcon={<BackArrowIcon />}>
-							Back to All Projects
-						</Button>
-						<Button
-							href={`${PROJECTS_URL}/${nextProject.handle}`}
-							size="small"
-							variant="ghost"
-							EndIcon={<ForwardArrowIcon />}
-						>
-							Next Project
-						</Button>
-					</div>
+					<Button
+						className="relative top-20 -left-3 self-start"
+						href="/#featured-projects"
+						size="small"
+						variant="ghost"
+						StartIcon={<BackArrowIcon />}
+					>
+						Back to All Projects
+					</Button>
 					<div className="grid md:grid-cols-2 gap-8 flex-grow">
 						<div className="h-full flex flex-col justify-center items-center md:items-start gap-4">
-							<h1 className="text-3xl md:text-5xl font-medium">{longTitle}</h1>
-							<h2 className="md:text-xl">{longSubtitle}</h2>
+							<h1 className="text-3xl md:text-5xl font-medium">
+								<span
+									className={`${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 leading-[1.4]`}
+								>
+									{longTitle}
+								</span>
+							</h1>
+							<h2 className="text-indigo/70 dark:text-white/70 md:text-xl">{longSubtitle}</h2>
 							{website ? (
-								<Button href={website.href} target="_blank" variant="outline">
+								<Button className="mt-2" href={website.href} target="_blank" variant="outline">
 									{website.text}
 								</Button>
 							) : null}
