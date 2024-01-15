@@ -6,11 +6,14 @@ import Button from '@/lib/Button'
 import BackArrowIcon from '@/lib/BackArrowIcon'
 import ForwardArrowIcon from '@/lib/ForwardArrowIcon'
 import { PROJECTS_URL } from '@/utils/constants'
+import Link from 'next/link'
 
 export default function ProjectPage({ params }: { params: { handle: string } }) {
+	let previousProjectIndex: number = projects.length - 1
 	let nextProjectIndex: number = 0
 	const project: Project | undefined = (projects as Project[]).find(({ handle }, i) => {
 		if (handle === params.handle) {
+			if (i - 1 > -1) previousProjectIndex = i - 1
 			if (i + 1 !== projects.length) nextProjectIndex = i + 1
 			return true
 		}
@@ -19,6 +22,8 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 	if (!project) notFound()
 
 	const { backgroundImage, longTitle, longSubtitle, sections, website } = project
+	const previousProject = projects[previousProjectIndex]
+	const nextProject = projects[nextProjectIndex]
 
 	return (
 		<>
@@ -31,7 +36,7 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 							Back to All Projects
 						</Button>
 						<Button
-							href={`${PROJECTS_URL}/${projects[nextProjectIndex].handle}`}
+							href={`${PROJECTS_URL}/${nextProject.handle}`}
 							size="small"
 							variant="ghost"
 							EndIcon={<ForwardArrowIcon />}
@@ -102,6 +107,33 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 						</section>
 					)
 			})}
+			<section className="bg-white dark:bg-grey-blue/50 py-8">
+				<div className="container grid grid-cols-2">
+					<Link
+						className="flex flex-col items-start gap-4"
+						href={`${PROJECTS_URL}/${previousProject.handle}`}
+					>
+						<Button size="small" variant="ghost" StartIcon={<BackArrowIcon />}>
+							Previous Project
+						</Button>
+						<Image alt="" src={`/${previousProject.backgroundImage}`} width={160} height={90} />
+						<div>
+							<h4 className="font-medium text-xl hover:underline">{previousProject.shortTitle}</h4>
+							<p>{previousProject.shortSubtitle}</p>
+						</div>
+					</Link>
+					<Link className="flex flex-col items-end gap-4" href={`${PROJECTS_URL}/${nextProject.handle}`}>
+						<Button size="small" variant="ghost" EndIcon={<ForwardArrowIcon />}>
+							Next Project
+						</Button>
+						<Image alt="" src={`/${nextProject.backgroundImage}`} width={160} height={90} />
+						<div className="text-right">
+							<h4 className="font-medium text-xl hover:underline">{nextProject.shortTitle}</h4>
+							<p>{nextProject.shortSubtitle}</p>
+						</div>
+					</Link>
+				</div>
+			</section>
 		</>
 	)
 }
