@@ -1,10 +1,8 @@
-export default function ForwardArrowIcon({ className = '', width = 24 }) {
+export default function ForwardArrowIcon({ className = '' }) {
 	return (
 		<svg
-			className={`flex-shrink-0 w-4 h-4 ${className}`}
+			className={`flex-shrink-0 ${className}`}
 			xmlns="http://www.w3.org/2000/svg"
-			width={width}
-			height={width}
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"

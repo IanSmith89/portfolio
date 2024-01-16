@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import projects from '@/data/projects.json'
 import { Project } from '@/utils/types'
@@ -6,7 +7,6 @@ import Button from '@/lib/Button'
 import BackArrowIcon from '@/lib/BackArrowIcon'
 import ForwardArrowIcon from '@/lib/ForwardArrowIcon'
 import { PROJECTS_URL } from '@/utils/constants'
-import Link from 'next/link'
 
 export default function ProjectPage({ params }: { params: { handle: string } }) {
 	let previousProjectIndex: number = projects.length - 1
@@ -21,35 +21,39 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 
 	if (!project) notFound()
 
-	const { backgroundImage, longTitle, longSubtitle, sections, website } = project
+	const { backgroundImage, bgColor, longTitle, longSubtitle, sections, website } = project
 	const previousProject = projects[previousProjectIndex]
 	const nextProject = projects[nextProjectIndex]
 
 	return (
 		<>
-			<section className="relative w-full h-[66vh] -mt-16">
+			<section className="relative w-full h-[75vh] md:h-[66vh] -mt-16">
 				<Image alt="" src={`/${backgroundImage}`} className="object-cover h-full" fill priority sizes="100vw" />
-				<div className="absolute w-full h-full transition-colors bg-green-200 dark:bg-green-900 mix-blend-hard-light filter backdrop-blur-sm" />
+				<div
+					className={`absolute w-full h-full transition-colors filter backdrop-blur-sm mix-blend-hard-light ${bgColor.light} ${bgColor.dark}`}
+				/>
 				<div className="relative container w-full h-full flex flex-col">
-					<div className="pt-20 flex justify-between">
-						<Button href="/#featured-projects" size="small" variant="ghost" StartIcon={<BackArrowIcon />}>
-							Back to All Projects
-						</Button>
-						<Button
-							href={`${PROJECTS_URL}/${nextProject.handle}`}
-							size="small"
-							variant="ghost"
-							EndIcon={<ForwardArrowIcon />}
-						>
-							Next Project
-						</Button>
-					</div>
+					<Button
+						className="relative top-20 -left-3 self-start"
+						href="/#featured-projects"
+						size="small"
+						variant="ghost"
+						StartIcon={<BackArrowIcon className="w-4" />}
+					>
+						Back to All Projects
+					</Button>
 					<div className="grid md:grid-cols-2 gap-8 flex-grow">
 						<div className="h-full flex flex-col justify-center items-center md:items-start gap-4">
-							<h1 className="text-3xl md:text-5xl font-medium">{longTitle}</h1>
-							<h2 className="md:text-xl">{longSubtitle}</h2>
+							<h1 className="text-3xl md:text-5xl font-medium">
+								<span
+									className={`${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 leading-[1.33] shadow-lg`}
+								>
+									{longTitle}
+								</span>
+							</h1>
+							<h2 className="text-indigo/70 dark:text-white/70 md:text-xl">{longSubtitle}</h2>
 							{website ? (
-								<Button href={website.href} target="_blank" variant="outline">
+								<Button className="mt-2" href={website.href} target="_blank" variant="outline">
 									{website.text}
 								</Button>
 							) : null}
@@ -107,32 +111,81 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 						</section>
 					)
 			})}
-			<section className="bg-white dark:bg-grey-blue/50 py-8">
-				<div className="container grid grid-cols-2">
-					<Link
-						className="flex flex-col items-start gap-4"
-						href={`${PROJECTS_URL}/${previousProject.handle}`}
-					>
-						<Button size="small" variant="ghost" StartIcon={<BackArrowIcon />}>
-							Previous Project
-						</Button>
-						<Image alt="" src={`/${previousProject.backgroundImage}`} width={160} height={90} />
+			<section className="grid grid-cols-2 h-[25vh]">
+				<Link
+					className="group overflow-hidden relative w-full flex items-center justify-between md:justify-end text-right"
+					href={`${PROJECTS_URL}/${previousProject.handle}`}
+				>
+					<Image
+						alt=""
+						src={`/${previousProject.backgroundImage}`}
+						className="transition-transform object-cover h-full group-hover:scale-[1.03]"
+						fill
+						sizes="50vw"
+					/>
+					<div
+						className={`absolute w-full h-full transition-all filter backdrop-blur-sm group-hover:backdrop-blur-0 mix-blend-hard-light ${previousProject.bgColor.light} ${previousProject.bgColor.dark}`}
+					/>
+					<div className="relative ml-2 mr-4">
+						<BackArrowIcon className="w-4 md:w-6" />
+					</div>
+					<div className="relative mr-4 md:mr-8 lg:mr-12">
+						<p className="text-xs md:text-sm opacity-70 mb-1">PREVIOUS PROJECT:</p>
 						<div>
-							<h4 className="font-medium text-xl hover:underline">{previousProject.shortTitle}</h4>
-							<p>{previousProject.shortSubtitle}</p>
+							<h4 className="text-xl sm:text-3xl md:text-5xl font-medium">
+								<span
+									className={`transition-all ${previousProject.bgColor.light} ${previousProject.bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md leading-[1.3] text-right`}
+								>
+									{previousProject.shortTitle}
+								</span>
+							</h4>
+							<p className="text-right">
+								<span
+									className={`transition-all ${previousProject.bgColor.light} ${previousProject.bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md text-right`}
+								>
+									{previousProject.shortSubtitle}
+								</span>
+							</p>
 						</div>
-					</Link>
-					<Link className="flex flex-col items-end gap-4" href={`${PROJECTS_URL}/${nextProject.handle}`}>
-						<Button size="small" variant="ghost" EndIcon={<ForwardArrowIcon />}>
-							Next Project
-						</Button>
-						<Image alt="" src={`/${nextProject.backgroundImage}`} width={160} height={90} />
-						<div className="text-right">
-							<h4 className="font-medium text-xl hover:underline">{nextProject.shortTitle}</h4>
-							<p>{nextProject.shortSubtitle}</p>
+					</div>
+				</Link>
+				<Link
+					className="group overflow-hidden relative w-full flex items-center justify-between md:justify-start"
+					href={`${PROJECTS_URL}/${nextProject.handle}`}
+				>
+					<Image
+						alt=""
+						src={`/${nextProject.backgroundImage}`}
+						className="transition-transform object-cover h-full group-hover:scale-[1.03]"
+						fill
+						sizes="50vw"
+					/>
+					<div
+						className={`absolute w-full h-full transition-all filter backdrop-blur-sm group-hover:backdrop-blur-0 mix-blend-hard-light ${nextProject.bgColor.light} ${nextProject.bgColor.dark}`}
+					/>
+					<div className="relative ml-4 md:ml-8 lg:ml-12">
+						<p className="text-xs md:text-sm opacity-70 mb-1">NEXT PROJECT:</p>
+						<div>
+							<h4 className="text-xl sm:text-3xl md:text-5xl font-medium">
+								<span
+									className={`transition-all ${nextProject.bgColor.light} ${nextProject.bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md leading-[1.3]`}
+								>
+									{nextProject.shortTitle}
+								</span>
+							</h4>
+							<p>
+								<span
+									className={`transition-all ${nextProject.bgColor.light} ${nextProject.bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md`}
+								>
+									{nextProject.shortSubtitle}
+								</span>
+							</p>
 						</div>
-					</Link>
-				</div>
+					</div>
+					<div className="relative mr-2 ml-4">
+						<ForwardArrowIcon className="w-4 md:w-6" />
+					</div>
+				</Link>
 			</section>
 		</>
 	)

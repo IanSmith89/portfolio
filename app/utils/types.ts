@@ -33,6 +33,10 @@ export type ProjectWebsite = {
 
 export type Project = {
 	backgroundImage: string
+	bgColor: {
+		light: string
+		dark: string
+	}
 	handle: string
 	longSubtitle?: string
 	longTitle?: string

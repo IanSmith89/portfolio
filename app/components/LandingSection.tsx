@@ -154,7 +154,7 @@ export default function LandingSection() {
 				</div>
 				<div className="w-full md:w-4/12 flex flex-col gap-8 lg:gap-12 justify-center pb-12">
 					<h1 className="transition-colors font-bold text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-indigo dark:text-white">
-						<span className="block font-normal text-sm sm:text-base md:text-xl xl:text-2xl 2xl:text-3xl mb-4 xl:mb-6 opacity-65">
+						<span className="block font-normal text-lg md:text-xl xl:text-2xl 2xl:text-3xl mb-4 xl:mb-6 opacity-65">
 							Hi I&apos;m Ian,
 						</span>
 						I like to create <span className="font-light">interactive</span> things{' '}
