@@ -7,6 +7,7 @@ import Button from '@/lib/Button'
 import BackArrowIcon from '@/lib/BackArrowIcon'
 import ForwardArrowIcon from '@/lib/ForwardArrowIcon'
 import { PROJECTS_URL } from '@/utils/constants'
+import ProjectContainerSection from '@/components/ProjectContainerSection'
 
 export default function ProjectPage({ params }: { params: { handle: string } }) {
 	let previousProjectIndex: number = projects.length - 1
@@ -62,44 +63,7 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 				</div>
 			</section>
 			{sections?.map((section, i) => {
-				if (section.type === 'container')
-					return (
-						<section
-							key={i}
-							className={`py-8 ${section.background === 'light' ? 'bg-white dark:bg-grey-blue/50' : ''}`}
-						>
-							<div className="container">
-								{section.content.map((contentBlock) => {
-									return (
-										<div key={contentBlock.title} className="mb-6">
-											<h3 className="font-medium text-2xl md:text-3xl mb-4">
-												{contentBlock.title}
-											</h3>
-											{contentBlock.type === 'text'
-												? contentBlock.content.map((p) => (
-														<p key={p} className="prose text-indigo dark:text-white">
-															{p}
-														</p>
-												  ))
-												: null}
-											{contentBlock.type === 'list' ? (
-												<ul>
-													{contentBlock.content.map((li) => (
-														<li
-															key={li.title}
-															className="prose text-indigo dark:text-white mb-2"
-														>
-															<span className="font-medium">{li.title}:</span> {li.detail}
-														</li>
-													))}
-												</ul>
-											) : null}
-										</div>
-									)
-								})}
-							</div>
-						</section>
-					)
+				if (section.type === 'container') return <ProjectContainerSection key={i} section={section} />
 
 				if (section.type === 'header')
 					return (

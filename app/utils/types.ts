@@ -1,17 +1,13 @@
-export type TextBlock = {
+type BaseBlock = {
 	content: string[]
 	title: string
+}
+
+export interface TextBlock extends BaseBlock {
 	type: 'text'
 }
 
-export type ListItem = {
-	detail: string
-	title: string
-}
-
-export type ListBlock = {
-	content: ListItem[]
-	title: string
+export interface ListBlock extends BaseBlock {
 	type: 'list'
 }
 
