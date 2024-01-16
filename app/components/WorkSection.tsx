@@ -29,7 +29,7 @@ export default function WorkSection() {
 								<Image
 									alt=""
 									src={`/${backgroundImage}`}
-									className="transition-transform object-cover h-full group-hover:scale-105"
+									className="transition-transform object-cover h-full group-hover:scale-[1.03]"
 									fill
 									sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
 								/>
@@ -39,14 +39,14 @@ export default function WorkSection() {
 								<div className="absolute w-full h-full flex flex-col items-center justify-center p-6">
 									<h3 className="font-medium text-3xl text-center">
 										<span
-											className={`transition-all ${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-lg`}
+											className={`transition-all ${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md leading-[1.33]`}
 										>
 											{shortTitle}
 										</span>
 									</h3>
 									<h4 className="font-light text-center">
 										<span
-											className={`transition-all ${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-2 group-hover:shadow-lg`}
+											className={`transition-all ${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-2 group-hover:shadow-md`}
 										>
 											{shortSubtitle}
 										</span>

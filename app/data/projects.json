@@ -562,7 +562,7 @@
 	{
 		"backgroundImage": "golden-gate.jpg",
 		"bgColor": {
-			"light": "bg-yellow-200",
+			"light": "bg-yellow-100",
 			"dark": "dark:bg-yellow-900"
 		},
 		"handle": "paragon",
@@ -1475,7 +1475,7 @@
 	{
 		"backgroundImage": "camping.jpg",
 		"bgColor": {
-			"light": "bg-yellow-200",
+			"light": "bg-yellow-100",
 			"dark": "dark:bg-yellow-900"
 		},
 		"handle": "wa-state-parks-camping-reservations",
