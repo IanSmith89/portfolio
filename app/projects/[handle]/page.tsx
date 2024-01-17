@@ -24,20 +24,20 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 
 	if (!project) notFound()
 
-	const { backgroundImage, bgColor, longTitle, longSubtitle, sections, website } = project
+	const { backgroundImage, bgColor, coverImage, longTitle, longSubtitle, sections, website } = project
 	const previousProject = projects[previousProjectIndex]
 	const nextProject = projects[nextProjectIndex]
 
 	return (
 		<>
-			<section className="relative w-full h-[75vh] md:h-[66vh] -mt-16">
+			<section className="relative w-full md:h-[66vh] -mt-16 pb-16">
 				<Image alt="" src={`/${backgroundImage}`} className="object-cover h-full" fill priority sizes="100vw" />
 				<div
 					className={`absolute w-full h-full transition-colors filter backdrop-blur-sm mix-blend-hard-light ${bgColor.light} ${bgColor.dark}`}
 				/>
-				<div className="relative container w-full h-full flex flex-col">
+				<div className="relative container w-full h-full pt-20">
 					<Button
-						className="relative top-20 -left-3 self-start"
+						className="-ml-3 mb-4"
 						href="/#featured-projects"
 						size="small"
 						variant="ghost"
@@ -45,8 +45,18 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 					>
 						Back to All Projects
 					</Button>
-					<div className="grid md:grid-cols-2 gap-8 flex-grow">
-						<div className="h-full flex flex-col justify-center items-center md:items-start gap-4">
+					<div className="h-full flex flex-col md:flex-row-reverse items-center gap-6 md:gap-10">
+						<div className="md:h-full md:w-1/2 flex items-center">
+							<Image
+								alt=""
+								src={`/${coverImage}`}
+								className="w-full h-auto"
+								priority
+								width={1600}
+								height={900}
+							/>
+						</div>
+						<div className="md:h-full md:w-1/2 flex flex-col justify-center items-center md:items-start gap-4">
 							<h1 className="text-3xl md:text-5xl font-medium">
 								<span
 									className={`${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 leading-[1.33] shadow-lg`}

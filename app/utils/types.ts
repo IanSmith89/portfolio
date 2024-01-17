@@ -63,6 +63,7 @@ export type Project = {
 		light: string
 		dark: string
 	}
+	coverImage?: string
 	handle: string
 	longSubtitle?: string
 	longTitle?: string

@@ -5,6 +5,7 @@
 			"light": "bg-green-300",
 			"dark": "dark:bg-green-900"
 		},
+		"coverImage": "tpc-cover.png",
 		"handle": "tpc-rebrand",
 		"longSubtitle": "Leading the technical efforts to rebrand, optimize, and modernize the TPC e-commerce website",
 		"longTitle": "Rebranding TPC: A Lesson in Engineering Leadership",
