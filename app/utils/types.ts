@@ -32,6 +32,19 @@ export interface ContainerProjectSection extends BaseSection {
 	type: 'container'
 }
 
+export type ImageCompare = {
+	image1: string
+	image2: string
+}
+
+export interface ImageCompareProjectSection extends BaseSection {
+	content: {
+		mobile: ImageCompare
+		desktop: ImageCompare
+	}
+	type: 'image-compare'
+}
+
 export type HeaderProjectSection = {
 	title: string
 	type: 'header'
@@ -51,7 +64,7 @@ export type Project = {
 	handle: string
 	longSubtitle?: string
 	longTitle?: string
-	sections?: (ContainerProjectSection | HeaderProjectSection | TwoColumnProjectSection)[]
+	sections?: (ContainerProjectSection | HeaderProjectSection | TwoColumnProjectSection | ImageCompareProjectSection)[]
 	shortSubtitle?: string
 	shortTitle: string
 	website?: ProjectWebsite

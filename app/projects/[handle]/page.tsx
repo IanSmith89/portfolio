@@ -9,6 +9,7 @@ import ForwardArrowIcon from '@/lib/ForwardArrowIcon'
 import { PROJECTS_URL } from '@/utils/constants'
 import ProjectContainerSection from '@/components/ProjectContainerSection'
 import Project2ColumnSection from '@/components/Project2ColumnSection'
+import ProjectImageCompareSection from '@/components/ProjectImageCompareSection'
 
 export default function ProjectPage({ params }: { params: { handle: string } }) {
 	let previousProjectIndex: number = projects.length - 1
@@ -77,6 +78,8 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 							<h2 className="font-light text-4xl md:text-5xl">{section.title}</h2>
 						</section>
 					)
+
+				if (section.type === 'image-compare') return <ProjectImageCompareSection key={i} section={section} />
 			})}
 			<section className="grid grid-cols-2 h-[25vh]">
 				<Link

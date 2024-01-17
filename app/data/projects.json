@@ -63,6 +63,20 @@
 			},
 			{
 				"background": "light",
+				"type": "image-compare",
+				"content": {
+					"mobile": {
+						"image1": "tpc-landing-old_mobile.png",
+						"image2": "tpc-landing-new_mobile.png"
+					},
+					"desktop": {
+						"image1": "tpc-landing-old_desktop.png",
+						"image2": "tpc-landing-new_desktop.png"
+					}
+				}
+			},
+			{
+				"background": "light",
 				"type": "container",
 				"content": [
 					{
