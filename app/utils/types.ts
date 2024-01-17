@@ -11,9 +11,24 @@ export interface ListBlock extends BaseBlock {
 	type: 'list'
 }
 
-export type ContainerProjectSection = {
+type BaseSection = {
 	background: 'light' | 'dark'
-	content: (TextBlock | ListBlock)[]
+}
+
+export type ContentBlock = TextBlock | ListBlock
+
+type ContentBlocks = ContentBlock[]
+
+export interface TwoColumnProjectSection extends BaseSection {
+	content: {
+		col1: ContentBlocks
+		col2: ContentBlocks
+	}
+	type: '2-column'
+}
+
+export interface ContainerProjectSection extends BaseSection {
+	content: ContentBlocks
 	type: 'container'
 }
 
@@ -36,7 +51,7 @@ export type Project = {
 	handle: string
 	longSubtitle?: string
 	longTitle?: string
-	sections?: (ContainerProjectSection | HeaderProjectSection)[]
+	sections?: (ContainerProjectSection | HeaderProjectSection | TwoColumnProjectSection)[]
 	shortSubtitle?: string
 	shortTitle: string
 	website?: ProjectWebsite

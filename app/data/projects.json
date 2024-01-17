@@ -11,32 +11,36 @@
 		"sections": [
 			{
 				"background": "light",
-				"type": "container",
-				"content": [
-					{
-						"type": "text",
-						"title": "Project Overview",
-						"content": [
-							"I had the privilege of leading the implementation of a significant redesign for the public-facing e-commerce website of TPC, the industry leader in buying and selling used bikes. The primary goal was to modernize the overall look and feel of the site, enhance the user experience, and improve performance."
-						]
-					},
-					{
-						"type": "list",
-						"title": "Objectives",
-						"content": [
-							"**Modernization:** Refresh the user interface to align with contemporary UX trends and the new company brand.",
-							"**Enhanced User Experience:** Improve navigation, product search and discovery, and overall satisfaction for online shoppers.",
-							"**Performance Optimization:** Enhance website speed while reorganizing and cleaning up outdated code."
-						]
-					},
-					{
-						"type": "text",
-						"title": "My Role",
-						"content": [
-							"As the **frontend engineering lead**, my responsibilities encompassed overseeing the entire frontend development process, collaborating with our design and product teams, and ensuring the successful implementation of the redesigned website while continuing to release new features and product updates."
-						]
-					}
-				]
+				"type": "2-column",
+				"content": {
+					"col1": [
+						{
+							"type": "text",
+							"title": "Project Overview",
+							"content": [
+								"I had the privilege of leading the implementation of a significant redesign for the public-facing e-commerce website of TPC, the industry leader in buying and selling used bikes. The primary goal was to modernize the overall look and feel of the site, enhance the user experience, and improve performance."
+							]
+						},
+						{
+							"type": "text",
+							"title": "My Role",
+							"content": [
+								"As the **frontend engineering lead**, my responsibilities encompassed overseeing the entire frontend development process, collaborating with our design and product teams, and ensuring the successful implementation of the redesigned website while continuing to release new features and product updates."
+							]
+						}
+					],
+					"col2": [
+						{
+							"type": "list",
+							"title": "Objectives",
+							"content": [
+								"**Modernization:** Refresh the user interface to align with contemporary UX trends and the new company brand.",
+								"**Enhanced User Experience:** Improve navigation, product search and discovery, and overall satisfaction for online shoppers.",
+								"**Performance Optimization:** Enhance website speed while reorganizing and cleaning up outdated code."
+							]
+						}
+					]
+				}
 			},
 			{
 				"background": "dark",
@@ -150,32 +154,36 @@
 		"sections": [
 			{
 				"background": "light",
-				"type": "container",
-				"content": [
-					{
-						"type": "text",
-						"title": "Project Overview",
-						"content": [
-							"In my role as a frontend software engineer at Starbucks, I led the development of a data-driven component library for internal HR applications. The objective was to standardize UI elements, improve consistency across platforms, and empower development teams to build efficient, user-friendly HR tools."
-						]
-					},
-					{
-						"type": "list",
-						"title": "Objectives",
-						"content": [
-							"**Consistency Across Apps:** Establish a unified visual language and design system for HR applications.",
-							"**Efficient Development:** Create reusable components to streamline the development process and reduce redundancy.",
-							"**Data-Driven Decision Making:** Integrate data visualization components for insightful HR analytics."
-						]
-					},
-					{
-						"type": "text",
-						"title": "My Role",
-						"content": [
-							"As the project lead, I was responsible for the entire lifecycle of the component library, from conceptualization to implementation, collaborating closely with both frontend developers and HR stakeholders."
-						]
-					}
-				]
+				"type": "2-column",
+				"content": {
+					"col1": [
+						{
+							"type": "text",
+							"title": "Project Overview",
+							"content": [
+								"In my role as a frontend software engineer at Starbucks, I led the development of a data-driven component library for internal HR applications. The objective was to standardize UI elements, improve consistency across platforms, and empower development teams to build efficient, user-friendly HR tools."
+							]
+						},
+						{
+							"type": "text",
+							"title": "My Role",
+							"content": [
+								"As the project lead, I was responsible for the entire lifecycle of the component library, from conceptualization to implementation, collaborating closely with both frontend developers and HR stakeholders."
+							]
+						}
+					],
+					"col2": [
+						{
+							"type": "list",
+							"title": "Objectives",
+							"content": [
+								"**Consistency Across Apps:** Establish a unified visual language and design system for HR applications.",
+								"**Efficient Development:** Create reusable components to streamline the development process and reduce redundancy.",
+								"**Data-Driven Decision Making:** Integrate data visualization components for insightful HR analytics."
+							]
+						}
+					]
+				}
 			},
 			{
 				"background": "dark",
@@ -285,32 +293,36 @@
 		"sections": [
 			{
 				"background": "light",
-				"type": "container",
-				"content": [
-					{
-						"type": "text",
-						"title": "Project Overview",
-						"content": [
-							"In the early stages of the COVID-19 pandemic, I had the privilege of collaborating on the development of a critical tool - the Vaccine Locator Website, commissioned by the Washington Department of Health. The primary goal was to provide the public with a user-friendly platform to locate and schedule COVID-19 vaccinations during a pivotal time in the fight against the pandemic."
-						]
-					},
-					{
-						"type": "list",
-						"title": "Objectives",
-						"content": [
-							"**Rapid Deployment:** Create a website in record time to aid in the rapid distribution of COVID-19 vaccines.",
-							"**User-Friendly Interface:** Develop an intuitive and accessible platform for users to easily find and schedule vaccination appointments.",
-							"**Real-Time Updates:** Implement a system for real-time updates on vaccine availability, locations, and eligibility criteria."
-						]
-					},
-					{
-						"type": "text",
-						"title": "My Role",
-						"content": [
-							"As a frontend software engineer, I played a crucial role in designing and implementing the user interface, collaborating closely with a multidisciplinary team that included public health experts, backend developers, and UX/UI designers."
-						]
-					}
-				]
+				"type": "2-column",
+				"content": {
+					"col1": [
+						{
+							"type": "text",
+							"title": "Project Overview",
+							"content": [
+								"In the early stages of the COVID-19 pandemic, I had the privilege of collaborating on the development of a critical tool - the Vaccine Locator Website, commissioned by the Washington Department of Health. The primary goal was to provide the public with a user-friendly platform to locate and schedule COVID-19 vaccinations during a pivotal time in the fight against the pandemic."
+							]
+						},
+						{
+							"type": "text",
+							"title": "My Role",
+							"content": [
+								"As a frontend software engineer, I played a crucial role in designing and implementing the user interface, collaborating closely with a multidisciplinary team that included public health experts, backend developers, and UX/UI designers."
+							]
+						}
+					],
+					"col2": [
+						{
+							"type": "list",
+							"title": "Objectives",
+							"content": [
+								"**Rapid Deployment:** Create a website in record time to aid in the rapid distribution of COVID-19 vaccines.",
+								"**User-Friendly Interface:** Develop an intuitive and accessible platform for users to easily find and schedule vaccination appointments.",
+								"**Real-Time Updates:** Implement a system for real-time updates on vaccine availability, locations, and eligibility criteria."
+							]
+						}
+					]
+				}
 			},
 			{
 				"background": "dark",
@@ -424,32 +436,36 @@
 		"sections": [
 			{
 				"background": "light",
-				"type": "container",
-				"content": [
-					{
-						"type": "text",
-						"title": "Project Overview",
-						"content": [
-							"I had the privilege of contributing to the redesign of the frontend and animations for a prominent luxury real estate company based in the Bay Area. The goal was to create a visually stunning website that not only showcased high-end properties but also provided an immersive and engaging user experience."
-						]
-					},
-					{
-						"type": "list",
-						"title": "Objectives",
-						"content": [
-							"**Striking Visual Design:** Redesign the frontend to reflect the sophistication and elegance associated with luxury real estate.",
-							"**Familiar User Experience:** Develop intuitive navigation and interactive animations to engage and captivate users.",
-							"**Easy Property Search Features:** Implement animations to showcase property details and amenities in an elegant and compelling manner."
-						]
-					},
-					{
-						"type": "text",
-						"title": "My Role",
-						"content": [
-							"As a frontend software engineer, my responsibilities included implementing the redesigned user interface, developing custom animations, and collaborating closely with designers to bring their vision to life."
-						]
-					}
-				]
+				"type": "2-column",
+				"content": {
+					"col1": [
+						{
+							"type": "text",
+							"title": "Project Overview",
+							"content": [
+								"I had the privilege of contributing to the redesign of the frontend and animations for a prominent luxury real estate company based in the Bay Area. The goal was to create a visually stunning website that not only showcased high-end properties but also provided an immersive and engaging user experience."
+							]
+						},
+						{
+							"type": "text",
+							"title": "My Role",
+							"content": [
+								"As a frontend software engineer, my responsibilities included implementing the redesigned user interface, developing custom animations, and collaborating closely with designers to bring their vision to life."
+							]
+						}
+					],
+					"col2": [
+						{
+							"type": "list",
+							"title": "Objectives",
+							"content": [
+								"**Striking Visual Design:** Redesign the frontend to reflect the sophistication and elegance associated with luxury real estate.",
+								"**Familiar User Experience:** Develop intuitive navigation and interactive animations to engage and captivate users.",
+								"**Easy Property Search Features:** Implement animations to showcase property details and amenities in an elegant and compelling manner."
+							]
+						}
+					]
+				}
 			},
 			{
 				"background": "dark",
@@ -559,32 +575,36 @@
 		"sections": [
 			{
 				"background": "light",
-				"type": "container",
-				"content": [
-					{
-						"type": "text",
-						"title": "Project Overview",
-						"content": [
-							"In my role as a software engineer, I led the design and development of a comprehensive Inventory Management System (IMS) for a cutting-edge biotechnology lab. The objective was to modernize and streamline the lab's operations by providing a robust platform for managing, tracking, and optimizing the utilization of lab resources."
-						]
-					},
-					{
-						"type": "list",
-						"title": "Objectives",
-						"content": [
-							"**Efficient Resource Management:** Create a centralized system to track and manage laboratory equipment, reagents, and consumables.",
-							"**Real-Time Visibility:** Develop a system that provides real-time visibility into inventory levels, minimizing the risk of stockouts and overstocking.",
-							"**Modernized Interface:** Design an intuitive and user-friendly interface that simplifies inventory-related tasks for lab personnel."
-						]
-					},
-					{
-						"type": "text",
-						"title": "My Role",
-						"content": [
-							"As the lead developer, I was responsible for the end-to-end design and implementation of the Inventory Management System, collaborating closely with lab managers and researchers to understand their unique needs."
-						]
-					}
-				]
+				"type": "2-column",
+				"content": {
+					"col1": [
+						{
+							"type": "text",
+							"title": "Project Overview",
+							"content": [
+								"In my role as a software engineer, I led the design and development of a comprehensive Inventory Management System (IMS) for a cutting-edge biotechnology lab. The objective was to modernize and streamline the lab's operations by providing a robust platform for managing, tracking, and optimizing the utilization of lab resources."
+							]
+						},
+						{
+							"type": "text",
+							"title": "My Role",
+							"content": [
+								"As the lead developer, I was responsible for the end-to-end design and implementation of the Inventory Management System, collaborating closely with lab managers and researchers to understand their unique needs."
+							]
+						}
+					],
+					"col2": [
+						{
+							"type": "list",
+							"title": "Objectives",
+							"content": [
+								"**Efficient Resource Management:** Create a centralized system to track and manage laboratory equipment, reagents, and consumables.",
+								"**Real-Time Visibility:** Develop a system that provides real-time visibility into inventory levels, minimizing the risk of stockouts and overstocking.",
+								"**Modernized Interface:** Design an intuitive and user-friendly interface that simplifies inventory-related tasks for lab personnel."
+							]
+						}
+					]
+				}
 			},
 			{
 				"background": "dark",
@@ -694,32 +714,36 @@
 		"sections": [
 			{
 				"background": "light",
-				"type": "container",
-				"content": [
-					{
-						"type": "text",
-						"title": "Project Overview",
-						"content": [
-							"As a dedicated software engineer, I took on the challenge of developing a custom internal website for RealtyPro, a leading real estate company. The primary goal was to create a centralized platform for managing inventory, property data, and streamlining internal processes."
-						]
-					},
-					{
-						"type": "list",
-						"title": "Objectives",
-						"content": [
-							"**Efficient Inventory Management:** Develop a system to track and manage real estate assets, including properties, equipment, and marketing materials.",
-							"**Data Centralization:** Create a centralized repository for property data, ensuring consistency and accessibility for all team members.",
-							"**Process Optimization:** Streamline internal workflows by automating routine tasks related to inventory and data management."
-						]
-					},
-					{
-						"type": "text",
-						"title": "My Role",
-						"content": [
-							"As the sole developer on this project, I was responsible for the end-to-end development of the custom internal website, collaborating closely with various departments within RealtyPro to understand their specific needs."
-						]
-					}
-				]
+				"type": "2-column",
+				"content": {
+					"col1": [
+						{
+							"type": "text",
+							"title": "Project Overview",
+							"content": [
+								"As a dedicated software engineer, I took on the challenge of developing a custom internal website for RealtyPro, a leading real estate company. The primary goal was to create a centralized platform for managing inventory, property data, and streamlining internal processes."
+							]
+						},
+						{
+							"type": "text",
+							"title": "My Role",
+							"content": [
+								"As the sole developer on this project, I was responsible for the end-to-end development of the custom internal website, collaborating closely with various departments within RealtyPro to understand their specific needs."
+							]
+						}
+					],
+					"col2": [
+						{
+							"type": "list",
+							"title": "Objectives",
+							"content": [
+								"**Efficient Inventory Management:** Develop a system to track and manage real estate assets, including properties, equipment, and marketing materials.",
+								"**Data Centralization:** Create a centralized repository for property data, ensuring consistency and accessibility for all team members.",
+								"**Process Optimization:** Streamline internal workflows by automating routine tasks related to inventory and data management."
+							]
+						}
+					]
+				}
 			},
 			{
 				"background": "dark",
@@ -829,32 +853,36 @@
 		"sections": [
 			{
 				"background": "light",
-				"type": "container",
-				"content": [
-					{
-						"type": "text",
-						"title": "Project Overview",
-						"content": [
-							"In my role as a frontend software engineer, I played a pivotal role in developing the portfolio website for ConsultX Solutions, a dynamic consulting company. The objective was to create a modern, user-friendly website that not only showcased the company's expertise but also engaged clients and prospects through interactive elements."
-						]
-					},
-					{
-						"type": "list",
-						"title": "Objectives",
-						"content": [
-							"**Dynamic Experience:** Develop a visually appealing and dynamic website to effectively showcase ConsultX Solutions' range of consulting services and success stories.",
-							"**Marketability:** Enhance user engagement through interactive features, encouraging clients and prospects to explore the company's portfolio.",
-							"**Brand Consistency:** Ensure the website reflects the company's brand identity, values, and professionalism."
-						]
-					},
-					{
-						"type": "text",
-						"title": "My Role",
-						"content": [
-							"As a key member of the development team, my responsibilities included designing and implementing the frontend of the portfolio website, collaborating closely with the design team and stakeholders at ConsultX Solutions."
-						]
-					}
-				]
+				"type": "2-column",
+				"content": {
+					"col1": [
+						{
+							"type": "text",
+							"title": "Project Overview",
+							"content": [
+								"In my role as a frontend software engineer, I played a pivotal role in developing the portfolio website for ConsultX Solutions, a dynamic consulting company. The objective was to create a modern, user-friendly website that not only showcased the company's expertise but also engaged clients and prospects through interactive elements."
+							]
+						},
+						{
+							"type": "text",
+							"title": "My Role",
+							"content": [
+								"As a key member of the development team, my responsibilities included designing and implementing the frontend of the portfolio website, collaborating closely with the design team and stakeholders at ConsultX Solutions."
+							]
+						}
+					],
+					"col2": [
+						{
+							"type": "list",
+							"title": "Objectives",
+							"content": [
+								"**Dynamic Experience:** Develop a visually appealing and dynamic website to effectively showcase ConsultX Solutions' range of consulting services and success stories.",
+								"**Marketability:** Enhance user engagement through interactive features, encouraging clients and prospects to explore the company's portfolio.",
+								"**Brand Consistency:** Ensure the website reflects the company's brand identity, values, and professionalism."
+							]
+						}
+					]
+				}
 			},
 			{
 				"background": "dark",
@@ -968,32 +996,36 @@
 		"sections": [
 			{
 				"background": "light",
-				"type": "container",
-				"content": [
-					{
-						"type": "text",
-						"title": "Project Overview",
-						"content": [
-							"As a passionate UX/UI designer, I took on the exciting challenge of creating a prototype concept for VetsConnect, an innovative online community tailored for veterinarians. The primary goal was to design a platform that fostered collaboration, knowledge-sharing, and networking within the veterinary community."
-						]
-					},
-					{
-						"type": "list",
-						"title": "Objectives",
-						"content": [
-							"**Community Engagement:** Develop a user-friendly online space that encourages veterinarians to connect, share insights, and collaborate on cases.",
-							"**Intuitive Design:** Create an intuitive and aesthetically pleasing interface that enhances the user experience and facilitates seamless navigation.",
-							"**Accessible Resources:** Ensure the prototype is responsive across devices, providing veterinarians with access anytime, anywhere."
-						]
-					},
-					{
-						"type": "text",
-						"title": "My Role",
-						"content": [
-							"As the lead designer on this project, I was responsible for the end-to-end design process, from ideation and wireframing to prototyping and gathering feedback from potential users."
-						]
-					}
-				]
+				"type": "2-column",
+				"content": {
+					"col1": [
+						{
+							"type": "text",
+							"title": "Project Overview",
+							"content": [
+								"As a passionate UX/UI designer, I took on the exciting challenge of creating a prototype concept for VetsConnect, an innovative online community tailored for veterinarians. The primary goal was to design a platform that fostered collaboration, knowledge-sharing, and networking within the veterinary community."
+							]
+						},
+						{
+							"type": "text",
+							"title": "My Role",
+							"content": [
+								"As the lead designer on this project, I was responsible for the end-to-end design process, from ideation and wireframing to prototyping and gathering feedback from potential users."
+							]
+						}
+					],
+					"col2": [
+						{
+							"type": "list",
+							"title": "Objectives",
+							"content": [
+								"**Community Engagement:** Develop a user-friendly online space that encourages veterinarians to connect, share insights, and collaborate on cases.",
+								"**Intuitive Design:** Create an intuitive and aesthetically pleasing interface that enhances the user experience and facilitates seamless navigation.",
+								"**Accessible Resources:** Ensure the prototype is responsive across devices, providing veterinarians with access anytime, anywhere."
+							]
+						}
+					]
+				}
 			},
 			{
 				"background": "dark",
@@ -1114,32 +1146,36 @@
 		"sections": [
 			{
 				"background": "light",
-				"type": "container",
-				"content": [
-					{
-						"type": "text",
-						"title": "Project Overview",
-						"content": [
-							"As a UX/UI designer, I took on the challenge of creating a prototype for a new concept for the camping reservation website for WA State Parks. The primary goal was to design a user-centric platform that simplifies the camping reservation process, enhances the overall user experience, and encourages more people to explore the beauty of Washington's state parks."
-						]
-					},
-					{
-						"type": "list",
-						"title": "Objectives",
-						"content": [
-							"**User-Centric Design:** Develop a prototype with a focus on user-friendly navigation and an intuitive reservation process.",
-							"**Visual Appeal:** Design an aesthetically pleasing interface that aligns with the natural beauty of the state parks, inspiring users to plan camping trips.",
-							"**Mobile-First Design:** Ensure the prototype is responsive across devices, catering to users who plan their trips using various devices."
-						]
-					},
-					{
-						"type": "text",
-						"title": "My Role",
-						"content": [
-							"As the lead designer, I spearheaded the design process from initial ideation and wireframing to prototyping and usability testing, collaborating closely with stakeholders from WA State Parks."
-						]
-					}
-				]
+				"type": "2-column",
+				"content": {
+					"col1": [
+						{
+							"type": "text",
+							"title": "Project Overview",
+							"content": [
+								"As a UX/UI designer, I took on the challenge of creating a prototype for a new concept for the camping reservation website for WA State Parks. The primary goal was to design a user-centric platform that simplifies the camping reservation process, enhances the overall user experience, and encourages more people to explore the beauty of Washington's state parks."
+							]
+						},
+						{
+							"type": "text",
+							"title": "My Role",
+							"content": [
+								"As the lead designer, I spearheaded the design process from initial ideation and wireframing to prototyping and usability testing, collaborating closely with stakeholders from WA State Parks."
+							]
+						}
+					],
+					"col2": [
+						{
+							"type": "list",
+							"title": "Objectives",
+							"content": [
+								"**User-Centric Design:** Develop a prototype with a focus on user-friendly navigation and an intuitive reservation process.",
+								"**Visual Appeal:** Design an aesthetically pleasing interface that aligns with the natural beauty of the state parks, inspiring users to plan camping trips.",
+								"**Mobile-First Design:** Ensure the prototype is responsive across devices, catering to users who plan their trips using various devices."
+							]
+						}
+					]
+				}
 			},
 			{
 				"background": "dark",
@@ -1253,32 +1289,36 @@
 		"sections": [
 			{
 				"background": "light",
-				"type": "container",
-				"content": [
-					{
-						"type": "text",
-						"title": "Project Overview",
-						"content": [
-							"As a designer and developer passionate about showcasing my skills and projects, I embarked on the journey of designing and building my own portfolio website. The primary goal was to create a platform that not only reflects my professional abilities but also provides visitors with an engaging and memorable experience."
-						]
-					},
-					{
-						"type": "list",
-						"title": "Objectives",
-						"content": [
-							"**Personal Branding:** Develop a portfolio website that effectively communicates my personal brand, style, and approach to design and development.",
-							"**Interactivity:** Prioritize a user-friendly interface and intuitive navigation to ensure visitors can easily explore my work and learn about my skills.",
-							"**Showcasing Projects + Technology:** Feature a diverse range of projects with detailed case studies to highlight my expertise and problem-solving capabilities."
-						]
-					},
-					{
-						"type": "text",
-						"title": "My Role",
-						"content": [
-							"As the sole designer and developer of the project, I was responsible for every aspect of the process, from initial ideation and wireframing to coding and deployment."
-						]
-					}
-				]
+				"type": "2-column",
+				"content": {
+					"col1": [
+						{
+							"type": "text",
+							"title": "Project Overview",
+							"content": [
+								"As a designer and developer passionate about showcasing my skills and projects, I embarked on the journey of designing and building my own portfolio website. The primary goal was to create a platform that not only reflects my professional abilities but also provides visitors with an engaging and memorable experience."
+							]
+						},
+						{
+							"type": "text",
+							"title": "My Role",
+							"content": [
+								"As the sole designer and developer of the project, I was responsible for every aspect of the process, from initial ideation and wireframing to coding and deployment."
+							]
+						}
+					],
+					"col2": [
+						{
+							"type": "list",
+							"title": "Objectives",
+							"content": [
+								"**Personal Branding:** Develop a portfolio website that effectively communicates my personal brand, style, and approach to design and development.",
+								"**Interactivity:** Prioritize a user-friendly interface and intuitive navigation to ensure visitors can easily explore my work and learn about my skills.",
+								"**Showcasing Projects + Technology:** Feature a diverse range of projects with detailed case studies to highlight my expertise and problem-solving capabilities."
+							]
+						}
+					]
+				}
 			},
 			{
 				"background": "dark",

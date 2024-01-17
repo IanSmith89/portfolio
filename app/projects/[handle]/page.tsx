@@ -8,6 +8,7 @@ import BackArrowIcon from '@/lib/BackArrowIcon'
 import ForwardArrowIcon from '@/lib/ForwardArrowIcon'
 import { PROJECTS_URL } from '@/utils/constants'
 import ProjectContainerSection from '@/components/ProjectContainerSection'
+import Project2ColumnSection from '@/components/Project2ColumnSection'
 
 export default function ProjectPage({ params }: { params: { handle: string } }) {
 	let previousProjectIndex: number = projects.length - 1
@@ -63,6 +64,8 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 				</div>
 			</section>
 			{sections?.map((section, i) => {
+				if (section.type === '2-column') return <Project2ColumnSection key={i} section={section} />
+
 				if (section.type === 'container') return <ProjectContainerSection key={i} section={section} />
 
 				if (section.type === 'header')
