@@ -2,36 +2,28 @@ const fs = require('fs/promises')
 const projects = require('./app/data/projects.json')
 
 const transformedData = projects.map((project) => {
-	project.sections = project.sections.map((section) => {
-		if (section.type === 'container') {
-			const newSection = {
-				...section,
-			}
+	const splitTitle = project.longTitle.split(': ')
+	const title = {
+		long: {
+			text: splitTitle[0],
+			subtitle: splitTitle[1],
+		},
+		short: {
+			text: project.shortTitle,
+			subtitle: project.shortSubtitle,
+		},
+	}
 
-			section.content.forEach((c) => {
-				if (c.title === 'Project Overview' || c.title === 'My Role' || c.title === 'Objectives') {
-					if (newSection.type === 'container') {
-						newSection.type = '2-column'
-						newSection.content = {
-							col1: [],
-							col2: [],
-						}
-					}
-
-					if (c.title === 'Project Overview' || c.title === 'My Role') {
-						newSection.content.col1.push(c)
-					}
-
-					if (c.title === 'Objectives') newSection.content.col2.push(c)
-				}
-			})
-
-			return newSection
-		}
-
-		return section
-	})
-	return project
+	return {
+		title,
+		backgroundImage: project.backgroundImage,
+		bgColor: project.bgColor,
+		coverImage: project.coverImage,
+		description: project.longSubtitle,
+		handle: project.handle,
+		sections: project.sections,
+		website: project.website,
+	}
 })
 
 fs.writeFile('./projects-2.json', JSON.stringify(transformedData, null, 4), (err) => {

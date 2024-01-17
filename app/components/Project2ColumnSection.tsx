@@ -1,9 +1,10 @@
 import { TwoColumnProjectSection } from '@/utils/types'
 import Content from './Content'
+import ThemeSection from './ThemeSection'
 
 export default function Project2ColumnSection({ section }: { section: TwoColumnProjectSection }) {
 	return (
-		<section className={`py-8 ${section.background === 'light' ? 'bg-white dark:bg-grey-blue/50' : ''}`}>
+		<ThemeSection background={section.background}>
 			<div className="container grid md:grid-cols-2 md:gap-10">
 				<div>
 					{section.content.col1.map((col1Content) => (
@@ -16,6 +17,6 @@ export default function Project2ColumnSection({ section }: { section: TwoColumnP
 					))}
 				</div>
 			</div>
-		</section>
+		</ThemeSection>
 	)
 }

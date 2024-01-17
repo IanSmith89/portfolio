@@ -63,12 +63,24 @@ export type Project = {
 		light: string
 		dark: string
 	}
-	coverImage?: string
+	coverImage: {
+		alt?: string
+		src: string
+		width: number
+		height: number
+	}
+	description: string
 	handle: string
-	longSubtitle?: string
-	longTitle?: string
-	sections?: (ContainerProjectSection | HeaderProjectSection | TwoColumnProjectSection | ImageCompareProjectSection)[]
-	shortSubtitle?: string
-	shortTitle: string
+	sections: (ContainerProjectSection | HeaderProjectSection | TwoColumnProjectSection | ImageCompareProjectSection)[]
+	title: {
+		long: {
+			text: string
+			subtitle: string
+		}
+		short: {
+			text: string
+			subtitle: string
+		}
+	}
 	website?: ProjectWebsite
 }

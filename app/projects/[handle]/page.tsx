@@ -24,13 +24,13 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 
 	if (!project) notFound()
 
-	const { backgroundImage, bgColor, coverImage, longTitle, longSubtitle, sections, website } = project
+	const { backgroundImage, bgColor, coverImage, description, sections, title, website } = project
 	const previousProject = projects[previousProjectIndex]
 	const nextProject = projects[nextProjectIndex]
 
 	return (
 		<>
-			<section className="relative w-full md:h-[66vh] -mt-16 pb-16">
+			<section className="relative w-full lg:h-[66vh] -mt-16 pb-16">
 				<Image alt="" src={`/${backgroundImage}`} className="object-cover h-full" fill priority sizes="100vw" />
 				<div
 					className={`absolute w-full h-full transition-colors filter backdrop-blur-sm mix-blend-hard-light ${bgColor.light} ${bgColor.dark}`}
@@ -48,23 +48,24 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 					<div className="h-full flex flex-col md:flex-row-reverse items-center gap-6 md:gap-10">
 						<div className="md:h-full md:w-1/2 flex items-center">
 							<Image
-								alt=""
-								src={`/${coverImage}`}
+								alt={coverImage.alt || ''}
+								src={`/${coverImage.src}`}
 								className="w-full h-auto"
 								priority
-								width={1600}
-								height={900}
+								width={coverImage.width}
+								height={coverImage.height}
 							/>
 						</div>
 						<div className="md:h-full md:w-1/2 flex flex-col justify-center items-center md:items-start gap-4">
-							<h1 className="text-3xl md:text-5xl font-medium">
+							<h1 className="text-3xl md:text-5xl xl:text-6xl font-medium">
 								<span
-									className={`${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 leading-[1.33] shadow-lg`}
+									className={`${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 md:px-4 leading-[1.33] shadow-lg`}
 								>
-									{longTitle}
+									{`${title.long.text}: `}
+									<span className="font-light">{title.long.subtitle}</span>
 								</span>
 							</h1>
-							<h2 className="text-indigo/70 dark:text-white/70 md:text-xl">{longSubtitle}</h2>
+							<h2 className="text-indigo/70 dark:text-white/70 md:text-xl">{description}</h2>
 							{website ? (
 								<Button className="mt-2" href={website.href} target="_blank" variant="outline">
 									{website.text}
@@ -116,14 +117,14 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 								<span
 									className={`transition-all ${previousProject.bgColor.light} ${previousProject.bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md leading-[1.3] text-right`}
 								>
-									{previousProject.shortTitle}
+									{previousProject.title.short.text}
 								</span>
 							</h4>
 							<p className="text-right">
 								<span
 									className={`transition-all ${previousProject.bgColor.light} ${previousProject.bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md text-right`}
 								>
-									{previousProject.shortSubtitle}
+									{previousProject.title.short.subtitle}
 								</span>
 							</p>
 						</div>
@@ -150,14 +151,14 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 								<span
 									className={`transition-all ${nextProject.bgColor.light} ${nextProject.bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md leading-[1.3]`}
 								>
-									{nextProject.shortTitle}
+									{nextProject.title.short.text}
 								</span>
 							</h4>
 							<p>
 								<span
 									className={`transition-all ${nextProject.bgColor.light} ${nextProject.bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md`}
 								>
-									{nextProject.shortSubtitle}
+									{nextProject.title.short.subtitle}
 								</span>
 							</p>
 						</div>

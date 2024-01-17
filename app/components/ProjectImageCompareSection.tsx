@@ -8,6 +8,7 @@ import macbook from '@public/macbook.svg'
 import Button from '@/lib/Button'
 import BackArrowIcon from '@/lib/BackArrowIcon'
 import ForwardArrowIcon from '@/lib/ForwardArrowIcon'
+import ThemeSection from './ThemeSection'
 
 export default function ProjectImageCompareSection({ section }: { section: ImageCompareProjectSection }) {
 	const [rangeValue, setRangeValue] = useState<number>(50)
@@ -17,7 +18,7 @@ export default function ProjectImageCompareSection({ section }: { section: Image
 	}
 
 	return (
-		<section className={`py-8 ${section.background === 'light' ? 'bg-white dark:bg-grey-blue/50' : ''}`}>
+		<ThemeSection background={section.background}>
 			<div className="container">
 				<h3 className="font-medium text-center text-2xl md:text-3xl mb-4">Before & After</h3>
 				<div className="relative">
@@ -106,6 +107,6 @@ export default function ProjectImageCompareSection({ section }: { section: Image
 					/>
 				</div>
 			</div>
-		</section>
+		</ThemeSection>
 	)
 }

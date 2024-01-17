@@ -1,14 +1,27 @@
 [
 	{
+		"title": {
+			"long": {
+				"text": "Rebranding TPC",
+				"subtitle": "A Lesson in Engineering Leadership"
+			},
+			"short": {
+				"text": "TPC",
+				"subtitle": "E-Commerce Rebrand"
+			}
+		},
 		"backgroundImage": "cyclists.jpg",
 		"bgColor": {
 			"light": "bg-green-300",
 			"dark": "dark:bg-green-900"
 		},
-		"coverImage": "tpc-cover.png",
+		"coverImage": {
+			"src": "tpc-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Leading the technical efforts to rebrand, optimize, and modernize the TPC e-commerce website",
 		"handle": "tpc-rebrand",
-		"longSubtitle": "Leading the technical efforts to rebrand, optimize, and modernize the TPC e-commerce website",
-		"longTitle": "Rebranding TPC: A Lesson in Engineering Leadership",
 		"sections": [
 			{
 				"background": "light",
@@ -154,22 +167,34 @@
 				]
 			}
 		],
-		"shortSubtitle": "E-Commerce Rebrand",
-		"shortTitle": "TPC",
 		"website": {
 			"href": "https://www.theproscloset.com",
 			"text": "Visit theproscloset.com"
 		}
 	},
 	{
+		"title": {
+			"long": {
+				"text": "Transforming HR at Starbucks",
+				"subtitle": "Building a Data-Driven Component Library"
+			},
+			"short": {
+				"text": "Starbucks",
+				"subtitle": "HR Apps & Design System"
+			}
+		},
 		"backgroundImage": "coffee.jpg",
 		"bgColor": {
 			"light": "bg-orange-300",
 			"dark": "dark:bg-orange-900"
 		},
+		"coverImage": {
+			"src": "",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Developing a design system and component library for internal Starbucks web apps",
 		"handle": "starbucks-s4-apps",
-		"longSubtitle": "Developing a design system and component library for internal Starbucks web apps",
-		"longTitle": "Transforming HR at Starbucks: Building a Data-Driven Component Library",
 		"sections": [
 			{
 				"background": "light",
@@ -296,19 +321,31 @@
 					}
 				]
 			}
-		],
-		"shortSubtitle": "HR Apps & Design System",
-		"shortTitle": "Starbucks"
+		]
 	},
 	{
+		"title": {
+			"long": {
+				"text": "Lifesaving Solutions",
+				"subtitle": "Vaccine Finder for the WA Department of Health"
+			},
+			"short": {
+				"text": "WA Department of Health",
+				"subtitle": "Vaccine Locator"
+			}
+		},
 		"backgroundImage": "vaccines.jpg",
 		"bgColor": {
 			"light": "bg-dark-blue-300",
 			"dark": "dark:bg-dark-blue-950"
 		},
+		"coverImage": {
+			"src": "",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Providing all Washingtonians a user-friendly website to locate vaccines during a pivotal time in the Covid pandemic",
 		"handle": "wa-doh-vaccine-locator",
-		"longSubtitle": "Providing all Washingtonians a user-friendly website to locate vaccines during a pivotal time in the Covid pandemic",
-		"longTitle": "Lifesaving Solutions: Vaccine Finder for the WA Department of Health",
 		"sections": [
 			{
 				"background": "light",
@@ -436,22 +473,34 @@
 				]
 			}
 		],
-		"shortSubtitle": "Vaccine Locator",
-		"shortTitle": "WA Department of Health",
 		"website": {
 			"href": "https://vaccinelocator.doh.wa.gov",
 			"text": "Visit Vaccinate WA"
 		}
 	},
 	{
+		"title": {
+			"long": {
+				"text": "Elevating Luxury Real Estate",
+				"subtitle": "Animations and Immersive Interactions"
+			},
+			"short": {
+				"text": "Paragon Real Estate",
+				"subtitle": "Luxury Property Website"
+			}
+		},
 		"backgroundImage": "golden-gate.jpg",
 		"bgColor": {
 			"light": "bg-yellow-100",
 			"dark": "dark:bg-yellow-900"
 		},
+		"coverImage": {
+			"src": "",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Telling a story and adding life to a public-facing Bay Area real estate company website",
 		"handle": "paragon",
-		"longSubtitle": "Telling a story and adding life to a public-facing Bay Area real estate company website",
-		"longTitle": "Elevating Luxury Real Estate: Animations and Immersive Interactions",
 		"sections": [
 			{
 				"background": "light",
@@ -578,19 +627,31 @@
 					}
 				]
 			}
-		],
-		"shortSubtitle": "Luxury Property Website",
-		"shortTitle": "Paragon Real Estate"
+		]
 	},
 	{
+		"title": {
+			"long": {
+				"text": "Streamlining Lab Operations",
+				"subtitle": "Custom Biotech Inventory Management"
+			},
+			"short": {
+				"text": "Astarte Biologics",
+				"subtitle": "Biotech Inventory Management"
+			}
+		},
 		"backgroundImage": "biotech-lab.jpg",
 		"bgColor": {
 			"light": "bg-purple-300",
 			"dark": "dark:bg-purple-900"
 		},
+		"coverImage": {
+			"src": "",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Modernizing the operations and data management system for a biotechnology company",
 		"handle": "astarte-inventory-management",
-		"longSubtitle": "Modernizing the operations and data management system for a biotechnology company",
-		"longTitle": "Streamlining Lab Operations: Custom Biotech Inventory Management",
 		"sections": [
 			{
 				"background": "light",
@@ -717,19 +778,31 @@
 					}
 				]
 			}
-		],
-		"shortSubtitle": "Biotech Inventory Management",
-		"shortTitle": "Astarte Biologics"
+		]
 	},
 	{
+		"title": {
+			"long": {
+				"text": "Empowering Efficiency",
+				"subtitle": "Developing Custom Real Estate Property Management Software"
+			},
+			"short": {
+				"text": "Paragon DASH",
+				"subtitle": "Property Management System"
+			}
+		},
 		"backgroundImage": "houses.jpg",
 		"bgColor": {
 			"light": "bg-red-300",
 			"dark": "dark:bg-red-900"
 		},
+		"coverImage": {
+			"src": "",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Centralizing data maintenance and inventory management into a custom internal website",
 		"handle": "paragon-property-management",
-		"longSubtitle": "Centralizing data maintenance and inventory management into a custom internal website",
-		"longTitle": "Empowering Efficiency: Developing Custom Real Estate Property Management Software",
 		"sections": [
 			{
 				"background": "light",
@@ -856,19 +929,31 @@
 					}
 				]
 			}
-		],
-		"shortSubtitle": "Property Management System",
-		"shortTitle": "Paragon DASH"
+		]
 	},
 	{
+		"title": {
+			"long": {
+				"text": "Elevating Online Presence",
+				"subtitle": "Building a Dynamic Consulting Portfolio"
+			},
+			"short": {
+				"text": "High Seas",
+				"subtitle": "Consulting Portfolio Website"
+			}
+		},
 		"backgroundImage": "sketchbook.jpg",
 		"bgColor": {
 			"light": "bg-green-300",
 			"dark": "dark:bg-green-900"
 		},
+		"coverImage": {
+			"src": "",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Showcasing the values and demonstrating the projects of a Bay Area consulting company",
 		"handle": "high-seas-portfolio",
-		"longSubtitle": "Showcasing the values and demonstrating the projects of a Bay Area consulting company",
-		"longTitle": "Elevating Online Presence: Building a Dynamic Consulting Portfolio",
 		"sections": [
 			{
 				"background": "light",
@@ -996,22 +1081,34 @@
 				]
 			}
 		],
-		"shortSubtitle": "Consulting Portfolio Website",
-		"shortTitle": "High Seas",
 		"website": {
 			"href": "https://highseas.com",
 			"text": "Visit highseas.com"
 		}
 	},
 	{
+		"title": {
+			"long": {
+				"text": "Pioneering a Network",
+				"subtitle": "Designing an Online Community for Veterinarians"
+			},
+			"short": {
+				"text": "Mighty Vet",
+				"subtitle": "Online Veterinary Community"
+			}
+		},
 		"backgroundImage": "vet.jpg",
 		"bgColor": {
 			"light": "bg-dark-blue-300",
 			"dark": "dark:bg-dark-blue-900"
 		},
+		"coverImage": {
+			"src": "",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Creating concepts and prototypes for a knowledge-sharing and networking website",
 		"handle": "mighty-vet-ux",
-		"longSubtitle": "Creating concepts and prototypes for a knowledge-sharing and networking website",
-		"longTitle": "Pioneering a Network: Designing an Online Community for Veterinarians",
 		"sections": [
 			{
 				"background": "light",
@@ -1149,19 +1246,31 @@
 					}
 				]
 			}
-		],
-		"shortSubtitle": "Online Veterinary Community",
-		"shortTitle": "Mighty Vet"
+		]
 	},
 	{
+		"title": {
+			"long": {
+				"text": "Seamless Adventure Planning",
+				"subtitle": "Prototyping a Camping Reservation System"
+			},
+			"short": {
+				"text": "WA State Parks",
+				"subtitle": "Camping Reservation System"
+			}
+		},
 		"backgroundImage": "camping.jpg",
 		"bgColor": {
 			"light": "bg-yellow-100",
 			"dark": "dark:bg-yellow-900"
 		},
+		"coverImage": {
+			"src": "",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Designing a user-centric platform to improve the reservation systems for WA State Parks",
 		"handle": "wa-state-parks-camping-reservations",
-		"longSubtitle": "Designing a user-centric platform to improve the reservation systems for WA State Parks",
-		"longTitle": "Seamless Adventure Planning: Prototyping a Camping Reservation System",
 		"sections": [
 			{
 				"background": "light",
@@ -1292,19 +1401,31 @@
 					}
 				]
 			}
-		],
-		"shortSubtitle": "Camping Reservation System",
-		"shortTitle": "WA State Parks"
+		]
 	},
 	{
+		"title": {
+			"long": {
+				"text": "Crafting a Personal Showcase",
+				"subtitle": "How I Made My Portfolio"
+			},
+			"short": {
+				"text": "ianjsmith.com",
+				"subtitle": "How It's Made"
+			}
+		},
 		"backgroundImage": "portfolio.jpg",
 		"bgColor": {
 			"light": "bg-teal-300",
 			"dark": "dark:bg-teal-900"
 		},
+		"coverImage": {
+			"src": "",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "My process for designing and building some of the features of this site",
 		"handle": "ian-j-smith-portfolio",
-		"longSubtitle": "My process for designing and building some of the features of this site",
-		"longTitle": "Crafting a Personal Showcase: How I Made My Portfolio",
 		"sections": [
 			{
 				"background": "light",
@@ -1470,8 +1591,6 @@
 				]
 			}
 		],
-		"shortSubtitle": "How It's Made",
-		"shortTitle": "ianjsmith.com",
 		"website": {
 			"href": "https://github.com/IanSmith89/portfolio",
 			"text": "View Code on GitHub"
