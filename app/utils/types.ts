@@ -35,6 +35,8 @@ export interface ContainerProjectSection extends BaseSection {
 export type ImageCompare = {
 	image1: string
 	image2: string
+	imageWidth: number
+	imageHeight: number
 }
 
 export interface ImageCompareProjectSection extends BaseSection {

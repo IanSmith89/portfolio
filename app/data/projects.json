@@ -67,11 +67,15 @@
 				"content": {
 					"mobile": {
 						"image1": "tpc-landing-old_mobile.png",
-						"image2": "tpc-landing-new_mobile.png"
+						"image2": "tpc-landing-new_mobile.png",
+						"imageWidth": 800,
+						"imageHeight": 13887
 					},
 					"desktop": {
 						"image1": "tpc-landing-old_desktop.png",
-						"image2": "tpc-landing-new_desktop.png"
+						"image2": "tpc-landing-new_desktop.png",
+						"imageWidth": 1280,
+						"imageHeight": 4658
 					}
 				}
 			},
