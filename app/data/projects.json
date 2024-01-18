@@ -10,13 +10,13 @@
 				"subtitle": "E-Commerce Rebrand"
 			}
 		},
-		"backgroundImage": "cyclists.jpg",
+		"backgroundImage": "/cyclists.jpg",
 		"bgColor": {
 			"light": "bg-green-300",
 			"dark": "dark:bg-green-900"
 		},
 		"coverImage": {
-			"src": "tpc-cover.png",
+			"src": "/tpc-cover.png",
 			"width": 1600,
 			"height": 900
 		},
@@ -80,14 +80,14 @@
 				"type": "image-compare",
 				"content": {
 					"mobile": {
-						"image1": "tpc-landing-old_mobile.png",
-						"image2": "tpc-landing-new_mobile.png",
+						"image1": "/tpc-landing-old_mobile.png",
+						"image2": "/tpc-landing-new_mobile.png",
 						"imageWidth": 800,
 						"imageHeight": 13887
 					},
 					"desktop": {
-						"image1": "tpc-landing-old_desktop.png",
-						"image2": "tpc-landing-new_desktop.png",
+						"image1": "/tpc-landing-old_desktop.png",
+						"image2": "/tpc-landing-new_desktop.png",
 						"imageWidth": 1280,
 						"imageHeight": 4658
 					}
@@ -105,11 +105,86 @@
 							"**Enhanced Product Pages:** Improved layout and presentation of product information for a better user experience.",
 							"**Responsive Design:** Ensured a seamless experience across various devices."
 						]
-					},
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"content": [
 					{
-						"type": "list",
+						"type": "image-list",
 						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
+						"content": [
+							{
+								"href": "https://www.algolia.com",
+								"image": {
+									"alt": "Algolia logo",
+									"src": {
+										"light": "/algolia_light.png",
+										"dark": "/algolia_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Revolutionized Search",
+								"text": "Thanks to the powerful search and discovery capabilities included with the integration of Algolia, we transformed the way users explore and discover the bikes and gear they want"
+							},
+							{
+								"href": "https://www.shopify.com",
+								"image": {
+									"alt": "Shopify logo",
+									"src": {
+										"light": "/shopify_light.png",
+										"dark": "/shopify_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Empowered Teams",
+								"text": "We were able to blend out-of-the-box functionality provided by Shopify along with custom solutions that allowed our marketing and merchandising teams to thrive indepent from the tech team"
+							},
+							{
+								"href": "https://www.sanity.io",
+								"image": {
+									"alt": "Sanity logo",
+									"src": {
+										"light": "/sanity_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Customized Content",
+								"text": "We utilized the customizable and intuitive Sanity.io platform to develop dynamic and configurable content for the TPC Sell//Trade app"
+							},
+							{
+								"href": "https://www.braze.com",
+								"image": {
+									"alt": "Braze logo",
+									"src": {
+										"light": "/braze_light.png",
+										"dark": "/braze_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Boosted Engagement",
+								"text": "By integrating with Braze during the rebrand we were able to easily connect with our users through personalized, targeted campaigns"
+							},
+							{
+								"href": "https://segment.com",
+								"image": {
+									"alt": "Segment logo",
+									"src": {
+										"light": "/segment_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Unified Analytics",
+								"text": "We also gained clarity into our users' data and behavior by leveraging Segment to unify our data and streamline reporting and insights"
+							}
+						]
 					}
 				]
 			},
@@ -183,7 +258,7 @@
 				"subtitle": "HR Apps & Design System"
 			}
 		},
-		"backgroundImage": "coffee.jpg",
+		"backgroundImage": "/coffee.jpg",
 		"bgColor": {
 			"light": "bg-orange-300",
 			"dark": "dark:bg-orange-900"
@@ -334,7 +409,7 @@
 				"subtitle": "Vaccine Locator"
 			}
 		},
-		"backgroundImage": "vaccines.jpg",
+		"backgroundImage": "/vaccines.jpg",
 		"bgColor": {
 			"light": "bg-dark-blue-300",
 			"dark": "dark:bg-dark-blue-950"
@@ -489,7 +564,7 @@
 				"subtitle": "Luxury Property Website"
 			}
 		},
-		"backgroundImage": "golden-gate.jpg",
+		"backgroundImage": "/golden-gate.jpg",
 		"bgColor": {
 			"light": "bg-yellow-100",
 			"dark": "dark:bg-yellow-900"
@@ -633,14 +708,14 @@
 		"title": {
 			"long": {
 				"text": "Streamlining Lab Operations",
-				"subtitle": "Custom Biotech Inventory Management"
+				"subtitle": "Astarte Biologics Inventory Management"
 			},
 			"short": {
 				"text": "Astarte Biologics",
 				"subtitle": "Biotech Inventory Management"
 			}
 		},
-		"backgroundImage": "biotech-lab.jpg",
+		"backgroundImage": "/biotech-lab.jpg",
 		"bgColor": {
 			"light": "bg-purple-300",
 			"dark": "dark:bg-purple-900"
@@ -784,14 +859,14 @@
 		"title": {
 			"long": {
 				"text": "Empowering Efficiency",
-				"subtitle": "Developing Custom Real Estate Property Management Software"
+				"subtitle": "Developing Custom Property Management Software"
 			},
 			"short": {
 				"text": "Paragon DASH",
 				"subtitle": "Property Management System"
 			}
 		},
-		"backgroundImage": "houses.jpg",
+		"backgroundImage": "/houses.jpg",
 		"bgColor": {
 			"light": "bg-red-300",
 			"dark": "dark:bg-red-900"
@@ -942,7 +1017,7 @@
 				"subtitle": "Consulting Portfolio Website"
 			}
 		},
-		"backgroundImage": "sketchbook.jpg",
+		"backgroundImage": "/sketchbook.jpg",
 		"bgColor": {
 			"light": "bg-green-300",
 			"dark": "dark:bg-green-900"
@@ -1097,7 +1172,7 @@
 				"subtitle": "Online Veterinary Community"
 			}
 		},
-		"backgroundImage": "vet.jpg",
+		"backgroundImage": "/vet.jpg",
 		"bgColor": {
 			"light": "bg-dark-blue-300",
 			"dark": "dark:bg-dark-blue-900"
@@ -1259,7 +1334,7 @@
 				"subtitle": "Camping Reservation System"
 			}
 		},
-		"backgroundImage": "camping.jpg",
+		"backgroundImage": "/camping.jpg",
 		"bgColor": {
 			"light": "bg-yellow-100",
 			"dark": "dark:bg-yellow-900"
@@ -1414,7 +1489,7 @@
 				"subtitle": "How It's Made"
 			}
 		},
-		"backgroundImage": "portfolio.jpg",
+		"backgroundImage": "/portfolio.jpg",
 		"bgColor": {
 			"light": "bg-teal-300",
 			"dark": "dark:bg-teal-900"

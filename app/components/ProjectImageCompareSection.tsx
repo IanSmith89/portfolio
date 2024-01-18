@@ -2,15 +2,16 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
-import { ImageCompareProjectSection } from '@/utils/types'
+import { ImageCompareSection } from '@/utils/types'
 import phone from '@public/phone.svg'
 import macbook from '@public/macbook.svg'
 import Button from '@/lib/Button'
 import BackArrowIcon from '@/lib/BackArrowIcon'
 import ForwardArrowIcon from '@/lib/ForwardArrowIcon'
 import ThemeSection from './ThemeSection'
+import ContentTitle from './ContentTitle'
 
-export default function ProjectImageCompareSection({ section }: { section: ImageCompareProjectSection }) {
+export default function ProjectImageCompareSection({ section }: { section: ImageCompareSection }) {
 	const [rangeValue, setRangeValue] = useState<number>(50)
 
 	const handleRangeChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
@@ -20,20 +21,20 @@ export default function ProjectImageCompareSection({ section }: { section: Image
 	return (
 		<ThemeSection background={section.background}>
 			<div className="container">
-				<h3 className="font-medium text-center text-2xl md:text-3xl mb-4">Before & After</h3>
+				<ContentTitle center>Before &amp; After</ContentTitle>
 				<div className="relative">
 					<div className="absolute aspect-[95/196] md:aspect-[243/158] bg-black/20 w-[95%] md:w-[77%] left-[2.5%] md:left-[11.5%] top-[5%] overflow-y-auto">
 						{/* Mobile Images */}
 						<Image
 							alt=""
-							src={`/${section.content.mobile.image1}`}
+							src={section.content.mobile.image1}
 							className="md:hidden absolute top-0 left-0 w-full h-auto"
 							width={section.content.mobile.imageWidth}
 							height={section.content.mobile.imageHeight}
 						/>
 						<Image
 							alt=""
-							src={`/${section.content.mobile.image2}`}
+							src={section.content.mobile.image2}
 							className="md:hidden absolute top-0 left-0 w-full h-auto"
 							style={{
 								clipPath: `inset(0 0 0 ${rangeValue}%)`,
@@ -44,14 +45,14 @@ export default function ProjectImageCompareSection({ section }: { section: Image
 						{/* Desktop Images */}
 						<Image
 							alt=""
-							src={`/${section.content.desktop.image1}`}
+							src={section.content.desktop.image1}
 							className="hidden md:block absolute top-0 left-0 w-full h-auto"
 							width={section.content.desktop.imageWidth}
 							height={section.content.desktop.imageHeight}
 						/>
 						<Image
 							alt=""
-							src={`/${section.content.desktop.image2}`}
+							src={section.content.desktop.image2}
 							className="hidden md:block absolute top-0 left-0 w-full h-auto"
 							style={{
 								clipPath: `inset(0 0 0 ${rangeValue}%)`,
@@ -67,7 +68,7 @@ export default function ProjectImageCompareSection({ section }: { section: Image
 								}}
 							/>
 							<Button
-								className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2"
+								className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 shadow-md"
 								style={{
 									left: `${rangeValue}%`,
 								}}
@@ -76,7 +77,7 @@ export default function ProjectImageCompareSection({ section }: { section: Image
 								<ForwardArrowIcon className="w-6" />
 							</Button>
 							<input
-								className="absolute top-1/2 -translate-y-1/2 w-full bg-transparent cursor-pointer appearance-none pointer-events-none focus:outline-none
+								className="absolute top-1/2 -translate-y-1/2 w-full bg-transparent cursor-grab appearance-none pointer-events-none focus:outline-none
 
                                 [&::-webkit-slider-thumb]:pointer-events-auto
                                 [&::-webkit-slider-thumb]:w-[98px]

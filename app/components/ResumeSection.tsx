@@ -65,7 +65,7 @@ export default function ResumeSection() {
 					size="large"
 					target="_blank"
 				>
-					VIEW MY FULL RÉSUMÉ
+					View My Full Résumé
 				</Button>
 			</div>
 		</section>

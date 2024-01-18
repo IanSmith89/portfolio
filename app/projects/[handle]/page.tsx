@@ -31,7 +31,7 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 	return (
 		<>
 			<section className="relative w-full lg:h-[66vh] -mt-16 pb-16">
-				<Image alt="" src={`/${backgroundImage}`} className="object-cover h-full" fill priority sizes="100vw" />
+				<Image alt="" src={backgroundImage} className="object-cover h-full" fill priority sizes="100vw" />
 				<div
 					className={`absolute w-full h-full transition-colors filter backdrop-blur-sm mix-blend-hard-light ${bgColor.light} ${bgColor.dark}`}
 				/>
@@ -49,7 +49,7 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 						<div className="md:h-full md:w-1/2 flex items-center">
 							<Image
 								alt={coverImage.alt || ''}
-								src={`/${coverImage.src}`}
+								src={coverImage.src}
 								className="w-full h-auto"
 								priority
 								width={coverImage.width}
@@ -57,7 +57,7 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 							/>
 						</div>
 						<div className="md:h-full md:w-1/2 flex flex-col justify-center items-center md:items-start gap-4">
-							<h1 className="text-3xl md:text-5xl xl:text-6xl font-medium">
+							<h1 className="text-3xl md:text-5xl font-medium">
 								<span
 									className={`${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 md:px-4 leading-[1.33] shadow-lg`}
 								>
@@ -65,7 +65,7 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 									<span className="font-light">{title.long.subtitle}</span>
 								</span>
 							</h1>
-							<h2 className="text-indigo/70 dark:text-white/70 md:text-xl">{description}</h2>
+							<h2 className="text-indigo/80 dark:text-white/70 md:text-xl">{description}</h2>
 							{website ? (
 								<Button className="mt-2" href={website.href} target="_blank" variant="outline">
 									{website.text}
@@ -99,7 +99,7 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 				>
 					<Image
 						alt=""
-						src={`/${previousProject.backgroundImage}`}
+						src={previousProject.backgroundImage}
 						className="transition-transform object-cover h-full group-hover:scale-[1.03]"
 						fill
 						sizes="50vw"
@@ -136,7 +136,7 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 				>
 					<Image
 						alt=""
-						src={`/${nextProject.backgroundImage}`}
+						src={nextProject.backgroundImage}
 						className="transition-transform object-cover h-full group-hover:scale-[1.03]"
 						fill
 						sizes="50vw"

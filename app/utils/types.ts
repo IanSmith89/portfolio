@@ -1,25 +1,46 @@
 type BaseBlock = {
-	content: string[]
 	title: string
 }
 
 export interface TextBlock extends BaseBlock {
+	content: string[]
 	type: 'text'
 }
 
 export interface ListBlock extends BaseBlock {
+	content: string[]
 	type: 'list'
+}
+
+export type ThemeImageData = {
+	alt?: string
+	src: {
+		light: string
+		dark?: string
+	}
+	width: number
+	height: number
+}
+
+export interface ImageListBlock extends BaseBlock {
+	content: {
+		href?: string
+		image: ThemeImageData
+		title: string
+		text: string
+	}[]
+	type: 'image-list'
 }
 
 type BaseSection = {
 	background: 'light' | 'dark'
 }
 
-export type ContentBlock = TextBlock | ListBlock
+export type ContentBlock = TextBlock | ListBlock | ImageListBlock
 
 type ContentBlocks = ContentBlock[]
 
-export interface TwoColumnProjectSection extends BaseSection {
+export interface TwoColumnSection extends BaseSection {
 	content: {
 		col1: ContentBlocks
 		col2: ContentBlocks
@@ -27,7 +48,7 @@ export interface TwoColumnProjectSection extends BaseSection {
 	type: '2-column'
 }
 
-export interface ContainerProjectSection extends BaseSection {
+export interface ContainerSection extends BaseSection {
 	content: ContentBlocks
 	type: 'container'
 }
@@ -39,7 +60,7 @@ export type ImageCompare = {
 	imageHeight: number
 }
 
-export interface ImageCompareProjectSection extends BaseSection {
+export interface ImageCompareSection extends BaseSection {
 	content: {
 		mobile: ImageCompare
 		desktop: ImageCompare
@@ -47,7 +68,7 @@ export interface ImageCompareProjectSection extends BaseSection {
 	type: 'image-compare'
 }
 
-export type HeaderProjectSection = {
+export type HeaderSection = {
 	title: string
 	type: 'header'
 }
@@ -71,7 +92,7 @@ export type Project = {
 	}
 	description: string
 	handle: string
-	sections: (ContainerProjectSection | HeaderProjectSection | TwoColumnProjectSection | ImageCompareProjectSection)[]
+	sections: (ContainerSection | HeaderSection | TwoColumnSection | ImageCompareSection)[]
 	title: {
 		long: {
 			text: string

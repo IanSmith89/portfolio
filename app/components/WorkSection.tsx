@@ -28,7 +28,7 @@ export default function WorkSection() {
 							<Link key={handle} href={`${PROJECTS_URL}/${handle}`} className={className}>
 								<Image
 									alt=""
-									src={`/${backgroundImage}`}
+									src={backgroundImage}
 									className="transition-transform object-cover h-full group-hover:scale-[1.03]"
 									fill
 									sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"

@@ -37,28 +37,32 @@ export default function Button({
 				' border-transparent bg-orange dark:bg-yellow text-indigo hover:bg-orange-500 dark:hover:bg-yellow/90'
 
 		if (size === 'small') classes += ' text-xs py-2 px-3'
-		else if (size === 'large') classes += ' py-3.5 px-5'
-		else classes += ' text-sm py-3 px-4'
+		else if (size === 'large') classes += ' py-3 px-5'
+		else classes += ' text-sm py-2.5 px-4'
 
 		if (className) classes += ` ${className}`
 
 		return classes
 	}, [className, size, variant])
 
+	const buttonContent = (
+		<>
+			{StartIcon ? <span>{StartIcon}</span> : null}
+			{children}
+			{EndIcon ? <span>{EndIcon}</span> : null}
+		</>
+	)
+
 	if (href)
 		return (
 			<Link className={buttonClasses} href={href} target={target}>
-				{StartIcon ? <span>{StartIcon}</span> : null}
-				{children}
-				{EndIcon ? <span>{EndIcon}</span> : null}
+				{buttonContent}
 			</Link>
 		)
 
 	return (
 		<button className={buttonClasses} {...rest}>
-			{StartIcon ? <span>{StartIcon}</span> : null}
-			{children}
-			{EndIcon ? <span>{EndIcon}</span> : null}
+			{buttonContent}
 		</button>
 	)
 }

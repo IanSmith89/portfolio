@@ -1,8 +1,8 @@
-import { TwoColumnProjectSection } from '@/utils/types'
+import { TwoColumnSection } from '@/utils/types'
 import Content from './Content'
 import ThemeSection from './ThemeSection'
 
-export default function Project2ColumnSection({ section }: { section: TwoColumnProjectSection }) {
+export default function Project2ColumnSection({ section }: { section: TwoColumnSection }) {
 	return (
 		<ThemeSection background={section.background}>
 			<div className="container grid md:grid-cols-2 md:gap-10">

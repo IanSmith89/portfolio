@@ -162,7 +162,7 @@ export default function LandingSection() {
 					</h1>
 					<div className="flex gap-2 flex-wrap">
 						<Button href="#featured-projects" size="large" EndIcon={<DownArrowIcon />}>
-							VIEW MY WORK
+							View My Work
 						</Button>
 					</div>
 				</div>
