@@ -5,7 +5,7 @@ import ThemeSection from './ThemeSection'
 export default function Project2ColumnSection({ section }: { section: TwoColumnSection }) {
 	return (
 		<ThemeSection background={section.background}>
-			<div className="container grid md:grid-cols-2 md:gap-10">
+			<div className="grid md:grid-cols-2 md:gap-10">
 				<div>
 					{section.content.col1.map((col1Content) => (
 						<Content key={col1Content.title} contentBlock={col1Content} />

@@ -2,14 +2,20 @@ type BaseBlock = {
 	title: string
 }
 
-export interface TextBlock extends BaseBlock {
+interface BaseListBlock extends BaseBlock {
 	content: string[]
+}
+
+export interface TextBlock extends BaseListBlock {
 	type: 'text'
 }
 
-export interface ListBlock extends BaseBlock {
-	content: string[]
-	type: 'list'
+export interface UnorderedListBlock extends BaseListBlock {
+	type: 'unordered-list'
+}
+
+export interface OrderedListBlock extends BaseListBlock {
+	type: 'ordered-list'
 }
 
 export type ThemeImageData = {
@@ -29,14 +35,14 @@ export interface ImageListBlock extends BaseBlock {
 		title: string
 		text: string
 	}[]
-	type: 'image-list'
+	type: 'image-blocks'
 }
 
 type BaseSection = {
 	background: 'light' | 'dark'
 }
 
-export type ContentBlock = TextBlock | ListBlock | ImageListBlock
+export type ContentBlock = TextBlock | UnorderedListBlock | OrderedListBlock | ImageListBlock
 
 type ContentBlocks = ContentBlock[]
 
@@ -49,6 +55,7 @@ export interface TwoColumnSection extends BaseSection {
 }
 
 export interface ContainerSection extends BaseSection {
+	center?: boolean
 	content: ContentBlocks
 	type: 'container'
 }

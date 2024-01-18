@@ -1,12 +1,13 @@
 export type ThemeSectionProps = {
 	background: 'light' | 'dark'
+	center?: boolean
 	children: React.ReactNode
 }
 
-export default function ThemeSection({ background, children }: ThemeSectionProps) {
+export default function ThemeSection({ background, center = false, children }: ThemeSectionProps) {
 	return (
 		<section className={`py-8 md:pt-12 lg:pt-16 ${background === 'light' ? 'bg-white dark:bg-grey-blue/50' : ''}`}>
-			{children}
+			<div className={`container ${center ? 'flex justify-center' : ''}`}>{children}</div>
 		</section>
 	)
 }

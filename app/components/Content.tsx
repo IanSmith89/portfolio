@@ -3,6 +3,7 @@ import { ContentBlock } from '@/utils/types'
 import Markdown from './Markdown'
 import ThemeImage from '@/lib/ThemeImage'
 import ContentTitle from './ContentTitle'
+import List from '@/lib/List'
 
 export type ContentProps = {
 	contentBlock: ContentBlock
@@ -11,7 +12,7 @@ export type ContentProps = {
 export default function Content({ contentBlock }: ContentProps) {
 	return (
 		<div key={contentBlock.title} className="mb-6 md:mb-12">
-			{contentBlock.type === 'image-list' ? (
+			{contentBlock.type === 'image-blocks' ? (
 				<>
 					<ContentTitle center>{contentBlock.title}</ContentTitle>
 					<div className={`flex flex-wrap gap-10 justify-center`}>
@@ -56,16 +57,17 @@ export default function Content({ contentBlock }: ContentProps) {
 				</>
 			) : null}
 
-			{contentBlock.type === 'list' ? (
+			{contentBlock.type === 'unordered-list' ? (
 				<>
 					<ContentTitle>{contentBlock.title}</ContentTitle>
-					<ul className="mb-4">
-						{contentBlock.content.map((li) => (
-							<li key={li} className="mb-3">
-								<Markdown key={li} text={li} />
-							</li>
-						))}
-					</ul>
+					<List>{contentBlock.content}</List>
+				</>
+			) : null}
+
+			{contentBlock.type === 'ordered-list' ? (
+				<>
+					<ContentTitle>{contentBlock.title}</ContentTitle>
+					<List ordered>{contentBlock.content}</List>
 				</>
 			) : null}
 		</div>

@@ -45,7 +45,7 @@
 					],
 					"col2": [
 						{
-							"type": "list",
+							"type": "unordered-list",
 							"title": "Objectives",
 							"content": [
 								"**Modernization:** Refresh the user interface to align with contemporary UX trends and the new company brand.",
@@ -59,9 +59,11 @@
 			{
 				"background": "dark",
 				"type": "container",
+				"center": true,
+				"center": true,
 				"content": [
 					{
-						"type": "list",
+						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
 							"**Outdated User Interface:** The existing website had an outdated design that didn't resonate with the company's progressive image.",
@@ -98,7 +100,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Key Features",
 						"content": [
 							"**Streamlined Navigation:** Implemented a simplified menu structure for easier navigation.",
@@ -113,7 +115,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "image-list",
+						"type": "image-blocks",
 						"title": "Technology Highlights",
 						"content": [
 							{
@@ -197,7 +199,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
 							"**Page Load Time:** Reduced by 40%, contributing to a significant improvement in bounce rates.",
@@ -293,7 +295,7 @@
 					],
 					"col2": [
 						{
-							"type": "list",
+							"type": "unordered-list",
 							"title": "Objectives",
 							"content": [
 								"**Consistency Across Apps:** Establish a unified visual language and design system for HR applications.",
@@ -307,9 +309,10 @@
 			{
 				"background": "dark",
 				"type": "container",
+				"center": true,
 				"content": [
 					{
-						"type": "list",
+						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
 							"**Inconsistency:** HR apps lacked visual consistency, leading to a disjointed user experience.",
@@ -328,7 +331,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Key Features",
 						"content": [
 							"**Consistent Design Language:** Established a unified visual language, ensuring consistency across all HR applications.",
@@ -337,7 +340,7 @@
 						]
 					},
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Technology Highlights",
 						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
 					}
@@ -352,7 +355,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
 							"**Development Time:** Reduced by 30% for new HR features and applications.",
@@ -444,7 +447,7 @@
 					],
 					"col2": [
 						{
-							"type": "list",
+							"type": "unordered-list",
 							"title": "Objectives",
 							"content": [
 								"**Rapid Deployment:** Create a website in record time to aid in the rapid distribution of COVID-19 vaccines.",
@@ -458,9 +461,10 @@
 			{
 				"background": "dark",
 				"type": "container",
+				"center": true,
 				"content": [
 					{
-						"type": "list",
+						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
 							"**Urgency:** The urgency of the pandemic required a rapid response to aid in the vaccination effort.",
@@ -479,7 +483,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Key Features",
 						"content": [
 							"**Real-Time Updates:** Implemented a backend system to provide real-time information on vaccine availability and eligibility criteria.",
@@ -488,7 +492,7 @@
 						]
 					},
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Technology Highlights",
 						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
 					}
@@ -503,7 +507,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
 							"**Website Traffic:** Experienced a surge in traffic, with millions of users accessing the website within the first month.",
@@ -599,7 +603,7 @@
 					],
 					"col2": [
 						{
-							"type": "list",
+							"type": "unordered-list",
 							"title": "Objectives",
 							"content": [
 								"**Striking Visual Design:** Redesign the frontend to reflect the sophistication and elegance associated with luxury real estate.",
@@ -613,9 +617,10 @@
 			{
 				"background": "dark",
 				"type": "container",
+				"center": true,
 				"content": [
 					{
-						"type": "list",
+						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
 							"**Outdated Interface:** The existing website lacked the visual appeal and modern design expected in the luxury real estate market.",
@@ -634,7 +639,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Key Features",
 						"content": [
 							"**Custom Animations:** Implemented subtle yet impactful animations to bring property images and details to life.",
@@ -643,7 +648,7 @@
 						]
 					},
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Technology Highlights",
 						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
 					}
@@ -658,7 +663,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
 							"**User Engagement:** Increased by 40%, leading to a higher likelihood of users exploring multiple property listings.",
@@ -750,7 +755,7 @@
 					],
 					"col2": [
 						{
-							"type": "list",
+							"type": "unordered-list",
 							"title": "Objectives",
 							"content": [
 								"**Efficient Resource Management:** Create a centralized system to track and manage laboratory equipment, reagents, and consumables.",
@@ -764,9 +769,10 @@
 			{
 				"background": "dark",
 				"type": "container",
+				"center": true,
 				"content": [
 					{
-						"type": "list",
+						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
 							"**Manual Processes:** The existing inventory management process relied heavily on manual tracking, leading to errors and inefficiencies.",
@@ -785,7 +791,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Key Features",
 						"content": [
 							"**Barcode Scanning:** Implemented a barcode scanning system to streamline the process of adding and removing items from inventory.",
@@ -794,7 +800,7 @@
 						]
 					},
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Technology Highlights",
 						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
 					}
@@ -809,7 +815,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
 							"**Time Saved:** A 30% reduction in the time spent on inventory management tasks, allowing lab personnel to focus more on research activities.",
@@ -901,7 +907,7 @@
 					],
 					"col2": [
 						{
-							"type": "list",
+							"type": "unordered-list",
 							"title": "Objectives",
 							"content": [
 								"**Efficient Inventory Management:** Develop a system to track and manage real estate assets, including properties, equipment, and marketing materials.",
@@ -915,9 +921,10 @@
 			{
 				"background": "dark",
 				"type": "container",
+				"center": true,
 				"content": [
 					{
-						"type": "list",
+						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
 							"**Starting From Scratch:** Existing tools for inventory and data management were fragmented, leading to inefficiencies and data inconsistencies.",
@@ -936,7 +943,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Key Features",
 						"content": [
 							"**Personalized Dashboard:** A centralized dashboard provided an overview of available properties, equipment, and marketing resources.",
@@ -945,7 +952,7 @@
 						]
 					},
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Technology Highlights",
 						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
 					}
@@ -960,7 +967,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
 							"**Time Saved:** A 40% reduction in the time spent on manual data entry tasks, allowing team members to focus on client interactions and property transactions.",
@@ -1052,7 +1059,7 @@
 					],
 					"col2": [
 						{
-							"type": "list",
+							"type": "unordered-list",
 							"title": "Objectives",
 							"content": [
 								"**Dynamic Experience:** Develop a visually appealing and dynamic website to effectively showcase ConsultX Solutions' range of consulting services and success stories.",
@@ -1066,9 +1073,10 @@
 			{
 				"background": "dark",
 				"type": "container",
+				"center": true,
 				"content": [
 					{
-						"type": "list",
+						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
 							"**Outdated Website:** The existing website lacked modern design elements and interactivity, failing to effectively represent the company's innovative approach.",
@@ -1087,7 +1095,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Key Features",
 						"content": [
 							"**Interactive Case Studies:** Implemented interactive elements within case studies to engage users and provide a deeper understanding of the company's consulting projects.",
@@ -1096,7 +1104,7 @@
 						]
 					},
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Technology Highlights",
 						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
 					}
@@ -1111,7 +1119,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
 							"**Time Saved:** A 40% reduction in the time spent on manual data entry tasks, allowing team members to focus on client interactions and property transactions.",
@@ -1207,7 +1215,7 @@
 					],
 					"col2": [
 						{
-							"type": "list",
+							"type": "unordered-list",
 							"title": "Objectives",
 							"content": [
 								"**Community Engagement:** Develop a user-friendly online space that encourages veterinarians to connect, share insights, and collaborate on cases.",
@@ -1221,9 +1229,10 @@
 			{
 				"background": "dark",
 				"type": "container",
+				"center": true,
 				"content": [
 					{
-						"type": "list",
+						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
 							"**Limited Networking Opportunities:** Veterinarians lacked a dedicated platform to connect, share experiences, and seek advice from peers.",
@@ -1280,7 +1289,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Key Features",
 						"content": [
 							"**Discussion Forums:** Structured forums for veterinarians to discuss cases, share knowledge, and seek advice.",
@@ -1369,7 +1378,7 @@
 					],
 					"col2": [
 						{
-							"type": "list",
+							"type": "unordered-list",
 							"title": "Objectives",
 							"content": [
 								"**User-Centric Design:** Develop a prototype with a focus on user-friendly navigation and an intuitive reservation process.",
@@ -1383,9 +1392,10 @@
 			{
 				"background": "dark",
 				"type": "container",
+				"center": true,
 				"content": [
 					{
-						"type": "list",
+						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
 							"**Outdated Reservation Process:** Users found the existing reservation system cumbersome and time-consuming, leading to frustration.",
@@ -1435,7 +1445,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Key Features",
 						"content": [
 							"**Visual Park Guides:** Implemented visually rich park guides to provide users with a preview of the natural beauty, amenities, and activities available at each state park.",
@@ -1524,7 +1534,7 @@
 					],
 					"col2": [
 						{
-							"type": "list",
+							"type": "unordered-list",
 							"title": "Objectives",
 							"content": [
 								"**Personal Branding:** Develop a portfolio website that effectively communicates my personal brand, style, and approach to design and development.",
@@ -1538,9 +1548,10 @@
 			{
 				"background": "dark",
 				"type": "container",
+				"center": true,
 				"content": [
 					{
-						"type": "list",
+						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
 							"**Outdated Personal Branding:** The existing portfolio did not effectively convey my unique style and personality.",
@@ -1597,7 +1608,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Key Features",
 						"content": [
 							"**Personal Branding:** Implemented a consistent visual identity, including a logo and color scheme, to reinforce my personal brand.",
@@ -1606,7 +1617,7 @@
 						]
 					},
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Technology Highlights",
 						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
 					}
@@ -1621,7 +1632,7 @@
 				"type": "container",
 				"content": [
 					{
-						"type": "list",
+						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
 							"**User Engagement:** Increased by 50%, reflected in longer average session durations and lower bounce rates.",
