@@ -12,7 +12,7 @@ export default function WorkSection() {
 			<div className="container">
 				<h2 className="text-4xl lg:text-5xl font-bold mb-6 md:mb-12">Featured Projects</h2>
 				<div className="grid auto-rows-[240px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-					{projects.map(({ backgroundImage, bgColor, handle, shortTitle, shortSubtitle }, i) => {
+					{projects.map(({ backgroundImage, bgColor, handle, title }, i) => {
 						let className = 'relative rounded-2xl overflow-hidden group'
 
 						if (i === 0) className += ' md:row-span-2'
@@ -28,7 +28,7 @@ export default function WorkSection() {
 							<Link key={handle} href={`${PROJECTS_URL}/${handle}`} className={className}>
 								<Image
 									alt=""
-									src={`/${backgroundImage}`}
+									src={backgroundImage}
 									className="transition-transform object-cover h-full group-hover:scale-[1.03]"
 									fill
 									sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
@@ -41,14 +41,14 @@ export default function WorkSection() {
 										<span
 											className={`transition-all ${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md leading-[1.33]`}
 										>
-											{shortTitle}
+											{title.short.text}
 										</span>
 									</h3>
 									<h4 className="font-light text-center">
 										<span
 											className={`transition-all ${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-2 group-hover:shadow-md`}
 										>
-											{shortSubtitle}
+											{title.short.subtitle}
 										</span>
 									</h4>
 								</div>

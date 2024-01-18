@@ -98,7 +98,7 @@ export default function ContactForm() {
 			/>
 
 			<Button className="mt-4" type="submit">
-				SEND MESSAGE
+				Send Message
 			</Button>
 		</form>
 	)

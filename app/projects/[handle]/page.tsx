@@ -7,6 +7,9 @@ import Button from '@/lib/Button'
 import BackArrowIcon from '@/lib/BackArrowIcon'
 import ForwardArrowIcon from '@/lib/ForwardArrowIcon'
 import { PROJECTS_URL } from '@/utils/constants'
+import ProjectContainerSection from '@/components/ProjectContainerSection'
+import Project2ColumnSection from '@/components/Project2ColumnSection'
+import ProjectImageCompareSection from '@/components/ProjectImageCompareSection'
 
 export default function ProjectPage({ params }: { params: { handle: string } }) {
 	let previousProjectIndex: number = projects.length - 1
@@ -21,20 +24,20 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 
 	if (!project) notFound()
 
-	const { backgroundImage, bgColor, longTitle, longSubtitle, sections, website } = project
+	const { backgroundImage, bgColor, coverImage, description, sections, title, website } = project
 	const previousProject = projects[previousProjectIndex]
 	const nextProject = projects[nextProjectIndex]
 
 	return (
 		<>
-			<section className="relative w-full h-[75vh] md:h-[66vh] -mt-16">
-				<Image alt="" src={`/${backgroundImage}`} className="object-cover h-full" fill priority sizes="100vw" />
+			<section className="relative w-full lg:h-[66vh] -mt-16 pb-16">
+				<Image alt="" src={backgroundImage} className="object-cover h-full" fill priority sizes="100vw" />
 				<div
 					className={`absolute w-full h-full transition-colors filter backdrop-blur-sm mix-blend-hard-light ${bgColor.light} ${bgColor.dark}`}
 				/>
-				<div className="relative container w-full h-full flex flex-col">
+				<div className="relative container w-full h-full pt-20">
 					<Button
-						className="relative top-20 -left-3 self-start"
+						className="-ml-3 mb-4"
 						href="/#featured-projects"
 						size="small"
 						variant="ghost"
@@ -42,16 +45,27 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 					>
 						Back to All Projects
 					</Button>
-					<div className="grid md:grid-cols-2 gap-8 flex-grow">
-						<div className="h-full flex flex-col justify-center items-center md:items-start gap-4">
+					<div className="h-full flex flex-col md:flex-row-reverse items-center gap-6 md:gap-10">
+						<div className="md:h-full md:w-1/2 flex items-center">
+							<Image
+								alt={coverImage.alt || ''}
+								src={coverImage.src}
+								className="w-full h-auto"
+								priority
+								width={coverImage.width}
+								height={coverImage.height}
+							/>
+						</div>
+						<div className="md:h-full md:w-1/2 flex flex-col justify-center items-center md:items-start gap-4">
 							<h1 className="text-3xl md:text-5xl font-medium">
 								<span
-									className={`${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 leading-[1.33] shadow-lg`}
+									className={`${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 md:px-4 leading-[1.33] shadow-lg`}
 								>
-									{longTitle}
+									{`${title.long.text}: `}
+									<span className="font-light">{title.long.subtitle}</span>
 								</span>
 							</h1>
-							<h2 className="text-indigo/70 dark:text-white/70 md:text-xl">{longSubtitle}</h2>
+							<h2 className="text-indigo/80 dark:text-white/70 md:text-xl">{description}</h2>
 							{website ? (
 								<Button className="mt-2" href={website.href} target="_blank" variant="outline">
 									{website.text}
@@ -62,44 +76,9 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 				</div>
 			</section>
 			{sections?.map((section, i) => {
-				if (section.type === 'container')
-					return (
-						<section
-							key={i}
-							className={`py-8 ${section.background === 'light' ? 'bg-white dark:bg-grey-blue/50' : ''}`}
-						>
-							<div className="container">
-								{section.content.map((contentBlock) => {
-									return (
-										<div key={contentBlock.title} className="mb-6">
-											<h3 className="font-medium text-2xl md:text-3xl mb-4">
-												{contentBlock.title}
-											</h3>
-											{contentBlock.type === 'text'
-												? contentBlock.content.map((p) => (
-														<p key={p} className="prose text-indigo dark:text-white">
-															{p}
-														</p>
-												  ))
-												: null}
-											{contentBlock.type === 'list' ? (
-												<ul>
-													{contentBlock.content.map((li) => (
-														<li
-															key={li.title}
-															className="prose text-indigo dark:text-white mb-2"
-														>
-															<span className="font-medium">{li.title}:</span> {li.detail}
-														</li>
-													))}
-												</ul>
-											) : null}
-										</div>
-									)
-								})}
-							</div>
-						</section>
-					)
+				if (section.type === '2-column') return <Project2ColumnSection key={i} section={section} />
+
+				if (section.type === 'container') return <ProjectContainerSection key={i} section={section} />
 
 				if (section.type === 'header')
 					return (
@@ -110,6 +89,8 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 							<h2 className="font-light text-4xl md:text-5xl">{section.title}</h2>
 						</section>
 					)
+
+				if (section.type === 'image-compare') return <ProjectImageCompareSection key={i} section={section} />
 			})}
 			<section className="grid grid-cols-2 h-[25vh]">
 				<Link
@@ -118,7 +99,7 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 				>
 					<Image
 						alt=""
-						src={`/${previousProject.backgroundImage}`}
+						src={previousProject.backgroundImage}
 						className="transition-transform object-cover h-full group-hover:scale-[1.03]"
 						fill
 						sizes="50vw"
@@ -136,14 +117,14 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 								<span
 									className={`transition-all ${previousProject.bgColor.light} ${previousProject.bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md leading-[1.3] text-right`}
 								>
-									{previousProject.shortTitle}
+									{previousProject.title.short.text}
 								</span>
 							</h4>
 							<p className="text-right">
 								<span
 									className={`transition-all ${previousProject.bgColor.light} ${previousProject.bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md text-right`}
 								>
-									{previousProject.shortSubtitle}
+									{previousProject.title.short.subtitle}
 								</span>
 							</p>
 						</div>
@@ -155,7 +136,7 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 				>
 					<Image
 						alt=""
-						src={`/${nextProject.backgroundImage}`}
+						src={nextProject.backgroundImage}
 						className="transition-transform object-cover h-full group-hover:scale-[1.03]"
 						fill
 						sizes="50vw"
@@ -170,14 +151,14 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 								<span
 									className={`transition-all ${nextProject.bgColor.light} ${nextProject.bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md leading-[1.3]`}
 								>
-									{nextProject.shortTitle}
+									{nextProject.title.short.text}
 								</span>
 							</h4>
 							<p>
 								<span
 									className={`transition-all ${nextProject.bgColor.light} ${nextProject.bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md`}
 								>
-									{nextProject.shortSubtitle}
+									{nextProject.title.short.subtitle}
 								</span>
 							</p>
 						</div>
