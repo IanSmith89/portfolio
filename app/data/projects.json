@@ -60,7 +60,6 @@
 				"background": "dark",
 				"type": "container",
 				"center": true,
-				"center": true,
 				"content": [
 					{
 						"type": "ordered-list",
@@ -79,33 +78,48 @@
 			},
 			{
 				"background": "light",
-				"type": "image-compare",
-				"content": {
-					"mobile": {
-						"image1": "/tpc-landing-old_mobile.png",
-						"image2": "/tpc-landing-new_mobile.png",
-						"imageWidth": 800,
-						"imageHeight": 13887
-					},
-					"desktop": {
-						"image1": "/tpc-landing-old_desktop.png",
-						"image2": "/tpc-landing-new_desktop.png",
-						"imageWidth": 1280,
-						"imageHeight": 4658
-					}
-				}
-			},
-			{
-				"background": "light",
 				"type": "container",
 				"content": [
 					{
-						"type": "unordered-list",
+						"type": "text-image",
 						"title": "Key Features",
 						"content": [
-							"**Streamlined Navigation:** Implemented a simplified menu structure for easier navigation.",
-							"**Enhanced Product Pages:** Improved layout and presentation of product information for a better user experience.",
-							"**Responsive Design:** Ensured a seamless experience across various devices."
+							{
+								"text": [
+									"**Streamlined Navigation**",
+									"Implemented a simplified menu structure for easier navigation."
+								],
+								"image": {
+									"alt": "TPC navigation screeshots",
+									"src": {
+										"light": "/tpc-navigation.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": ["**Search & Discovery Improvements**", "blah blah blah"],
+								"image": {
+									"alt": "TPC search screeshots",
+									"src": {
+										"light": "/tpc-search.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": ["**My Account Overhaul**", "blah blah blah"],
+								"image": {
+									"alt": "TPC account screeshots",
+									"src": {
+										"light": "/tpc-account.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
 					}
 				]
@@ -193,6 +207,24 @@
 			{
 				"type": "header",
 				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "image-compare",
+				"content": {
+					"mobile": {
+						"image1": "/tpc-landing-old_mobile.png",
+						"image2": "/tpc-landing-new_mobile.png",
+						"imageWidth": 800,
+						"imageHeight": 13887
+					},
+					"desktop": {
+						"image1": "/tpc-landing-old_desktop.png",
+						"image2": "/tpc-landing-new_desktop.png",
+						"imageWidth": 1280,
+						"imageHeight": 4658
+					}
+				}
 			},
 			{
 				"background": "light",

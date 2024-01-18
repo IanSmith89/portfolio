@@ -38,13 +38,21 @@ export interface ImageListBlock extends BaseBlock {
 	type: 'image-blocks'
 }
 
+export interface TextImageBlock extends BaseBlock {
+	content: {
+		text: string[]
+		image: ThemeImageData
+	}[]
+	type: 'text-image'
+}
+
+export type ContentBlock = TextBlock | UnorderedListBlock | OrderedListBlock | ImageListBlock | TextImageBlock
+
+type ContentBlocks = ContentBlock[]
+
 type BaseSection = {
 	background: 'light' | 'dark'
 }
-
-export type ContentBlock = TextBlock | UnorderedListBlock | OrderedListBlock | ImageListBlock
-
-type ContentBlocks = ContentBlock[]
 
 export interface TwoColumnSection extends BaseSection {
 	content: {

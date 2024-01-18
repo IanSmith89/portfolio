@@ -15,7 +15,7 @@ export default function Content({ contentBlock }: ContentProps) {
 			{contentBlock.type === 'image-blocks' ? (
 				<>
 					<ContentTitle center>{contentBlock.title}</ContentTitle>
-					<div className={`flex flex-wrap gap-10 justify-center`}>
+					<div className={`flex flex-wrap gap-4 md:gap-10 justify-center`}>
 						{contentBlock.content.map(({ href, image, text, title }) => {
 							const ImageComponent = (
 								<div className="aspect-[4/3] flex items-center justify-center">
@@ -68,6 +68,31 @@ export default function Content({ contentBlock }: ContentProps) {
 				<>
 					<ContentTitle>{contentBlock.title}</ContentTitle>
 					<List ordered>{contentBlock.content}</List>
+				</>
+			) : null}
+
+			{contentBlock.type === 'text-image' ? (
+				<>
+					<ContentTitle>{contentBlock.title}</ContentTitle>
+					{contentBlock.content.map((c, i) => (
+						<div key={i} className="grid md:grid-cols-3 gap-4 lg:gap-10 mb-12 md:mb-16">
+							<div className="flex flex-col justify-center h-full">
+								{c.text.map((p) => (
+									<Markdown key={p} text={p} />
+								))}
+							</div>
+							<div className="md:col-span-2">
+								<ThemeImage
+									alt={c.image.alt || ''}
+									srcLight={c.image.src.light}
+									srcDark={c.image.src?.dark}
+									className="w-full h-auto"
+									width={c.image.width}
+									height={c.image.height}
+								/>
+							</div>
+						</div>
+					))}
 				</>
 			) : null}
 		</div>
