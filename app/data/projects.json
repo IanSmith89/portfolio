@@ -290,25 +290,34 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Reflection",
-						"content": [
-							"The redesign of CyclePro's e-commerce website was a collaborative effort that successfully addressed user experience challenges and achieved notable improvements in performance and design. As the frontend engineering lead, this project allowed me to showcase my leadership skills, technical expertise, and commitment to delivering a high-quality user experience."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Lessons Learned",
-						"content": [
-							"Overcoming technical challenges related to performance optimization taught us the importance of balancing aesthetic improvements with maintaining a fast and efficient website."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Future Recommendations",
-						"content": [
-							"For future projects, I recommend continuous user testing throughout development and increased focus on mobile-first design principles to adapt to evolving user preferences."
-						]
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"The redesign of CyclePro's e-commerce website was a collaborative effort that successfully addressed user experience challenges and achieved notable improvements in performance and design. As the frontend engineering lead, this project allowed me to showcase my leadership skills, technical expertise, and commitment to delivering a high-quality user experience."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "text",
+									"title": "Lessons Learned",
+									"content": [
+										"Overcoming technical challenges related to performance optimization taught us the importance of balancing aesthetic improvements with maintaining a fast and efficient website."
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future projects, I recommend continuous user testing throughout development and increased focus on mobile-first design principles to adapt to evolving user preferences."
+									]
+								}
+							]
+						}
 					}
 				]
 			}
@@ -451,25 +460,34 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Reflection",
-						"content": [
-							"The creation of the data-driven component library for internal HR apps at Starbucks was a transformative project that showcased the impact of standardization and data-driven design on user experience and development efficiency. As the project lead, this experience reinforced my commitment to creating solutions that bridge the gap between design, development, and user needs."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Lessons Learned",
-						"content": [
-							"Overcoming challenges in integrating data visualization components highlighted the need for continuous communication with data analysts and HR specialists."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Future Recommendations",
-						"content": [
-							"For future projects, I recommend ongoing collaboration with end-users to adapt the component library to evolving needs and incorporating emerging technologies for enhanced data visualization."
-						]
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"The creation of the data-driven component library for internal HR apps at Starbucks was a transformative project that showcased the impact of standardization and data-driven design on user experience and development efficiency. As the project lead, this experience reinforced my commitment to creating solutions that bridge the gap between design, development, and user needs."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "text",
+									"title": "Lessons Learned",
+									"content": [
+										"Overcoming challenges in integrating data visualization components highlighted the need for continuous communication with data analysts and HR specialists."
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future projects, I recommend ongoing collaboration with end-users to adapt the component library to evolving needs and incorporating emerging technologies for enhanced data visualization."
+									]
+								}
+							]
+						}
 					}
 				]
 			}
@@ -608,25 +626,34 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Reflection",
-						"content": [
-							"Collaborating on the Vaccine Locator Website for the Washington Department of Health was a profound experience that highlighted the power of technology in addressing urgent public health needs. As a frontend software engineer, this project reinforced my commitment to leveraging technology for the greater good and demonstrated the positive impact that collaborative efforts can achieve during challenging times."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Lessons Learned",
-						"content": [
-							"Overcoming the challenges of real-time information dissemination underscored the critical need for a robust backend system and collaboration with public health authorities."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Future Recommendations",
-						"content": [
-							"For future projects, I recommend building on the success of this initiative by continuing to prioritize user accessibility, real-time information, and collaboration with relevant stakeholders."
-						]
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Collaborating on the Vaccine Locator Website for the Washington Department of Health was a profound experience that highlighted the power of technology in addressing urgent public health needs. As a frontend software engineer, this project reinforced my commitment to leveraging technology for the greater good and demonstrated the positive impact that collaborative efforts can achieve during challenging times."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "text",
+									"title": "Lessons Learned",
+									"content": [
+										"Overcoming the challenges of real-time information dissemination underscored the critical need for a robust backend system and collaboration with public health authorities."
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future projects, I recommend building on the success of this initiative by continuing to prioritize user accessibility, real-time information, and collaboration with relevant stakeholders."
+									]
+								}
+							]
+						}
 					}
 				]
 			}
@@ -769,25 +796,34 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Reflection",
-						"content": [
-							"The redesign of the frontend and animations for Bay Area Estates was a collaborative effort that successfully transformed the digital presence of the luxury real estate company. As a frontend software engineer, this project allowed me to showcase my skills in creating visually appealing and engaging user interfaces, contributing to the company's success in a competitive market."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Lessons Learned",
-						"content": [
-							"Overcoming challenges related to optimizing animations for various devices emphasized the need for a responsive and performance-focused approach."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Future Recommendations",
-						"content": [
-							"For future projects, I recommend exploring emerging technologies such as VR or AR to further enhance the immersive nature of the luxury real estate browsing experience."
-						]
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"The redesign of the frontend and animations for Bay Area Estates was a collaborative effort that successfully transformed the digital presence of the luxury real estate company. As a frontend software engineer, this project allowed me to showcase my skills in creating visually appealing and engaging user interfaces, contributing to the company's success in a competitive market."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "text",
+									"title": "Lessons Learned",
+									"content": [
+										"Overcoming challenges related to optimizing animations for various devices emphasized the need for a responsive and performance-focused approach."
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future projects, I recommend exploring emerging technologies such as VR or AR to further enhance the immersive nature of the luxury real estate browsing experience."
+									]
+								}
+							]
+						}
 					}
 				]
 			}
@@ -926,25 +962,34 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Reflection",
-						"content": [
-							"Designing and developing the Inventory Management System for the biotechnology lab was a rewarding experience that showcased the transformative impact of technology on streamlining laboratory operations. As the lead developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the advancement of scientific research."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Lessons Learned",
-						"content": [
-							"Overcoming challenges related to integrating barcode scanning technology underscored the importance of thorough testing and collaboration with lab personnel."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Future Recommendations",
-						"content": [
-							"For future enhancements, I recommend exploring integrations with lab equipment to enable even more seamless tracking of specialized resources."
-						]
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Designing and developing the Inventory Management System for the biotechnology lab was a rewarding experience that showcased the transformative impact of technology on streamlining laboratory operations. As the lead developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the advancement of scientific research."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "text",
+									"title": "Lessons Learned",
+									"content": [
+										"Overcoming challenges related to integrating barcode scanning technology underscored the importance of thorough testing and collaboration with lab personnel."
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future enhancements, I recommend exploring integrations with lab equipment to enable even more seamless tracking of specialized resources."
+									]
+								}
+							]
+						}
 					}
 				]
 			}
@@ -1083,25 +1128,34 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Reflection",
-						"content": [
-							"Developing the custom internal website for RealtyPro was a rewarding experience that showcased the transformative impact of technology on optimizing internal processes within a real estate company. As the lead developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the efficiency and success of RealtyPro."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Lessons Learned",
-						"content": [
-							"Overcoming challenges related to data migration and ensuring a seamless transition highlighted the importance of thorough testing and communication with stakeholders."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Future Recommendations",
-						"content": [
-							"For future enhancements, I recommend exploring integrations with external systems, such as CRM tools, to further streamline workflows and data synchronization."
-						]
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Developing the custom internal website for RealtyPro was a rewarding experience that showcased the transformative impact of technology on optimizing internal processes within a real estate company. As the lead developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the efficiency and success of RealtyPro."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "text",
+									"title": "Lessons Learned",
+									"content": [
+										"Overcoming challenges related to data migration and ensuring a seamless transition highlighted the importance of thorough testing and communication with stakeholders."
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future enhancements, I recommend exploring integrations with external systems, such as CRM tools, to further streamline workflows and data synchronization."
+									]
+								}
+							]
+						}
 					}
 				]
 			}
@@ -1240,25 +1294,34 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Reflection",
-						"content": [
-							"Building the portfolio website for ConsultX Solutions was a collaborative effort that showcased the transformative impact of a well-designed and interactive online presence. As a frontend software engineer, this project allowed me to leverage my technical expertise to create a website that not only met the client's objectives but exceeded their expectations, contributing to the company's success in the competitive consulting industry."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Lessons Learned",
-						"content": [
-							"Overcoming challenges related to implementing complex animations underscored the need for optimization without compromising on user experience."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Future Recommendations",
-						"content": [
-							"For future enhancements, I recommend exploring opportunities for integrating analytics tools to gather deeper insights into user behavior on the website."
-						]
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Building the portfolio website for ConsultX Solutions was a collaborative effort that showcased the transformative impact of a well-designed and interactive online presence. As a frontend software engineer, this project allowed me to leverage my technical expertise to create a website that not only met the client's objectives but exceeded their expectations, contributing to the company's success in the competitive consulting industry."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "text",
+									"title": "Lessons Learned",
+									"content": [
+										"Overcoming challenges related to implementing complex animations underscored the need for optimization without compromising on user experience."
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future enhancements, I recommend exploring opportunities for integrating analytics tools to gather deeper insights into user behavior on the website."
+									]
+								}
+							]
+						}
 					}
 				]
 			}
@@ -1412,25 +1475,34 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Reflection",
-						"content": [
-							"Designing the prototype concept for VetsConnect was an inspiring journey that highlighted the transformative impact of technology on fostering connections within the veterinary community. As a UX/UI designer, this project allowed me to contribute to the creation of an innovative platform that has the potential to revolutionize how veterinarians connect, collaborate, and share knowledge."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Lessons Learned",
-						"content": [
-							"Overcoming challenges related to incorporating complex networking features underscored the need for a balance between functionality and simplicity."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Future Recommendations",
-						"content": [
-							"For future development, I recommend further refinement based on ongoing user feedback and potential integration with additional tools for veterinary research and collaboration."
-						]
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Designing the prototype concept for VetsConnect was an inspiring journey that highlighted the transformative impact of technology on fostering connections within the veterinary community. As a UX/UI designer, this project allowed me to contribute to the creation of an innovative platform that has the potential to revolutionize how veterinarians connect, collaborate, and share knowledge."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "text",
+									"title": "Lessons Learned",
+									"content": [
+										"Overcoming challenges related to incorporating complex networking features underscored the need for a balance between functionality and simplicity."
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future development, I recommend further refinement based on ongoing user feedback and potential integration with additional tools for veterinary research and collaboration."
+									]
+								}
+							]
+						}
 					}
 				]
 			}
@@ -1573,25 +1645,34 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Reflection",
-						"content": [
-							"Prototyping the new concept for the WA State Parks camping reservation website was an inspiring journey that highlighted the transformative impact of technology on promoting outdoor adventures. As a UX/UI designer, this project allowed me to contribute to the creation of a platform that aims to make camping in Washington's state parks more accessible and enjoyable for everyone."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Lessons Learned",
-						"content": [
-							"Overcoming challenges related to integrating visually rich content underscored the need for optimization without compromising website performance."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Future Recommendations",
-						"content": [
-							"For future development, I recommend continuous user testing and iterative improvements based on user feedback to further refine the user experience."
-						]
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Prototyping the new concept for the WA State Parks camping reservation website was an inspiring journey that highlighted the transformative impact of technology on promoting outdoor adventures. As a UX/UI designer, this project allowed me to contribute to the creation of a platform that aims to make camping in Washington's state parks more accessible and enjoyable for everyone."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "text",
+									"title": "Lessons Learned",
+									"content": [
+										"Overcoming challenges related to integrating visually rich content underscored the need for optimization without compromising website performance."
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future development, I recommend continuous user testing and iterative improvements based on user feedback to further refine the user experience."
+									]
+								}
+							]
+						}
 					}
 				]
 			}
@@ -1768,25 +1849,34 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Reflection",
-						"content": [
-							"Designing and building my own portfolio website was a fulfilling endeavor that allowed me to express my personal brand and capabilities in a digital space. As the sole designer and developer, this project reinforced the importance of continuous improvement, creativity, and user-centric design principles in creating a compelling online showcase."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Lessons Learned",
-						"content": [
-							"Overcoming challenges related to balancing design aesthetics with performance optimization emphasized the need for careful consideration and testing."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Future Recommendations",
-						"content": [
-							"For future updates, I plan to regularly refresh project showcases, incorporate new technologies, and seek feedback to ensure the portfolio remains relevant and engaging."
-						]
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Designing and building my own portfolio website was a fulfilling endeavor that allowed me to express my personal brand and capabilities in a digital space. As the sole designer and developer, this project reinforced the importance of continuous improvement, creativity, and user-centric design principles in creating a compelling online showcase."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "text",
+									"title": "Lessons Learned",
+									"content": [
+										"Overcoming challenges related to balancing design aesthetics with performance optimization emphasized the need for careful consideration and testing."
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future updates, I plan to regularly refresh project showcases, incorporate new technologies, and seek feedback to ensure the portfolio remains relevant and engaging."
+									]
+								}
+							]
+						}
 					}
 				]
 			}

@@ -5,13 +5,25 @@ const projects = require('../app/data/projects.json')
 
 const transformedData = projects.map((project) => {
 	project.sections = project.sections.map((section) => {
-		if (section.type === 'two-column') {
-			const newSection = { ...section }
-			newSection.type = 'container'
-			newSection.content = {}
-			newSection.content.type = 'two-column'
-			newSection.content.content = section.content
-			return newSection
+		if (section.type === 'container') {
+			const col1 = []
+			const col2 = []
+			section.blocks.forEach((block) => {
+				if (block.title === 'Reflection') col1.push(block)
+				if (block.title === 'Lessons Learned' || block.title === 'Future Recommendations') col2.push(block)
+			})
+
+			if (col1.length || col2.length) {
+				section.blocks = [
+					{
+						type: 'two-column',
+						content: {
+							col1,
+							col2,
+						},
+					},
+				]
+			}
 		}
 
 		return section
@@ -20,7 +32,7 @@ const transformedData = projects.map((project) => {
 	return project
 })
 
-fs.writeFile('./projects-2.json', JSON.stringify(transformedData, null, 4), (err) => {
+fs.writeFile('./scripts/projects-2.json', JSON.stringify(transformedData, null, 4), (err) => {
 	if (err) return console.error('ERROR:', err)
 
 	console.log('Write file success!')
