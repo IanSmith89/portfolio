@@ -1,3 +1,12 @@
+export enum Block {
+	TEXT = 'text',
+	UNORDERED_LIST = 'unordered-list',
+	ORDERED_LIST = 'ordered-list',
+	IMAGE_BLOCKS = 'image-blocks',
+	TEXT_IMAGE = 'text-image',
+	TWO_COLUMN = 'two-column',
+}
+
 type BaseBlock = {
 	title: string
 }
@@ -7,15 +16,15 @@ interface BaseListBlock extends BaseBlock {
 }
 
 export interface TextBlock extends BaseListBlock {
-	type: 'text'
+	type: Block.TEXT
 }
 
 export interface UnorderedListBlock extends BaseListBlock {
-	type: 'unordered-list'
+	type: Block.UNORDERED_LIST
 }
 
 export interface OrderedListBlock extends BaseListBlock {
-	type: 'ordered-list'
+	type: Block.ORDERED_LIST
 }
 
 export type ThemeImageData = {
@@ -35,7 +44,7 @@ export interface ImageListBlock extends BaseBlock {
 		title: string
 		text: string
 	}[]
-	type: 'image-blocks'
+	type: Block.IMAGE_BLOCKS
 }
 
 export interface TextImageBlock extends BaseBlock {
@@ -43,10 +52,24 @@ export interface TextImageBlock extends BaseBlock {
 		text: string[]
 		image: ThemeImageData
 	}[]
-	type: 'text-image'
+	type: Block.TEXT_IMAGE
 }
 
-export type ContentBlock = TextBlock | UnorderedListBlock | OrderedListBlock | ImageListBlock | TextImageBlock
+export type TwoColumnBlock = {
+	content: {
+		col1: ContentBlocks
+		col2: ContentBlocks
+	}
+	type: Block.TWO_COLUMN
+}
+
+export type ContentBlock =
+	| TextBlock
+	| UnorderedListBlock
+	| OrderedListBlock
+	| ImageListBlock
+	| TextImageBlock
+	| TwoColumnBlock
 
 type ContentBlocks = ContentBlock[]
 
@@ -54,15 +77,7 @@ type BaseSection = {
 	background: 'light' | 'dark'
 }
 
-export interface TwoColumnSection extends BaseSection {
-	content: {
-		col1: ContentBlocks
-		col2: ContentBlocks
-	}
-	type: '2-column'
-}
-
-export interface ContainerSection extends BaseSection {
+export interface ContainerSectionData extends BaseSection {
 	center?: boolean
 	content: ContentBlocks
 	type: 'container'
@@ -107,7 +122,7 @@ export type Project = {
 	}
 	description: string
 	handle: string
-	sections: (ContainerSection | HeaderSection | TwoColumnSection | ImageCompareSection)[]
+	sections: (ContainerSectionData | HeaderSection | TwoColumnBlock | ImageCompareSection)[]
 	title: {
 		long: {
 			text: string

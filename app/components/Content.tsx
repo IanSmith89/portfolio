@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ContentBlock } from '@/utils/types'
+import { Block, ContentBlock } from '@/utils/types'
 import Markdown from './Markdown'
 import ThemeImage from '@/lib/ThemeImage'
 import ContentTitle from './ContentTitle'
@@ -11,8 +11,8 @@ export type ContentProps = {
 
 export default function Content({ contentBlock }: ContentProps) {
 	return (
-		<div key={contentBlock.title} className="mb-6 md:mb-12">
-			{contentBlock.type === 'image-blocks' ? (
+		<div className="mb-6 md:mb-12">
+			{contentBlock.type === Block.IMAGE_BLOCKS ? (
 				<>
 					<ContentTitle center>{contentBlock.title}</ContentTitle>
 					<div className={`flex flex-wrap gap-4 md:gap-10 justify-center`}>
@@ -48,7 +48,7 @@ export default function Content({ contentBlock }: ContentProps) {
 				</>
 			) : null}
 
-			{contentBlock.type === 'text' ? (
+			{contentBlock.type === Block.TEXT ? (
 				<>
 					<ContentTitle>{contentBlock.title}</ContentTitle>
 					{contentBlock.content.map((p) => (
@@ -57,21 +57,21 @@ export default function Content({ contentBlock }: ContentProps) {
 				</>
 			) : null}
 
-			{contentBlock.type === 'unordered-list' ? (
+			{contentBlock.type === Block.UNORDERED_LIST ? (
 				<>
 					<ContentTitle>{contentBlock.title}</ContentTitle>
 					<List>{contentBlock.content}</List>
 				</>
 			) : null}
 
-			{contentBlock.type === 'ordered-list' ? (
+			{contentBlock.type === Block.ORDERED_LIST ? (
 				<>
 					<ContentTitle>{contentBlock.title}</ContentTitle>
 					<List ordered>{contentBlock.content}</List>
 				</>
 			) : null}
 
-			{contentBlock.type === 'text-image' ? (
+			{contentBlock.type === Block.TEXT_IMAGE ? (
 				<>
 					<ContentTitle>{contentBlock.title}</ContentTitle>
 					{contentBlock.content.map((c, i) => (
@@ -94,6 +94,21 @@ export default function Content({ contentBlock }: ContentProps) {
 						</div>
 					))}
 				</>
+			) : null}
+
+			{contentBlock.type === Block.TWO_COLUMN ? (
+				<div className="grid md:grid-cols-2 md:gap-10">
+					<div>
+						{contentBlock.content.col1.map((col1Content, i) => (
+							<Content key={i} contentBlock={col1Content} />
+						))}
+					</div>
+					<div>
+						{contentBlock.content.col2.map((col2Content, j) => (
+							<Content key={j} contentBlock={col2Content} />
+						))}
+					</div>
+				</div>
 			) : null}
 		</div>
 	)

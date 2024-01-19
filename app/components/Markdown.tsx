@@ -6,7 +6,7 @@ export default function Markdown({ text }: { text: string }) {
 			components={{
 				p({ children, className, node, ...rest }) {
 					return (
-						<p {...rest} className="prose font-normal text-indigo/90 dark:text-indigo-100">
+						<p {...rest} className="prose font-normal text-indigo/90 dark:text-indigo-100 mb-2">
 							{children}
 						</p>
 					)

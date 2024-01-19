@@ -7,8 +7,7 @@ import Button from '@/lib/Button'
 import BackArrowIcon from '@/lib/BackArrowIcon'
 import ForwardArrowIcon from '@/lib/ForwardArrowIcon'
 import { PROJECTS_URL } from '@/utils/constants'
-import ProjectContainerSection from '@/components/ProjectContainerSection'
-import Project2ColumnSection from '@/components/Project2ColumnSection'
+import ContainerSection from '@/components/ContainerSection'
 import ProjectImageCompareSection from '@/components/ProjectImageCompareSection'
 
 export default function ProjectPage({ params }: { params: { handle: string } }) {
@@ -75,10 +74,8 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 					</div>
 				</div>
 			</section>
-			{sections?.map((section, i) => {
-				if (section.type === '2-column') return <Project2ColumnSection key={i} section={section} />
-
-				if (section.type === 'container') return <ProjectContainerSection key={i} section={section} />
+			{sections.map((section, i) => {
+				if (section.type === 'container') return <ContainerSection key={i} section={section} />
 
 				if (section.type === 'header')
 					return (
