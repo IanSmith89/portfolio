@@ -76,13 +76,16 @@ export default function Content({ block }: ContentProps) {
 				<>
 					<ContentTitle>{block.title}</ContentTitle>
 					{block.content.map((c, i) => (
-						<div key={i} className="grid md:grid-cols-3 gap-4 lg:gap-10 mb-12 md:mb-16">
+						<div
+							key={i}
+							className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-10 mb-12 md:mb-16"
+						>
 							<div className="flex flex-col justify-center h-full">
 								{c.text.map((p) => (
 									<Markdown key={p} text={p} />
 								))}
 							</div>
-							<div className="md:col-span-2">
+							<div className="lg:col-span-2 xl:col-span-3">
 								<ThemeImage
 									alt={c.image.alt || ''}
 									srcLight={c.image.src.light}

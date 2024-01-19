@@ -42,7 +42,7 @@
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As the **frontend engineering lead**, my responsibilities encompassed overseeing the entire frontend development process, collaborating with our design and product teams, and ensuring the successful implementation of the redesigned website while continuing to release new features and product updates."
+										"As the **frontend engineering lead**, my responsibilities encompassed overseeing the entire frontend development process, collaborating with our design, product, marketing, and backend engineering teams, and communicating regular milestones and deadlines. I oversaw refactors of all pages on the website and ensured the successful implementation of the rebrand while continuing to release new features and product updates."
 									]
 								}
 							],
@@ -53,7 +53,7 @@
 									"content": [
 										"**Modernization:** Refresh the user interface to align with contemporary UX trends and the new company brand.",
 										"**Enhanced User Experience:** Improve navigation, product search and discovery, and overall satisfaction for online shoppers.",
-										"**Performance Optimization:** Enhance website speed while reorganizing and cleaning up outdated code."
+										"**Code Sanitation & Performance:** Clean up outdated and unused code to improve performance and developer experience."
 									]
 								}
 							]
@@ -70,9 +70,9 @@
 						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
-							"**Outdated User Interface:** The existing website had an outdated design that didn't resonate with the company's progressive image.",
-							"**Suboptimal User Journey:** Users faced difficulties navigating and finding products efficiently.",
-							"**Performance Concerns:** Load times were inconsistent, impacting the overall user experience."
+							"**Outdated User Interface:** The existing website had an outdated design that didn't resonate with the company's progressive image and lacked some basic functionality common in modern e-commerce websites.",
+							"**Suboptimal User Journeys:** Users faced difficulties navigating and finding products efficiently. Some of the user flows were not tailored to the best user experience or desired conversion rates.",
+							"**Performance Concerns:** There was a lot of tech debt in the form of dead code and overall cruft that not only hampered website performance but also made it challenging to consume from a developer experience."
 						]
 					}
 				]
@@ -229,7 +229,7 @@
 									"height": 405
 								},
 								"title": "Unified Analytics",
-								"text": "We also gained clarity into our users' data and behavior by leveraging Segment to unify our data and streamline reporting and insights"
+								"text": "We gained clarity into our users' data and behavior by leveraging Segment to unify our data and streamline reporting and insights"
 							}
 						]
 					}
@@ -266,21 +266,24 @@
 			{
 				"background": "light",
 				"type": "container",
+				"center": true,
 				"blocks": [
 					{
 						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
-							"**Page Load Time:** Reduced by 40%, contributing to a significant improvement in bounce rates.",
-							"**Conversion Rate:** Increased by 25% within the first month post-launch.",
-							"**Mobile Traffic:** Saw a 20% increase, indicating improved mobile responsiveness."
+							"**Project Duration:** Over 3 months we successfully refactored all pages and launched the rebranded website on time to conincide with marketing efforts and the new brand announcement",
+							"**Site Performance:** We addressed all major issues with metrics identified by Google Lighthouse, increasing our scores to >90% for performance, and perfect 100% for accessibility, best practices, and SEO",
+							"**Search Response Time:** We reduced the response time for search queries from a couple seconds to an average of 8ms",
+							"**Tech Debt:** We removed or refactored over 100k lines of unused or outdated code"
 						]
 					},
 					{
 						"type": "text",
 						"title": "Impact",
 						"content": [
-							"The redesign not only met but exceeded the project objectives, resulting in a more engaging and efficient e-commerce platform."
+							"The launch of the redesigned site not only met but exceeded the project objectives, resulting in a more engaging and efficient user experience and an easier codebase to maintain.",
+							"By regularly communicating and agreeing on realistic deadlines, all involved teams were able to successfully announce the new brand and immediately incorporate rebranded assets and product features."
 						]
 					}
 				]
@@ -297,23 +300,26 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"The redesign of CyclePro's e-commerce website was a collaborative effort that successfully addressed user experience challenges and achieved notable improvements in performance and design. As the frontend engineering lead, this project allowed me to showcase my leadership skills, technical expertise, and commitment to delivering a high-quality user experience."
+										"The redesign of TPC's e-commerce website was a collaborative effort that successfully addressed user experience challenges and achieved notable improvements in performance and design. As the frontend engineering lead, this project allowed me to showcase my leadership skills, technical expertise, and commitment to delivering a high-quality user experience.",
+										"It presented a unique and fun challenge in balancing refactoring and cleaning up code while maintaining focus on the overall goal of finishing the project on time. I enjoyed collaborating with so many different teams and contributors, and I liked the opportunity to make a large impact on the perception of a public-facing brand in an industry I love."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming technical challenges related to performance optimization taught us the importance of balancing aesthetic improvements with maintaining a fast and efficient website."
+										"**Crush Tech Debt When You Can:** This project allowed our team to address longstanding amounts of tech debt while also encouraging us to implement consistent architecture patterns",
+										"**Overcommunicate Deadlines:** Speak up early and often when creating deadlines with external teams, and don't be afraid to be realistic about project estimates",
+										"**Take Initiative:** As a frontend engineer, it's your duty to collaborate with designers, and you can contribute ideas that positively impact the direction and decision-making in most projects"
 									]
 								},
 								{
 									"type": "text",
 									"title": "Future Recommendations",
 									"content": [
-										"For future projects, I recommend continuous user testing throughout development and increased focus on mobile-first design principles to adapt to evolving user preferences."
+										"For future projects, I recommend establishing agreed upon metrics that allow the stakeholders to know what is successful and what still needs work when taking on such a large project."
 									]
 								}
 							]
