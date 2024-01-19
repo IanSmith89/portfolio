@@ -5,11 +5,9 @@ import ThemeSection from './ThemeSection'
 export default function ContainerSection({ section }: { section: ContainerSectionData }) {
 	return (
 		<ThemeSection background={section.background} center={section.center}>
-			{Array.isArray(section.content) ? (
-				section.content.map((contentBlock, i) => <Content key={i} contentBlock={contentBlock} />)
-			) : (
-				<Content contentBlock={section.content} />
-			)}
+			{section.blocks.map((block, i) => (
+				<Content key={i} block={block} />
+			))}
 		</ThemeSection>
 	)
 }

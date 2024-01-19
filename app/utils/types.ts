@@ -1,10 +1,11 @@
 export enum Block {
-	TEXT = 'text',
-	UNORDERED_LIST = 'unordered-list',
-	ORDERED_LIST = 'ordered-list',
 	IMAGE_BLOCKS = 'image-blocks',
+	IMAGE_COMPARE = 'image-compare',
+	ORDERED_LIST = 'ordered-list',
+	TEXT = 'text',
 	TEXT_IMAGE = 'text-image',
 	TWO_COLUMN = 'two-column',
+	UNORDERED_LIST = 'unordered-list',
 }
 
 type BaseBlock = {
@@ -63,26 +64,6 @@ export type TwoColumnBlock = {
 	type: Block.TWO_COLUMN
 }
 
-export type ContentBlock =
-	| TextBlock
-	| UnorderedListBlock
-	| OrderedListBlock
-	| ImageListBlock
-	| TextImageBlock
-	| TwoColumnBlock
-
-type ContentBlocks = ContentBlock[]
-
-type BaseSection = {
-	background: 'light' | 'dark'
-}
-
-export interface ContainerSectionData extends BaseSection {
-	center?: boolean
-	content: ContentBlocks
-	type: 'container'
-}
-
 export type ImageCompare = {
 	image1: string
 	image2: string
@@ -90,17 +71,43 @@ export type ImageCompare = {
 	imageHeight: number
 }
 
-export interface ImageCompareSection extends BaseSection {
+export interface ImageCompareBlock extends BaseBlock {
 	content: {
 		mobile: ImageCompare
 		desktop: ImageCompare
 	}
-	type: 'image-compare'
+	type: Block.IMAGE_COMPARE
+}
+
+export type ContentBlock =
+	| TextBlock
+	| UnorderedListBlock
+	| OrderedListBlock
+	| ImageListBlock
+	| TextImageBlock
+	| TwoColumnBlock
+	| ImageCompareBlock
+
+type ContentBlocks = ContentBlock[]
+
+type BaseSection = {
+	background: 'light' | 'dark'
+}
+
+export enum Section {
+	CONTAINER = 'container',
+	HEADER = 'header',
+}
+
+export interface ContainerSectionData extends BaseSection {
+	center?: boolean
+	blocks: ContentBlocks
+	type: Section.CONTAINER
 }
 
 export type HeaderSection = {
 	title: string
-	type: 'header'
+	type: Section.HEADER
 }
 
 export type ProjectWebsite = {
@@ -122,7 +129,7 @@ export type Project = {
 	}
 	description: string
 	handle: string
-	sections: (ContainerSectionData | HeaderSection | TwoColumnBlock | ImageCompareSection)[]
+	sections: (ContainerSectionData | HeaderSection)[]
 	title: {
 		long: {
 			text: string

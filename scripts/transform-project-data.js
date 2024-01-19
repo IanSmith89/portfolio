@@ -1,5 +1,7 @@
+// Helper script to run to transform and manipulate all project data structure
+
 const fs = require('fs/promises')
-const projects = require('./app/data/projects.json')
+const projects = require('../app/data/projects.json')
 
 const transformedData = projects.map((project) => {
 	project.sections = project.sections.map((section) => {
