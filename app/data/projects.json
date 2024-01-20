@@ -337,11 +337,11 @@
 		"title": {
 			"long": {
 				"text": "Transforming HR at Starbucks",
-				"subtitle": "Building a Data-Driven Component Library"
+				"subtitle": "Building a Component Library for Efficient Development"
 			},
 			"short": {
 				"text": "Starbucks",
-				"subtitle": "HR Apps & Design System"
+				"subtitle": "Internal Apps & Component Library"
 			}
 		},
 		"backgroundImage": "/coffee.jpg",
@@ -350,11 +350,11 @@
 			"dark": "dark:bg-orange-900"
 		},
 		"coverImage": {
-			"src": "",
+			"src": "/starbucks-cover.png",
 			"width": 1600,
 			"height": 900
 		},
-		"description": "Developing a design system and component library for internal Starbucks web apps",
+		"description": "Developing a design system and component library for internal Starbucks applications",
 		"handle": "starbucks-s4-apps",
 		"sections": [
 			{
@@ -369,14 +369,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"In my role as a frontend software engineer at Starbucks, I led the development of a data-driven component library for internal HR applications. The objective was to standardize UI elements, improve consistency across platforms, and empower development teams to build efficient, user-friendly HR tools."
+										"In my time as a software engineer at Starbucks, I led the development of a data-driven component library for internal applications in the Business Intelligence & Data Services organization. The objective was to standardize UI components, improve consistency across platforms, and empower development teams to build efficient, user-friendly internal tools."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As the project lead, I was responsible for the entire lifecycle of the component library, from conceptualization to implementation, collaborating closely with both frontend developers and HR stakeholders."
+										"As a **senior application developer** and the project lead, I was responsible for the entire lifecycle of the component library, from design conceptualization to implementation, maintaining documentation, and collaborating closely with other design and development teams and internal Starbucks business stakeholders."
 									]
 								}
 							],
@@ -385,9 +385,9 @@
 									"type": "unordered-list",
 									"title": "Objectives",
 									"content": [
-										"**Consistency Across Apps:** Establish a unified visual language and design system for HR applications.",
-										"**Efficient Development:** Create reusable components to streamline the development process and reduce redundancy.",
-										"**Data-Driven Decision Making:** Integrate data visualization components for insightful HR analytics."
+										"**Consistency Across Apps:** Establish a unified visual language and design system for internal applications used in HR, finance, and business operations.",
+										"**Efficiency & Reusability:** Create reusable components to streamline the development process and reduce redundant code across teams.",
+										"**Ease of Maintenance:** Develop and release the project as a standalone library that can be easily integrated and updated by multiple contributors."
 									]
 								}
 							]
@@ -404,9 +404,9 @@
 						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
-							"**Inconsistency:** HR apps lacked visual consistency, leading to a disjointed user experience.",
-							"**Development Redundancy:** Similar components were being developed independently by different teams.",
-							"**Limited Data Visualization:** HR teams lacked effective tools for data analysis and reporting."
+							"**Organizational Inconsistency:** Many of the teams in our organization worked with similar technology stacks but developed apps with various approaches that lacked visual consistency, leading to a disjointed user experience.",
+							"**Code Redundancy:** Similar frontend code was being developed and deployed independently by different teams, and most of the frontend code was not regularly maintained.",
+							"**Personnel Fragmentation:** Development teams were somewhat fragmented and siloed in their day-to-day work and areas of expertise."
 						]
 					}
 				]
@@ -420,18 +420,123 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "text-image",
 						"title": "Key Contributions",
 						"content": [
-							"**Consistent Design Language:** Established a unified visual language, ensuring consistency across all HR applications.",
-							"**Reusable Components:** Created a library of reusable components to accelerate development and maintainability.",
-							"**Data Visualization:** Integrated charts and graphs for visualizing HR analytics within the applications."
+							{
+								"text": [
+									"**Integrated Styles & Design Language**",
+									"I worked closely with other design and development teams to ensure that the component syntax and core colors, styles, and typography aligned with any existing conventions.",
+									"I also met regularly and presented to the brand design teams to ensure our component library followed the already established [Starbucks Creative Expression](https://creative.starbucks.com/) guidelines."
+								],
+								"image": {
+									"alt": "Starbucks Creative Expression screeshots",
+									"src": {
+										"light": "/starbucks-brand.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Reusable Components**",
+									"I established a core set of the most common user interface components that built off of some of the existing frontend standards in our organization plus a suite of components borrowed the MUI component library.",
+									"I introduced a number of new components including calendars, datepickers, tables, and navigation variations that weren't previously standardized across existing internal applications."
+								],
+								"image": {
+									"alt": "Starbucks component library screeshots",
+									"src": {
+										"light": "/starbucks-components.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Release & Integration**",
+									"I successfully deployed and made regular updates to the component library and installed and used it in a number of internal applications used for reporting, financial tracking, resource management, and business operations.",
+									"The component library was initally used by a handful of teams before gaining wide adoption across a number of teams and apps.",
+									"Note: screenshots are approximations of final application designs."
+								],
+								"image": {
+									"alt": "Starbucks component app screeshots",
+									"src": {
+										"light": "/starbucks-apps.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
-					},
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "image-blocks",
 						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
+						"content": [
+							{
+								"href": "https://react.dev",
+								"image": {
+									"alt": "React logo",
+									"src": {
+										"light": "/react_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Trusted Framework",
+								"text": "Along with most of the rest of the frontend teams in our organization, we built our component library to be compatible with the component-based React framework"
+							},
+							{
+								"href": "https://mui.com",
+								"image": {
+									"alt": "MUI logo",
+									"src": {
+										"light": "/mui_light.png",
+										"dark": "/mui_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Tried & Tested Components",
+								"text": "We relied on a lot of the functionality provided by MUI to reduce overall dev time and decision-making around naming conventions and some software architecture"
+							},
+							{
+								"href": "https://storybook.js.org/",
+								"image": {
+									"alt": "Storybook logo",
+									"src": {
+										"light": "/storybook_light.png",
+										"dark": "/storybook_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Effortless UI Development",
+								"text": "Storybook provided the team a powerful platform for documenting functionality and behavior of the components while also serving as a dedicated environment for testing and development"
+							},
+							{
+								"href": "https://www.figma.com",
+								"image": {
+									"alt": "Figma logo",
+									"src": {
+										"light": "/figma_light.png",
+										"dark": "/figma_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Consistent Design Assets",
+								"text": "All components were designed and maintained in Figma to ensure that every one relied on the same on-brand design assets and was easily updated when changes were required"
+							}
+						]
 					}
 				]
 			},
@@ -442,21 +547,23 @@
 			{
 				"background": "light",
 				"type": "container",
+				"center": true,
 				"blocks": [
 					{
 						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
-							"**Development Time:** Reduced by 30% for new HR features and applications.",
-							"**User Adoption:** Positive feedback from HR teams resulted in a swift adoption of the new component library.",
-							"**Data Analysis Efficiency:** HR analysts reported a 25% improvement in data analysis and reporting capabilities."
+							"**User Adoption:** Positive feedback from business stakeholders and other engineering teams resulted in a swift adoption of the new component library.",
+							"**Duplicated Code Reduction:** The library included 40+ new reusable components and was integrated into 15+ internal applications.",
+							"**Developer Efficiency:** The release of the component library introduced new resources and a shared mode of working for 4+ engineering teams within our organization."
 						]
 					},
 					{
 						"type": "text",
 						"title": "Impact",
 						"content": [
-							"The implementation of the data-driven component library not only met but exceeded the project objectives, resulting in a more streamlined, consistent, and data-driven approach to HR application development."
+							"The implementation of the component library resulted in a more streamlined, consistent, and user-friendly approach to application development within the Business Intelligence & Data Services organization.",
+							"Users of the applications that installed the library were impressed with the sleek look and feel and appreciated the improvements to overall user experience."
 						]
 					}
 				]
@@ -473,23 +580,25 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"The creation of the data-driven component library for internal HR apps at Starbucks was a transformative project that showcased the impact of standardization and data-driven design on user experience and development efficiency. As the project lead, this experience reinforced my commitment to creating solutions that bridge the gap between design, development, and user needs."
+										"The creation of this component library for internal apps at Starbucks was a transformative project for me that showcased the impact of standardization and data-driven design on user experience and development efficiency. As the project lead, this experience reinforced my commitment to creating solutions that bridge the gap between design, development, and user needs."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming challenges in integrating data visualization components highlighted the need for continuous communication with data analysts and HR specialists."
+										"**Navigating Large Enterprise:** This project provided a great understanding of the scope of working with multiple engineering teams and internal users in a global enterprise",
+										"**Collaboration Takes You Places:** Working with a number of other design and development teams showed me the power of collaborating with others",
+										"**Stand on the Shoulders of Giants:** Relying on proven existing technologies is a great way to move fast and prevent yourself from reinventing the wheel unnecessarily"
 									]
 								},
 								{
 									"type": "text",
 									"title": "Future Recommendations",
 									"content": [
-										"For future projects, I recommend ongoing collaboration with end-users to adapt the component library to evolving needs and incorporating emerging technologies for enhanced data visualization."
+										"For future projects, I recommend ongoing collaboration and feedback with end-users to adapt the component library to evolving needs. It would also be a good exercise to think outside of the box after initial components have been developed to identify opportunities for other reusable code to include in a library."
 									]
 								}
 							]
@@ -608,6 +717,7 @@
 			{
 				"background": "light",
 				"type": "container",
+				"center": true,
 				"blocks": [
 					{
 						"type": "unordered-list",
@@ -778,6 +888,7 @@
 			{
 				"background": "light",
 				"type": "container",
+				"center": true,
 				"blocks": [
 					{
 						"type": "unordered-list",
@@ -944,6 +1055,7 @@
 			{
 				"background": "light",
 				"type": "container",
+				"center": true,
 				"blocks": [
 					{
 						"type": "unordered-list",
@@ -1110,6 +1222,7 @@
 			{
 				"background": "light",
 				"type": "container",
+				"center": true,
 				"blocks": [
 					{
 						"type": "unordered-list",
@@ -1276,6 +1389,7 @@
 			{
 				"background": "light",
 				"type": "container",
+				"center": true,
 				"blocks": [
 					{
 						"type": "unordered-list",
@@ -1831,6 +1945,7 @@
 			{
 				"background": "light",
 				"type": "container",
+				"center": true,
 				"blocks": [
 					{
 						"type": "unordered-list",

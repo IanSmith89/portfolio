@@ -6,12 +6,8 @@ export type ListProps = {
 }
 
 export default function List({ children, ordered = false }: ListProps) {
-	let listItemClasses = 'mb-3'
-
-	if (ordered) listItemClasses += ' flex items-start gap-3'
-
 	const listItems = children.map((li, i) => (
-		<li key={li} className={listItemClasses}>
+		<li key={li} className={ordered ? 'flex items-start gap-3' : ''}>
 			{ordered ? (
 				<div className="min-w-7 min-h-7 flex items-center justify-center rounded-full bg-indigo dark:bg-teal text-white dark:text-indigo font-medium">
 					{i + 1}

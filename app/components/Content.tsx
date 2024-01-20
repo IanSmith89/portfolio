@@ -19,7 +19,7 @@ export default function Content({ block }: ContentProps) {
 					<div className={`flex flex-wrap gap-4 md:gap-10 justify-center`}>
 						{block.content.map(({ href, image, text, title }) => {
 							const ImageComponent = (
-								<div className="aspect-[4/3] flex items-center justify-center">
+								<div className="aspect-square flex items-center justify-center">
 									<ThemeImage
 										alt={image.alt || ''}
 										srcLight={image.src.light}
@@ -41,7 +41,7 @@ export default function Content({ block }: ContentProps) {
 										ImageComponent
 									)}
 									<h4 className="text-lg md:text-xl font-medium mb-2">{title}</h4>
-									<p className="text-indigo/90 dark:text-indigo-100 text-center">{text}</p>
+									<Markdown className="text-center" text={text} />
 								</div>
 							)
 						})}
@@ -101,7 +101,7 @@ export default function Content({ block }: ContentProps) {
 			) : null}
 
 			{block.type === Block.TWO_COLUMN ? (
-				<div className="grid md:grid-cols-2 md:gap-10">
+				<div className="grid md:grid-cols-2 gap-2 md:gap-10">
 					<div>
 						{block.content.col1.map((col1Content, i) => (
 							<Content key={i} block={col1Content} />

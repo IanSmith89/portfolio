@@ -153,12 +153,12 @@ export default function LandingSection() {
 				</div>
 				<div className="w-full md:w-4/12 flex flex-col gap-8 lg:gap-12 justify-center pb-12">
 					<h1 className="transition-colors font-bold text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-indigo dark:text-white">
-						<span className="block font-normal text-lg md:text-xl xl:text-2xl 2xl:text-3xl mb-4 xl:mb-6 text-indigo/70 dark:text-indigo-100/80">
+						<span className="block font-normal text-lg md:text-xl xl:text-2xl 2xl:text-3xl mb-4 xl:mb-6 text-indigo/75 dark:text-indigo-100/80">
 							Hi I&apos;m Ian,
 						</span>
 						I like to create{' '}
-						<span className="font-light text-indigo/90 dark:text-indigo-100/80">interactive</span> things{' '}
-						<span className="font-light text-indigo/90 dark:text-indigo-100/80">on the web</span>.
+						<span className="font-light text-indigo/75 dark:text-indigo-100/80">interactive</span> things{' '}
+						<span className="font-light text-indigo/75 dark:text-indigo-100/80">on the web</span>.
 					</h1>
 					<div className="flex gap-2 flex-wrap">
 						<Button href="#featured-projects" size="large" EndIcon={<DownArrowIcon />}>

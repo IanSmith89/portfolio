@@ -6,23 +6,18 @@ const projects = require('../app/data/projects.json')
 const transformedData = projects.map((project) => {
 	project.sections = project.sections.map((section) => {
 		if (section.type === 'container') {
-			const col1 = []
-			const col2 = []
+			let center
 			section.blocks.forEach((block) => {
-				if (block.title === 'Reflection') col1.push(block)
-				if (block.title === 'Lessons Learned' || block.title === 'Future Recommendations') col2.push(block)
+				if (block.title === 'Metrics') center = true
 			})
 
-			if (col1.length || col2.length) {
-				section.blocks = [
-					{
-						type: 'two-column',
-						content: {
-							col1,
-							col2,
-						},
-					},
-				]
+			if (center) {
+				return {
+					background: section.background,
+					type: section.type,
+					center: true,
+					blocks: section.blocks,
+				}
 			}
 		}
 
