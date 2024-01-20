@@ -2,14 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import projects from '@/data/projects.json'
-import { Project } from '@/utils/types'
+import { Project, Section } from '@/utils/types'
 import Button from '@/lib/Button'
 import BackArrowIcon from '@/lib/BackArrowIcon'
 import ForwardArrowIcon from '@/lib/ForwardArrowIcon'
 import { PROJECTS_URL } from '@/utils/constants'
-import ProjectContainerSection from '@/components/ProjectContainerSection'
-import Project2ColumnSection from '@/components/Project2ColumnSection'
-import ProjectImageCompareSection from '@/components/ProjectImageCompareSection'
+import ContainerSection from '@/components/ContainerSection'
 
 export default function ProjectPage({ params }: { params: { handle: string } }) {
 	let previousProjectIndex: number = projects.length - 1
@@ -75,12 +73,10 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 					</div>
 				</div>
 			</section>
-			{sections?.map((section, i) => {
-				if (section.type === '2-column') return <Project2ColumnSection key={i} section={section} />
+			{sections.map((section, i) => {
+				if (section.type === Section.CONTAINER) return <ContainerSection key={i} section={section} />
 
-				if (section.type === 'container') return <ProjectContainerSection key={i} section={section} />
-
-				if (section.type === 'header')
+				if (section.type === Section.HEADER)
 					return (
 						<section
 							key={i}
@@ -89,8 +85,6 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 							<h2 className="font-light text-4xl md:text-5xl">{section.title}</h2>
 						</section>
 					)
-
-				if (section.type === 'image-compare') return <ProjectImageCompareSection key={i} section={section} />
 			})}
 			<section className="grid grid-cols-2 h-[25vh]">
 				<Link

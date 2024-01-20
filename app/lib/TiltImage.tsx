@@ -19,7 +19,6 @@ export default function TiltImage({
 	return (
 		<Tilt
 			className={`tilt-img ${className}`}
-			gyroscope
 			perspective={900}
 			scale={1.05}
 			tiltMaxAngleX={30}

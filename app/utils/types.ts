@@ -1,3 +1,13 @@
+export enum Block {
+	IMAGE_BLOCKS = 'image-blocks',
+	IMAGE_COMPARE = 'image-compare',
+	ORDERED_LIST = 'ordered-list',
+	TEXT = 'text',
+	TEXT_IMAGE = 'text-image',
+	TWO_COLUMN = 'two-column',
+	UNORDERED_LIST = 'unordered-list',
+}
+
 type BaseBlock = {
 	title: string
 }
@@ -7,15 +17,15 @@ interface BaseListBlock extends BaseBlock {
 }
 
 export interface TextBlock extends BaseListBlock {
-	type: 'text'
+	type: Block.TEXT
 }
 
 export interface UnorderedListBlock extends BaseListBlock {
-	type: 'unordered-list'
+	type: Block.UNORDERED_LIST
 }
 
 export interface OrderedListBlock extends BaseListBlock {
-	type: 'ordered-list'
+	type: Block.ORDERED_LIST
 }
 
 export type ThemeImageData = {
@@ -35,7 +45,7 @@ export interface ImageListBlock extends BaseBlock {
 		title: string
 		text: string
 	}[]
-	type: 'image-blocks'
+	type: Block.IMAGE_BLOCKS
 }
 
 export interface TextImageBlock extends BaseBlock {
@@ -43,29 +53,15 @@ export interface TextImageBlock extends BaseBlock {
 		text: string[]
 		image: ThemeImageData
 	}[]
-	type: 'text-image'
+	type: Block.TEXT_IMAGE
 }
 
-export type ContentBlock = TextBlock | UnorderedListBlock | OrderedListBlock | ImageListBlock | TextImageBlock
-
-type ContentBlocks = ContentBlock[]
-
-type BaseSection = {
-	background: 'light' | 'dark'
-}
-
-export interface TwoColumnSection extends BaseSection {
+export type TwoColumnBlock = {
 	content: {
 		col1: ContentBlocks
 		col2: ContentBlocks
 	}
-	type: '2-column'
-}
-
-export interface ContainerSection extends BaseSection {
-	center?: boolean
-	content: ContentBlocks
-	type: 'container'
+	type: Block.TWO_COLUMN
 }
 
 export type ImageCompare = {
@@ -75,17 +71,43 @@ export type ImageCompare = {
 	imageHeight: number
 }
 
-export interface ImageCompareSection extends BaseSection {
+export interface ImageCompareBlock extends BaseBlock {
 	content: {
 		mobile: ImageCompare
 		desktop: ImageCompare
 	}
-	type: 'image-compare'
+	type: Block.IMAGE_COMPARE
+}
+
+export type ContentBlock =
+	| TextBlock
+	| UnorderedListBlock
+	| OrderedListBlock
+	| ImageListBlock
+	| TextImageBlock
+	| TwoColumnBlock
+	| ImageCompareBlock
+
+type ContentBlocks = ContentBlock[]
+
+type BaseSection = {
+	background: 'light' | 'dark'
+}
+
+export enum Section {
+	CONTAINER = 'container',
+	HEADER = 'header',
+}
+
+export interface ContainerSectionData extends BaseSection {
+	center?: boolean
+	blocks: ContentBlocks
+	type: Section.CONTAINER
 }
 
 export type HeaderSection = {
 	title: string
-	type: 'header'
+	type: Section.HEADER
 }
 
 export type ProjectWebsite = {
@@ -107,7 +129,7 @@ export type Project = {
 	}
 	description: string
 	handle: string
-	sections: (ContainerSection | HeaderSection | TwoColumnSection | ImageCompareSection)[]
+	sections: (ContainerSectionData | HeaderSection)[]
 	title: {
 		long: {
 			text: string
