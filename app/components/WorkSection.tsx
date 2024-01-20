@@ -12,7 +12,7 @@ export default function WorkSection() {
 			<div className="container">
 				<h2 className="text-4xl lg:text-5xl font-bold mb-6 md:mb-12">Featured Projects</h2>
 				<div className="grid auto-rows-[240px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-					{projects.map(({ backgroundImage, bgColor, handle, title }, i) => {
+					{projects.map(({ backgroundImage, handle, title }, i) => {
 						let className = 'relative rounded-2xl overflow-hidden group'
 
 						if (i === 0) className += ' md:row-span-2'
@@ -34,19 +34,19 @@ export default function WorkSection() {
 									sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 20vw"
 								/>
 								<div
-									className={`transition-all absolute -inset-1 filter backdrop-blur-sm mix-blend-hard-light ${bgColor.light} ${bgColor.dark} group-hover:backdrop-blur-0`}
+									className={`transition-all absolute -inset-1 filter backdrop-blur-sm mix-blend-hard-light bg-indigo-100/70 dark:bg-teal-950/85 group-hover:bg-teal dark:group-hover:bg-grey-blue/70 group-hover:backdrop-blur-0`}
 								/>
 								<div className="absolute w-full h-full flex flex-col items-center justify-center p-6">
-									<h3 className="font-medium text-3xl text-center">
+									<h3 className="font-medium text-3xl text-center text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo dark:group-hover:text-indigo">
 										<span
-											className={`transition-all ${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-3 group-hover:shadow-md leading-[1.33]`}
+											className={`group-hover:bg-orange dark:group-hover:bg-yellow box-decoration-clone py-1 px-3 group-hover:shadow-md leading-[1.33] rounded-xl`}
 										>
 											{title.short.text}
 										</span>
 									</h3>
-									<h4 className="font-light text-center">
+									<h4 className="text-center text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo dark:group-hover:text-indigo">
 										<span
-											className={`transition-all ${bgColor.light} ${bgColor.dark} box-decoration-clone py-1 px-2 group-hover:shadow-md`}
+											className={`group-hover:bg-orange dark:group-hover:bg-yellow box-decoration-clone py-1 px-2 group-hover:shadow-md rounded-lg`}
 										>
 											{title.short.subtitle}
 										</span>
