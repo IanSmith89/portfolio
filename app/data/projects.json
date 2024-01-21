@@ -613,7 +613,7 @@
 		},
 		"backgroundImage": "/vaccines.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/wa-doh-cover.png",
 			"width": 1600,
 			"height": 900
 		},
@@ -632,14 +632,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"In the early stages of the COVID-19 pandemic, I had the privilege of collaborating on the development of a critical tool - the Vaccine Locator Website, commissioned by the Washington Department of Health. The primary goal was to provide the public with a user-friendly platform to locate and schedule COVID-19 vaccinations during a pivotal time in the fight against the pandemic."
+										"Over the course of six weeks in the early stages of the COVID-19 pandemic, I had the privilege of collaborating on the development of a critical tool commissioned by the Washington Department of Health - the vaccine locator website launched as part of the state-wide Vaccinate WA campaign. The primary goal was to provide the public with the latest trusted information to locate COVID-19 vaccinations on a user-friendly platform during a pivotal and often confusing time in the fight against the pandemic."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As a frontend software engineer, I played a crucial role in designing and implementing the user interface, collaborating closely with a multidisciplinary team that included public health experts, backend developers, and UX/UI designers."
+										"As the **lead frontend engineer**, I played a crucial role in collaborating closely with a multidisciplinary team that included public health experts, backend developers, and UX designers. My primary responsibilities included frontend software architecture decisions and implementation, internationalization, and accessibility."
 									]
 								}
 							],
@@ -648,9 +648,9 @@
 									"type": "unordered-list",
 									"title": "Objectives",
 									"content": [
-										"**Rapid Deployment:** Create a website in record time to aid in the rapid distribution of COVID-19 vaccines.",
-										"**User-Friendly Interface:** Develop an intuitive and accessible platform for users to easily find and schedule vaccination appointments.",
-										"**Real-Time Updates:** Implement a system for real-time updates on vaccine availability, locations, and eligibility criteria."
+										"**Rapid Deployment:** Quickly create and release to aid in the rapid distribution of COVID-19 vaccines and responding to sometimes daily changes to public health policy and project requirements.",
+										"**User-Friendly Interface:** Develop an intuitive and utilitarian platform for users to easily find and schedule vaccination appointments on any device.",
+										"**Internationalization & Accessibility:** Implement a system that was able to handle displaying information in multiple languages and ensuring that users of all abilities were able to access and use."
 									]
 								}
 							]
@@ -667,9 +667,9 @@
 						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
-							"**Urgency:** The urgency of the pandemic required a rapid response to aid in the vaccination effort.",
-							"**Information Dissemination:** Providing accurate and real-time information on vaccine availability was a significant challenge.",
-							"**User Accessibility:** Ensuring the website was accessible to diverse user groups, including those with limited digital literacy."
+							"**Urgency:** The urgency of the pandemic required a rapid response to aid in the vaccination effort while dealing with constantly shifting requirements.",
+							"**Information Dissemination:** Providing concise information on vaccine availability was a significant challenge. As new vaccines and information received signoff from public health officials the team had to respond to change in data and interface structure to handle the changes.",
+							"**Internationalization:** Maintaining an consistent source of information that could be accurately translated as official messaging was updated required constant attention and refactoring."
 						]
 					}
 				]
@@ -683,18 +683,108 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "text-image",
 						"title": "Key Contributions",
 						"content": [
-							"**Real-Time Updates:** Implemented a backend system to provide real-time information on vaccine availability and eligibility criteria.",
-							"**User-Friendly Interface:** Prioritized a simple and accessible design to cater to users with varying levels of digital literacy.",
-							"**Interactive Map:** Integrated an interactive map for users to visually locate nearby vaccination centers."
+							{
+								"text": [
+									"**Familiar Search Experience**",
+									"Working closely with the UX designers on the team, we decided on a simple, utilitarian interface with a Google-like search experience that is familiar to the most amount of people.",
+									"The goal was to provide users a single search input that accepted zip codes and displayed search results that initially showed only the most important information, including location contact information and the types of vaccines available."
+								],
+								"image": {
+									"alt": "WA DOH search screeshots",
+									"src": {
+										"light": "/wa-doh-search.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Internationalization Strategy**",
+									"In order to effectively communicate with the greatest amount of people, I was responsible for implementing the frontend strategy for displaying text content that was translated into numerous languages including those that read right-to-left.",
+									"I ensured that the interface was still legible no matter the language and worked with our backend engineers to develop a data model that could respond to the frequently changing text and translated content."
+								],
+								"image": {
+									"alt": "WA DOH internationalization screeshots",
+									"src": {
+										"light": "/wa-doh-i18n.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Flexible Accessibility Options**",
+									"Given the high profile nature of the site, the project timeline, and that public-facing government websites require adhering to the highest accessibility standards, the team decided to use the Accessibe platform to ensure all aspects of the site were accessible to all users.",
+									"I was responsible for integrating with the platform and ensuring that the various accessibility profiles and settings it provides didn't interfere with our front end code."
+								],
+								"image": {
+									"alt": "WA DOH accessibility screeshots",
+									"src": {
+										"light": "/wa-doh-a11y.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
-					},
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "image-blocks",
 						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
+						"content": [
+							{
+								"href": "https://mui.com",
+								"image": {
+									"alt": "MUI logo",
+									"src": {
+										"light": "/mui_light.png",
+										"dark": "/mui_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Rapid UI Development",
+								"text": "We relied on the built-in functionality provided by MUI to handle text direction changes as well as the large selection of prebuilt, tested components for quick UI development"
+							},
+							{
+								"href": "https://www.i18next.com",
+								"image": {
+									"alt": "i18next logo",
+									"src": {
+										"light": "/i18next_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Internationalization Simplified",
+								"text": "The i18next framework allowed the team to implement an architecture that provided easy identification and display options for text content that needed to be translated"
+							},
+							{
+								"href": "https://accessibe.com",
+								"image": {
+									"alt": "accessiBe logo",
+									"src": {
+										"light": "/accessibe_light.png",
+										"dark": "/accessibe_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "WCAG & ADA Compliance",
+								"text": "Accessibe gave the WA Department of Health a trusted tool to provide all public users the ability to easily use the vaccine locator website"
+							}
+						]
 					}
 				]
 			},
@@ -711,16 +801,17 @@
 						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
-							"**Website Traffic:** Experienced a surge in traffic, with millions of users accessing the website within the first month.",
-							"**Vaccination Appointments:** Contributed to a significant increase in the number of scheduled vaccination appointments.",
-							"**Public Engagement:** The website became a trusted resource, garnering positive media coverage and engagement on social platforms."
+							"**Website Traffic:** Experienced a surge in traffic upon website launch, with over 2 million users accessing the website within the first week.",
+							"**Internationalization:** The flexibility of the interface and data structures we put in place contributed to expanding to offer 43 different languages and dialects.",
+							"**Public Engagement:** The website became a trusted government resource, garnering positive media coverage and continued user engagement."
 						]
 					},
 					{
 						"type": "text",
 						"title": "Impact",
 						"content": [
-							"The Vaccine Locator Website played a vital role in streamlining the vaccination process, contributing to the overall effort to combat the COVID-19 pandemic."
+							"The Vaccine Locator Website played a vital role in streamlining the vaccination process, contributing to the overall effort to combat the COVID-19 pandemic.",
+							"The collaborative efforts of the team allowed the WA Department of Health to continue sharing vaccine information throughout the pandemic and easily respond to changing federal guidelines."
 						]
 					}
 				]
@@ -737,23 +828,26 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"Collaborating on the Vaccine Locator Website for the Washington Department of Health was a profound experience that highlighted the power of technology in addressing urgent public health needs. As a frontend software engineer, this project reinforced my commitment to leveraging technology for the greater good and demonstrated the positive impact that collaborative efforts can achieve during challenging times."
+										"Collaborating on the Vaccine Locator Website for the Washington Department of Health was a profound experience that highlighted the power of technology in addressing urgent public health needs. As a frontend software engineer, this project reinforced my commitment to leveraging technology for the greater good and demonstrated the positive impact that collaborative efforts can achieve during challenging and stressful times.",
+										"Although the project included some of the most ambiguous and frequently changing requirements I've experienced so far, it was invigorating and oftentimes exciting to know the work we were doing would have an impact on a large userbase that I have never had the chance to build websites for."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming the challenges of real-time information dissemination underscored the critical need for a robust backend system and collaboration with public health authorities."
+										"**Keep It Simple:** This project taught me that simple solutions for displaying and storing information often result in short-term flexibility and long-term consistency",
+										"**Be Flexible & Positive:** Responding to frequently changing requirements can sometimes drag projects down, but maintaining a positive, flexible attitude has a large impact on the work that gets done",
+										"**Teamwork Feels Great:** Collaborating with stakeholders outside of technology teams is a perfect way to identify edge cases earlier and ensure that your work is actually solving the problems it's supposed to"
 									]
 								},
 								{
 									"type": "text",
 									"title": "Future Recommendations",
 									"content": [
-										"For future projects, I recommend building on the success of this initiative by continuing to prioritize user accessibility, real-time information, and collaboration with relevant stakeholders."
+										"For future projects, I recommend building on the success of this initiative by continuing to prioritize user accessibility, collaboration with relevant stakeholders, and setting up data in a way that could handle internationalization. You never know the next time your site might need to be translated to 43 different languages."
 									]
 								}
 							]

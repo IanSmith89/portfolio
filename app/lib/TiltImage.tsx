@@ -27,7 +27,12 @@ export default function TiltImage({
 			trackOnWindow
 			transitionSpeed={3000}
 		>
-			<Image alt={alt} className={`inner-element ${imageClassName}`} {...rest} />
+			<Image
+				alt={alt}
+				className={`inner-element ${imageClassName}`}
+				placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+				{...rest}
+			/>
 		</Tilt>
 	)
 }
