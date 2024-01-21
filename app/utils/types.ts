@@ -117,10 +117,6 @@ export type ProjectWebsite = {
 
 export type Project = {
 	backgroundImage: string
-	bgColor: {
-		light: string
-		dark: string
-	}
 	coverImage: {
 		alt?: string
 		src: string
