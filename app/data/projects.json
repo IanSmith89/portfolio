@@ -11,10 +11,6 @@
 			}
 		},
 		"backgroundImage": "/cyclists.jpg",
-		"bgColor": {
-			"light": "bg-green-300",
-			"dark": "dark:bg-green-900"
-		},
 		"coverImage": {
 			"src": "/tpc-cover.png",
 			"width": 1600,
@@ -345,10 +341,6 @@
 			}
 		},
 		"backgroundImage": "/coffee.jpg",
-		"bgColor": {
-			"light": "bg-orange-300",
-			"dark": "dark:bg-orange-900"
-		},
 		"coverImage": {
 			"src": "/starbucks-cover.png",
 			"width": 1600,
@@ -620,10 +612,6 @@
 			}
 		},
 		"backgroundImage": "/vaccines.jpg",
-		"bgColor": {
-			"light": "bg-dark-blue-300",
-			"dark": "dark:bg-dark-blue-950"
-		},
 		"coverImage": {
 			"src": "",
 			"width": 1600,
@@ -791,10 +779,6 @@
 			}
 		},
 		"backgroundImage": "/golden-gate.jpg",
-		"bgColor": {
-			"light": "bg-yellow-100",
-			"dark": "dark:bg-yellow-900"
-		},
 		"coverImage": {
 			"src": "",
 			"width": 1600,
@@ -958,10 +942,6 @@
 			}
 		},
 		"backgroundImage": "/biotech-lab.jpg",
-		"bgColor": {
-			"light": "bg-purple-300",
-			"dark": "dark:bg-purple-900"
-		},
 		"coverImage": {
 			"src": "",
 			"width": 1600,
@@ -1125,10 +1105,6 @@
 			}
 		},
 		"backgroundImage": "/houses.jpg",
-		"bgColor": {
-			"light": "bg-red-300",
-			"dark": "dark:bg-red-900"
-		},
 		"coverImage": {
 			"src": "",
 			"width": 1600,
@@ -1292,10 +1268,6 @@
 			}
 		},
 		"backgroundImage": "/sketchbook.jpg",
-		"bgColor": {
-			"light": "bg-green-300",
-			"dark": "dark:bg-green-900"
-		},
 		"coverImage": {
 			"src": "",
 			"width": 1600,
@@ -1463,10 +1435,6 @@
 			}
 		},
 		"backgroundImage": "/vet.jpg",
-		"bgColor": {
-			"light": "bg-dark-blue-300",
-			"dark": "dark:bg-dark-blue-900"
-		},
 		"coverImage": {
 			"src": "",
 			"width": 1600,
@@ -1640,10 +1608,6 @@
 			}
 		},
 		"backgroundImage": "/camping.jpg",
-		"bgColor": {
-			"light": "bg-yellow-100",
-			"dark": "dark:bg-yellow-900"
-		},
 		"coverImage": {
 			"src": "",
 			"width": 1600,
@@ -1810,10 +1774,6 @@
 			}
 		},
 		"backgroundImage": "/portfolio.jpg",
-		"bgColor": {
-			"light": "bg-teal-300",
-			"dark": "dark:bg-teal-900"
-		},
 		"coverImage": {
 			"src": "",
 			"width": 1600,
