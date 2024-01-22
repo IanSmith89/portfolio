@@ -92,7 +92,7 @@
 									"Using Shopify's internal dashboard editor to configure the menus, categories, and links allowed our marketing team to maintain and update the information architecture without having to request updates from the tech team."
 								],
 								"image": {
-									"alt": "TPC navigation screeshots",
+									"alt": "TPC navigation screenshots",
 									"src": {
 										"light": "/tpc-navigation.png"
 									},
@@ -108,7 +108,7 @@
 									"Users also gained the ability to create and maintain saved search queries to track their most-wanted gear and receive email updates when new products arrive."
 								],
 								"image": {
-									"alt": "TPC search screeshots",
+									"alt": "TPC search screenshots",
 									"src": {
 										"light": "/tpc-search.png"
 									},
@@ -124,7 +124,7 @@
 									"I also added functionality for users to update their primary contact information including first and last name and phone number."
 								],
 								"image": {
-									"alt": "TPC account screeshots",
+									"alt": "TPC account screenshots",
 									"src": {
 										"light": "/tpc-account.png"
 									},
@@ -139,7 +139,7 @@
 									"I implemented a simple search experience that incorporated Shopify architecture patterns to return paged results and allow our marketing team to easily organize and tag articles."
 								],
 								"image": {
-									"alt": "TPC magazine screeshots",
+									"alt": "TPC magazine screenshots",
 									"src": {
 										"light": "/tpc-magazine.png"
 									},
@@ -422,7 +422,7 @@
 									"I also met regularly and presented to the brand design teams to ensure our component library followed the already established [Starbucks Creative Expression](https://creative.starbucks.com/) guidelines."
 								],
 								"image": {
-									"alt": "Starbucks Creative Expression screeshots",
+									"alt": "Starbucks Creative Expression screenshots",
 									"src": {
 										"light": "/starbucks-brand.png"
 									},
@@ -437,7 +437,7 @@
 									"I introduced a number of new components including calendars, datepickers, tables, and navigation variations that weren't previously standardized across existing internal applications."
 								],
 								"image": {
-									"alt": "Starbucks component library screeshots",
+									"alt": "Starbucks component library screenshots",
 									"src": {
 										"light": "/starbucks-components.png"
 									},
@@ -453,7 +453,7 @@
 									"Note: screenshots are approximations of final application designs."
 								],
 								"image": {
-									"alt": "Starbucks component app screeshots",
+									"alt": "Starbucks component app screenshots",
 									"src": {
 										"light": "/starbucks-apps.png"
 									},
@@ -693,7 +693,7 @@
 									"The goal was to provide users a single search input that accepted zip codes and displayed search results that initially showed only the most important information, including location contact information and the types of vaccines available."
 								],
 								"image": {
-									"alt": "WA DOH search screeshots",
+									"alt": "WA DOH search screenshots",
 									"src": {
 										"light": "/wa-doh-search.png"
 									},
@@ -708,7 +708,7 @@
 									"I ensured that the interface was still legible no matter the language and worked with our backend engineers to develop a data model that could respond to the frequently changing text and translated content."
 								],
 								"image": {
-									"alt": "WA DOH internationalization screeshots",
+									"alt": "WA DOH internationalization screenshots",
 									"src": {
 										"light": "/wa-doh-i18n.png"
 									},
@@ -723,7 +723,7 @@
 									"I was responsible for integrating with the platform and ensuring that the various accessibility profiles and settings it provides didn't interfere with our front end code."
 								],
 								"image": {
-									"alt": "WA DOH accessibility screeshots",
+									"alt": "WA DOH accessibility screenshots",
 									"src": {
 										"light": "/wa-doh-a11y.png"
 									},
@@ -954,7 +954,7 @@
 									"Working closely with our design team, I ensured that the assets on the page rendered and transitioned as intended."
 								],
 								"image": {
-									"alt": "Paragon animation screeshots",
+									"alt": "Paragon animation screenshots",
 									"src": {
 										"light": "/paragon.gif"
 									},
@@ -969,7 +969,7 @@
 									"Working closely with a translator, I ensured that the animations of each stroke were implemented in the proper order and direction based on how each Chinese character is written by hand."
 								],
 								"image": {
-									"alt": "Paragon Chinese animation screeshots",
+									"alt": "Paragon Chinese animation screenshots",
 									"src": {
 										"light": "/paragon-chinese.gif"
 									},
@@ -984,7 +984,7 @@
 									"Using SVG assets and simple CSS rules, I was able to implement impactful interactions that aided in the search and discovery and education about the different Bay Area neighborhoods."
 								],
 								"image": {
-									"alt": "Paragon map screeshots",
+									"alt": "Paragon map screenshots",
 									"src": {
 										"light": "/paragon-map.gif"
 									},
@@ -999,7 +999,7 @@
 									"All user interface components were consistent with the Paragon brand and further exemplified the elevated visual aesthetic they desired."
 								],
 								"image": {
-									"alt": "Paragon search screeshots",
+									"alt": "Paragon search screenshots",
 									"src": {
 										"light": "/paragon-search.png"
 									},
@@ -1134,169 +1134,6 @@
 	{
 		"title": {
 			"long": {
-				"text": "Empowering Efficiency",
-				"subtitle": "Developing Custom Property Management Software"
-			},
-			"short": {
-				"text": "Paragon DASH",
-				"subtitle": "Property Management System"
-			}
-		},
-		"backgroundImage": "/houses.jpg",
-		"coverImage": {
-			"src": "",
-			"width": 1600,
-			"height": 900
-		},
-		"description": "Centralizing data maintenance and inventory management into a custom internal website",
-		"handle": "paragon-property-management",
-		"sections": [
-			{
-				"background": "light",
-				"type": "container",
-				"blocks": [
-					{
-						"type": "two-column",
-						"content": {
-							"col1": [
-								{
-									"type": "text",
-									"title": "Project Overview",
-									"content": [
-										"As a dedicated software engineer, I took on the challenge of developing a custom internal website for RealtyPro, a leading real estate company. The primary goal was to create a centralized platform for managing inventory, property data, and streamlining internal processes."
-									]
-								},
-								{
-									"type": "text",
-									"title": "My Role",
-									"content": [
-										"As the sole developer on this project, I was responsible for the end-to-end development of the custom internal website, collaborating closely with various departments within RealtyPro to understand their specific needs."
-									]
-								}
-							],
-							"col2": [
-								{
-									"type": "unordered-list",
-									"title": "Objectives",
-									"content": [
-										"**Efficient Inventory Management:** Develop a system to track and manage real estate assets, including properties, equipment, and marketing materials.",
-										"**Data Centralization:** Create a centralized repository for property data, ensuring consistency and accessibility for all team members.",
-										"**Process Optimization:** Streamline internal workflows by automating routine tasks related to inventory and data management."
-									]
-								}
-							]
-						}
-					}
-				]
-			},
-			{
-				"background": "dark",
-				"type": "container",
-				"center": true,
-				"blocks": [
-					{
-						"type": "ordered-list",
-						"title": "Challenges",
-						"content": [
-							"**Starting From Scratch:** Existing tools for inventory and data management were fragmented, leading to inefficiencies and data inconsistencies.",
-							"**Disparate Systems:** Many tasks, such as updating property information and managing marketing materials, were manual and time-consuming.",
-							"**Unreliable Data Accessibility:** The lack of a centralized system made it challenging for team members to access up-to-date information promptly."
-						]
-					}
-				]
-			},
-			{
-				"type": "header",
-				"title": "Solution"
-			},
-			{
-				"background": "light",
-				"type": "container",
-				"blocks": [
-					{
-						"type": "unordered-list",
-						"title": "Key Contributions",
-						"content": [
-							"**Personalized Dashboard:** A centralized dashboard provided an overview of available properties, equipment, and marketing resources.",
-							"**Property Data Centralization:** A unified repository for property data, with easy-to-use tools for updating and retrieving information.",
-							"**Automated Workflows:** Implemented automation for routine tasks, such as updating property listings and managing marketing collateral."
-						]
-					},
-					{
-						"type": "unordered-list",
-						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
-					}
-				]
-			},
-			{
-				"type": "header",
-				"title": "Results & Impact"
-			},
-			{
-				"background": "light",
-				"type": "container",
-				"center": true,
-				"blocks": [
-					{
-						"type": "unordered-list",
-						"title": "Metrics",
-						"content": [
-							"**Time Saved:** A 40% reduction in the time spent on manual data entry tasks, allowing team members to focus on client interactions and property transactions.",
-							"**Data Accuracy:** Improved data accuracy by 30%, reducing errors and discrepancies in property listings.",
-							"**Increased Autonomy:** Increased collaboration across departments due to improved accessibility and centralization of property data."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Impact",
-						"content": [
-							"The custom internal website successfully transformed internal processes at RealtyPro, fostering greater efficiency, collaboration, and accuracy in managing inventory and property data."
-						]
-					}
-				]
-			},
-			{
-				"background": "dark",
-				"type": "container",
-				"blocks": [
-					{
-						"type": "two-column",
-						"content": {
-							"col1": [
-								{
-									"type": "text",
-									"title": "Reflection",
-									"content": [
-										"Developing the custom internal website for RealtyPro was a rewarding experience that showcased the transformative impact of technology on optimizing internal processes within a real estate company. As the lead developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the efficiency and success of RealtyPro."
-									]
-								}
-							],
-							"col2": [
-								{
-									"type": "text",
-									"title": "Lessons Learned",
-									"content": [
-										"Overcoming challenges related to data migration and ensuring a seamless transition highlighted the importance of thorough testing and communication with stakeholders."
-									]
-								},
-								{
-									"type": "text",
-									"title": "Future Recommendations",
-									"content": [
-										"For future enhancements, I recommend exploring integrations with external systems, such as CRM tools, to further streamline workflows and data synchronization."
-									]
-								}
-							]
-						}
-					}
-				]
-			}
-		]
-	},
-	{
-		"title": {
-			"long": {
 				"text": "Streamlining Lab Operations",
 				"subtitle": "Astarte Biologics Inventory Management"
 			},
@@ -1387,7 +1224,7 @@
 									"We were abel to devise a plan for high-priority issues to address and early ideas for how to display the interfaces for showing and updating the inventory data."
 								],
 								"image": {
-									"alt": "Astarte sketches screeshots",
+									"alt": "Astarte sketches screenshots",
 									"src": {
 										"light": "/astarte-sketches.png"
 									},
@@ -1402,7 +1239,7 @@
 									"I undertook educating myself on the objects used in the lab such as freezers, vials, canes, and lots to gain a better grasp on potential user interfaces and workflows."
 								],
 								"image": {
-									"alt": "Astarte equipment screeshots",
+									"alt": "Astarte equipment screenshots",
 									"src": {
 										"light": "/astarte-equipment.png"
 									},
@@ -1417,7 +1254,7 @@
 									"Simple icon buttons were used to denote the common daily tasks including filtering, downloading inventory counts, and adding new products and lots to their databases."
 								],
 								"image": {
-									"alt": "Astarte interface screeshots",
+									"alt": "Astarte interface screenshots",
 									"src": {
 										"light": "/astarte-interface.png"
 									},
@@ -1431,7 +1268,7 @@
 									"I designed additional interfaces and modal-based workflows for common lab tasks including moving inventory, updating information, and uploading certificates."
 								],
 								"image": {
-									"alt": "Astarte detail screeshots",
+									"alt": "Astarte detail screenshots",
 									"src": {
 										"light": "/astarte-details.png"
 									},
@@ -1512,6 +1349,216 @@
 	{
 		"title": {
 			"long": {
+				"text": "Empowering Efficiency",
+				"subtitle": "Custom Property Management Software"
+			},
+			"short": {
+				"text": "DASH",
+				"subtitle": "Property Management System"
+			}
+		},
+		"backgroundImage": "/houses.jpg",
+		"coverImage": {
+			"src": "/dash-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Centralizing data maintenance and property management into a custom self-service platform",
+		"handle": "paragon-property-management",
+		"sections": [
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Project Overview",
+									"content": [
+										"As a software engineer at High Seas Consulting, I collaborated on developing custom internal property management software for Paragon Real Estate Group, a leading Bay Area real estate company. The primary goal was to create a centralized self-service platform for managing inventory, property data, and streamlining internal processes."
+									]
+								},
+								{
+									"type": "text",
+									"title": "My Role",
+									"content": [
+										"As a **frontend developer** on this project, I was responsible for software architecture decisions, development of custom interfaces and components, and collaborating closely with our design team and various departments within Paragon to understand their specific needs."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Objectives",
+									"content": [
+										"**Efficient Inventory Management:** Develop a system to track and manage real estate assets, including properties, equipment, and marketing materials.",
+										"**Data Centralization:** Create a centralized repository for property data, ensuring consistency and accessibility for all team members.",
+										"**Personalization:** Streamline internal workflows tailored to individual roles and user groups by automating routine tasks related to inventory and data management."
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "ordered-list",
+						"title": "Challenges",
+						"content": [
+							"**Starting From Scratch:** Existing tools for inventory and data management were fragmented, leading to inefficiencies and data inconsistencies.",
+							"**Disparate Systems:** Many tasks, such as updating property information and managing marketing materials, were manual, time-consuming, and lacked a cohesive single platform to complete all tasks.",
+							"**Unreliable Data Accessibility:** The lack of a centralized system made it challenging for team members to access up-to-date information promptly."
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Solution"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Key Contributions",
+						"content": [
+							{
+								"text": [
+									"**Branded Component Library**",
+									"I contributed to and maintained a reusable component library that incorporated with the Paragon brand as well as handling all client-side validation and data sanitation.",
+									"Many of the processes and features required heavy form-based data entry, so our library consisted of components useful in forms plus others tailored to common real estate functions."
+								],
+								"image": {
+									"alt": "DASH component screenshots",
+									"src": {
+										"light": "/dash-components.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Easy Data Maintenance**",
+									"Editting property, agent, location, and geographic data was a daily occurrence for DASH users, so we implemented an \"Edit Mode\" that was succint and easy to use."
+								],
+								"image": {
+									"alt": "DASH edit screenshots",
+									"src": {
+										"light": "/dash-edit.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					},
+					{
+						"type": "image-blocks",
+						"title": "Technology Highlights",
+						"content": [
+							{
+								"href": "https://react.dev",
+								"image": {
+									"alt": "React logo",
+									"src": {
+										"light": "/react_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Powerful JavaScript Framework",
+								"text": "The entirety of the Paragon DASH tool was built using the React framework, useful for its reusable components and widespread adoption"
+							},
+							{
+								"href": "https://mobx.js.org",
+								"image": {
+									"alt": "Mobx logo",
+									"src": {
+										"light": "/mobx_light.png",
+										"dark": "/mobx_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Simple State Management",
+								"text": "The team chose Mobx for our state management for its concise syntax and integration with React"
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"The custom property management system successfully transformed internal processes at Paragon, fostering greater efficiency, collaboration, and accuracy in managing inventory, property, and agent data."
+						]
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Developing the custom internal dashboard for Paragon was a rewarding experience that showcased the transformative impact of technology on optimizing internal processes within a real estate company. As a contributing developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the efficiency and success of Paragon.",
+										"I enjoyed the challenge of creating interfaces for an industry I was unfamiliar with at the time, and the lessons learned through working on a team benefitted my personal and professional development."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Lessons Learned",
+									"content": [
+										"**Communicate With Stakeholders:** Communicating often with stakeholders will result in a better product and user experience",
+										"**Know Your Data:** Becoming intimately familiar with all aspects of data, even as a frontend engineer will make your job easier and your code cleaner"
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future enhancements, I recommend exploring more consistent user testing to gain insight earlier in the design and development process."
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": {
+			"long": {
 				"text": "Elevating Online Presence",
 				"subtitle": "Building a Dynamic Consulting Portfolio"
 			},
@@ -1522,11 +1569,11 @@
 		},
 		"backgroundImage": "/sketchbook.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/highseas-cover.png",
 			"width": 1600,
 			"height": 900
 		},
-		"description": "Showcasing the values and demonstrating the projects of a Bay Area consulting company",
+		"description": "Demonstrating company values and showcasing the projects of a Bay Area consulting company",
 		"handle": "high-seas-portfolio",
 		"sections": [
 			{
@@ -1541,14 +1588,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"In my role as a frontend software engineer, I played a pivotal role in developing the portfolio website for ConsultX Solutions, a dynamic consulting company. The objective was to create a modern, user-friendly website that not only showcased the company's expertise but also engaged clients and prospects through interactive elements."
+										"In my role as a frontend software engineer, I played a pivotal role in developing the portfolio website for High Seas Consulting. The objective was to create a modern, user-friendly website that not only showcased the company's expertise but also engaged clients and prospects through interactive elements and case studies."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As a key member of the development team, my responsibilities included designing and implementing the frontend of the portfolio website, collaborating closely with the design team and stakeholders at ConsultX Solutions."
+										"As a key member of the **frontend development** team, my responsibilities included implementing aspects of the frontend, microinteractions, and navigation of the portfolio website, and collaborating closely with the design team and owners at High Seas."
 									]
 								}
 							],
@@ -1557,7 +1604,7 @@
 									"type": "unordered-list",
 									"title": "Objectives",
 									"content": [
-										"**Dynamic Experience:** Develop a visually appealing and dynamic website to effectively showcase ConsultX Solutions' range of consulting services and success stories.",
+										"**Dynamic Experience:** Develop a visually appealing and dynamic website to effectively showcase High Seas' range of consulting services and success stories.",
 										"**Marketability:** Enhance user engagement through interactive features, encouraging clients and prospects to explore the company's portfolio.",
 										"**Brand Consistency:** Ensure the website reflects the company's brand identity, values, and professionalism."
 									]
@@ -1592,18 +1639,87 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "text-image",
 						"title": "Key Contributions",
 						"content": [
-							"**Interactive Case Studies:** Implemented interactive elements within case studies to engage users and provide a deeper understanding of the company's consulting projects.",
-							"**Dynamic Micro-interactions:** A dynamic carousel showcasing client testimonials, adding credibility and trustworthiness to the company's reputation.",
-							"**Cohesive Brand Presentation:** An animated overview of the company's services on the homepage, providing a quick and engaging snapshot of ConsultX Solutions' offerings."
+							{
+								"text": [
+									"**Subtle Microinteractions**",
+									"I implemented subtle microinteractions in the form of hover effects, animations, and transitions throughout the portfolio site.",
+									"Small details like this fit the design values and outlook of the design and engineering teams across the company."
+								],
+								"image": {
+									"alt": "High Seas interaction screenshots",
+									"src": {
+										"light": "/highseas-interactions.gif"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Dynamic Pages & Case Studies**",
+									"I contributed to the development of vibrant, dynamic pages for marketing and showcases of project case studies.",
+									"The design ethos of High Seas is a combination of cutting-edge tech with a talented eye for design, and the pages across the site demonstrate that well."
+								],
+								"image": {
+									"alt": "High Seas page screenshots",
+									"src": {
+										"light": "/highseas-pages.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Increased Brand Awareness**",
+									"The collaboration between designers, developers, and product team members resulted in a cohesive site that truly showcased the values and skillsets of High Seas."
+								],
+								"image": {
+									"alt": "High Seas landing screenshots",
+									"src": {
+										"light": "/highseas-landing.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
 					},
 					{
-						"type": "unordered-list",
+						"type": "image-blocks",
 						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
+						"content": [
+							{
+								"href": "https://react.dev",
+								"image": {
+									"alt": "React logo",
+									"src": {
+										"light": "/react_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Powerful JavaScript Framework",
+								"text": "We chose to build the portfolio site using React because of its strengths with building dynamic user interfaces"
+							},
+							{
+								"href": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+								"image": {
+									"alt": "CSS logo",
+									"src": {
+										"light": "/css_light.png",
+										"dark": "/css_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Meaningful Interactions",
+								"text": "All microinteractions and animations were acheived with simple CSS rules, reducing bundle size and the need for unnecessary JavaScript"
+							}
+						]
 					}
 				]
 			},
@@ -1617,19 +1733,11 @@
 				"center": true,
 				"blocks": [
 					{
-						"type": "unordered-list",
-						"title": "Metrics",
-						"content": [
-							"**Time Saved:** A 40% reduction in the time spent on manual data entry tasks, allowing team members to focus on client interactions and property transactions.",
-							"**Data Accuracy:** Improved data accuracy by 30%, reducing errors and discrepancies in property listings.",
-							"**Increased Autonomy:** Increased collaboration across departments due to improved accessibility and centralization of property data."
-						]
-					},
-					{
 						"type": "text",
 						"title": "Impact",
 						"content": [
-							"The revamped portfolio website successfully positioned ConsultX Solutions as an innovative and dynamic consulting firm, leading to increased client inquiries and engagements."
+							"The revamped portfolio website successfully reaffirmed High Seas as an innovative and dynamic consulting firm, leading to increased client inquiries and engagements.",
+							"The case studies successfully showcased their work while also demonstrating the strong design and development chops that their employees had to offer."
 						]
 					}
 				]
@@ -1646,16 +1754,17 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"Building the portfolio website for ConsultX Solutions was a collaborative effort that showcased the transformative impact of a well-designed and interactive online presence. As a frontend software engineer, this project allowed me to leverage my technical expertise to create a website that not only met the client's objectives but exceeded their expectations, contributing to the company's success in the competitive consulting industry."
+										"Building the portfolio website for High Seas was a collaborative effort that showcased the transformative impact of a well-designed and interactive online presence. As a frontend developer, this project allowed me to leverage my technical expertise to create a website that not only met the project objectives while contributing to the company's success in the competitive consulting industry."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming challenges related to implementing complex animations underscored the need for optimization without compromising on user experience."
+										"**Pixel-Pushing Provides Value:** Attention to detail provides a ton of value when it comes to projects related to highlighting marketable design sensibilities",
+										"**Subtle Interactions are Impactful:** Implementing many consistent, small interactions across a website have a large impact on the overall user experience"
 									]
 								},
 								{
