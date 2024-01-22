@@ -865,7 +865,7 @@
 		"title": {
 			"long": {
 				"text": "Elevating Luxury Real Estate",
-				"subtitle": "Animations and Immersive Interactions"
+				"subtitle": "Immersive Interactions & Custom Animation"
 			},
 			"short": {
 				"text": "Paragon Real Estate",
@@ -874,7 +874,7 @@
 		},
 		"backgroundImage": "/golden-gate.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/paragon-cover.png",
 			"width": 1600,
 			"height": 900
 		},
@@ -893,14 +893,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"I had the privilege of contributing to the redesign of the frontend and animations for a prominent luxury real estate company based in the Bay Area. The goal was to create a visually stunning website that not only showcased high-end properties but also provided an immersive and engaging user experience."
+										"While working for High Seas Consulting, one of our primary clients was Paragon Real Estate Group, a prominent luxury real estate company based in the Bay Area. We developed a visually stunning public-facing website for them that not only showcased high-end properties but also provided an immersive and engaging user experience."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As a frontend software engineer, my responsibilities included implementing the redesigned user interface, developing custom animations, and collaborating closely with designers to bring their vision to life."
+										"As a **frontend developer**, my responsibilities included implementing the redesigned user interface, deciding on frontend technologies and architecture, developing custom animations, and collaborating closely with our design team to bring their vision to life."
 									]
 								}
 							],
@@ -909,9 +909,9 @@
 									"type": "unordered-list",
 									"title": "Objectives",
 									"content": [
-										"**Striking Visual Design:** Redesign the frontend to reflect the sophistication and elegance associated with luxury real estate.",
-										"**Familiar User Experience:** Develop intuitive navigation and interactive animations to engage and captivate users.",
-										"**Easy Property Search Features:** Implement animations to showcase property details and amenities in an elegant and compelling manner."
+										"**Striking Visual Design:** Deliver a redesigned website to reflect the sophistication and elegance associated with luxury real estate.",
+										"**Welcoming User Experience:** Develop intuitive navigation and interactive animations to engage and captivate users.",
+										"**Intuitive Search Features:** Allow for an easy search experience and implement animations to showcase neighborhood details and amenities in an elegant and compelling manner."
 									]
 								}
 							]
@@ -944,18 +944,123 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "text-image",
 						"title": "Key Contributions",
 						"content": [
-							"**Custom Animations:** Implemented subtle yet impactful animations to bring property images and details to life.",
-							"**Interactive Location Maps:** Users could explore high-resolution images and videos with a fluid and engaging interface.",
-							"**Intuitive Navigation:** Streamlined navigation with animations that guided users seamlessly through property listings."
+							{
+								"text": [
+									"**Custom Typographic Animations**",
+									"I implemented custom animations and transitions on one of the marketing pages to demonstrate the sleekness and cutting-edge emotions that Paragon wanted to evoke.",
+									"Working closely with our design team, I ensured that the assets on the page rendered and transitioned as intended."
+								],
+								"image": {
+									"alt": "Paragon animation screeshots",
+									"src": {
+										"light": "/paragon.gif"
+									},
+									"width": 1440,
+									"height": 740
+								}
+							},
+							{
+								"text": [
+									"**Translated Animations**",
+									"Based on the reception and success of the initial animated marketing pages, I also implemented special pages that presented the same animations in Simplified and Traditional Mandarin Chinese to expand Paragon's reach in the Bay Area market.",
+									"Working closely with a translator, I ensured that the animations of each stroke were implemented in the proper order and direction based on how each Chinese character is written by hand."
+								],
+								"image": {
+									"alt": "Paragon Chinese animation screeshots",
+									"src": {
+										"light": "/paragon-chinese.gif"
+									},
+									"width": 1440,
+									"height": 740
+								}
+							},
+							{
+								"text": [
+									"**Interactive Regional Maps**",
+									"I added interactivity when I worked on a section of the site that let users explore the various regions and neighborhoods that Paragon operated out of.",
+									"Using SVG assets and simple CSS rules, I was able to implement impactful interactions that aided in the search and discovery and education about the different Bay Area neighborhoods."
+								],
+								"image": {
+									"alt": "Paragon map screeshots",
+									"src": {
+										"light": "/paragon-map.gif"
+									},
+									"width": 1140,
+									"height": 738
+								}
+							},
+							{
+								"text": [
+									"**Intuitive Search & Discovery**",
+									"I implemented a clean search interface with simplified initial parameters that led users to a more detailed results page, allowing for further refinement and discovery.",
+									"All user interface components were consistent with the Paragon brand and further exemplified the elevated visual aesthetic they desired."
+								],
+								"image": {
+									"alt": "Paragon search screeshots",
+									"src": {
+										"light": "/paragon-search.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
-					},
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "image-blocks",
 						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
+						"content": [
+							{
+								"href": "https://react.dev",
+								"image": {
+									"alt": "React logo",
+									"src": {
+										"light": "/react_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Reusable Components",
+								"text": "The entirety of the Paragon website was built using the React framework, useful for its reusable components and widespread adoption"
+							},
+							{
+								"href": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+								"image": {
+									"alt": "CSS logo",
+									"src": {
+										"light": "/css_light.png",
+										"dark": "/css_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Clean Styles & Animation",
+								"text": "All basic typographic animations and regional map interactions were acheived with simple CSS rules, reducing bundle size and the  need for unnecessary JavaScript"
+							},
+							{
+								"href": "https://developer.mozilla.org/en-US/docs/Web/SVG",
+								"image": {
+									"alt": "SVG logo",
+									"src": {
+										"light": "/svg_light.png",
+										"dark": "/svg_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Useful Vector Assets",
+								"text": "Graphic assets were rendered using SVG files because of their easy integration with React and the ability to render directly to the DOM"
+							}
+						]
 					}
 				]
 			},
@@ -972,16 +1077,16 @@
 						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
-							"**User Engagement:** Increased by 40%, leading to a higher likelihood of users exploring multiple property listings.",
-							"**Conversion Rate:** Showed a 20% improvement, indicating a positive impact on potential buyer interactions.",
-							"**Competitive Edge:** The redesigned website contributed to the company's differentiation in the competitive Bay Area real estate market."
+							"**Competitive Edge:** The redesigned website contributed to the company's differentiation in the competitive Bay Area real estate market.",
+							"**User Engagement:** The launch of the redesigned Paragon site saw a large increase in user engagement, leading to a higher likelihood of users exploring multiple property listings."
 						]
 					},
 					{
 						"type": "text",
 						"title": "Impact",
 						"content": [
-							"The revamped frontend and animations elevated the online presence of the luxury real estate company, positioning it as a premier destination for high-end property seekers in the Bay Area."
+							"The revamped frontend and animations elevated Paragon's online presence, positioning it as a premier destination for high-end property seekers in the Bay Area.",
+							"Our team's work also contributed to the eventual [acquisition of Paragon Real Estate Group by Compass](https://www.sfchronicle.com/business/networth/article/Paragon-Real-Estate-of-SF-acquired-by-Compass-to-13061063.php) in 2018, forming what is still San Francisco's largest real estate brokerage."
 						]
 					}
 				]
@@ -998,23 +1103,25 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"The redesign of the frontend and animations for Bay Area Estates was a collaborative effort that successfully transformed the digital presence of the luxury real estate company. As a frontend software engineer, this project allowed me to showcase my skills in creating visually appealing and engaging user interfaces, contributing to the company's success in a competitive market."
+										"The redesign of the frontend and animations for Paragon was a collaborative effort that successfully transformed the digital presence of the luxury real estate company. As a frontend developer, this project allowed me to showcase my skills in creating visually appealing and engaging user interfaces, contributing to the company's success in a competitive market.",
+										"It was also a great experience collaborating with our design team to add interactivity to a site and have back and forth conversations on what was and wasn't possible to implement given the project timeline and requirements."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming challenges related to optimizing animations for various devices emphasized the need for a responsive and performance-focused approach."
+										"**JavaScript Isn't Always the Answer:** As powerful as JavaScript is, oftentimes there are more lightweight solutions that allow you to acheive the same functionality",
+										"**Respect Goes A Long Way:** Chinese users of the site were delighted with the attention to detail with the animations, showing the power of paying attention to the small things"
 									]
 								},
 								{
 									"type": "text",
 									"title": "Future Recommendations",
 									"content": [
-										"For future projects, I recommend exploring emerging technologies such as VR or AR to further enhance the immersive nature of the luxury real estate browsing experience."
+										"Now that more time has passed since product launch, I recommend exploring emerging technologies such as VR or AR to further enhance the immersive nature of the luxury real estate browsing experience."
 									]
 								}
 							]
