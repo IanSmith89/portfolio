@@ -337,7 +337,7 @@
 			},
 			"short": {
 				"text": "Starbucks",
-				"subtitle": "Internal Apps & Component Library"
+				"subtitle": "Component Library & Internal Apps"
 			}
 		},
 		"backgroundImage": "/coffee.jpg",
@@ -1134,169 +1134,6 @@
 	{
 		"title": {
 			"long": {
-				"text": "Streamlining Lab Operations",
-				"subtitle": "Astarte Biologics Inventory Management"
-			},
-			"short": {
-				"text": "Astarte Biologics",
-				"subtitle": "Biotech Inventory Management"
-			}
-		},
-		"backgroundImage": "/biotech-lab.jpg",
-		"coverImage": {
-			"src": "",
-			"width": 1600,
-			"height": 900
-		},
-		"description": "Modernizing the operations and data management system for a biotechnology company",
-		"handle": "astarte-inventory-management",
-		"sections": [
-			{
-				"background": "light",
-				"type": "container",
-				"blocks": [
-					{
-						"type": "two-column",
-						"content": {
-							"col1": [
-								{
-									"type": "text",
-									"title": "Project Overview",
-									"content": [
-										"In my role as a software engineer, I led the design and development of a comprehensive Inventory Management System (IMS) for a cutting-edge biotechnology lab. The objective was to modernize and streamline the lab's operations by providing a robust platform for managing, tracking, and optimizing the utilization of lab resources."
-									]
-								},
-								{
-									"type": "text",
-									"title": "My Role",
-									"content": [
-										"As the lead developer, I was responsible for the end-to-end design and implementation of the Inventory Management System, collaborating closely with lab managers and researchers to understand their unique needs."
-									]
-								}
-							],
-							"col2": [
-								{
-									"type": "unordered-list",
-									"title": "Objectives",
-									"content": [
-										"**Efficient Resource Management:** Create a centralized system to track and manage laboratory equipment, reagents, and consumables.",
-										"**Real-Time Visibility:** Develop a system that provides real-time visibility into inventory levels, minimizing the risk of stockouts and overstocking.",
-										"**Modernized Interface:** Design an intuitive and user-friendly interface that simplifies inventory-related tasks for lab personnel."
-									]
-								}
-							]
-						}
-					}
-				]
-			},
-			{
-				"background": "dark",
-				"type": "container",
-				"center": true,
-				"blocks": [
-					{
-						"type": "ordered-list",
-						"title": "Challenges",
-						"content": [
-							"**Manual Processes:** The existing inventory management process relied heavily on manual tracking, leading to errors and inefficiencies.",
-							"**Limited Visibility:** Lab personnel lacked real-time visibility into inventory levels, hindering their ability to plan experiments effectively.",
-							"**Diverse Inventory:** Managing a wide range of specialized equipment, chemicals, and biological materials required a flexible and scalable solution."
-						]
-					}
-				]
-			},
-			{
-				"type": "header",
-				"title": "Solution"
-			},
-			{
-				"background": "light",
-				"type": "container",
-				"blocks": [
-					{
-						"type": "unordered-list",
-						"title": "Key Contributions",
-						"content": [
-							"**Barcode Scanning:** Implemented a barcode scanning system to streamline the process of adding and removing items from inventory.",
-							"**Real-Time Updates:** Provided real-time updates on inventory levels, reducing the risk of stockouts and enabling better planning.",
-							"**User Permissions:** Implemented role-based access controls to ensure that only authorized personnel could perform specific actions within the system."
-						]
-					},
-					{
-						"type": "unordered-list",
-						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
-					}
-				]
-			},
-			{
-				"type": "header",
-				"title": "Results & Impact"
-			},
-			{
-				"background": "light",
-				"type": "container",
-				"center": true,
-				"blocks": [
-					{
-						"type": "unordered-list",
-						"title": "Metrics",
-						"content": [
-							"**Time Saved:** A 30% reduction in the time spent on inventory management tasks, allowing lab personnel to focus more on research activities.",
-							"**Accuracy:** Reduced inventory discrepancies by 25%, minimizing the risk of experimental disruptions due to insufficient or incorrect supplies.",
-							"**User Adoption:** The system achieved 95% user adoption within the first month, showcasing its effectiveness and ease of use."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Impact",
-						"content": [
-							"The Inventory Management System successfully transformed lab operations, optimizing resource utilization and contributing to a more streamlined and efficient research environment."
-						]
-					}
-				]
-			},
-			{
-				"background": "dark",
-				"type": "container",
-				"blocks": [
-					{
-						"type": "two-column",
-						"content": {
-							"col1": [
-								{
-									"type": "text",
-									"title": "Reflection",
-									"content": [
-										"Designing and developing the Inventory Management System for the biotechnology lab was a rewarding experience that showcased the transformative impact of technology on streamlining laboratory operations. As the lead developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the advancement of scientific research."
-									]
-								}
-							],
-							"col2": [
-								{
-									"type": "text",
-									"title": "Lessons Learned",
-									"content": [
-										"Overcoming challenges related to integrating barcode scanning technology underscored the importance of thorough testing and collaboration with lab personnel."
-									]
-								},
-								{
-									"type": "text",
-									"title": "Future Recommendations",
-									"content": [
-										"For future enhancements, I recommend exploring integrations with lab equipment to enable even more seamless tracking of specialized resources."
-									]
-								}
-							]
-						}
-					}
-				]
-			}
-		]
-	},
-	{
-		"title": {
-			"long": {
 				"text": "Empowering Efficiency",
 				"subtitle": "Developing Custom Property Management Software"
 			},
@@ -1448,6 +1285,221 @@
 									"title": "Future Recommendations",
 									"content": [
 										"For future enhancements, I recommend exploring integrations with external systems, such as CRM tools, to further streamline workflows and data synchronization."
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": {
+			"long": {
+				"text": "Streamlining Lab Operations",
+				"subtitle": "Astarte Biologics Inventory Management"
+			},
+			"short": {
+				"text": "Astarte Biologics",
+				"subtitle": "Biotech Inventory Management"
+			}
+		},
+		"backgroundImage": "/biotech-lab.jpg",
+		"coverImage": {
+			"src": "/astarte-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Modernizing the operations and inventory data management system for a Seattle biotechnology company",
+		"handle": "astarte-inventory-management",
+		"sections": [
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Project Overview",
+									"content": [
+										"In my role as a software engineer, I led the design and development of a comprehensive Inventory Management System (IMS) for Astarte Biologics, a cutting-edge biotechnology lab. The objective was to modernize and streamline the lab's operations by providing a robust platform for managing, tracking, and optimizing the utilization of lab resources."
+									]
+								},
+								{
+									"type": "text",
+									"title": "My Role",
+									"content": [
+										"Contributing as a **fullstack developer**, I was responsible for the end-to-end design and implementation of the IMS, collaborating closely with lab managers and researchers to understand their unique needs and working closely with the backend engineers on our team to ensure that the data models we devised were accurate and intentionally designed."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Objectives",
+									"content": [
+										"**Efficient Resource Management:** Create a centralized system to track and manage laboratory equipment, reagents, and consumables.",
+										"**Real-Time Visibility:** Develop a system that provides real-time visibility into inventory levels, minimizing the risk of stockouts and overstocking.",
+										"**Modernized Interface:** Design an intuitive and user-friendly interface that simplifies inventory-related tasks for lab personnel."
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "ordered-list",
+						"title": "Challenges",
+						"content": [
+							"**Manual Processes:** The existing inventory management process relied heavily on manual tracking, oftentimes via paper and clipboard, leading to errors and inefficiencies.",
+							"**Limited Visibility:** Lab personnel lacked real-time visibility into inventory levels, hindering their ability to effectively locate their products or identify low inventory to mark for reorder.",
+							"**Diverse Inventory:** Managing a wide range of specialized chemicals, equipment, and biological materials required a flexible and scalable solution and a thorough understanding of the business."
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Solution"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Key Contributions",
+						"content": [
+							{
+								"text": [
+									"**Project Planning & Ideation**",
+									"I worked closely with our counterpart at the biotech lab and our product team to thoroughly understand the current issues faced by the company and the hierarchy of products and data they needed to maintain.",
+									"We were abel to devise a plan for high-priority issues to address and early ideas for how to display the interfaces for showing and updating the inventory data."
+								],
+								"image": {
+									"alt": "Astarte sketches screeshots",
+									"src": {
+										"light": "/astarte-sketches.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Understanding Context**",
+									"It was essential to become familiar with the lab equipment and manual processes we were meant to virtualize.",
+									"I undertook educating myself on the objects used in the lab such as freezers, vials, canes, and lots to gain a better grasp on potential user interfaces and workflows."
+								],
+								"image": {
+									"alt": "Astarte equipment screeshots",
+									"src": {
+										"light": "/astarte-equipment.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Designing Familiar Interfaces**",
+									"The employees of the lab were in their comfort zone when looking at tabular, structured data, so I designed the interfaces using components such as data tables and simple inputs and dropdowns that they were already familiar with consuming.",
+									"Simple icon buttons were used to denote the common daily tasks including filtering, downloading inventory counts, and adding new products and lots to their databases."
+								],
+								"image": {
+									"alt": "Astarte interface screeshots",
+									"src": {
+										"light": "/astarte-interface.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Digitizing Common Tasks**",
+									"I designed additional interfaces and modal-based workflows for common lab tasks including moving inventory, updating information, and uploading certificates."
+								],
+								"image": {
+									"alt": "Astarte detail screeshots",
+									"src": {
+										"light": "/astarte-details.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "unordered-list",
+						"title": "Metrics",
+						"content": [
+							"**Time Saved:** A reduction in the time spent on inventory management tasks allowed lab personnel to focus more on research activities.",
+							"**Accuracy:** Reduced inventory discrepancies, minimizing the risk of experimental disruptions due to insufficient or incorrect supplies.",
+							"**User Adoption:** The system achieved fullscale user adoption within the first month in the lab, showcasing its effectiveness and ease of use."
+						]
+					},
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"The Inventory Management System successfully transformed lab operations, optimizing resource utilization and contributing to a more streamlined and efficient research environment."
+						]
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Designing and developing the Astarte Inventory Management System for was a rewarding experience that showcased the transformative impact of technology on streamlining laboratory operations and outdated, manual processes. As a designer and developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the advancement of scientific research."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Lessons Learned",
+									"content": [
+										"**Context Is Key:** Gaining context in the entities you're designing or developing for is essential to success",
+										"**Complex Processes Don't Need Complex Solutions:** When dealing with complex or unfamiliar subject matter, taking time to understand and break down problems to small, digestible chunks really helps with ideating for solutions"
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future enhancements, I recommend exploring integrations with lab equipment and barcode or QR scanners to enable even more seamless tracking of specialized resources and ease of data entry."
 									]
 								}
 							]
