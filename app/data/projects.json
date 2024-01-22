@@ -1798,11 +1798,11 @@
 		},
 		"backgroundImage": "/vet.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/mightyvet-cover.png",
 			"width": 1600,
 			"height": 900
 		},
-		"description": "Creating concepts and prototypes for a knowledge-sharing and networking website",
+		"description": "Creating concepts and prototypes for a knowledge-sharing and networking website for veterinarians",
 		"handle": "mighty-vet-ux",
 		"sections": [
 			{
@@ -1817,14 +1817,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"As a passionate UX/UI designer, I took on the exciting challenge of creating a prototype concept for VetsConnect, an innovative online community tailored for veterinarians. The primary goal was to design a platform that fostered collaboration, knowledge-sharing, and networking within the veterinary community."
+										"I took on the exciting challenge of creating a prototype concept for MightyVet, an innovative online community tailored for tackling some of the unforeseen challenges and mental health issues faced by veterinarians. The primary goal was to design a platform that fostered collaboration, knowledge-sharing, and networking within the veterinary community."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As the lead designer on this project, I was responsible for the end-to-end design process, from ideation and wireframing to prototyping and gathering feedback from potential users."
+										"As a **UX designer** with two other designers and researchers, I was responsible for various aspects of the end-to-end design process, including information architecture, ideation and wireframing, prototyping, and gathering feedback from potential users."
 									]
 								}
 							],
@@ -1833,7 +1833,7 @@
 									"type": "unordered-list",
 									"title": "Objectives",
 									"content": [
-										"**Community Engagement:** Develop a user-friendly online space that encourages veterinarians to connect, share insights, and collaborate on cases.",
+										"**Community Engagement:** Develop a user-friendly online space that encourages veterinarians to connect, share insights, and access resources for well-being.",
 										"**Intuitive Design:** Create an intuitive and aesthetically pleasing interface that enhances the user experience and facilitates seamless navigation.",
 										"**Accessible Resources:** Ensure the prototype is responsive across devices, providing veterinarians with access anytime, anywhere."
 									]
@@ -1852,9 +1852,9 @@
 						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
-							"**Limited Networking Opportunities:** Veterinarians lacked a dedicated platform to connect, share experiences, and seek advice from peers.",
-							"**Starting From Scratch:** Existing veterinary forums were outdated in terms of design and user experience, hindering user engagement.",
-							"**Accessibility Concerns:** Some veterinarians faced challenges accessing online platforms on mobile devices, limiting their participation."
+							"**Sensitive Subject Matter:** Veterinarians deal with a lot of unseen issues including depression, mental health, and suicide. It was essential to provide meaningful resources and practice radical empathy.",
+							"**Limited Networking Opportunities:** Veterinarians lacked a dedicated platform to connect, share experiences, and seek advice from peers on important issues that are a part of the verterinary profession.",
+							"**Starting From Scratch:** Existing veterinary forums were outdated in terms of design and user experience, hindering user engagement."
 						]
 					}
 				]
@@ -1866,52 +1866,215 @@
 			{
 				"background": "light",
 				"type": "container",
+				"center": true,
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Ideation & Conceptualization",
+						"type": "unordered-list",
+						"title": "Problem Definition",
 						"content": [
-							"Collaborated with key stakeholders and veterinarians to ideate on a design concept that addressed their specific needs and desires for an online community."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Wireframing",
-						"content": [
-							"Translated design concepts into wireframes, outlining the structure and user flow of the platform, ensuring a user-centric design."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Prototyping",
-						"content": [
-							"Developed an interactive prototype to simulate user interactions, incorporating feedback from veterinarians and stakeholders before the final design."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Usability Testing",
-						"content": [
-							"Conducted usability testing sessions with potential users to gather insights into the prototype's usability and identify areas for improvement."
+							"In order to design the product that MightyVet wanted, we first had to understand what the usability issues were with the existing MightyVet website and how we could address them with improved user experiences.",
+							"To guide our intial research, we asked ourselves three important questions:",
+							"**How might we emphasize community and mentorship through user experience?**",
+							"**How might we support a broad range of users and make it accessible beyond veterinarians?**",
+							"**How might we connect all the capabilities for the user?**"
 						]
 					}
 				]
-			},
-			{
-				"type": "header",
-				"title": "Solution"
 			},
 			{
 				"background": "light",
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
-						"title": "Key Contributions",
+						"type": "text-image",
+						"title": "Research",
 						"content": [
-							"**Discussion Forums:** Structured forums for veterinarians to discuss cases, share knowledge, and seek advice.",
-							"**Networking Hub:** A dedicated section for building professional connections and collaborating on research projects.",
-							"**Responsive Design:** Ensured seamless access to the community through a responsive web design and a dedicated mobile app."
+							{
+								"text": [
+									"**Heuristic Review**",
+									"We completed a heuristic review of the existing website to identify areas of opportunity for improving the user experience.",
+									"Using subjective ratings of different heuristics to get a baseline on overall usabilility of the site, we concluded that the usability score was 68 out of 100, and there were opportunities to improve the homepage and navigation to make a large immediate impact."
+								],
+								"image": {
+									"alt": "MightyVet heuristics screenshots",
+									"src": {
+										"light": "/mightyvet-heuristics.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Competitive Analysis**",
+									"We identified other similar websites and organizations to complete a competitive analysis to understand what other websites were doing and any insightful UX patterns to replicate.",
+									"We looked at a number of non-profits and mentorship companies and found various useful bits of information or user flows to test out in our own updated designs."
+								],
+								"image": {
+									"alt": "MightyVet analysis screenshots",
+									"src": {
+										"light": "/mightyvet-analysis.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Affinity Diagramming**",
+									"We completed a brainstorming session using affinity diagramming to organize the information we had gathered from our previous research and analysis.",
+									"We identified a number of groupings based on the usability issues we had seen as well as patterns emerging from the challenges faced by the veterinary community."
+								],
+								"image": {
+									"alt": "MightyVet affinity screenshots",
+									"src": {
+										"light": "/mightyvet-affinity.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Ideation & Conceptualization",
+						"content": [
+							{
+								"text": [
+									"**Information Architecture**",
+									"Using what we had learned from our initial research, we began to formulate a more structured plan for how to resolve some of the user experience issues MightyVet needed resolved.",
+									"We devised improved information architecture that we believed better organized and fit the mental model of the website users' as far as how different sections of the site should be presented."
+								],
+								"image": {
+									"alt": "MightyVet information architecture screenshots",
+									"src": {
+										"light": "/mightyvet-information-architecture.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Sketching**",
+									"Before moving on to digital wireframing and prototyping we first completed initial sketches to see how some of the ideas we had might look as rough interface concepts."
+								],
+								"image": {
+									"alt": "MightyVet sketches screenshots",
+									"src": {
+										"light": "/mightyvet-sketches.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Wireframing**",
+									"To further refine our new user experience for MightyVet, we then moved on the computer to complete initial wireframes to start finalizing our vision."
+								],
+								"image": {
+									"alt": "MightyVet wireframe screenshots",
+									"src": {
+										"light": "/mightyvet-wireframes.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Visual Design & Prototyping",
+						"content": [
+							{
+								"text": [
+									"**Design Moodboard**",
+									"To get an idea of the different visual design updates we wanted to make we created a moodboard that drew influence from other competing websites as well as more modern interface trends.",
+									"MightyVet didn't need extensive visual design updates, but they wanted a refresh that brought a more modern appeal to the site."
+								],
+								"image": {
+									"alt": "MightyVet moodboard screenshots",
+									"src": {
+										"light": "/mightyvet-moodboard.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Log In + Donate Workflows**",
+									"Two essential workflows that neede updating were the user workflows for logging in and making donations, especially on mobile devices.",
+									"We implemented simplified workflows that allowed mobile users the ability to easily log in to their account as well as making donations."
+								],
+								"image": {
+									"alt": "MightyVet mobile screenshots",
+									"src": {
+										"light": "/mightyvet-mobile.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Redesigned User Profiles**",
+									"We completely overhauled the mentor user profile pages to better reflect the activities and resources that users expected to access on MightyVet.",
+									"Important information is displayed including upcoming events and webinars plus personalized goals for completing monthly learning and development goals."
+								],
+								"image": {
+									"alt": "MightyVet profile screenshots",
+									"src": {
+										"light": "/mightyvet-profile.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Restructured Mentor Search**",
+									"The mentroship page for searching and discovering veterinary mentors in your area was completely redesigned and updated with more structured search results and a simplified search experience."
+								],
+								"image": {
+									"alt": "MightyVet mentor screenshots",
+									"src": {
+										"light": "/mightyvet-mentors.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Searchable Webinars & Education Resources**",
+									"We implemented a brand new page and user experience for webinars and other online educational content.",
+									"The existing MightyVet site had multiple disparate links to external resources that lacked a cohesive experience and centralized source for content."
+								],
+								"image": {
+									"alt": "MightyVet webinar screenshots",
+									"src": {
+										"light": "/mightyvet-webinars.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
 					}
 				]
@@ -1919,6 +2082,21 @@
 			{
 				"type": "header",
 				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"We shared our research findings and final proposed prototypes with MightyVet, and our vision and ideas were welcomed and thoughtfully considered.",
+							"Ultimately, the complete concept we presented wasn't implemented, and MightyVet has since undergone a number of redesigns. The insights gained from the research and prototyping we completed was invaluable in determining some of the direction and features they eventually implemented on the website."
+						]
+					}
+				]
 			},
 			{
 				"background": "dark",
@@ -1932,23 +2110,25 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"Designing the prototype concept for VetsConnect was an inspiring journey that highlighted the transformative impact of technology on fostering connections within the veterinary community. As a UX/UI designer, this project allowed me to contribute to the creation of an innovative platform that has the potential to revolutionize how veterinarians connect, collaborate, and share knowledge."
+										"Designing the new UX concept for MightyVet was an inspiring journey that highlighted the transformative impact of technology on fostering connections within the veterinary community. As a UX designer, this project allowed me to contribute to the creation of an innovative platform with the potential to revolutionize how veterinarians connect, collaborate, and share knowledge.",
+										"I enjoyed taking a new approach to creative problem-solving as well as working on a multidisciplinary UX team with other designers. It was a great experience undertaking different research methods to inform a digital prototype."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming challenges related to incorporating complex networking features underscored the need for a balance between functionality and simplicity."
+										"**Going Slow Can Help You Go Fast:** Rather than jumping straight to digital prototypes or solutioning with code, a more thoughtful approach informed by research and user feedback can help you go faster when you're ready to implement your vision",
+										"**Process Is As Important As Implementation:** How you arrive at your end goal or solution to a problem is equally as important as how the solution might be implemented"
 									]
 								},
 								{
 									"type": "text",
 									"title": "Future Recommendations",
 									"content": [
-										"For future development, I recommend further refinement based on ongoing user feedback and potential integration with additional tools for veterinary research and collaboration."
+										"For future design projects, I recommend further refinement based on ongoing user feedback and potential integration with additional tools or resources for veterinary research and collaboration."
 									]
 								}
 							]
