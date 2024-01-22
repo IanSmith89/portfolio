@@ -48,6 +48,7 @@ export default function ProjectPage({ params }: { params: { handle: string } }) 
 								priority
 								width={coverImage.width}
 								height={coverImage.height}
+								placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
 							/>
 						</div>
 						<div className="md:h-full md:w-1/2 flex flex-col justify-center items-center md:items-start gap-4">

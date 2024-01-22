@@ -92,7 +92,7 @@
 									"Using Shopify's internal dashboard editor to configure the menus, categories, and links allowed our marketing team to maintain and update the information architecture without having to request updates from the tech team."
 								],
 								"image": {
-									"alt": "TPC navigation screeshots",
+									"alt": "TPC navigation screenshots",
 									"src": {
 										"light": "/tpc-navigation.png"
 									},
@@ -108,7 +108,7 @@
 									"Users also gained the ability to create and maintain saved search queries to track their most-wanted gear and receive email updates when new products arrive."
 								],
 								"image": {
-									"alt": "TPC search screeshots",
+									"alt": "TPC search screenshots",
 									"src": {
 										"light": "/tpc-search.png"
 									},
@@ -124,7 +124,7 @@
 									"I also added functionality for users to update their primary contact information including first and last name and phone number."
 								],
 								"image": {
-									"alt": "TPC account screeshots",
+									"alt": "TPC account screenshots",
 									"src": {
 										"light": "/tpc-account.png"
 									},
@@ -139,7 +139,7 @@
 									"I implemented a simple search experience that incorporated Shopify architecture patterns to return paged results and allow our marketing team to easily organize and tag articles."
 								],
 								"image": {
-									"alt": "TPC magazine screeshots",
+									"alt": "TPC magazine screenshots",
 									"src": {
 										"light": "/tpc-magazine.png"
 									},
@@ -337,7 +337,7 @@
 			},
 			"short": {
 				"text": "Starbucks",
-				"subtitle": "Internal Apps & Component Library"
+				"subtitle": "Component Library & Internal Apps"
 			}
 		},
 		"backgroundImage": "/coffee.jpg",
@@ -422,7 +422,7 @@
 									"I also met regularly and presented to the brand design teams to ensure our component library followed the already established [Starbucks Creative Expression](https://creative.starbucks.com/) guidelines."
 								],
 								"image": {
-									"alt": "Starbucks Creative Expression screeshots",
+									"alt": "Starbucks Creative Expression screenshots",
 									"src": {
 										"light": "/starbucks-brand.png"
 									},
@@ -437,7 +437,7 @@
 									"I introduced a number of new components including calendars, datepickers, tables, and navigation variations that weren't previously standardized across existing internal applications."
 								],
 								"image": {
-									"alt": "Starbucks component library screeshots",
+									"alt": "Starbucks component library screenshots",
 									"src": {
 										"light": "/starbucks-components.png"
 									},
@@ -453,7 +453,7 @@
 									"Note: screenshots are approximations of final application designs."
 								],
 								"image": {
-									"alt": "Starbucks component app screeshots",
+									"alt": "Starbucks component app screenshots",
 									"src": {
 										"light": "/starbucks-apps.png"
 									},
@@ -613,7 +613,7 @@
 		},
 		"backgroundImage": "/vaccines.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/wa-doh-cover.png",
 			"width": 1600,
 			"height": 900
 		},
@@ -632,14 +632,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"In the early stages of the COVID-19 pandemic, I had the privilege of collaborating on the development of a critical tool - the Vaccine Locator Website, commissioned by the Washington Department of Health. The primary goal was to provide the public with a user-friendly platform to locate and schedule COVID-19 vaccinations during a pivotal time in the fight against the pandemic."
+										"Over the course of six weeks in the early stages of the COVID-19 pandemic, I had the privilege of collaborating on the development of a critical tool commissioned by the Washington Department of Health - the vaccine locator website launched as part of the state-wide Vaccinate WA campaign. The primary goal was to provide the public with the latest trusted information to locate COVID-19 vaccinations on a user-friendly platform during a pivotal and often confusing time in the fight against the pandemic."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As a frontend software engineer, I played a crucial role in designing and implementing the user interface, collaborating closely with a multidisciplinary team that included public health experts, backend developers, and UX/UI designers."
+										"As the **lead frontend engineer**, I played a crucial role in collaborating closely with a multidisciplinary team that included public health experts, backend developers, and UX designers. My primary responsibilities included frontend software architecture decisions and implementation, internationalization, and accessibility."
 									]
 								}
 							],
@@ -648,9 +648,9 @@
 									"type": "unordered-list",
 									"title": "Objectives",
 									"content": [
-										"**Rapid Deployment:** Create a website in record time to aid in the rapid distribution of COVID-19 vaccines.",
-										"**User-Friendly Interface:** Develop an intuitive and accessible platform for users to easily find and schedule vaccination appointments.",
-										"**Real-Time Updates:** Implement a system for real-time updates on vaccine availability, locations, and eligibility criteria."
+										"**Rapid Deployment:** Quickly create and release to aid in the rapid distribution of COVID-19 vaccines and responding to sometimes daily changes to public health policy and project requirements.",
+										"**User-Friendly Interface:** Develop an intuitive and utilitarian platform for users to easily find and schedule vaccination appointments on any device.",
+										"**Internationalization & Accessibility:** Implement a system that was able to handle displaying information in multiple languages and ensuring that users of all abilities were able to access and use."
 									]
 								}
 							]
@@ -667,9 +667,9 @@
 						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
-							"**Urgency:** The urgency of the pandemic required a rapid response to aid in the vaccination effort.",
-							"**Information Dissemination:** Providing accurate and real-time information on vaccine availability was a significant challenge.",
-							"**User Accessibility:** Ensuring the website was accessible to diverse user groups, including those with limited digital literacy."
+							"**Urgency:** The urgency of the pandemic required a rapid response to aid in the vaccination effort while dealing with constantly shifting requirements.",
+							"**Information Dissemination:** Providing concise information on vaccine availability was a significant challenge. As new vaccines and information received signoff from public health officials the team had to respond to change in data and interface structure to handle the changes.",
+							"**Internationalization:** Maintaining an consistent source of information that could be accurately translated as official messaging was updated required constant attention and refactoring."
 						]
 					}
 				]
@@ -683,18 +683,108 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "text-image",
 						"title": "Key Contributions",
 						"content": [
-							"**Real-Time Updates:** Implemented a backend system to provide real-time information on vaccine availability and eligibility criteria.",
-							"**User-Friendly Interface:** Prioritized a simple and accessible design to cater to users with varying levels of digital literacy.",
-							"**Interactive Map:** Integrated an interactive map for users to visually locate nearby vaccination centers."
+							{
+								"text": [
+									"**Familiar Search Experience**",
+									"Working closely with the UX designers on the team, we decided on a simple, utilitarian interface with a Google-like search experience that is familiar to the most amount of people.",
+									"The goal was to provide users a single search input that accepted zip codes and displayed search results that initially showed only the most important information, including location contact information and the types of vaccines available."
+								],
+								"image": {
+									"alt": "WA DOH search screenshots",
+									"src": {
+										"light": "/wa-doh-search.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Internationalization Strategy**",
+									"In order to effectively communicate with the greatest amount of people, I was responsible for implementing the frontend strategy for displaying text content that was translated into numerous languages including those that read right-to-left.",
+									"I ensured that the interface was still legible no matter the language and worked with our backend engineers to develop a data model that could respond to the frequently changing text and translated content."
+								],
+								"image": {
+									"alt": "WA DOH internationalization screenshots",
+									"src": {
+										"light": "/wa-doh-i18n.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Flexible Accessibility Options**",
+									"Given the high profile nature of the site, the project timeline, and that public-facing government websites require adhering to the highest accessibility standards, the team decided to use the Accessibe platform to ensure all aspects of the site were accessible to all users.",
+									"I was responsible for integrating with the platform and ensuring that the various accessibility profiles and settings it provides didn't interfere with our front end code."
+								],
+								"image": {
+									"alt": "WA DOH accessibility screenshots",
+									"src": {
+										"light": "/wa-doh-a11y.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
-					},
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "image-blocks",
 						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
+						"content": [
+							{
+								"href": "https://mui.com",
+								"image": {
+									"alt": "MUI logo",
+									"src": {
+										"light": "/mui_light.png",
+										"dark": "/mui_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Rapid UI Development",
+								"text": "We relied on the built-in functionality provided by MUI to handle text direction changes as well as the large selection of prebuilt, tested components for quick UI development"
+							},
+							{
+								"href": "https://www.i18next.com",
+								"image": {
+									"alt": "i18next logo",
+									"src": {
+										"light": "/i18next_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Internationalization Simplified",
+								"text": "The i18next framework allowed the team to implement an architecture that provided easy identification and display options for text content that needed to be translated"
+							},
+							{
+								"href": "https://accessibe.com",
+								"image": {
+									"alt": "accessiBe logo",
+									"src": {
+										"light": "/accessibe_light.png",
+										"dark": "/accessibe_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "WCAG & ADA Compliance",
+								"text": "Accessibe gave the WA Department of Health a trusted tool to provide all public users the ability to easily use the vaccine locator website"
+							}
+						]
 					}
 				]
 			},
@@ -711,16 +801,17 @@
 						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
-							"**Website Traffic:** Experienced a surge in traffic, with millions of users accessing the website within the first month.",
-							"**Vaccination Appointments:** Contributed to a significant increase in the number of scheduled vaccination appointments.",
-							"**Public Engagement:** The website became a trusted resource, garnering positive media coverage and engagement on social platforms."
+							"**Website Traffic:** Experienced a surge in traffic upon website launch, with over 2 million users accessing the website within the first week.",
+							"**Internationalization:** The flexibility of the interface and data structures we put in place contributed to expanding to offer 43 different languages and dialects.",
+							"**Public Engagement:** The website became a trusted government resource, garnering positive media coverage and continued user engagement."
 						]
 					},
 					{
 						"type": "text",
 						"title": "Impact",
 						"content": [
-							"The Vaccine Locator Website played a vital role in streamlining the vaccination process, contributing to the overall effort to combat the COVID-19 pandemic."
+							"The Vaccine Locator Website played a vital role in streamlining the vaccination process, contributing to the overall effort to combat the COVID-19 pandemic.",
+							"The collaborative efforts of the team allowed the WA Department of Health to continue sharing vaccine information throughout the pandemic and easily respond to changing federal guidelines."
 						]
 					}
 				]
@@ -737,23 +828,26 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"Collaborating on the Vaccine Locator Website for the Washington Department of Health was a profound experience that highlighted the power of technology in addressing urgent public health needs. As a frontend software engineer, this project reinforced my commitment to leveraging technology for the greater good and demonstrated the positive impact that collaborative efforts can achieve during challenging times."
+										"Collaborating on the Vaccine Locator Website for the Washington Department of Health was a profound experience that highlighted the power of technology in addressing urgent public health needs. As a frontend software engineer, this project reinforced my commitment to leveraging technology for the greater good and demonstrated the positive impact that collaborative efforts can achieve during challenging and stressful times.",
+										"Although the project included some of the most ambiguous and frequently changing requirements I've experienced so far, it was invigorating and oftentimes exciting to know the work we were doing would have an impact on a large userbase that I have never had the chance to build websites for."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming the challenges of real-time information dissemination underscored the critical need for a robust backend system and collaboration with public health authorities."
+										"**Keep It Simple:** This project taught me that simple solutions for displaying and storing information often result in short-term flexibility and long-term consistency",
+										"**Be Flexible & Positive:** Responding to frequently changing requirements can sometimes drag projects down, but maintaining a positive, flexible attitude has a large impact on the work that gets done",
+										"**Teamwork Feels Great:** Collaborating with stakeholders outside of technology teams is a perfect way to identify edge cases earlier and ensure that your work is actually solving the problems it's supposed to"
 									]
 								},
 								{
 									"type": "text",
 									"title": "Future Recommendations",
 									"content": [
-										"For future projects, I recommend building on the success of this initiative by continuing to prioritize user accessibility, real-time information, and collaboration with relevant stakeholders."
+										"For future projects, I recommend building on the success of this initiative by continuing to prioritize user accessibility, collaboration with relevant stakeholders, and setting up data in a way that could handle internationalization. You never know the next time your site might need to be translated to 43 different languages."
 									]
 								}
 							]
@@ -771,7 +865,7 @@
 		"title": {
 			"long": {
 				"text": "Elevating Luxury Real Estate",
-				"subtitle": "Animations and Immersive Interactions"
+				"subtitle": "Immersive Interactions & Custom Animation"
 			},
 			"short": {
 				"text": "Paragon Real Estate",
@@ -780,7 +874,7 @@
 		},
 		"backgroundImage": "/golden-gate.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/paragon-cover.png",
 			"width": 1600,
 			"height": 900
 		},
@@ -799,14 +893,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"I had the privilege of contributing to the redesign of the frontend and animations for a prominent luxury real estate company based in the Bay Area. The goal was to create a visually stunning website that not only showcased high-end properties but also provided an immersive and engaging user experience."
+										"While working for High Seas Consulting, one of our primary clients was Paragon Real Estate Group, a prominent luxury real estate company based in the Bay Area. We developed a visually stunning public-facing website for them that not only showcased high-end properties but also provided an immersive and engaging user experience."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As a frontend software engineer, my responsibilities included implementing the redesigned user interface, developing custom animations, and collaborating closely with designers to bring their vision to life."
+										"As a **frontend developer**, my responsibilities included implementing the redesigned user interface, deciding on frontend technologies and architecture, developing custom animations, and collaborating closely with our design team to bring their vision to life."
 									]
 								}
 							],
@@ -815,9 +909,9 @@
 									"type": "unordered-list",
 									"title": "Objectives",
 									"content": [
-										"**Striking Visual Design:** Redesign the frontend to reflect the sophistication and elegance associated with luxury real estate.",
-										"**Familiar User Experience:** Develop intuitive navigation and interactive animations to engage and captivate users.",
-										"**Easy Property Search Features:** Implement animations to showcase property details and amenities in an elegant and compelling manner."
+										"**Striking Visual Design:** Deliver a redesigned website to reflect the sophistication and elegance associated with luxury real estate.",
+										"**Welcoming User Experience:** Develop intuitive navigation and interactive animations to engage and captivate users.",
+										"**Intuitive Search Features:** Allow for an easy search experience and implement animations to showcase neighborhood details and amenities in an elegant and compelling manner."
 									]
 								}
 							]
@@ -850,18 +944,123 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "text-image",
 						"title": "Key Contributions",
 						"content": [
-							"**Custom Animations:** Implemented subtle yet impactful animations to bring property images and details to life.",
-							"**Interactive Location Maps:** Users could explore high-resolution images and videos with a fluid and engaging interface.",
-							"**Intuitive Navigation:** Streamlined navigation with animations that guided users seamlessly through property listings."
+							{
+								"text": [
+									"**Custom Typographic Animations**",
+									"I implemented custom animations and transitions on one of the marketing pages to demonstrate the sleekness and cutting-edge emotions that Paragon wanted to evoke.",
+									"Working closely with our design team, I ensured that the assets on the page rendered and transitioned as intended."
+								],
+								"image": {
+									"alt": "Paragon animation screenshots",
+									"src": {
+										"light": "/paragon.gif"
+									},
+									"width": 1440,
+									"height": 740
+								}
+							},
+							{
+								"text": [
+									"**Translated Animations**",
+									"Based on the reception and success of the initial animated marketing pages, I also implemented special pages that presented the same animations in Simplified and Traditional Mandarin Chinese to expand Paragon's reach in the Bay Area market.",
+									"Working closely with a translator, I ensured that the animations of each stroke were implemented in the proper order and direction based on how each Chinese character is written by hand."
+								],
+								"image": {
+									"alt": "Paragon Chinese animation screenshots",
+									"src": {
+										"light": "/paragon-chinese.gif"
+									},
+									"width": 1440,
+									"height": 740
+								}
+							},
+							{
+								"text": [
+									"**Interactive Regional Maps**",
+									"I added interactivity when I worked on a section of the site that let users explore the various regions and neighborhoods that Paragon operated out of.",
+									"Using SVG assets and simple CSS rules, I was able to implement impactful interactions that aided in the search and discovery and education about the different Bay Area neighborhoods."
+								],
+								"image": {
+									"alt": "Paragon map screenshots",
+									"src": {
+										"light": "/paragon-map.gif"
+									},
+									"width": 1140,
+									"height": 738
+								}
+							},
+							{
+								"text": [
+									"**Intuitive Search & Discovery**",
+									"I implemented a clean search interface with simplified initial parameters that led users to a more detailed results page, allowing for further refinement and discovery.",
+									"All user interface components were consistent with the Paragon brand and further exemplified the elevated visual aesthetic they desired."
+								],
+								"image": {
+									"alt": "Paragon search screenshots",
+									"src": {
+										"light": "/paragon-search.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
-					},
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "image-blocks",
 						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
+						"content": [
+							{
+								"href": "https://react.dev",
+								"image": {
+									"alt": "React logo",
+									"src": {
+										"light": "/react_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Reusable Components",
+								"text": "The entirety of the Paragon website was built using the React framework, useful for its reusable components and widespread adoption"
+							},
+							{
+								"href": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+								"image": {
+									"alt": "CSS logo",
+									"src": {
+										"light": "/css_light.png",
+										"dark": "/css_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Clean Styles & Animation",
+								"text": "All basic typographic animations and regional map interactions were acheived with simple CSS rules, reducing bundle size and the  need for unnecessary JavaScript"
+							},
+							{
+								"href": "https://developer.mozilla.org/en-US/docs/Web/SVG",
+								"image": {
+									"alt": "SVG logo",
+									"src": {
+										"light": "/svg_light.png",
+										"dark": "/svg_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Useful Vector Assets",
+								"text": "Graphic assets were rendered using SVG files because of their easy integration with React and the ability to render directly to the DOM"
+							}
+						]
 					}
 				]
 			},
@@ -878,16 +1077,16 @@
 						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
-							"**User Engagement:** Increased by 40%, leading to a higher likelihood of users exploring multiple property listings.",
-							"**Conversion Rate:** Showed a 20% improvement, indicating a positive impact on potential buyer interactions.",
-							"**Competitive Edge:** The redesigned website contributed to the company's differentiation in the competitive Bay Area real estate market."
+							"**Competitive Edge:** The redesigned website contributed to the company's differentiation in the competitive Bay Area real estate market.",
+							"**User Engagement:** The launch of the redesigned Paragon site saw a large increase in user engagement, leading to a higher likelihood of users exploring multiple property listings."
 						]
 					},
 					{
 						"type": "text",
 						"title": "Impact",
 						"content": [
-							"The revamped frontend and animations elevated the online presence of the luxury real estate company, positioning it as a premier destination for high-end property seekers in the Bay Area."
+							"The revamped frontend and animations elevated Paragon's online presence, positioning it as a premier destination for high-end property seekers in the Bay Area.",
+							"Our team's work also contributed to the eventual [acquisition of Paragon Real Estate Group by Compass](https://www.sfchronicle.com/business/networth/article/Paragon-Real-Estate-of-SF-acquired-by-Compass-to-13061063.php) in 2018, forming what is still San Francisco's largest real estate brokerage."
 						]
 					}
 				]
@@ -904,23 +1103,25 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"The redesign of the frontend and animations for Bay Area Estates was a collaborative effort that successfully transformed the digital presence of the luxury real estate company. As a frontend software engineer, this project allowed me to showcase my skills in creating visually appealing and engaging user interfaces, contributing to the company's success in a competitive market."
+										"The redesign of the frontend and animations for Paragon was a collaborative effort that successfully transformed the digital presence of the luxury real estate company. As a frontend developer, this project allowed me to showcase my skills in creating visually appealing and engaging user interfaces, contributing to the company's success in a competitive market.",
+										"It was also a great experience collaborating with our design team to add interactivity to a site and have back and forth conversations on what was and wasn't possible to implement given the project timeline and requirements."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming challenges related to optimizing animations for various devices emphasized the need for a responsive and performance-focused approach."
+										"**JavaScript Isn't Always the Answer:** As powerful as JavaScript is, oftentimes there are more lightweight solutions that allow you to acheive the same functionality",
+										"**Respect Goes A Long Way:** Chinese users of the site were delighted with the attention to detail with the animations, showing the power of paying attention to the small things"
 									]
 								},
 								{
 									"type": "text",
 									"title": "Future Recommendations",
 									"content": [
-										"For future projects, I recommend exploring emerging technologies such as VR or AR to further enhance the immersive nature of the luxury real estate browsing experience."
+										"Now that more time has passed since product launch, I recommend exploring emerging technologies such as VR or AR to further enhance the immersive nature of the luxury real estate browsing experience."
 									]
 								}
 							]
@@ -943,11 +1144,11 @@
 		},
 		"backgroundImage": "/biotech-lab.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/astarte-cover.png",
 			"width": 1600,
 			"height": 900
 		},
-		"description": "Modernizing the operations and data management system for a biotechnology company",
+		"description": "Modernizing the operations and inventory data management system for a Seattle biotechnology company",
 		"handle": "astarte-inventory-management",
 		"sections": [
 			{
@@ -962,14 +1163,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"In my role as a software engineer, I led the design and development of a comprehensive Inventory Management System (IMS) for a cutting-edge biotechnology lab. The objective was to modernize and streamline the lab's operations by providing a robust platform for managing, tracking, and optimizing the utilization of lab resources."
+										"In my role as a software engineer, I led the design and development of a comprehensive Inventory Management System (IMS) for Astarte Biologics, a cutting-edge biotechnology lab. The objective was to modernize and streamline the lab's operations by providing a robust platform for managing, tracking, and optimizing the utilization of lab resources."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As the lead developer, I was responsible for the end-to-end design and implementation of the Inventory Management System, collaborating closely with lab managers and researchers to understand their unique needs."
+										"Contributing as a **fullstack developer**, I was responsible for the end-to-end design and implementation of the IMS, collaborating closely with lab managers and researchers to understand their unique needs and working closely with the backend engineers on our team to ensure that the data models we devised were accurate and intentionally designed."
 									]
 								}
 							],
@@ -997,9 +1198,9 @@
 						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
-							"**Manual Processes:** The existing inventory management process relied heavily on manual tracking, leading to errors and inefficiencies.",
-							"**Limited Visibility:** Lab personnel lacked real-time visibility into inventory levels, hindering their ability to plan experiments effectively.",
-							"**Diverse Inventory:** Managing a wide range of specialized equipment, chemicals, and biological materials required a flexible and scalable solution."
+							"**Manual Processes:** The existing inventory management process relied heavily on manual tracking, oftentimes via paper and clipboard, leading to errors and inefficiencies.",
+							"**Limited Visibility:** Lab personnel lacked real-time visibility into inventory levels, hindering their ability to effectively locate their products or identify low inventory to mark for reorder.",
+							"**Diverse Inventory:** Managing a wide range of specialized chemicals, equipment, and biological materials required a flexible and scalable solution and a thorough understanding of the business."
 						]
 					}
 				]
@@ -1013,18 +1214,69 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "text-image",
 						"title": "Key Contributions",
 						"content": [
-							"**Barcode Scanning:** Implemented a barcode scanning system to streamline the process of adding and removing items from inventory.",
-							"**Real-Time Updates:** Provided real-time updates on inventory levels, reducing the risk of stockouts and enabling better planning.",
-							"**User Permissions:** Implemented role-based access controls to ensure that only authorized personnel could perform specific actions within the system."
+							{
+								"text": [
+									"**Project Planning & Ideation**",
+									"I worked closely with our counterpart at the biotech lab and our product team to thoroughly understand the current issues faced by the company and the hierarchy of products and data they needed to maintain.",
+									"We were abel to devise a plan for high-priority issues to address and early ideas for how to display the interfaces for showing and updating the inventory data."
+								],
+								"image": {
+									"alt": "Astarte sketches screenshots",
+									"src": {
+										"light": "/astarte-sketches.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Understanding Context**",
+									"It was essential to become familiar with the lab equipment and manual processes we were meant to virtualize.",
+									"I undertook educating myself on the objects used in the lab such as freezers, vials, canes, and lots to gain a better grasp on potential user interfaces and workflows."
+								],
+								"image": {
+									"alt": "Astarte equipment screenshots",
+									"src": {
+										"light": "/astarte-equipment.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Designing Familiar Interfaces**",
+									"The employees of the lab were in their comfort zone when looking at tabular, structured data, so I designed the interfaces using components such as data tables and simple inputs and dropdowns that they were already familiar with consuming.",
+									"Simple icon buttons were used to denote the common daily tasks including filtering, downloading inventory counts, and adding new products and lots to their databases."
+								],
+								"image": {
+									"alt": "Astarte interface screenshots",
+									"src": {
+										"light": "/astarte-interface.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Digitizing Common Tasks**",
+									"I designed additional interfaces and modal-based workflows for common lab tasks including moving inventory, updating information, and uploading certificates."
+								],
+								"image": {
+									"alt": "Astarte detail screenshots",
+									"src": {
+										"light": "/astarte-details.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
-					},
-					{
-						"type": "unordered-list",
-						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
 					}
 				]
 			},
@@ -1041,9 +1293,9 @@
 						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
-							"**Time Saved:** A 30% reduction in the time spent on inventory management tasks, allowing lab personnel to focus more on research activities.",
-							"**Accuracy:** Reduced inventory discrepancies by 25%, minimizing the risk of experimental disruptions due to insufficient or incorrect supplies.",
-							"**User Adoption:** The system achieved 95% user adoption within the first month, showcasing its effectiveness and ease of use."
+							"**Time Saved:** A reduction in the time spent on inventory management tasks allowed lab personnel to focus more on research activities.",
+							"**Accuracy:** Reduced inventory discrepancies, minimizing the risk of experimental disruptions due to insufficient or incorrect supplies.",
+							"**User Adoption:** The system achieved fullscale user adoption within the first month in the lab, showcasing its effectiveness and ease of use."
 						]
 					},
 					{
@@ -1067,23 +1319,24 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"Designing and developing the Inventory Management System for the biotechnology lab was a rewarding experience that showcased the transformative impact of technology on streamlining laboratory operations. As the lead developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the advancement of scientific research."
+										"Designing and developing the Astarte Inventory Management System for was a rewarding experience that showcased the transformative impact of technology on streamlining laboratory operations and outdated, manual processes. As a designer and developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the advancement of scientific research."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming challenges related to integrating barcode scanning technology underscored the importance of thorough testing and collaboration with lab personnel."
+										"**Context Is Key:** Gaining context in the entities you're designing or developing for is essential to success",
+										"**Complex Processes Don't Need Complex Solutions:** When dealing with complex or unfamiliar subject matter, taking time to understand and break down problems to small, digestible chunks really helps with ideating for solutions"
 									]
 								},
 								{
 									"type": "text",
 									"title": "Future Recommendations",
 									"content": [
-										"For future enhancements, I recommend exploring integrations with lab equipment to enable even more seamless tracking of specialized resources."
+										"For future enhancements, I recommend exploring integrations with lab equipment and barcode or QR scanners to enable even more seamless tracking of specialized resources and ease of data entry."
 									]
 								}
 							]
@@ -1097,20 +1350,20 @@
 		"title": {
 			"long": {
 				"text": "Empowering Efficiency",
-				"subtitle": "Developing Custom Property Management Software"
+				"subtitle": "Custom Property Management Software"
 			},
 			"short": {
-				"text": "Paragon DASH",
+				"text": "DASH",
 				"subtitle": "Property Management System"
 			}
 		},
 		"backgroundImage": "/houses.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/dash-cover.png",
 			"width": 1600,
 			"height": 900
 		},
-		"description": "Centralizing data maintenance and inventory management into a custom internal website",
+		"description": "Centralizing data maintenance and property management into a custom self-service platform",
 		"handle": "paragon-property-management",
 		"sections": [
 			{
@@ -1125,14 +1378,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"As a dedicated software engineer, I took on the challenge of developing a custom internal website for RealtyPro, a leading real estate company. The primary goal was to create a centralized platform for managing inventory, property data, and streamlining internal processes."
+										"As a software engineer at High Seas Consulting, I collaborated on developing custom internal property management software for Paragon Real Estate Group, a leading Bay Area real estate company. The primary goal was to create a centralized self-service platform for managing inventory, property data, and streamlining internal processes."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As the sole developer on this project, I was responsible for the end-to-end development of the custom internal website, collaborating closely with various departments within RealtyPro to understand their specific needs."
+										"As a **frontend developer** on this project, I was responsible for software architecture decisions, development of custom interfaces and components, and collaborating closely with our design team and various departments within Paragon to understand their specific needs."
 									]
 								}
 							],
@@ -1143,7 +1396,7 @@
 									"content": [
 										"**Efficient Inventory Management:** Develop a system to track and manage real estate assets, including properties, equipment, and marketing materials.",
 										"**Data Centralization:** Create a centralized repository for property data, ensuring consistency and accessibility for all team members.",
-										"**Process Optimization:** Streamline internal workflows by automating routine tasks related to inventory and data management."
+										"**Personalization:** Streamline internal workflows tailored to individual roles and user groups by automating routine tasks related to inventory and data management."
 									]
 								}
 							]
@@ -1161,7 +1414,7 @@
 						"title": "Challenges",
 						"content": [
 							"**Starting From Scratch:** Existing tools for inventory and data management were fragmented, leading to inefficiencies and data inconsistencies.",
-							"**Disparate Systems:** Many tasks, such as updating property information and managing marketing materials, were manual and time-consuming.",
+							"**Disparate Systems:** Many tasks, such as updating property information and managing marketing materials, were manual, time-consuming, and lacked a cohesive single platform to complete all tasks.",
 							"**Unreliable Data Accessibility:** The lack of a centralized system made it challenging for team members to access up-to-date information promptly."
 						]
 					}
@@ -1176,18 +1429,72 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "text-image",
 						"title": "Key Contributions",
 						"content": [
-							"**Personalized Dashboard:** A centralized dashboard provided an overview of available properties, equipment, and marketing resources.",
-							"**Property Data Centralization:** A unified repository for property data, with easy-to-use tools for updating and retrieving information.",
-							"**Automated Workflows:** Implemented automation for routine tasks, such as updating property listings and managing marketing collateral."
+							{
+								"text": [
+									"**Branded Component Library**",
+									"I contributed to and maintained a reusable component library that incorporated with the Paragon brand as well as handling all client-side validation and data sanitation.",
+									"Many of the processes and features required heavy form-based data entry, so our library consisted of components useful in forms plus others tailored to common real estate functions."
+								],
+								"image": {
+									"alt": "DASH component screenshots",
+									"src": {
+										"light": "/dash-components.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Easy Data Maintenance**",
+									"Editting property, agent, location, and geographic data was a daily occurrence for DASH users, so we implemented an \"Edit Mode\" that was succint and easy to use."
+								],
+								"image": {
+									"alt": "DASH edit screenshots",
+									"src": {
+										"light": "/dash-edit.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
 					},
 					{
-						"type": "unordered-list",
+						"type": "image-blocks",
 						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
+						"content": [
+							{
+								"href": "https://react.dev",
+								"image": {
+									"alt": "React logo",
+									"src": {
+										"light": "/react_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Powerful JavaScript Framework",
+								"text": "The entirety of the Paragon DASH tool was built using the React framework, useful for its reusable components and widespread adoption"
+							},
+							{
+								"href": "https://mobx.js.org",
+								"image": {
+									"alt": "Mobx logo",
+									"src": {
+										"light": "/mobx_light.png",
+										"dark": "/mobx_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Simple State Management",
+								"text": "The team chose Mobx for our state management for its concise syntax and integration with React"
+							}
+						]
 					}
 				]
 			},
@@ -1201,19 +1508,10 @@
 				"center": true,
 				"blocks": [
 					{
-						"type": "unordered-list",
-						"title": "Metrics",
-						"content": [
-							"**Time Saved:** A 40% reduction in the time spent on manual data entry tasks, allowing team members to focus on client interactions and property transactions.",
-							"**Data Accuracy:** Improved data accuracy by 30%, reducing errors and discrepancies in property listings.",
-							"**Increased Autonomy:** Increased collaboration across departments due to improved accessibility and centralization of property data."
-						]
-					},
-					{
 						"type": "text",
 						"title": "Impact",
 						"content": [
-							"The custom internal website successfully transformed internal processes at RealtyPro, fostering greater efficiency, collaboration, and accuracy in managing inventory and property data."
+							"The custom property management system successfully transformed internal processes at Paragon, fostering greater efficiency, collaboration, and accuracy in managing inventory, property, and agent data."
 						]
 					}
 				]
@@ -1230,23 +1528,25 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"Developing the custom internal website for RealtyPro was a rewarding experience that showcased the transformative impact of technology on optimizing internal processes within a real estate company. As the lead developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the efficiency and success of RealtyPro."
+										"Developing the custom internal dashboard for Paragon was a rewarding experience that showcased the transformative impact of technology on optimizing internal processes within a real estate company. As a contributing developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the efficiency and success of Paragon.",
+										"I enjoyed the challenge of creating interfaces for an industry I was unfamiliar with at the time, and the lessons learned through working on a team benefitted my personal and professional development."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming challenges related to data migration and ensuring a seamless transition highlighted the importance of thorough testing and communication with stakeholders."
+										"**Communicate With Stakeholders:** Communicating often with stakeholders will result in a better product and user experience",
+										"**Know Your Data:** Becoming intimately familiar with all aspects of data, even as a frontend engineer will make your job easier and your code cleaner"
 									]
 								},
 								{
 									"type": "text",
 									"title": "Future Recommendations",
 									"content": [
-										"For future enhancements, I recommend exploring integrations with external systems, such as CRM tools, to further streamline workflows and data synchronization."
+										"For future enhancements, I recommend exploring more consistent user testing to gain insight earlier in the design and development process."
 									]
 								}
 							]
@@ -1269,11 +1569,11 @@
 		},
 		"backgroundImage": "/sketchbook.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/highseas-cover.png",
 			"width": 1600,
 			"height": 900
 		},
-		"description": "Showcasing the values and demonstrating the projects of a Bay Area consulting company",
+		"description": "Demonstrating company values and showcasing the projects of a Bay Area consulting company",
 		"handle": "high-seas-portfolio",
 		"sections": [
 			{
@@ -1288,14 +1588,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"In my role as a frontend software engineer, I played a pivotal role in developing the portfolio website for ConsultX Solutions, a dynamic consulting company. The objective was to create a modern, user-friendly website that not only showcased the company's expertise but also engaged clients and prospects through interactive elements."
+										"In my role as a frontend software engineer, I played a pivotal role in developing the portfolio website for High Seas Consulting. The objective was to create a modern, user-friendly website that not only showcased the company's expertise but also engaged clients and prospects through interactive elements and case studies."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As a key member of the development team, my responsibilities included designing and implementing the frontend of the portfolio website, collaborating closely with the design team and stakeholders at ConsultX Solutions."
+										"As a key member of the **frontend development** team, my responsibilities included implementing aspects of the frontend, microinteractions, and navigation of the portfolio website, and collaborating closely with the design team and owners at High Seas."
 									]
 								}
 							],
@@ -1304,7 +1604,7 @@
 									"type": "unordered-list",
 									"title": "Objectives",
 									"content": [
-										"**Dynamic Experience:** Develop a visually appealing and dynamic website to effectively showcase ConsultX Solutions' range of consulting services and success stories.",
+										"**Dynamic Experience:** Develop a visually appealing and dynamic website to effectively showcase High Seas' range of consulting services and success stories.",
 										"**Marketability:** Enhance user engagement through interactive features, encouraging clients and prospects to explore the company's portfolio.",
 										"**Brand Consistency:** Ensure the website reflects the company's brand identity, values, and professionalism."
 									]
@@ -1339,18 +1639,87 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
+						"type": "text-image",
 						"title": "Key Contributions",
 						"content": [
-							"**Interactive Case Studies:** Implemented interactive elements within case studies to engage users and provide a deeper understanding of the company's consulting projects.",
-							"**Dynamic Micro-interactions:** A dynamic carousel showcasing client testimonials, adding credibility and trustworthiness to the company's reputation.",
-							"**Cohesive Brand Presentation:** An animated overview of the company's services on the homepage, providing a quick and engaging snapshot of ConsultX Solutions' offerings."
+							{
+								"text": [
+									"**Subtle Microinteractions**",
+									"I implemented subtle microinteractions in the form of hover effects, animations, and transitions throughout the portfolio site.",
+									"Small details like this fit the design values and outlook of the design and engineering teams across the company."
+								],
+								"image": {
+									"alt": "High Seas interaction screenshots",
+									"src": {
+										"light": "/highseas-interactions.gif"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Dynamic Pages & Case Studies**",
+									"I contributed to the development of vibrant, dynamic pages for marketing and showcases of project case studies.",
+									"The design ethos of High Seas is a combination of cutting-edge tech with a talented eye for design, and the pages across the site demonstrate that well."
+								],
+								"image": {
+									"alt": "High Seas page screenshots",
+									"src": {
+										"light": "/highseas-pages.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Increased Brand Awareness**",
+									"The collaboration between designers, developers, and product team members resulted in a cohesive site that truly showcased the values and skillsets of High Seas."
+								],
+								"image": {
+									"alt": "High Seas landing screenshots",
+									"src": {
+										"light": "/highseas-landing.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
 					},
 					{
-						"type": "unordered-list",
+						"type": "image-blocks",
 						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
+						"content": [
+							{
+								"href": "https://react.dev",
+								"image": {
+									"alt": "React logo",
+									"src": {
+										"light": "/react_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Powerful JavaScript Framework",
+								"text": "We chose to build the portfolio site using React because of its strengths with building dynamic user interfaces"
+							},
+							{
+								"href": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+								"image": {
+									"alt": "CSS logo",
+									"src": {
+										"light": "/css_light.png",
+										"dark": "/css_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Meaningful Interactions",
+								"text": "All microinteractions and animations were acheived with simple CSS rules, reducing bundle size and the need for unnecessary JavaScript"
+							}
+						]
 					}
 				]
 			},
@@ -1364,19 +1733,11 @@
 				"center": true,
 				"blocks": [
 					{
-						"type": "unordered-list",
-						"title": "Metrics",
-						"content": [
-							"**Time Saved:** A 40% reduction in the time spent on manual data entry tasks, allowing team members to focus on client interactions and property transactions.",
-							"**Data Accuracy:** Improved data accuracy by 30%, reducing errors and discrepancies in property listings.",
-							"**Increased Autonomy:** Increased collaboration across departments due to improved accessibility and centralization of property data."
-						]
-					},
-					{
 						"type": "text",
 						"title": "Impact",
 						"content": [
-							"The revamped portfolio website successfully positioned ConsultX Solutions as an innovative and dynamic consulting firm, leading to increased client inquiries and engagements."
+							"The revamped portfolio website successfully reaffirmed High Seas as an innovative and dynamic consulting firm, leading to increased client inquiries and engagements.",
+							"The case studies successfully showcased their work while also demonstrating the strong design and development chops that their employees had to offer."
 						]
 					}
 				]
@@ -1393,16 +1754,17 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"Building the portfolio website for ConsultX Solutions was a collaborative effort that showcased the transformative impact of a well-designed and interactive online presence. As a frontend software engineer, this project allowed me to leverage my technical expertise to create a website that not only met the client's objectives but exceeded their expectations, contributing to the company's success in the competitive consulting industry."
+										"Building the portfolio website for High Seas was a collaborative effort that showcased the transformative impact of a well-designed and interactive online presence. As a frontend developer, this project allowed me to leverage my technical expertise to create a website that not only met the project objectives while contributing to the company's success in the competitive consulting industry."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming challenges related to implementing complex animations underscored the need for optimization without compromising on user experience."
+										"**Pixel-Pushing Provides Value:** Attention to detail provides a ton of value when it comes to projects related to highlighting marketable design sensibilities",
+										"**Subtle Interactions are Impactful:** Implementing many consistent, small interactions across a website have a large impact on the overall user experience"
 									]
 								},
 								{
