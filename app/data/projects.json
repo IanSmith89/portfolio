@@ -1,0 +1,2800 @@
+[
+	{
+		"title": {
+			"long": {
+				"text": "Rebranding TPC",
+				"subtitle": "A Lesson in Engineering Leadership"
+			},
+			"short": {
+				"text": "TPC",
+				"subtitle": "E-Commerce Rebrand"
+			}
+		},
+		"backgroundImage": "/cyclists.jpg",
+		"coverImage": {
+			"src": "/tpc-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Leading the technical efforts to rebrand, optimize, and modernize the TPC e-commerce website",
+		"handle": "tpc-rebrand",
+		"sections": [
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Project Overview",
+									"content": [
+										"I had the privilege of leading the implementation of a significant redesign for the public-facing e-commerce website of TPC, the industry leader in buying and selling used bikes. The primary goal was to modernize the overall look and feel of the site, enhance the user experience, and improve performance."
+									]
+								},
+								{
+									"type": "text",
+									"title": "My Role",
+									"content": [
+										"As the **frontend engineering lead**, my responsibilities encompassed overseeing the entire frontend development process, collaborating with our design, product, marketing, and backend engineering teams, and communicating regular milestones and deadlines. I oversaw refactors of all pages on the website and ensured the successful implementation of the rebrand while continuing to release new features and product updates."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Objectives",
+									"content": [
+										"**Modernization:** Refresh the user interface to align with contemporary UX trends and the new company brand.",
+										"**Enhanced User Experience:** Improve navigation, product search and discovery, and overall satisfaction for online shoppers.",
+										"**Code Sanitation & Performance:** Clean up outdated and unused code to improve performance and developer experience."
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "ordered-list",
+						"title": "Challenges",
+						"content": [
+							"**Outdated User Interface:** The existing website had an outdated design that didn't resonate with the company's progressive image and lacked some basic functionality common in modern e-commerce websites.",
+							"**Suboptimal User Journeys:** Users faced difficulties navigating and finding products efficiently. Some of the user flows were not tailored to the best user experience or desired conversion rates.",
+							"**Performance Concerns:** There was a lot of tech debt in the form of dead code and overall cruft that not only hampered website performance but also made it challenging to consume from a developer experience."
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Solution"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Key Contributions",
+						"content": [
+							{
+								"text": [
+									"**Streamlined Navigation**",
+									"I implemented a simplified primary header navigation and footer to increase usability and improve discoverability.",
+									"Using Shopify's internal dashboard editor to configure the menus, categories, and links allowed our marketing team to maintain and update the information architecture without having to request updates from the tech team."
+								],
+								"image": {
+									"alt": "TPC navigation screenshots",
+									"src": {
+										"light": "/tpc-navigation.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Search & Discovery Improvements**",
+									"Integrating with Algolia to power the rebranded website's search greatly improved and modernized the overall search experience.",
+									"I configured and built all search and filter-related functionality including setting up logic for displaying suggested search terms and matching categories, brands, and products.",
+									"Users also gained the ability to create and maintain saved search queries to track their most-wanted gear and receive email updates when new products arrive."
+								],
+								"image": {
+									"alt": "TPC search screenshots",
+									"src": {
+										"light": "/tpc-search.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**My Account Personalization**",
+									"We completely redesigned the \"My Account\" experience to incorporate new functionality and add features expected of a modern account page.",
+									"My primary contributions included integrating with Braze APIs to give users' options for setting their notification preferences.",
+									"I also added functionality for users to update their primary contact information including first and last name and phone number."
+								],
+								"image": {
+									"alt": "TPC account screenshots",
+									"src": {
+										"light": "/tpc-account.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Simplified Magazine Exploration**",
+									"One of the biggest pain points regularly reported by users and internal teams alike was the lack of search functionality on the magazine blog page.",
+									"I implemented a simple search experience that incorporated Shopify architecture patterns to return paged results and allow our marketing team to easily organize and tag articles."
+								],
+								"image": {
+									"alt": "TPC magazine screenshots",
+									"src": {
+										"light": "/tpc-magazine.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "image-blocks",
+						"title": "Technology Highlights",
+						"content": [
+							{
+								"href": "https://www.algolia.com",
+								"image": {
+									"alt": "Algolia logo",
+									"src": {
+										"light": "/algolia_light.png",
+										"dark": "/algolia_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Revolutionized Search",
+								"text": "Thanks to the powerful search and discovery capabilities included with the integration of Algolia, we transformed the way users explore and discover the bikes and gear they want"
+							},
+							{
+								"href": "https://www.shopify.com",
+								"image": {
+									"alt": "Shopify logo",
+									"src": {
+										"light": "/shopify_light.png",
+										"dark": "/shopify_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Empowered Teams",
+								"text": "We were able to blend out-of-the-box functionality provided by Shopify along with custom solutions that allowed our marketing and merchandising teams to thrive independent from the tech team"
+							},
+							{
+								"href": "https://www.braze.com",
+								"image": {
+									"alt": "Braze logo",
+									"src": {
+										"light": "/braze_light.png",
+										"dark": "/braze_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Boosted Engagement",
+								"text": "By integrating with Braze during the rebrand we were able to easily connect with our users through personalized, targeted campaigns"
+							},
+							{
+								"href": "https://segment.com",
+								"image": {
+									"alt": "Segment logo",
+									"src": {
+										"light": "/segment_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Unified Analytics",
+								"text": "We gained clarity into our users' data and behavior by leveraging Segment to unify our data and streamline reporting and insights"
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "image-compare",
+						"title": "Before & After",
+						"content": {
+							"mobile": {
+								"image1": "/tpc-landing-old_mobile.png",
+								"image2": "/tpc-landing-new_mobile.png",
+								"imageWidth": 800,
+								"imageHeight": 13887
+							},
+							"desktop": {
+								"image1": "/tpc-landing-old_desktop.png",
+								"image2": "/tpc-landing-new_desktop.png",
+								"imageWidth": 1280,
+								"imageHeight": 4658
+							}
+						}
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "unordered-list",
+						"title": "Metrics",
+						"content": [
+							"**Project Duration:** Over 3 months we successfully refactored all pages and launched the rebranded website on time to coincide with marketing efforts and the new brand announcement",
+							"**Site Performance:** We addressed all major issues with metrics identified by Google Lighthouse, increasing our scores to >90% for performance, and perfect 100% for accessibility, best practices, and SEO",
+							"**Search Response Time:** We reduced the response time for search queries from a couple seconds to an average of 8ms",
+							"**Tech Debt:** We removed or refactored over 100k lines of unused or outdated code"
+						]
+					},
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"The launch of the redesigned site not only met but exceeded the project objectives, resulting in a more engaging and efficient user experience and an easier codebase to maintain.",
+							"By regularly communicating and agreeing on realistic deadlines, all involved teams were able to successfully announce the new brand and immediately incorporate rebranded assets and product features."
+						]
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"The redesign of TPC's e-commerce website was a collaborative effort that successfully addressed user experience challenges and achieved notable improvements in performance and design. As the frontend engineering lead, this project allowed me to showcase my leadership skills, technical expertise, and commitment to delivering a high-quality user experience.",
+										"It presented a unique and fun challenge in balancing refactoring and cleaning up code while maintaining focus on the overall goal of finishing the project on time. I enjoyed collaborating with so many different teams and contributors, and I liked the opportunity to make a large impact on the perception of a public-facing brand in an industry I love."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Lessons Learned",
+									"content": [
+										"**Crush Tech Debt When You Can:** This project allowed our team to address longstanding amounts of tech debt while also encouraging us to implement consistent architecture patterns",
+										"**Overcommunicate Deadlines:** Speak up early and often when creating deadlines with external teams, and don't be afraid to be realistic about project estimates",
+										"**Take Initiative:** As a frontend engineer, it's your duty to collaborate with designers, and you can contribute ideas that positively impact the direction and decision-making in most projects"
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future projects, I recommend establishing agreed upon metrics that allow the stakeholders to know what is successful and what still needs work when taking on such a large project."
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		],
+		"website": {
+			"href": "https://www.theproscloset.com",
+			"text": "Visit theproscloset.com"
+		}
+	},
+	{
+		"title": {
+			"long": {
+				"text": "Transforming HR at Starbucks",
+				"subtitle": "Building a Component Library for Efficient Development"
+			},
+			"short": {
+				"text": "Starbucks",
+				"subtitle": "Component Library & Internal Apps"
+			}
+		},
+		"backgroundImage": "/coffee.jpg",
+		"coverImage": {
+			"src": "/starbucks-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Developing a design system and component library for internal Starbucks applications",
+		"handle": "starbucks-s4-apps",
+		"sections": [
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Project Overview",
+									"content": [
+										"In my time as a software engineer at Starbucks, I led the development of a data-driven component library for internal applications in the Business Intelligence & Data Services organization. The objective was to standardize UI components, improve consistency across platforms, and empower development teams to build efficient, user-friendly internal tools."
+									]
+								},
+								{
+									"type": "text",
+									"title": "My Role",
+									"content": [
+										"As a **senior application developer** and the project lead, I was responsible for the entire lifecycle of the component library, from design conceptualization to implementation, maintaining documentation, and collaborating closely with other design and development teams and internal Starbucks business stakeholders."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Objectives",
+									"content": [
+										"**Consistency Across Apps:** Establish a unified visual language and design system for internal applications used in HR, finance, and business operations.",
+										"**Efficiency & Reusability:** Create reusable components to streamline the development process and reduce redundant code across teams.",
+										"**Ease of Maintenance:** Develop and release the project as a standalone library that can be easily integrated and updated by multiple contributors."
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "ordered-list",
+						"title": "Challenges",
+						"content": [
+							"**Organizational Inconsistency:** Many of the teams in our organization worked with similar technology stacks but developed apps with various approaches that lacked visual consistency, leading to a disjointed user experience.",
+							"**Code Redundancy:** Similar frontend code was being developed and deployed independently by different teams, and most of the frontend code was not regularly maintained.",
+							"**Personnel Fragmentation:** Development teams were somewhat fragmented and siloed in their day-to-day work and areas of expertise."
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Solution"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Key Contributions",
+						"content": [
+							{
+								"text": [
+									"**Integrated Styles & Design Language**",
+									"I worked closely with other design and development teams to ensure that the component syntax and core colors, styles, and typography aligned with any existing conventions.",
+									"I also met regularly and presented to the brand design teams to ensure our component library followed the already established [Starbucks Creative Expression](https://creative.starbucks.com/) guidelines."
+								],
+								"image": {
+									"alt": "Starbucks Creative Expression screenshots",
+									"src": {
+										"light": "/starbucks-brand.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Reusable Components**",
+									"I established a core set of the most common user interface components that built off of some of the existing frontend standards in our organization plus a suite of components borrowed the MUI component library.",
+									"I introduced a number of new components including calendars, datepickers, tables, and navigation variations that weren't previously standardized across existing internal applications."
+								],
+								"image": {
+									"alt": "Starbucks component library screenshots",
+									"src": {
+										"light": "/starbucks-components.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Release & Integration**",
+									"I successfully deployed and made regular updates to the component library and installed and used it in a number of internal applications used for reporting, financial tracking, resource management, and business operations.",
+									"The component library was initially used by a handful of teams before gaining wide adoption across a number of teams and apps.",
+									"Note: screenshots are approximations of final application designs."
+								],
+								"image": {
+									"alt": "Starbucks component app screenshots",
+									"src": {
+										"light": "/starbucks-apps.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "image-blocks",
+						"title": "Technology Highlights",
+						"content": [
+							{
+								"href": "https://react.dev",
+								"image": {
+									"alt": "React logo",
+									"src": {
+										"light": "/react_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Trusted Framework",
+								"text": "Along with most of the rest of the frontend teams in our organization, we built our component library to be compatible with the component-based React framework"
+							},
+							{
+								"href": "https://mui.com",
+								"image": {
+									"alt": "MUI logo",
+									"src": {
+										"light": "/mui_light.png",
+										"dark": "/mui_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Tried & Tested Components",
+								"text": "We relied on a lot of the functionality provided by MUI to reduce overall dev time and decision-making around naming conventions and some software architecture"
+							},
+							{
+								"href": "https://storybook.js.org/",
+								"image": {
+									"alt": "Storybook logo",
+									"src": {
+										"light": "/storybook_light.png",
+										"dark": "/storybook_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Effortless UI Development",
+								"text": "Storybook provided the team a powerful platform for documenting functionality and behavior of the components while also serving as a dedicated environment for testing and development"
+							},
+							{
+								"href": "https://www.figma.com",
+								"image": {
+									"alt": "Figma logo",
+									"src": {
+										"light": "/figma_light.png",
+										"dark": "/figma_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Consistent Design Assets",
+								"text": "All components were designed and maintained in Figma to ensure that every one relied on the same on-brand design assets and was easily updated when changes were required"
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "unordered-list",
+						"title": "Metrics",
+						"content": [
+							"**User Adoption:** Positive feedback from business stakeholders and other engineering teams resulted in a swift adoption of the new component library.",
+							"**Duplicated Code Reduction:** The library included 40+ new reusable components and was integrated into 15+ internal applications.",
+							"**Developer Efficiency:** The release of the component library introduced new resources and a shared mode of working for 4+ engineering teams within our organization."
+						]
+					},
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"The implementation of the component library resulted in a more streamlined, consistent, and user-friendly approach to application development within the Business Intelligence & Data Services organization.",
+							"Users of the applications that installed the library were impressed with the sleek look and feel and appreciated the improvements to overall user experience."
+						]
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"The creation of this component library for internal apps at Starbucks was a transformative project for me that showcased the impact of standardization and data-driven design on user experience and development efficiency. As the project lead, this experience reinforced my commitment to creating solutions that bridge the gap between design, development, and user needs."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Lessons Learned",
+									"content": [
+										"**Navigating Large Enterprise:** This project provided a great understanding of the scope of working with multiple engineering teams and internal users in a global enterprise",
+										"**Collaboration Takes You Places:** Working with a number of other design and development teams showed me the power of collaborating with others",
+										"**Stand on the Shoulders of Giants:** Relying on proven existing technologies is a great way to move fast and prevent yourself from reinventing the wheel unnecessarily"
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future projects, I recommend ongoing collaboration and feedback with end-users to adapt the component library to evolving needs. It would also be a good exercise to think outside of the box after initial components have been developed to identify opportunities for other reusable code to include in a library."
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": {
+			"long": {
+				"text": "Lifesaving Solutions",
+				"subtitle": "Vaccine Finder for the WA Department of Health"
+			},
+			"short": {
+				"text": "WA Department of Health",
+				"subtitle": "Vaccine Locator"
+			}
+		},
+		"backgroundImage": "/vaccines.jpg",
+		"coverImage": {
+			"src": "/wa-doh-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Providing all Washingtonians a user-friendly website to locate vaccines during a pivotal time in the Covid pandemic",
+		"handle": "wa-doh-vaccine-locator",
+		"sections": [
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Project Overview",
+									"content": [
+										"Over the course of six weeks in the early stages of the COVID-19 pandemic, I had the privilege of collaborating on the development of a critical tool commissioned by the Washington Department of Health - the vaccine locator website launched as part of the state-wide Vaccinate WA campaign. The primary goal was to provide the public with the latest trusted information to locate COVID-19 vaccinations on a user-friendly platform during a pivotal and often confusing time in the fight against the pandemic."
+									]
+								},
+								{
+									"type": "text",
+									"title": "My Role",
+									"content": [
+										"As the **lead frontend engineer**, I played a crucial role in collaborating closely with a multidisciplinary team that included public health experts, backend developers, and UX designers. My primary responsibilities included frontend software architecture decisions and implementation, internationalization, and accessibility."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Objectives",
+									"content": [
+										"**Rapid Deployment:** Quickly create and release to aid in the rapid distribution of COVID-19 vaccines and responding to sometimes daily changes to public health policy and project requirements.",
+										"**User-Friendly Interface:** Develop an intuitive and utilitarian platform for users to easily find and schedule vaccination appointments on any device.",
+										"**Internationalization & Accessibility:** Implement a system that was able to handle displaying information in multiple languages and ensuring that users of all abilities were able to access and use."
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "ordered-list",
+						"title": "Challenges",
+						"content": [
+							"**Urgency:** The urgency of the pandemic required a rapid response to aid in the vaccination effort while dealing with constantly shifting requirements.",
+							"**Information Dissemination:** Providing concise information on vaccine availability was a significant challenge. As new vaccines and information received signoff from public health officials the team had to respond to change in data and interface structure to handle the changes.",
+							"**Internationalization:** Maintaining an consistent source of information that could be accurately translated as official messaging was updated required constant attention and refactoring."
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Solution"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Key Contributions",
+						"content": [
+							{
+								"text": [
+									"**Familiar Search Experience**",
+									"Working closely with the UX designers on the team, we decided on a simple, utilitarian interface with a Google-like search experience that is familiar to the most amount of people.",
+									"The goal was to provide users a single search input that accepted zip codes and displayed search results that initially showed only the most important information, including location contact information and the types of vaccines available."
+								],
+								"image": {
+									"alt": "WA DOH search screenshots",
+									"src": {
+										"light": "/wa-doh-search.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Internationalization Strategy**",
+									"In order to effectively communicate with the greatest amount of people, I was responsible for implementing the frontend strategy for displaying text content that was translated into numerous languages including those that read right-to-left.",
+									"I ensured that the interface was still legible no matter the language and worked with our backend engineers to develop a data model that could respond to the frequently changing text and translated content."
+								],
+								"image": {
+									"alt": "WA DOH internationalization screenshots",
+									"src": {
+										"light": "/wa-doh-i18n.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Flexible Accessibility Options**",
+									"Given the high profile nature of the site, the project timeline, and that public-facing government websites require adhering to the highest accessibility standards, the team decided to use the Accessibe platform to ensure all aspects of the site were accessible to all users.",
+									"I was responsible for integrating with the platform and ensuring that the various accessibility profiles and settings it provides didn't interfere with our front end code."
+								],
+								"image": {
+									"alt": "WA DOH accessibility screenshots",
+									"src": {
+										"light": "/wa-doh-a11y.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "image-blocks",
+						"title": "Technology Highlights",
+						"content": [
+							{
+								"href": "https://mui.com",
+								"image": {
+									"alt": "MUI logo",
+									"src": {
+										"light": "/mui_light.png",
+										"dark": "/mui_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Rapid UI Development",
+								"text": "We relied on the built-in functionality provided by MUI to handle text direction changes as well as the large selection of prebuilt, tested components for quick UI development"
+							},
+							{
+								"href": "https://www.i18next.com",
+								"image": {
+									"alt": "i18next logo",
+									"src": {
+										"light": "/i18next_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Internationalization Simplified",
+								"text": "The i18next framework allowed the team to implement an architecture that provided easy identification and display options for text content that needed to be translated"
+							},
+							{
+								"href": "https://accessibe.com",
+								"image": {
+									"alt": "accessiBe logo",
+									"src": {
+										"light": "/accessibe_light.png",
+										"dark": "/accessibe_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "WCAG & ADA Compliance",
+								"text": "Accessibe gave the WA Department of Health a trusted tool to provide all public users the ability to easily use the vaccine locator website"
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "unordered-list",
+						"title": "Metrics",
+						"content": [
+							"**Website Traffic:** Experienced a surge in traffic upon website launch, with over 2 million users accessing the website within the first week.",
+							"**Internationalization:** The flexibility of the interface and data structures we put in place contributed to expanding to offer 43 different languages and dialects.",
+							"**Public Engagement:** The website became a trusted government resource, garnering positive media coverage and continued user engagement."
+						]
+					},
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"The Vaccine Locator Website played a vital role in streamlining the vaccination process, contributing to the overall effort to combat the COVID-19 pandemic.",
+							"The collaborative efforts of the team allowed the WA Department of Health to continue sharing vaccine information throughout the pandemic and easily respond to changing federal guidelines."
+						]
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Collaborating on the Vaccine Locator Website for the Washington Department of Health was a profound experience that highlighted the power of technology in addressing urgent public health needs. As a frontend software engineer, this project reinforced my commitment to leveraging technology for the greater good and demonstrated the positive impact that collaborative efforts can achieve during challenging and stressful times.",
+										"Although the project included some of the most ambiguous and frequently changing requirements I've experienced so far, it was invigorating and oftentimes exciting to know the work we were doing would have an impact on a large userbase that I have never had the chance to build websites for."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Lessons Learned",
+									"content": [
+										"**Keep It Simple:** This project taught me that simple solutions for displaying and storing information often result in short-term flexibility and long-term consistency",
+										"**Be Flexible & Positive:** Responding to frequently changing requirements can sometimes drag projects down, but maintaining a positive, flexible attitude has a large impact on the work that gets done",
+										"**Teamwork Feels Great:** Collaborating with stakeholders outside of technology teams is a perfect way to identify edge cases earlier and ensure that your work is actually solving the problems it's supposed to"
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future projects, I recommend building on the success of this initiative by continuing to prioritize user accessibility, collaboration with relevant stakeholders, and setting up data in a way that could handle internationalization. You never know the next time your site might need to be translated to 43 different languages."
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		],
+		"website": {
+			"href": "https://vaccinelocator.doh.wa.gov",
+			"text": "Visit Vaccinate WA"
+		}
+	},
+	{
+		"title": {
+			"long": {
+				"text": "Elevating Luxury Real Estate",
+				"subtitle": "Immersive Interactions & Custom Animation"
+			},
+			"short": {
+				"text": "Paragon Real Estate",
+				"subtitle": "Luxury Property Website"
+			}
+		},
+		"backgroundImage": "/golden-gate.jpg",
+		"coverImage": {
+			"src": "/paragon-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Telling a story and adding life to a public-facing Bay Area real estate company website",
+		"handle": "paragon",
+		"sections": [
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Project Overview",
+									"content": [
+										"While working for High Seas Consulting, one of our primary clients was Paragon Real Estate Group, a prominent luxury real estate company based in the Bay Area. We developed a visually stunning public-facing website for them that not only showcased high-end properties but also provided an immersive and engaging user experience."
+									]
+								},
+								{
+									"type": "text",
+									"title": "My Role",
+									"content": [
+										"As a **frontend developer**, my responsibilities included implementing the redesigned user interface, deciding on frontend technologies and architecture, developing custom animations, and collaborating closely with our design team to bring their vision to life."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Objectives",
+									"content": [
+										"**Striking Visual Design:** Deliver a redesigned website to reflect the sophistication and elegance associated with luxury real estate.",
+										"**Welcoming User Experience:** Develop intuitive navigation and interactive animations to engage and captivate users.",
+										"**Intuitive Search Features:** Allow for an easy search experience and implement animations to showcase neighborhood details and amenities in an elegant and compelling manner."
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "ordered-list",
+						"title": "Challenges",
+						"content": [
+							"**Outdated Interface:** The existing website lacked the visual appeal and modern design expected in the luxury real estate market.",
+							"**Limited User Engagement:** Users were not staying on the website long enough to explore the unique features of each property.",
+							"**Competition in the Bay Area:** With fierce competition in the real estate market, the website needed to stand out as a premier destination for luxury property seekers."
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Solution"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Key Contributions",
+						"content": [
+							{
+								"text": [
+									"**Custom Typographic Animations**",
+									"I implemented custom animations and transitions on one of the marketing pages to demonstrate the sleekness and cutting-edge emotions that Paragon wanted to evoke.",
+									"Working closely with our design team, I ensured that the assets on the page rendered and transitioned as intended."
+								],
+								"image": {
+									"alt": "Paragon animation screenshots",
+									"src": {
+										"light": "/paragon.gif"
+									},
+									"width": 1440,
+									"height": 740
+								}
+							},
+							{
+								"text": [
+									"**Translated Animations**",
+									"Based on the reception and success of the initial animated marketing pages, I also implemented special pages that presented the same animations in Simplified and Traditional Mandarin Chinese to expand Paragon's reach in the Bay Area market.",
+									"Working closely with a translator, I ensured that the animations of each stroke were implemented in the proper order and direction based on how each Chinese character is written by hand."
+								],
+								"image": {
+									"alt": "Paragon Chinese animation screenshots",
+									"src": {
+										"light": "/paragon-chinese.gif"
+									},
+									"width": 1440,
+									"height": 740
+								}
+							},
+							{
+								"text": [
+									"**Interactive Regional Maps**",
+									"I added interactivity when I worked on a section of the site that let users explore the various regions and neighborhoods that Paragon operated out of.",
+									"Using SVG assets and simple CSS rules, I was able to implement impactful interactions that aided in the search and discovery and education about the different Bay Area neighborhoods."
+								],
+								"image": {
+									"alt": "Paragon map screenshots",
+									"src": {
+										"light": "/paragon-map.gif"
+									},
+									"width": 1140,
+									"height": 738
+								}
+							},
+							{
+								"text": [
+									"**Intuitive Search & Discovery**",
+									"I implemented a clean search interface with simplified initial parameters that led users to a more detailed results page, allowing for further refinement and discovery.",
+									"All user interface components were consistent with the Paragon brand and further exemplified the elevated visual aesthetic they desired."
+								],
+								"image": {
+									"alt": "Paragon search screenshots",
+									"src": {
+										"light": "/paragon-search.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "image-blocks",
+						"title": "Technology Highlights",
+						"content": [
+							{
+								"href": "https://react.dev",
+								"image": {
+									"alt": "React logo",
+									"src": {
+										"light": "/react_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Reusable Components",
+								"text": "The entirety of the Paragon website was built using the React framework, useful for its reusable components and widespread adoption"
+							},
+							{
+								"href": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+								"image": {
+									"alt": "CSS logo",
+									"src": {
+										"light": "/css_light.png",
+										"dark": "/css_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Clean Styles & Animation",
+								"text": "All basic typographic animations and regional map interactions were achieved with simple CSS rules, reducing bundle size and the  need for unnecessary JavaScript"
+							},
+							{
+								"href": "https://developer.mozilla.org/en-US/docs/Web/SVG",
+								"image": {
+									"alt": "SVG logo",
+									"src": {
+										"light": "/svg_light.png",
+										"dark": "/svg_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Useful Vector Assets",
+								"text": "Graphic assets were rendered using SVG files because of their easy integration with React and the ability to render directly to the DOM"
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "unordered-list",
+						"title": "Metrics",
+						"content": [
+							"**Competitive Edge:** The redesigned website contributed to the company's differentiation in the competitive Bay Area real estate market.",
+							"**User Engagement:** The launch of the redesigned Paragon site saw a large increase in user engagement, leading to a higher likelihood of users exploring multiple property listings."
+						]
+					},
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"The revamped frontend and animations elevated Paragon's online presence, positioning it as a premier destination for high-end property seekers in the Bay Area.",
+							"Our team's work also contributed to the eventual [acquisition of Paragon Real Estate Group by Compass](https://www.sfchronicle.com/business/networth/article/Paragon-Real-Estate-of-SF-acquired-by-Compass-to-13061063.php) in 2018, forming what is still San Francisco's largest real estate brokerage."
+						]
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"The redesign of the frontend and animations for Paragon was a collaborative effort that successfully transformed the digital presence of the luxury real estate company. As a frontend developer, this project allowed me to showcase my skills in creating visually appealing and engaging user interfaces, contributing to the company's success in a competitive market.",
+										"It was also a great experience collaborating with our design team to add interactivity to a site and have back and forth conversations on what was and wasn't possible to implement given the project timeline and requirements."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Lessons Learned",
+									"content": [
+										"**JavaScript Isn't Always the Answer:** As powerful as JavaScript is, oftentimes there are more lightweight solutions that allow you to achieve the same functionality",
+										"**Respect Goes A Long Way:** Chinese users of the site were delighted with the attention to detail with the animations, showing the power of paying attention to the small things"
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"Now that more time has passed since product launch, I recommend exploring emerging technologies such as VR or AR to further enhance the immersive nature of the luxury real estate browsing experience."
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": {
+			"long": {
+				"text": "Streamlining Lab Operations",
+				"subtitle": "Astarte Biologics Inventory Management"
+			},
+			"short": {
+				"text": "Astarte Biologics",
+				"subtitle": "Biotech Inventory Management"
+			}
+		},
+		"backgroundImage": "/biotech-lab.jpg",
+		"coverImage": {
+			"src": "/astarte-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Modernizing the operations and inventory data management system for a Seattle biotechnology company",
+		"handle": "astarte-inventory-management",
+		"sections": [
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Project Overview",
+									"content": [
+										"In my role as a software engineer, I led the design and development of a comprehensive Inventory Management System (IMS) for Astarte Biologics, a cutting-edge biotechnology lab. The objective was to modernize and streamline the lab's operations by providing a robust platform for managing, tracking, and optimizing the utilization of lab resources."
+									]
+								},
+								{
+									"type": "text",
+									"title": "My Role",
+									"content": [
+										"Contributing as a **fullstack developer**, I was responsible for the end-to-end design and implementation of the IMS, collaborating closely with lab managers and researchers to understand their unique needs and working closely with the backend engineers on our team to ensure that the data models we devised were accurate and intentionally designed."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Objectives",
+									"content": [
+										"**Efficient Resource Management:** Create a centralized system to track and manage laboratory equipment, reagents, and consumables.",
+										"**Real-Time Visibility:** Develop a system that provides real-time visibility into inventory levels, minimizing the risk of stockouts and overstocking.",
+										"**Modernized Interface:** Design an intuitive and user-friendly interface that simplifies inventory-related tasks for lab personnel."
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "ordered-list",
+						"title": "Challenges",
+						"content": [
+							"**Manual Processes:** The existing inventory management process relied heavily on manual tracking, oftentimes via paper and clipboard, leading to errors and inefficiencies.",
+							"**Limited Visibility:** Lab personnel lacked real-time visibility into inventory levels, hindering their ability to effectively locate their products or identify low inventory to mark for reorder.",
+							"**Diverse Inventory:** Managing a wide range of specialized chemicals, equipment, and biological materials required a flexible and scalable solution and a thorough understanding of the business."
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Solution"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Key Contributions",
+						"content": [
+							{
+								"text": [
+									"**Project Planning & Ideation**",
+									"I worked closely with our counterpart at the biotech lab and our product team to thoroughly understand the current issues faced by the company and the hierarchy of products and data they needed to maintain.",
+									"We were abel to devise a plan for high-priority issues to address and early ideas for how to display the interfaces for showing and updating the inventory data."
+								],
+								"image": {
+									"alt": "Astarte sketches screenshots",
+									"src": {
+										"light": "/astarte-sketches.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Understanding Context**",
+									"It was essential to become familiar with the lab equipment and manual processes we were meant to virtualize.",
+									"I undertook educating myself on the objects used in the lab such as freezers, vials, canes, and lots to gain a better grasp on potential user interfaces and workflows."
+								],
+								"image": {
+									"alt": "Astarte equipment screenshots",
+									"src": {
+										"light": "/astarte-equipment.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Designing Familiar Interfaces**",
+									"The employees of the lab were in their comfort zone when looking at tabular, structured data, so I designed the interfaces using components such as data tables and simple inputs and dropdowns that they were already familiar with consuming.",
+									"Simple icon buttons were used to denote the common daily tasks including filtering, downloading inventory counts, and adding new products and lots to their databases."
+								],
+								"image": {
+									"alt": "Astarte interface screenshots",
+									"src": {
+										"light": "/astarte-interface.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Digitizing Common Tasks**",
+									"I designed additional interfaces and modal-based workflows for common lab tasks including moving inventory, updating information, and uploading certificates."
+								],
+								"image": {
+									"alt": "Astarte detail screenshots",
+									"src": {
+										"light": "/astarte-details.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "unordered-list",
+						"title": "Metrics",
+						"content": [
+							"**Time Saved:** A reduction in the time spent on inventory management tasks allowed lab personnel to focus more on research activities.",
+							"**Accuracy:** Reduced inventory discrepancies, minimizing the risk of experimental disruptions due to insufficient or incorrect supplies.",
+							"**User Adoption:** The system achieved full-scale user adoption within the first month in the lab, showcasing its effectiveness and ease of use."
+						]
+					},
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"The Inventory Management System successfully transformed lab operations, optimizing resource utilization and contributing to a more streamlined and efficient research environment."
+						]
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Designing and developing the Astarte Inventory Management System for was a rewarding experience that showcased the transformative impact of technology on streamlining laboratory operations and outdated, manual processes. As a designer and developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the advancement of scientific research."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Lessons Learned",
+									"content": [
+										"**Context Is Key:** Gaining context in the entities you're designing or developing for is essential to success",
+										"**Complex Processes Don't Need Complex Solutions:** When dealing with complex or unfamiliar subject matter, taking time to understand and break down problems to small, digestible chunks really helps with ideating for solutions"
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future enhancements, I recommend exploring integrations with lab equipment and barcode or QR scanners to enable even more seamless tracking of specialized resources and ease of data entry."
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": {
+			"long": {
+				"text": "Empowering Efficiency",
+				"subtitle": "Custom Property Management Software"
+			},
+			"short": {
+				"text": "DASH",
+				"subtitle": "Property Management System"
+			}
+		},
+		"backgroundImage": "/houses.jpg",
+		"coverImage": {
+			"src": "/dash-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Centralizing data maintenance and property management into a custom self-service platform",
+		"handle": "paragon-property-management",
+		"sections": [
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Project Overview",
+									"content": [
+										"As a software engineer at High Seas Consulting, I collaborated on developing custom internal property management software for Paragon Real Estate Group, a leading Bay Area real estate company. The primary goal was to create a centralized self-service platform for managing inventory, property data, and streamlining internal processes."
+									]
+								},
+								{
+									"type": "text",
+									"title": "My Role",
+									"content": [
+										"As a **frontend developer** on this project, I was responsible for software architecture decisions, development of custom interfaces and components, and collaborating closely with our design team and various departments within Paragon to understand their specific needs."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Objectives",
+									"content": [
+										"**Efficient Inventory Management:** Develop a system to track and manage real estate assets, including properties, equipment, and marketing materials.",
+										"**Data Centralization:** Create a centralized repository for property data, ensuring consistency and accessibility for all team members.",
+										"**Personalization:** Streamline internal workflows tailored to individual roles and user groups by automating routine tasks related to inventory and data management."
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "ordered-list",
+						"title": "Challenges",
+						"content": [
+							"**Starting From Scratch:** Existing tools for inventory and data management were fragmented, leading to inefficiencies and data inconsistencies.",
+							"**Disparate Systems:** Many tasks, such as updating property information and managing marketing materials, were manual, time-consuming, and lacked a cohesive single platform to complete all tasks.",
+							"**Unreliable Data Accessibility:** The lack of a centralized system made it challenging for team members to access up-to-date information promptly."
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Solution"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Key Contributions",
+						"content": [
+							{
+								"text": [
+									"**Branded Component Library**",
+									"I contributed to and maintained a reusable component library that incorporated with the Paragon brand as well as handling all client-side validation and data sanitation.",
+									"Many of the processes and features required heavy form-based data entry, so our library consisted of components useful in forms plus others tailored to common real estate functions."
+								],
+								"image": {
+									"alt": "DASH component screenshots",
+									"src": {
+										"light": "/dash-components.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Easy Data Maintenance**",
+									"Editing property, agent, location, and geographic data was a daily occurrence for DASH users, so we implemented an \"Edit Mode\" that was succinct and easy to use."
+								],
+								"image": {
+									"alt": "DASH edit screenshots",
+									"src": {
+										"light": "/dash-edit.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					},
+					{
+						"type": "image-blocks",
+						"title": "Technology Highlights",
+						"content": [
+							{
+								"href": "https://react.dev",
+								"image": {
+									"alt": "React logo",
+									"src": {
+										"light": "/react_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Powerful JavaScript Framework",
+								"text": "The entirety of the Paragon DASH tool was built using the React framework, useful for its reusable components and widespread adoption"
+							},
+							{
+								"href": "https://mobx.js.org",
+								"image": {
+									"alt": "Mobx logo",
+									"src": {
+										"light": "/mobx_light.png",
+										"dark": "/mobx_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Simple State Management",
+								"text": "The team chose Mobx for our state management for its concise syntax and integration with React"
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"The custom property management system successfully transformed internal processes at Paragon, fostering greater efficiency, collaboration, and accuracy in managing inventory, property, and agent data."
+						]
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Developing the custom internal dashboard for Paragon was a rewarding experience that showcased the transformative impact of technology on optimizing internal processes within a real estate company. As a contributing developer, this project allowed me to leverage my technical expertise to address real-world challenges and contribute to the efficiency and success of Paragon.",
+										"I enjoyed the challenge of creating interfaces for an industry I was unfamiliar with at the time, and the lessons learned through working on a team benefitted my personal and professional development."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Lessons Learned",
+									"content": [
+										"**Communicate With Stakeholders:** Communicating often with stakeholders will result in a better product and user experience",
+										"**Know Your Data:** Becoming intimately familiar with all aspects of data, even as a frontend engineer will make your job easier and your code cleaner"
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future enhancements, I recommend exploring more consistent user testing to gain insight earlier in the design and development process."
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": {
+			"long": {
+				"text": "Elevating Online Presence",
+				"subtitle": "Building a Dynamic Consulting Portfolio"
+			},
+			"short": {
+				"text": "High Seas",
+				"subtitle": "Consulting Portfolio Website"
+			}
+		},
+		"backgroundImage": "/sketchbook.jpg",
+		"coverImage": {
+			"src": "/highseas-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Demonstrating company values and showcasing the projects of a Bay Area consulting company",
+		"handle": "high-seas-portfolio",
+		"sections": [
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Project Overview",
+									"content": [
+										"In my role as a frontend software engineer, I played a pivotal role in developing the portfolio website for High Seas Consulting. The objective was to create a modern, user-friendly website that not only showcased the company's expertise but also engaged clients and prospects through interactive elements and case studies."
+									]
+								},
+								{
+									"type": "text",
+									"title": "My Role",
+									"content": [
+										"As a key member of the **frontend development** team, my responsibilities included implementing aspects of the frontend, micro-interactions, and navigation of the portfolio website, and collaborating closely with the design team and owners at High Seas."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Objectives",
+									"content": [
+										"**Dynamic Experience:** Develop a visually appealing and dynamic website to effectively showcase High Seas' range of consulting services and success stories.",
+										"**Marketability:** Enhance user engagement through interactive features, encouraging clients and prospects to explore the company's portfolio.",
+										"**Brand Consistency:** Ensure the website reflects the company's brand identity, values, and professionalism."
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "ordered-list",
+						"title": "Challenges",
+						"content": [
+							"**Outdated Website:** The existing website lacked modern design elements and interactivity, failing to effectively represent the company's innovative approach.",
+							"**Limited User Engagement:** Users were not spending much time on the website, and the bounce rate was higher than desired.",
+							"**Inconsistency:** The previous website did not consistently convey the brand's identity, causing a potential disconnect with clients."
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Solution"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Key Contributions",
+						"content": [
+							{
+								"text": [
+									"**Subtle Micro-interactions**",
+									"I implemented subtle micro-interactions in the form of hover effects, animations, and transitions throughout the portfolio site.",
+									"Small details like this fit the design values and outlook of the design and engineering teams across the company."
+								],
+								"image": {
+									"alt": "High Seas interaction screenshots",
+									"src": {
+										"light": "/highseas-interactions.gif"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Dynamic Pages & Case Studies**",
+									"I contributed to the development of vibrant, dynamic pages for marketing and showcases of project case studies.",
+									"The design ethos of High Seas is a combination of cutting-edge tech with a talented eye for design, and the pages across the site demonstrate that well."
+								],
+								"image": {
+									"alt": "High Seas page screenshots",
+									"src": {
+										"light": "/highseas-pages.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Increased Brand Awareness**",
+									"The collaboration between designers, developers, and product team members resulted in a cohesive site that truly showcased the values and skill sets of High Seas."
+								],
+								"image": {
+									"alt": "High Seas landing screenshots",
+									"src": {
+										"light": "/highseas-landing.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					},
+					{
+						"type": "image-blocks",
+						"title": "Technology Highlights",
+						"content": [
+							{
+								"href": "https://react.dev",
+								"image": {
+									"alt": "React logo",
+									"src": {
+										"light": "/react_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Powerful JavaScript Framework",
+								"text": "We chose to build the portfolio site using React because of its strengths with building dynamic user interfaces"
+							},
+							{
+								"href": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+								"image": {
+									"alt": "CSS logo",
+									"src": {
+										"light": "/css_light.png",
+										"dark": "/css_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Meaningful Interactions",
+								"text": "All micro-interactions and animations were achieved with simple CSS rules, reducing bundle size and the need for unnecessary JavaScript"
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"The revamped portfolio website successfully reaffirmed High Seas as an innovative and dynamic consulting firm, leading to increased client inquiries and engagements.",
+							"The case studies successfully showcased their work while also demonstrating the strong design and development chops that their employees had to offer."
+						]
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Building the portfolio website for High Seas was a collaborative effort that showcased the transformative impact of a well-designed and interactive online presence. As a frontend developer, this project allowed me to leverage my technical expertise to create a website that not only met the project objectives while contributing to the company's success in the competitive consulting industry."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Lessons Learned",
+									"content": [
+										"**Pixel-Pushing Provides Value:** Attention to detail provides a ton of value when it comes to projects related to highlighting marketable design sensibilities",
+										"**Subtle Interactions are Impactful:** Implementing many consistent, small interactions across a website have a large impact on the overall user experience"
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future enhancements, I recommend exploring opportunities for integrating analytics tools to gather deeper insights into user behavior on the website."
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		],
+		"website": {
+			"href": "https://highseas.com",
+			"text": "Visit highseas.com"
+		}
+	},
+	{
+		"title": {
+			"long": {
+				"text": "Pioneering a Network",
+				"subtitle": "Designing an Online Community for Veterinarians"
+			},
+			"short": {
+				"text": "Mighty Vet",
+				"subtitle": "Online Veterinary Community"
+			}
+		},
+		"backgroundImage": "/vet.jpg",
+		"coverImage": {
+			"src": "/mightyvet-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Creating concepts and prototypes for a knowledge-sharing and networking website for veterinarians",
+		"handle": "mighty-vet-ux",
+		"sections": [
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Project Overview",
+									"content": [
+										"I took on the exciting challenge of creating a prototype concept for MightyVet, an innovative online community tailored for tackling some of the unforeseen challenges and mental health issues faced by veterinarians. The primary goal was to design a platform that fostered collaboration, knowledge-sharing, and networking within the veterinary community."
+									]
+								},
+								{
+									"type": "text",
+									"title": "My Role",
+									"content": [
+										"As a **UX designer** with two other designers and researchers, I was responsible for various aspects of the end-to-end design process, including information architecture, ideation and wireframing, prototyping, and gathering feedback from potential users."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Objectives",
+									"content": [
+										"**Community Engagement:** Develop a user-friendly online space that encourages veterinarians to connect, share insights, and access resources for well-being.",
+										"**Intuitive Design:** Create an intuitive and aesthetically pleasing interface that enhances the user experience and facilitates seamless navigation.",
+										"**Accessible Resources:** Ensure the prototype is responsive across devices, providing veterinarians with access anytime, anywhere."
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "ordered-list",
+						"title": "Challenges",
+						"content": [
+							"**Sensitive Subject Matter:** Veterinarians deal with a lot of unseen issues including depression, mental health, and suicide. It was essential to provide meaningful resources and practice radical empathy.",
+							"**Limited Networking Opportunities:** Veterinarians lacked a dedicated platform to connect, share experiences, and seek advice from peers on important issues that are a part of the veterinary profession.",
+							"**Starting From Scratch:** Existing veterinary forums were outdated in terms of design and user experience, hindering user engagement."
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Design Process"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "unordered-list",
+						"title": "Problem Definition",
+						"content": [
+							"In order to design the product that MightyVet wanted, we first had to understand what the usability issues were with the existing MightyVet website and how we could address them with improved user experiences.",
+							"To guide our initial research, we asked ourselves three important questions:",
+							"**How might we emphasize community and mentorship through user experience?**",
+							"**How might we support a broad range of users and make it accessible beyond veterinarians?**",
+							"**How might we connect all the capabilities for the user?**"
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Research",
+						"content": [
+							{
+								"text": [
+									"**Heuristic Review**",
+									"We completed a heuristic review of the existing website to identify areas of opportunity for improving the user experience.",
+									"Using subjective ratings of different heuristics to get a baseline on overall usability of the site, we concluded that the usability score was 68 out of 100, and there were opportunities to improve the homepage and navigation to make a large immediate impact."
+								],
+								"image": {
+									"alt": "MightyVet heuristics screenshots",
+									"src": {
+										"light": "/mightyvet-heuristics.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Competitive Analysis**",
+									"We identified other similar websites and organizations to complete a competitive analysis to understand what other websites were doing and any insightful UX patterns to replicate.",
+									"We looked at a number of non-profits and mentorship companies and found various useful bits of information or user flows to test out in our own updated designs."
+								],
+								"image": {
+									"alt": "MightyVet analysis screenshots",
+									"src": {
+										"light": "/mightyvet-analysis.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Affinity Diagramming**",
+									"We completed a brainstorming session using affinity diagramming to organize the information we had gathered from our previous research and analysis.",
+									"We identified a number of groupings based on the usability issues we had seen as well as patterns emerging from the challenges faced by the veterinary community."
+								],
+								"image": {
+									"alt": "MightyVet affinity screenshots",
+									"src": {
+										"light": "/mightyvet-affinity.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Ideation & Conceptualization",
+						"content": [
+							{
+								"text": [
+									"**Information Architecture**",
+									"Using what we had learned from our initial research, we began to formulate a more structured plan for how to resolve some of the user experience issues MightyVet needed resolved.",
+									"We devised improved information architecture that we believed better organized and fit the mental model of the website users' as far as how different sections of the site should be presented."
+								],
+								"image": {
+									"alt": "MightyVet information architecture screenshots",
+									"src": {
+										"light": "/mightyvet-information-architecture.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Sketching**",
+									"Before moving on to digital wireframing and prototyping we first completed initial sketches to see how some of the ideas we had might look as rough interface concepts."
+								],
+								"image": {
+									"alt": "MightyVet sketches screenshots",
+									"src": {
+										"light": "/mightyvet-sketches.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Wireframing**",
+									"To further refine our new user experience for MightyVet, we then moved on the computer to complete initial wireframes to start finalizing our vision."
+								],
+								"image": {
+									"alt": "MightyVet wireframe screenshots",
+									"src": {
+										"light": "/mightyvet-wireframes.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Visual Design & Prototyping",
+						"content": [
+							{
+								"text": [
+									"**Design Moodboard**",
+									"To get an idea of the different visual design updates we wanted to make we created a moodboard that drew influence from other competing websites as well as more modern interface trends.",
+									"MightyVet didn't need extensive visual design updates, but they wanted a refresh that brought a more modern appeal to the site."
+								],
+								"image": {
+									"alt": "MightyVet moodboard screenshots",
+									"src": {
+										"light": "/mightyvet-moodboard.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Log In + Donate Workflows**",
+									"Two essential workflows that needed updating were the user workflows for logging in and making donations, especially on mobile devices.",
+									"We implemented simplified workflows that allowed mobile users the ability to easily log in to their account as well as making donations."
+								],
+								"image": {
+									"alt": "MightyVet mobile screenshots",
+									"src": {
+										"light": "/mightyvet-mobile.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Redesigned User Profiles**",
+									"We completely overhauled the mentor user profile pages to better reflect the activities and resources that users expected to access on MightyVet.",
+									"Important information is displayed including upcoming events and webinars plus personalized goals for completing monthly learning and development goals."
+								],
+								"image": {
+									"alt": "MightyVet profile screenshots",
+									"src": {
+										"light": "/mightyvet-profile.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Restructured Mentor Search**",
+									"The mentorship page for searching and discovering veterinary mentors in your area was completely redesigned and updated with more structured search results and a simplified search experience."
+								],
+								"image": {
+									"alt": "MightyVet mentor screenshots",
+									"src": {
+										"light": "/mightyvet-mentors.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Searchable Webinars & Education Resources**",
+									"We implemented a brand new page and user experience for webinars and other online educational content.",
+									"The existing MightyVet site had multiple disparate links to external resources that lacked a cohesive experience and centralized source for content."
+								],
+								"image": {
+									"alt": "MightyVet webinar screenshots",
+									"src": {
+										"light": "/mightyvet-webinars.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"We shared our research findings and final proposed prototypes with MightyVet, and our vision and ideas were welcomed and thoughtfully considered.",
+							"Ultimately, the complete concept we presented wasn't implemented, and MightyVet has since undergone a number of redesigns. The insights gained from the research and prototyping we completed was invaluable in determining some of the direction and features they eventually implemented on the website."
+						]
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Designing the new UX concept for MightyVet was an inspiring journey that highlighted the transformative impact of technology on fostering connections within the veterinary community. As a UX designer, this project allowed me to contribute to the creation of an innovative platform with the potential to revolutionize how veterinarians connect, collaborate, and share knowledge.",
+										"I enjoyed taking a new approach to creative problem-solving as well as working on a multidisciplinary UX team with other designers. It was a great experience undertaking different research methods to inform a digital prototype."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Lessons Learned",
+									"content": [
+										"**Going Slow Can Help You Go Fast:** Rather than jumping straight to digital prototypes or solutioning with code, a more thoughtful approach informed by research and user feedback can help you go faster when you're ready to implement your vision",
+										"**Process Is As Important As Implementation:** How you arrive at your end goal or solution to a problem is equally as important as how the solution might be implemented"
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future design projects, I recommend further refinement based on ongoing user feedback and potential integration with additional tools or resources for veterinary research and collaboration."
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": {
+			"long": {
+				"text": "Seamless Adventure Planning",
+				"subtitle": "Prototyping a Camping Reservation System"
+			},
+			"short": {
+				"text": "WA State Parks",
+				"subtitle": "Camping Reservation System"
+			}
+		},
+		"backgroundImage": "/camping.jpg",
+		"coverImage": {
+			"src": "/wa-sp-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "Designing a user-centric mobile experience to improve the reservation systems for WA State Parks",
+		"handle": "wa-state-parks-camping-reservations",
+		"sections": [
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Project Overview",
+									"content": [
+										"As a UX designer, I took on the challenge of creating and testing a prototype for a new concept for the camping reservation website for WA State Parks. The primary goal was to design a user-centric platform that simplifies the camping reservation process, enhances the overall user experience, and encourages more people to explore the beauty of Washington's state parks."
+									]
+								},
+								{
+									"type": "text",
+									"title": "My Role",
+									"content": [
+										"As the sole **UX designer** and researcher on this project, I spearheaded the design process from initial ideation and wireframing to prototyping and usability testing, collaborating with potential users and stakeholders from WA State Parks."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Objectives",
+									"content": [
+										"**User-Friendly Design:** Develop a prototype with a focus on user-friendly navigation and an intuitive reservation process.",
+										"**Visual Appeal:** Design an aesthetically pleasing interface that aligns with the natural beauty of the state parks, inspiring users to plan camping trips.",
+										"**Mobile-First Design:** Ensure the prototype is effective on mobile screens with intention to scale up functionality to larger devices."
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "ordered-list",
+						"title": "Challenges",
+						"content": [
+							"**Outdated Reservation Process:** Users found the existing reservation system cumbersome, time-consuming, and confusing, leading to frustration.",
+							"**Limited Visual Appeal:** The current website lacked visual elements that captured the essence of Washington's diverse state parks.",
+							"**Accessibility Concerns:** Users experienced difficulties navigating the website on mobile devices, limiting their ability to make reservations on the go."
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Design Process"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "unordered-list",
+						"title": "Research Approach",
+						"content": [
+							"**Identify Test Participants:** I met and talked with a small range of users that self-identified as outdoorsy, liked to camp, and may or may not have used the WA State Parks camping reservation system before",
+							"**Participant Interviews:** I wanted to understand pain points and positive findings with users' experiences using the existing reservation system in order to identify opportunities to improve the major workflows",
+							"**Workflow Observation:** I observed the participants attempting to complete predefined common tasks including searching for a campground and campsite and trying to make a reservation for certain dates",
+							"**Usability Testing & Prototype Review:** I asked users to then try the same workflows using various prototypes I came up with to test new ideas and gain better understanding of user needs",
+							"**Post-test Interview:** I recorded additional feedback from participants after completing the workflow and prototype exercises to ensure they had shared all pain points and positive interactions"
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Usability Testing",
+						"content": [
+							{
+								"text": [
+									"**Study Participants**",
+									"As part of the initial interviews I had each participant tell me a little about their frequency of camping, whether or not they had used the WA State Parks camping reservation system before, and how they rated the current experience on a scale of 1 to 10 with any suggestions for improvement."
+								],
+								"image": {
+									"alt": "WA State Parks participants screenshots",
+									"src": {
+										"light": "/wa-sp-participants.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Existing Reservation Workflow**",
+									"Many aspects were reported as outdated or confusing during initial usability testing.",
+									"Participants noted that the experience was fairly text heavy with little to no imagery to help them decide or learn more about campgrounds they were interested in camping in."
+								],
+								"image": {
+									"alt": "WA State Parks reservation screenshots",
+									"src": {
+										"light": "/wa-sp-reservation-flow.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Sketching**",
+									"Taking what I had learned from the initial round of interviews and usability testing, I started creating rough sketches to explore new ideas and continue testing."
+								],
+								"image": {
+									"alt": "WA State Parks sketch screenshots",
+									"src": {
+										"light": "/wa-sp-sketches.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Wireframing**",
+									"I created initial rough wireframes and asked my research participants to again walk through the camping reservation process.",
+									"I created a simple clickable prototype using Adobe XD and had users speak aloud as they completed the same search and reservation tasks."
+								],
+								"image": {
+									"alt": "WA State Parks wireframe screenshots",
+									"src": {
+										"light": "/wa-sp-wireframes.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Final Prototype Features",
+						"content": [
+							{
+								"text": [
+									"**Intentional Navigation**",
+									"I changed the primary landing experience to include calls to action to complete the most common tasks that users visit the site for.",
+									"The expandable mobile menu also reflected the updated information architecture and allowed users to complete tasks from any page on the site."
+								],
+								"image": {
+									"alt": "WA State Parks nav screenshots",
+									"src": {
+										"light": "/wa-sp-navigation.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Improved Search & Discovery**",
+									"I made updates to the search interface and filters including condensing the search elements to maximize mobile screen real estate and making small yet impactful updates to the datepicker component.",
+									"Campground and campsite detail pages were updated with more imagery and compact information that only initially displayed the most important data such as site and occupancy details."
+								],
+								"image": {
+									"alt": "WA State Parks search screenshots",
+									"src": {
+										"light": "/wa-sp-search.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Visually Appealing Details**",
+									"I reworked the design of the regional, state park, and campground detail pages to include maps and images to aid in the education and discovery when researching which places to camp.",
+									"This was one of the most impactful small changes that research participants responded favorably to."
+								],
+								"image": {
+									"alt": "WA State Parks map screenshots",
+									"src": {
+										"light": "/wa-sp-maps.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Research Participant Feedback",
+						"content": [
+							{
+								"text": [
+									"**Final Usability Testing Results**",
+									"Across the board all research participants reported that the changes and design updates I suggested greatly improved the user experience of making a camping reservation through Washington State Parks.",
+									"Based on my initial observations, participants upgraded the overall experience from an average 5.2 rating to 9.4."
+								],
+								"image": {
+									"alt": "WA State Parks result screenshots",
+									"src": {
+										"light": "/wa-sp-results.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"Although this project was initially started as an exercise in better understanding user research and usability testing, part way through the process I reached out to representatives from WA State Parks and offered to present my research and prototypes for consideration, and they agreed to meet with me.",
+							"I shared my findings and updated designs, and they were received with great appreciation. The WA State Parks team was highly impressed but ultimately didn't have the funding at the time to undertake redesigning the camping reservation system."
+						]
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Prototyping the new concept for the WA State Parks camping reservation website was an inspiring journey that highlighted the transformative impact of user research and how technology can promote outdoor adventures. As a UX designer and researcher, this project allowed me to contribute to the creation of a platform that aims to make camping in Washington's state parks more accessible and enjoyable for everyone.",
+										"It was an especially eye-opening experience for me to listen to others' points of view and either confirm or deny my own personal biases that I have when taking on design or development projects."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Lessons Learned",
+									"content": [
+										"**Interactivity Goes a Long Way:** Adding simple interactivity such as a map or image gallery can really take simple, boring data to a more consumable and ultimately enjoyable level",
+										"**Listen:** Taking the time to gather opinions and feedback from others is essential",
+										"**Don't Be Afraid to Reach Out:** I was pleasantly surprised how excited the WA State Parks team was to hear new ideas, and it invigorated me to take the same chances with other projects"
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"If I were to continue this project, I would recommend continuing to modernize and update other major aspects of the reservation website including managing existing reservations and other user profile features."
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": {
+			"long": {
+				"text": "Crafting a Personal Showcase",
+				"subtitle": "How I Made My Portfolio"
+			},
+			"short": {
+				"text": "ianjsmith.com",
+				"subtitle": "How It's Made"
+			}
+		},
+		"backgroundImage": "/portfolio.jpg",
+		"coverImage": {
+			"src": "/portfolio-cover.png",
+			"width": 1600,
+			"height": 900
+		},
+		"description": "My process for designing and building some of the features of this site",
+		"handle": "ian-j-smith-portfolio",
+		"sections": [
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Project Overview",
+									"content": [
+										"As someone passionate about showcasing my skills and projects, I embarked on the journey of designing and building my own portfolio website. The primary goal was to create an online experience that not only reflects my professional abilities but also provides visitors with an engaging and memorable experience."
+									]
+								},
+								{
+									"type": "text",
+									"title": "My Role",
+									"content": [
+										"As the sole **designer and developer** of the project, I am responsible for every aspect of the process, from initial ideation, conceptualization, asset preparation, and visual and UI design to coding, deployment, bug-squashing, and continued maintenance."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Objectives",
+									"content": [
+										"**Personal Branding:** Develop a portfolio website that effectively communicates my personal brand, style, and approach to design and development.",
+										"**Interactivity:** Prioritize a user-friendly interface with a touch of memorable interactivity to ensure visitors want to explore my work and learn about my skills.",
+										"**Showcasing Projects + Technology:** Feature a diverse range of projects with detailed case studies to highlight my expertise and problem-solving capabilities."
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "ordered-list",
+						"title": "Challenges",
+						"content": [
+							"**Outdated Portfolio & Case Studies:** My existing portfolio did not effectively convey my unique style and personality and lacked meaningful detail and explanation in the case studies.",
+							"**Lack of Personal Branding:** As someone who has a degree in graphic design, it pains me that I didn't have personal branding that I'm proud of.",
+							"**Limited Engagement:** No one really knows about my portfolio site, and I didn't have any sort of analytics in place to inform me of usage statistics."
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Design Process"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Brainstorming & Conceptualization",
+						"content": [
+							{
+								"text": [
+									"**Competitive Inspiration**",
+									"There are plenty of amazing portfolios on the web, but I was especially inspired by various interactions, interfaces, and quirks from the following:",
+									"[Eric Van Holtz](https://vanholtz.co)",
+									"[Lynn Fisher](https://lynnandtonic.com)",
+									"[Miranda Biondi](https://mirandabiondi.com)",
+									"[Wolff Olins](https://www.wolffolins.com)",
+									"[Matt Farley](https://www.wolffolins.com)",
+									"[Lars Olson](https://www.lars-olson.com)",
+									"[Monica Dinculescu](https://meowni.ca)",
+									"[Kilian Peters](https://www.lokkeestudios.com)",
+									"[Cassie Evans](https://www.cassie.codes)"
+								],
+								"image": {
+									"alt": "Portfolio inspiration screenshots",
+									"src": {
+										"light": "/portfolio-inspiration.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Rough Sketches**",
+									"Like most projects, I did my usual brainstorming and sketching in my sketchbook to further flesh out ideas.",
+									"One that I was particularly excited about was making some sort of interactive collage."
+								],
+								"image": {
+									"alt": "Portfolio sketch screenshots",
+									"src": {
+										"light": "/portfolio-sketches.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Personal Branding**",
+									"I've long had the idea to \"borrow\" inspiration from a logomark created by Paul Rand for one of the titans of the design world, the classic [IBM rebus](https://www.ibm.com/design/language/ibm-logos/rebus).",
+									"I love the simplicity and effectiveness of such a lasting visual, and my initials are a perfect fit to riff on the famous design."
+								],
+								"image": {
+									"alt": "Portfolio branding screenshots",
+									"src": {
+										"light": "/portfolio-branding.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Collage & Color Studies**",
+									"After doing a mini photo shoot with a number of sentimental items around my house and office, I started experimenting with different collage layouts and derived a color palette from the images to carry through to the user interface."
+								],
+								"image": {
+									"alt": "Portfolio collage screenshots",
+									"src": {
+										"light": "/portfolio-collage.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Solution"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Key Features",
+						"content": [
+							{
+								"text": [
+									"**Subtly Interactive Imagery**",
+									"I knew I wanted to make the collage in the landing section more memorable, and one way to do that was to add interactivity subtle enough to entertain visitors without being completely distracting from the rest of the projects or case studies."
+								],
+								"image": {
+									"alt": "Portfolio tilt image screenshots",
+									"src": {
+										"light": "/portfolio-tilt.gif"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Integrated Email Form**",
+									"My previous portfolios have lacked more intentional methods for contacting me other than email.",
+									"By integrating with the incredibly easy to set up Web3Forms API, I was able to build a simple [contact form](/#contact) that is tailored to send messages how I prefer to be contacted."
+								],
+								"image": {
+									"alt": "Portfolio contact screenshots",
+									"src": {
+										"light": "/portfolio-contact.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Dead Simple CI/CD**",
+									"Deciding to deploy my portfolio using Vercel has made continuous development and deployment a breeze because of their integrations with GitHub and great documentation for Next.js projects.",
+									"I also installed and now use the free tiers of Vercels analytics and speed insights packages to learn more about the usage and performance stats of my portfolio."
+								],
+								"image": {
+									"alt": "Portfolio CI/CD screenshots",
+									"src": {
+										"light": "/portfolio-cicd.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					},
+					{
+						"type": "image-blocks",
+						"title": "Technology Highlights",
+						"content": [
+							{
+								"href": "https://nextjs.org",
+								"image": {
+									"alt": "Next.js logo",
+									"src": {
+										"light": "/next_light.png",
+										"dark": "/next_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "The React Framework",
+								"text": "I explored and benefitted from a lot of the features with Next.js version 14, one of the top frameworks to integrate with React"
+							},
+							{
+								"href": "https://www.typescriptlang.org",
+								"image": {
+									"alt": "TypeScript logo",
+									"src": {
+										"light": "/typescript_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Intentional Code Design",
+								"text": "I treated my portfolio the same as any other TypeScript project I've worked on, benefitting from the type-checking, debugging, and other features of the language"
+							},
+							{
+								"href": "https://tailwindcss.com",
+								"image": {
+									"alt": "Tailwind CSS logo",
+									"src": {
+										"light": "/tailwind_light.png",
+										"dark": "/tailwind_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Utility-First CSS",
+								"text": "I used this portfolio as a deep-dive into the benefits and quirks of using Tailwind CSS, especially helpful for enabling dark mode"
+							},
+							{
+								"href": "https://vercel.com",
+								"image": {
+									"alt": "Vercel logo",
+									"src": {
+										"light": "/vercel_light.png",
+										"dark": "/vercel_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Top-Notch DX",
+								"text": "This site is deployed and hosted on Vercel, chosen for its ease of use and amazing developer experience for a project this size"
+							},
+							{
+								"href": "https://web3forms.com/",
+								"image": {
+									"alt": "Web3Forms logo",
+									"src": {
+										"light": "/web3forms_light.png",
+										"dark": "/web3forms_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Modern Contact Forms",
+								"text": "Integrating with the Web3Forms API made my custom contact form incredibly easy to configure, test, and use"
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "header",
+				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "unordered-list",
+						"title": "Metrics",
+						"content": [
+							"**TBD:** Now that I have basic analytics incorporated into my portfolio site, I'm excited to track the usage and site performance over time."
+						]
+					},
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"I know this redesigned portfolio website will successfully elevate my online presence (because I haven't had a functional one for a couple years). I look forward to creating a positive impression and providing a stable website for effectively showcasing my skills and projects.",
+							"On a personal level it also feels great to finally have built a site that exemplifies my creative and technical skill set and is configured in a way that will allow me to easily make updates in the future."
+						]
+					}
+				]
+			},
+			{
+				"background": "dark",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "two-column",
+						"content": {
+							"col1": [
+								{
+									"type": "text",
+									"title": "Reflection",
+									"content": [
+										"Designing and building my own portfolio website was a fulfilling experience that allowed me to express my personal brand and capabilities in a digital space. As the sole designer and developer, this project reinforced the importance of continuous improvement, creativity, and user-centric design principles in creating a compelling online showcase."
+									]
+								}
+							],
+							"col2": [
+								{
+									"type": "unordered-list",
+									"title": "Lessons Learned",
+									"content": [
+										"**Content Is the Hardest Part:** I'm grateful for all the marketing folks and copywriters I've worked with in the past - generating content is HARD",
+										"**Documentation Is Your Friend:** Well-written documentation can make even the most complex technologies easily approachable",
+										"**The Web is Ever-Changing:** New technologies are coming and going every day, and a personal portfolio is a great way to stay on top of the latest trends and frameworks"
+									]
+								},
+								{
+									"type": "text",
+									"title": "Future Recommendations",
+									"content": [
+										"For future updates, I plan to regularly refresh project showcases, incorporate new technologies, and seek feedback to ensure the portfolio remains relevant and engaging."
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		],
+		"website": {
+			"href": "https://github.com/IanSmith89/portfolio",
+			"text": "View Code on GitHub"
+		}
+	}
+]

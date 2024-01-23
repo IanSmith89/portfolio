@@ -1,26 +1,28 @@
 import Image from 'next/image'
-import GridLines from './GridLines'
-import Blob from './Blob'
-import Flash from './Flash'
-import LinedBlob from './LinedBlob'
-import Circle from './Circle'
-import macbook from '../../public/macbook.svg'
-import housePlantTall from '../../public/house-plant-tall.svg'
-import housePlantShort from '../../public/house-plant-short.svg'
-import eye from '../../public/eye.png'
-import boot from '../../public/boot.png'
-import guitar from '../../public/guitar.png'
-import sunglasses from '../../public/sunglasses.png'
-import mouth from '../../public/mouth.png'
-import microphone from '../../public/microphone.png'
-import arm from '../../public/arm.png'
-import knight from '../../public/knight.png'
-import snowboard from '../../public/snowboard.png'
-import keyboard from '../../public/keyboard.png'
-import stickman from '../../public/stickman.png'
-import spatula from '../../public/spatula.png'
-import me from '../../public/me.png'
-import TiltImage from './TiltImage'
+import GridLines from '@/lib/GridLines'
+import Blob from '@/lib/Blob'
+import Flash from '@/lib/Flash'
+import LinedBlob from '@/lib/LinedBlob'
+import Circle from '@/lib/Circle'
+import macbook from '@public/macbook.svg'
+import housePlantTall from '@public/house-plant-tall.svg'
+import housePlantShort from '@public/house-plant-short.svg'
+import eye from '@public/eye.png'
+import boot from '@public/boot.png'
+import guitar from '@public/guitar.png'
+import sunglasses from '@public/sunglasses.png'
+import mouth from '@public/mouth.png'
+import microphone from '@public/microphone.png'
+import arm from '@public/arm.png'
+import knight from '@public/knight.png'
+import snowboard from '@public/snowboard.png'
+import keyboard from '@public/keyboard.png'
+import stickman from '@public/stickman.png'
+import spatula from '@public/spatula.png'
+import me from '@public/me.png'
+import TiltImage from '@/lib/TiltImage'
+import Button from '@/lib/Button'
+import DownArrowIcon from '@/lib/DownArrowIcon'
 
 export default function LandingSection() {
 	return (
@@ -122,7 +124,6 @@ export default function LandingSection() {
 						<TiltImage
 							className="absolute top-[13.42%] left-[42.46%] w-[10.32%]"
 							imageProps={{
-								className: 'filter grayscale',
 								priority: true,
 								src: boot,
 							}}
@@ -152,15 +153,18 @@ export default function LandingSection() {
 				</div>
 				<div className="w-full md:w-4/12 flex flex-col gap-8 lg:gap-12 justify-center pb-12">
 					<h1 className="transition-colors font-bold text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-indigo dark:text-white">
-						<span className="block font-normal text-sm sm:text-base md:text-xl xl:text-2xl 2xl:text-3xl mb-4 xl:mb-6 opacity-65">
+						<span className="block font-normal text-lg md:text-xl xl:text-2xl 2xl:text-3xl mb-4 xl:mb-6 text-indigo/75 dark:text-indigo-100/80">
 							Hi I&apos;m Ian,
 						</span>
-						I like to create <span className="font-light">interactive</span> things{' '}
-						<span className="font-light">on the web</span>.
+						I like to create{' '}
+						<span className="font-light text-indigo/75 dark:text-indigo-100/80">interactive</span> things{' '}
+						<span className="font-light text-indigo/75 dark:text-indigo-100/80">on the web</span>.
 					</h1>
-					{/* <div className="flex gap-2 flex-wrap">
-							<Button href="#recent-work">VIEW MY WORK</Button>
-						</div> */}
+					<div className="flex gap-2 flex-wrap">
+						<Button href="#featured-projects" size="large" EndIcon={<DownArrowIcon />}>
+							View My Work
+						</Button>
+					</div>
 				</div>
 			</div>
 		</section>
