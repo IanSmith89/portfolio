@@ -3,10 +3,10 @@ export const NAV_ROUTES = [
 		href: '/#featured-projects',
 		title: 'Work',
 	},
-	// {
-	// 	href: '/#about-me',
-	// 	title: 'About',
-	// },
+	{
+		href: '/#about-me',
+		title: 'About',
+	},
 	{
 		href: '/#resume',
 		title: 'Résumé',

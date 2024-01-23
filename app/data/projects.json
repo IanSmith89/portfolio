@@ -188,19 +188,6 @@
 								"text": "We were able to blend out-of-the-box functionality provided by Shopify along with custom solutions that allowed our marketing and merchandising teams to thrive independent from the tech team"
 							},
 							{
-								"href": "https://www.sanity.io",
-								"image": {
-									"alt": "Sanity logo",
-									"src": {
-										"light": "/sanity_light.png"
-									},
-									"width": 720,
-									"height": 405
-								},
-								"title": "Customized Content",
-								"text": "We utilized the customizable and intuitive Sanity.io platform to develop dynamic and configurable content for the TPC Sell//Trade app"
-							},
-							{
 								"href": "https://www.braze.com",
 								"image": {
 									"alt": "Braze logo",
