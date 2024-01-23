@@ -2461,7 +2461,7 @@
 		},
 		"backgroundImage": "/portfolio.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/portfolio-cover.png",
 			"width": 1600,
 			"height": 900
 		},
@@ -2480,14 +2480,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"As a designer and developer passionate about showcasing my skills and projects, I embarked on the journey of designing and building my own portfolio website. The primary goal was to create a platform that not only reflects my professional abilities but also provides visitors with an engaging and memorable experience."
+										"As someone passionate about showcasing my skills and projects, I embarked on the journey of designing and building my own portfolio website. The primary goal was to create an online experience that not only reflects my professional abilities but also provides visitors with an engaging and memorable experience."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As the sole designer and developer of the project, I was responsible for every aspect of the process, from initial ideation and wireframing to coding and deployment."
+										"As the sole **designer and developer** of the project, I am responsible for every aspect of the process, from initial ideation, conceptualization, asset preparation, and visual and UI design to coding, deployment, bug-squashing, and continued maintenance."
 									]
 								}
 							],
@@ -2497,7 +2497,7 @@
 									"title": "Objectives",
 									"content": [
 										"**Personal Branding:** Develop a portfolio website that effectively communicates my personal brand, style, and approach to design and development.",
-										"**Interactivity:** Prioritize a user-friendly interface and intuitive navigation to ensure visitors can easily explore my work and learn about my skills.",
+										"**Interactivity:** Prioritize a user-friendly interface with a touch of memorable interactivity to ensure visitors want to explore my work and learn about my skills.",
 										"**Showcasing Projects + Technology:** Feature a diverse range of projects with detailed case studies to highlight my expertise and problem-solving capabilities."
 									]
 								}
@@ -2515,9 +2515,9 @@
 						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
-							"**Outdated Personal Branding:** The existing portfolio did not effectively convey my unique style and personality.",
-							"**Broken Existing Website:** The previous version of my portfolio lacked modern design elements and did not showcase my latest projects adequately.",
-							"**Limited Engagement:** Users were not spending much time on the website, and the bounce rate was higher than desired."
+							"**Outdated Portfolio & Case Studies:** My existing portfolio did not effectively convey my unique style and personality and lacked meaningful detail and explanation in the case studies.",
+							"**Lack of Personal Branding:** As someone who has a degree in graphic design, it pains me that I didn't have personal branding that I'm proud of.",
+							"**Limited Engagement:** No one really knows about my portfolio site, and I didn't have any sort of analytics in place to inform me of usage statistics."
 						]
 					}
 				]
@@ -2531,31 +2531,76 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Competitive Analysis & Inspiration",
+						"type": "text-image",
+						"title": "Brainstorming & Conceptualization",
 						"content": [
-							"Collaborated with stakeholders to ideate on a design concept that addressed the specific needs of users and captured the spirit of camping in WA State Parks."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Ideation & Branding Conceptualization",
-						"content": [
-							"Collaborated with stakeholders to ideate on a design concept that addressed the specific needs of users and captured the spirit of camping in WA State Parks."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Wireframing & Prototyping",
-						"content": [
-							"Translated design concepts into wireframes, outlining the structure and user flow of the prototype, ensuring a streamlined reservation process."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Prototyping",
-						"content": [
-							"Developed an interactive prototype to simulate user interactions, incorporating feedback from potential users and stakeholders before the final design."
+							{
+								"text": [
+									"**Competitive Inspiration**",
+									"There are plenty of amazing portfolios on the web, but I was especially inspired by various interactions, interfaces, and quirks from the following:",
+									"[Eric Van Holtz](https://vanholtz.co)",
+									"[Lynn Fisher](https://lynnandtonic.com)",
+									"[Miranda Biondi](https://mirandabiondi.com)",
+									"[Wolff Olins](https://www.wolffolins.com)",
+									"[Matt Farley](https://www.wolffolins.com)",
+									"[Lars Olson](https://www.lars-olson.com)",
+									"[Monica Dinculescu](https://meowni.ca)",
+									"[Kilian Peters](https://www.lokkeestudios.com)",
+									"[Cassie Evans](https://www.cassie.codes)"
+								],
+								"image": {
+									"alt": "Portfolio inspiration screenshots",
+									"src": {
+										"light": "/portfolio-inspiration.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Rough Sketches**",
+									"Like most projects, I did my usual brainstorming and sketching in my sketchbook to further flesh out ideas.",
+									"One that I was particularly excited about was making some sort of interactive collage."
+								],
+								"image": {
+									"alt": "Portfolio sketch screenshots",
+									"src": {
+										"light": "/portfolio-sketches.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Personal Branding**",
+									"I've long had the idea to \"borrow\" inspiration from a logomark created by Paul Rand for one of the titans of the design world, the classic [IBM rebus](https://www.ibm.com/design/language/ibm-logos/rebus).",
+									"I love the simplicity and effectiveness of such a lasting visual, and my initials are a perfect fit to riff on the famous design."
+								],
+								"image": {
+									"alt": "Portfolio branding screenshots",
+									"src": {
+										"light": "/portfolio-branding.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Collage & Color Studies**",
+									"After doing a mini photo shoot with a number of sentimental items around my house and office, I started experimenting with different collage layouts and derived a color palette from the images to carry through to the user interface."
+								],
+								"image": {
+									"alt": "Portfolio collage screenshots",
+									"src": {
+										"light": "/portfolio-collage.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
 					}
 				]
@@ -2569,18 +2614,129 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
-						"title": "Key Contributions",
+						"type": "text-image",
+						"title": "Key Features",
 						"content": [
-							"**Personal Branding:** Implemented a consistent visual identity, including a logo and color scheme, to reinforce my personal brand.",
-							"**Project Showcases:** Created detailed case studies for key projects, emphasizing the problem-solving process, design thinking, and development skills.",
-							"**Interactive Elements:** Integrated subtle animations and interactive elements to engage users and create a memorable browsing experience."
+							{
+								"text": [
+									"**Subtly Interactive Imagery**",
+									"I knew I wanted to make the collage in the landing section more memorable, and one way to do that was to add interactivity subtle enough to entertain visitors without being completely distracting from the rest of the projects or case studies."
+								],
+								"image": {
+									"alt": "Portfolio tilt image screenshots",
+									"src": {
+										"light": "/portfolio-tilt.gif"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Integrated Email Form**",
+									"My previous portfolios have lacked more intentional methods for contacting me other than email.",
+									"By integrating with the incredibly easy to set up Web3Forms API, I was able to build a simple [contact form](/#contact) that is tailored to send messages how I prefer to be contacted."
+								],
+								"image": {
+									"alt": "Portfolio contact screenshots",
+									"src": {
+										"light": "/portfolio-contact.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Dead Simple CI/CD**",
+									"Deciding to deploy my portfolio using Vercel has made continuous development and deployment a breeze because of their integrations with GitHub and great documentation for Next.js projects.",
+									"I also installed and now use the free tiers of Vercels analytics and speed insights packages to learn more about the usage and performance stats of my portfolio."
+								],
+								"image": {
+									"alt": "Portfolio CI/CD screenshots",
+									"src": {
+										"light": "/portfolio-cicd.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
 					},
 					{
-						"type": "unordered-list",
+						"type": "image-blocks",
 						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
+						"content": [
+							{
+								"href": "https://nextjs.org",
+								"image": {
+									"alt": "Next.js logo",
+									"src": {
+										"light": "/next_light.png",
+										"dark": "/next_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "The React Framework",
+								"text": "I explored and benefitted from a lot of the features with Next.js version 14, one of the top frameworks to integrate with React"
+							},
+							{
+								"href": "https://www.typescriptlang.org",
+								"image": {
+									"alt": "TypeScript logo",
+									"src": {
+										"light": "/typescript_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Intentional Code Design",
+								"text": "I treated my portfolio the same as any other TypeScript project I've worked on, benefitting from the type-checking, debugging, and other features of the language"
+							},
+							{
+								"href": "https://tailwindcss.com",
+								"image": {
+									"alt": "Tailwind CSS logo",
+									"src": {
+										"light": "/tailwind_light.png",
+										"dark": "/tailwind_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Utility-First CSS",
+								"text": "I used this portfolio as a deep-dive into the benefits and quirks of using Tailwind CSS, especially helpful for enabling dark mode"
+							},
+							{
+								"href": "https://vercel.com",
+								"image": {
+									"alt": "Vercel logo",
+									"src": {
+										"light": "/vercel_light.png",
+										"dark": "/vercel_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Top-Notch DX",
+								"text": "This site is deployed and hosted on Vercel, chosen for its ease of use and amazing developer experience for a project this size"
+							},
+							{
+								"href": "https://web3forms.com/",
+								"image": {
+									"alt": "Web3Forms logo",
+									"src": {
+										"light": "/web3forms_light.png",
+										"dark": "/web3forms_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Modern Contact Forms",
+								"text": "Integrating with the Web3Forms API made my custom contact form incredibly easy to configure, test, and use"
+							}
+						]
 					}
 				]
 			},
@@ -2597,16 +2753,15 @@
 						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
-							"**User Engagement:** Increased by 50%, reflected in longer average session durations and lower bounce rates.",
-							"**Portfolio Views:** Experienced a 40% increase, indicating heightened interest in exploring multiple projects.",
-							"**Contact Form Submissions:** Saw a 25% increase in inquiries from potential collaborators and employers."
+							"**TBD:** Now that I have basic analytics incorporated into my portfolio site, I'm excited to track the usage and site performance over time."
 						]
 					},
 					{
 						"type": "text",
 						"title": "Impact",
 						"content": [
-							"The redesigned portfolio website successfully elevated my online presence, creating a positive impression and providing a platform for effectively showcasing my skills and projects."
+							"I know this redesigned portfolio website will successfully elevate my online presence (because I haven't had a functional one for a couple years). I look forward to creating a positive impression and providing a stable website for effectively showcasing my skills and projects.",
+							"On a personal level it also feels great to finally have built a site that exemplifies my creative and technical skill set and is configured in a way that will allow me to easily make updates in the future."
 						]
 					}
 				]
@@ -2623,16 +2778,18 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"Designing and building my own portfolio website was a fulfilling endeavor that allowed me to express my personal brand and capabilities in a digital space. As the sole designer and developer, this project reinforced the importance of continuous improvement, creativity, and user-centric design principles in creating a compelling online showcase."
+										"Designing and building my own portfolio website was a fulfilling experience that allowed me to express my personal brand and capabilities in a digital space. As the sole designer and developer, this project reinforced the importance of continuous improvement, creativity, and user-centric design principles in creating a compelling online showcase."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming challenges related to balancing design aesthetics with performance optimization emphasized the need for careful consideration and testing."
+										"**Content Is the Hardest Part:** I'm grateful for all the marketing folks and copywriters I've worked with in the past - generating content is HARD",
+										"**Documentation Is Your Friend:** Well-written documentation can make even the most complex technologies easily approachable",
+										"**The Web is Ever-Changing:** New technologies are coming and going every day, and a personal portfolio is a great way to stay on top of the latest trends and frameworks"
 									]
 								},
 								{
