@@ -88,7 +88,7 @@
 							{
 								"text": [
 									"**Streamlined Navigation**",
-									"I implemented a simplified primary header navigation and footer to increase usability and improve discoverabilility.",
+									"I implemented a simplified primary header navigation and footer to increase usability and improve discoverability.",
 									"Using Shopify's internal dashboard editor to configure the menus, categories, and links allowed our marketing team to maintain and update the information architecture without having to request updates from the tech team."
 								],
 								"image": {
@@ -185,20 +185,7 @@
 									"height": 405
 								},
 								"title": "Empowered Teams",
-								"text": "We were able to blend out-of-the-box functionality provided by Shopify along with custom solutions that allowed our marketing and merchandising teams to thrive indepent from the tech team"
-							},
-							{
-								"href": "https://www.sanity.io",
-								"image": {
-									"alt": "Sanity logo",
-									"src": {
-										"light": "/sanity_light.png"
-									},
-									"width": 720,
-									"height": 405
-								},
-								"title": "Customized Content",
-								"text": "We utilized the customizable and intuitive Sanity.io platform to develop dynamic and configurable content for the TPC Sell//Trade app"
+								"text": "We were able to blend out-of-the-box functionality provided by Shopify along with custom solutions that allowed our marketing and merchandising teams to thrive independent from the tech team"
 							},
 							{
 								"href": "https://www.braze.com",
@@ -268,7 +255,7 @@
 						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
-							"**Project Duration:** Over 3 months we successfully refactored all pages and launched the rebranded website on time to conincide with marketing efforts and the new brand announcement",
+							"**Project Duration:** Over 3 months we successfully refactored all pages and launched the rebranded website on time to coincide with marketing efforts and the new brand announcement",
 							"**Site Performance:** We addressed all major issues with metrics identified by Google Lighthouse, increasing our scores to >90% for performance, and perfect 100% for accessibility, best practices, and SEO",
 							"**Search Response Time:** We reduced the response time for search queries from a couple seconds to an average of 8ms",
 							"**Tech Debt:** We removed or refactored over 100k lines of unused or outdated code"
@@ -449,7 +436,7 @@
 								"text": [
 									"**Release & Integration**",
 									"I successfully deployed and made regular updates to the component library and installed and used it in a number of internal applications used for reporting, financial tracking, resource management, and business operations.",
-									"The component library was initally used by a handful of teams before gaining wide adoption across a number of teams and apps.",
+									"The component library was initially used by a handful of teams before gaining wide adoption across a number of teams and apps.",
 									"Note: screenshots are approximations of final application designs."
 								],
 								"image": {
@@ -1044,7 +1031,7 @@
 									"height": 405
 								},
 								"title": "Clean Styles & Animation",
-								"text": "All basic typographic animations and regional map interactions were acheived with simple CSS rules, reducing bundle size and the  need for unnecessary JavaScript"
+								"text": "All basic typographic animations and regional map interactions were achieved with simple CSS rules, reducing bundle size and the  need for unnecessary JavaScript"
 							},
 							{
 								"href": "https://developer.mozilla.org/en-US/docs/Web/SVG",
@@ -1113,7 +1100,7 @@
 									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"**JavaScript Isn't Always the Answer:** As powerful as JavaScript is, oftentimes there are more lightweight solutions that allow you to acheive the same functionality",
+										"**JavaScript Isn't Always the Answer:** As powerful as JavaScript is, oftentimes there are more lightweight solutions that allow you to achieve the same functionality",
 										"**Respect Goes A Long Way:** Chinese users of the site were delighted with the attention to detail with the animations, showing the power of paying attention to the small things"
 									]
 								},
@@ -1295,7 +1282,7 @@
 						"content": [
 							"**Time Saved:** A reduction in the time spent on inventory management tasks allowed lab personnel to focus more on research activities.",
 							"**Accuracy:** Reduced inventory discrepancies, minimizing the risk of experimental disruptions due to insufficient or incorrect supplies.",
-							"**User Adoption:** The system achieved fullscale user adoption within the first month in the lab, showcasing its effectiveness and ease of use."
+							"**User Adoption:** The system achieved full-scale user adoption within the first month in the lab, showcasing its effectiveness and ease of use."
 						]
 					},
 					{
@@ -1450,7 +1437,7 @@
 							{
 								"text": [
 									"**Easy Data Maintenance**",
-									"Editting property, agent, location, and geographic data was a daily occurrence for DASH users, so we implemented an \"Edit Mode\" that was succint and easy to use."
+									"Editing property, agent, location, and geographic data was a daily occurrence for DASH users, so we implemented an \"Edit Mode\" that was succinct and easy to use."
 								],
 								"image": {
 									"alt": "DASH edit screenshots",
@@ -1595,7 +1582,7 @@
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As a key member of the **frontend development** team, my responsibilities included implementing aspects of the frontend, microinteractions, and navigation of the portfolio website, and collaborating closely with the design team and owners at High Seas."
+										"As a key member of the **frontend development** team, my responsibilities included implementing aspects of the frontend, micro-interactions, and navigation of the portfolio website, and collaborating closely with the design team and owners at High Seas."
 									]
 								}
 							],
@@ -1644,8 +1631,8 @@
 						"content": [
 							{
 								"text": [
-									"**Subtle Microinteractions**",
-									"I implemented subtle microinteractions in the form of hover effects, animations, and transitions throughout the portfolio site.",
+									"**Subtle Micro-interactions**",
+									"I implemented subtle micro-interactions in the form of hover effects, animations, and transitions throughout the portfolio site.",
 									"Small details like this fit the design values and outlook of the design and engineering teams across the company."
 								],
 								"image": {
@@ -1675,7 +1662,7 @@
 							{
 								"text": [
 									"**Increased Brand Awareness**",
-									"The collaboration between designers, developers, and product team members resulted in a cohesive site that truly showcased the values and skillsets of High Seas."
+									"The collaboration between designers, developers, and product team members resulted in a cohesive site that truly showcased the values and skill sets of High Seas."
 								],
 								"image": {
 									"alt": "High Seas landing screenshots",
@@ -1717,7 +1704,7 @@
 									"height": 405
 								},
 								"title": "Meaningful Interactions",
-								"text": "All microinteractions and animations were acheived with simple CSS rules, reducing bundle size and the need for unnecessary JavaScript"
+								"text": "All micro-interactions and animations were achieved with simple CSS rules, reducing bundle size and the need for unnecessary JavaScript"
 							}
 						]
 					}
@@ -1798,11 +1785,11 @@
 		},
 		"backgroundImage": "/vet.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/mightyvet-cover.png",
 			"width": 1600,
 			"height": 900
 		},
-		"description": "Creating concepts and prototypes for a knowledge-sharing and networking website",
+		"description": "Creating concepts and prototypes for a knowledge-sharing and networking website for veterinarians",
 		"handle": "mighty-vet-ux",
 		"sections": [
 			{
@@ -1817,14 +1804,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"As a passionate UX/UI designer, I took on the exciting challenge of creating a prototype concept for VetsConnect, an innovative online community tailored for veterinarians. The primary goal was to design a platform that fostered collaboration, knowledge-sharing, and networking within the veterinary community."
+										"I took on the exciting challenge of creating a prototype concept for MightyVet, an innovative online community tailored for tackling some of the unforeseen challenges and mental health issues faced by veterinarians. The primary goal was to design a platform that fostered collaboration, knowledge-sharing, and networking within the veterinary community."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As the lead designer on this project, I was responsible for the end-to-end design process, from ideation and wireframing to prototyping and gathering feedback from potential users."
+										"As a **UX designer** with two other designers and researchers, I was responsible for various aspects of the end-to-end design process, including information architecture, ideation and wireframing, prototyping, and gathering feedback from potential users."
 									]
 								}
 							],
@@ -1833,7 +1820,7 @@
 									"type": "unordered-list",
 									"title": "Objectives",
 									"content": [
-										"**Community Engagement:** Develop a user-friendly online space that encourages veterinarians to connect, share insights, and collaborate on cases.",
+										"**Community Engagement:** Develop a user-friendly online space that encourages veterinarians to connect, share insights, and access resources for well-being.",
 										"**Intuitive Design:** Create an intuitive and aesthetically pleasing interface that enhances the user experience and facilitates seamless navigation.",
 										"**Accessible Resources:** Ensure the prototype is responsive across devices, providing veterinarians with access anytime, anywhere."
 									]
@@ -1852,9 +1839,9 @@
 						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
-							"**Limited Networking Opportunities:** Veterinarians lacked a dedicated platform to connect, share experiences, and seek advice from peers.",
-							"**Starting From Scratch:** Existing veterinary forums were outdated in terms of design and user experience, hindering user engagement.",
-							"**Accessibility Concerns:** Some veterinarians faced challenges accessing online platforms on mobile devices, limiting their participation."
+							"**Sensitive Subject Matter:** Veterinarians deal with a lot of unseen issues including depression, mental health, and suicide. It was essential to provide meaningful resources and practice radical empathy.",
+							"**Limited Networking Opportunities:** Veterinarians lacked a dedicated platform to connect, share experiences, and seek advice from peers on important issues that are a part of the veterinary profession.",
+							"**Starting From Scratch:** Existing veterinary forums were outdated in terms of design and user experience, hindering user engagement."
 						]
 					}
 				]
@@ -1866,52 +1853,215 @@
 			{
 				"background": "light",
 				"type": "container",
+				"center": true,
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Ideation & Conceptualization",
+						"type": "unordered-list",
+						"title": "Problem Definition",
 						"content": [
-							"Collaborated with key stakeholders and veterinarians to ideate on a design concept that addressed their specific needs and desires for an online community."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Wireframing",
-						"content": [
-							"Translated design concepts into wireframes, outlining the structure and user flow of the platform, ensuring a user-centric design."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Prototyping",
-						"content": [
-							"Developed an interactive prototype to simulate user interactions, incorporating feedback from veterinarians and stakeholders before the final design."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Usability Testing",
-						"content": [
-							"Conducted usability testing sessions with potential users to gather insights into the prototype's usability and identify areas for improvement."
+							"In order to design the product that MightyVet wanted, we first had to understand what the usability issues were with the existing MightyVet website and how we could address them with improved user experiences.",
+							"To guide our initial research, we asked ourselves three important questions:",
+							"**How might we emphasize community and mentorship through user experience?**",
+							"**How might we support a broad range of users and make it accessible beyond veterinarians?**",
+							"**How might we connect all the capabilities for the user?**"
 						]
 					}
 				]
-			},
-			{
-				"type": "header",
-				"title": "Solution"
 			},
 			{
 				"background": "light",
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
-						"title": "Key Contributions",
+						"type": "text-image",
+						"title": "Research",
 						"content": [
-							"**Discussion Forums:** Structured forums for veterinarians to discuss cases, share knowledge, and seek advice.",
-							"**Networking Hub:** A dedicated section for building professional connections and collaborating on research projects.",
-							"**Responsive Design:** Ensured seamless access to the community through a responsive web design and a dedicated mobile app."
+							{
+								"text": [
+									"**Heuristic Review**",
+									"We completed a heuristic review of the existing website to identify areas of opportunity for improving the user experience.",
+									"Using subjective ratings of different heuristics to get a baseline on overall usability of the site, we concluded that the usability score was 68 out of 100, and there were opportunities to improve the homepage and navigation to make a large immediate impact."
+								],
+								"image": {
+									"alt": "MightyVet heuristics screenshots",
+									"src": {
+										"light": "/mightyvet-heuristics.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Competitive Analysis**",
+									"We identified other similar websites and organizations to complete a competitive analysis to understand what other websites were doing and any insightful UX patterns to replicate.",
+									"We looked at a number of non-profits and mentorship companies and found various useful bits of information or user flows to test out in our own updated designs."
+								],
+								"image": {
+									"alt": "MightyVet analysis screenshots",
+									"src": {
+										"light": "/mightyvet-analysis.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Affinity Diagramming**",
+									"We completed a brainstorming session using affinity diagramming to organize the information we had gathered from our previous research and analysis.",
+									"We identified a number of groupings based on the usability issues we had seen as well as patterns emerging from the challenges faced by the veterinary community."
+								],
+								"image": {
+									"alt": "MightyVet affinity screenshots",
+									"src": {
+										"light": "/mightyvet-affinity.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Ideation & Conceptualization",
+						"content": [
+							{
+								"text": [
+									"**Information Architecture**",
+									"Using what we had learned from our initial research, we began to formulate a more structured plan for how to resolve some of the user experience issues MightyVet needed resolved.",
+									"We devised improved information architecture that we believed better organized and fit the mental model of the website users' as far as how different sections of the site should be presented."
+								],
+								"image": {
+									"alt": "MightyVet information architecture screenshots",
+									"src": {
+										"light": "/mightyvet-information-architecture.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Sketching**",
+									"Before moving on to digital wireframing and prototyping we first completed initial sketches to see how some of the ideas we had might look as rough interface concepts."
+								],
+								"image": {
+									"alt": "MightyVet sketches screenshots",
+									"src": {
+										"light": "/mightyvet-sketches.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Wireframing**",
+									"To further refine our new user experience for MightyVet, we then moved on the computer to complete initial wireframes to start finalizing our vision."
+								],
+								"image": {
+									"alt": "MightyVet wireframe screenshots",
+									"src": {
+										"light": "/mightyvet-wireframes.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Visual Design & Prototyping",
+						"content": [
+							{
+								"text": [
+									"**Design Moodboard**",
+									"To get an idea of the different visual design updates we wanted to make we created a moodboard that drew influence from other competing websites as well as more modern interface trends.",
+									"MightyVet didn't need extensive visual design updates, but they wanted a refresh that brought a more modern appeal to the site."
+								],
+								"image": {
+									"alt": "MightyVet moodboard screenshots",
+									"src": {
+										"light": "/mightyvet-moodboard.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Log In + Donate Workflows**",
+									"Two essential workflows that needed updating were the user workflows for logging in and making donations, especially on mobile devices.",
+									"We implemented simplified workflows that allowed mobile users the ability to easily log in to their account as well as making donations."
+								],
+								"image": {
+									"alt": "MightyVet mobile screenshots",
+									"src": {
+										"light": "/mightyvet-mobile.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Redesigned User Profiles**",
+									"We completely overhauled the mentor user profile pages to better reflect the activities and resources that users expected to access on MightyVet.",
+									"Important information is displayed including upcoming events and webinars plus personalized goals for completing monthly learning and development goals."
+								],
+								"image": {
+									"alt": "MightyVet profile screenshots",
+									"src": {
+										"light": "/mightyvet-profile.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Restructured Mentor Search**",
+									"The mentorship page for searching and discovering veterinary mentors in your area was completely redesigned and updated with more structured search results and a simplified search experience."
+								],
+								"image": {
+									"alt": "MightyVet mentor screenshots",
+									"src": {
+										"light": "/mightyvet-mentors.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Searchable Webinars & Education Resources**",
+									"We implemented a brand new page and user experience for webinars and other online educational content.",
+									"The existing MightyVet site had multiple disparate links to external resources that lacked a cohesive experience and centralized source for content."
+								],
+								"image": {
+									"alt": "MightyVet webinar screenshots",
+									"src": {
+										"light": "/mightyvet-webinars.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
 					}
 				]
@@ -1919,6 +2069,21 @@
 			{
 				"type": "header",
 				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"We shared our research findings and final proposed prototypes with MightyVet, and our vision and ideas were welcomed and thoughtfully considered.",
+							"Ultimately, the complete concept we presented wasn't implemented, and MightyVet has since undergone a number of redesigns. The insights gained from the research and prototyping we completed was invaluable in determining some of the direction and features they eventually implemented on the website."
+						]
+					}
+				]
 			},
 			{
 				"background": "dark",
@@ -1932,23 +2097,25 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"Designing the prototype concept for VetsConnect was an inspiring journey that highlighted the transformative impact of technology on fostering connections within the veterinary community. As a UX/UI designer, this project allowed me to contribute to the creation of an innovative platform that has the potential to revolutionize how veterinarians connect, collaborate, and share knowledge."
+										"Designing the new UX concept for MightyVet was an inspiring journey that highlighted the transformative impact of technology on fostering connections within the veterinary community. As a UX designer, this project allowed me to contribute to the creation of an innovative platform with the potential to revolutionize how veterinarians connect, collaborate, and share knowledge.",
+										"I enjoyed taking a new approach to creative problem-solving as well as working on a multidisciplinary UX team with other designers. It was a great experience undertaking different research methods to inform a digital prototype."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming challenges related to incorporating complex networking features underscored the need for a balance between functionality and simplicity."
+										"**Going Slow Can Help You Go Fast:** Rather than jumping straight to digital prototypes or solutioning with code, a more thoughtful approach informed by research and user feedback can help you go faster when you're ready to implement your vision",
+										"**Process Is As Important As Implementation:** How you arrive at your end goal or solution to a problem is equally as important as how the solution might be implemented"
 									]
 								},
 								{
 									"type": "text",
 									"title": "Future Recommendations",
 									"content": [
-										"For future development, I recommend further refinement based on ongoing user feedback and potential integration with additional tools for veterinary research and collaboration."
+										"For future design projects, I recommend further refinement based on ongoing user feedback and potential integration with additional tools or resources for veterinary research and collaboration."
 									]
 								}
 							]
@@ -1971,11 +2138,11 @@
 		},
 		"backgroundImage": "/camping.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/wa-sp-cover.png",
 			"width": 1600,
 			"height": 900
 		},
-		"description": "Designing a user-centric platform to improve the reservation systems for WA State Parks",
+		"description": "Designing a user-centric mobile experience to improve the reservation systems for WA State Parks",
 		"handle": "wa-state-parks-camping-reservations",
 		"sections": [
 			{
@@ -1990,14 +2157,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"As a UX/UI designer, I took on the challenge of creating a prototype for a new concept for the camping reservation website for WA State Parks. The primary goal was to design a user-centric platform that simplifies the camping reservation process, enhances the overall user experience, and encourages more people to explore the beauty of Washington's state parks."
+										"As a UX designer, I took on the challenge of creating and testing a prototype for a new concept for the camping reservation website for WA State Parks. The primary goal was to design a user-centric platform that simplifies the camping reservation process, enhances the overall user experience, and encourages more people to explore the beauty of Washington's state parks."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As the lead designer, I spearheaded the design process from initial ideation and wireframing to prototyping and usability testing, collaborating closely with stakeholders from WA State Parks."
+										"As the sole **UX designer** and researcher on this project, I spearheaded the design process from initial ideation and wireframing to prototyping and usability testing, collaborating with potential users and stakeholders from WA State Parks."
 									]
 								}
 							],
@@ -2006,9 +2173,9 @@
 									"type": "unordered-list",
 									"title": "Objectives",
 									"content": [
-										"**User-Centric Design:** Develop a prototype with a focus on user-friendly navigation and an intuitive reservation process.",
+										"**User-Friendly Design:** Develop a prototype with a focus on user-friendly navigation and an intuitive reservation process.",
 										"**Visual Appeal:** Design an aesthetically pleasing interface that aligns with the natural beauty of the state parks, inspiring users to plan camping trips.",
-										"**Mobile-First Design:** Ensure the prototype is responsive across devices, catering to users who plan their trips using various devices."
+										"**Mobile-First Design:** Ensure the prototype is effective on mobile screens with intention to scale up functionality to larger devices."
 									]
 								}
 							]
@@ -2025,9 +2192,9 @@
 						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
-							"**Outdated Reservation Process:** Users found the existing reservation system cumbersome and time-consuming, leading to frustration.",
+							"**Outdated Reservation Process:** Users found the existing reservation system cumbersome, time-consuming, and confusing, leading to frustration.",
 							"**Limited Visual Appeal:** The current website lacked visual elements that captured the essence of Washington's diverse state parks.",
-							"**Accessibility Concerns:** Some users experienced difficulties navigating the website on mobile devices, limiting their ability to make reservations on the go."
+							"**Accessibility Concerns:** Users experienced difficulties navigating the website on mobile devices, limiting their ability to make reservations on the go."
 						]
 					}
 				]
@@ -2039,45 +2206,144 @@
 			{
 				"background": "light",
 				"type": "container",
+				"center": true,
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Ideation & Conceptualization",
+						"type": "unordered-list",
+						"title": "Research Approach",
 						"content": [
-							"Collaborated with stakeholders to ideate on a design concept that addressed the specific needs of users and captured the spirit of camping in WA State Parks."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Wireframing",
-						"content": [
-							"Translated design concepts into wireframes, outlining the structure and user flow of the prototype, ensuring a streamlined reservation process."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Prototyping",
-						"content": [
-							"Developed an interactive prototype to simulate user interactions, incorporating feedback from potential users and stakeholders before the final design."
+							"**Identify Test Participants:** I met and talked with a small range of users that self-identified as outdoorsy, liked to camp, and may or may not have used the WA State Parks camping reservation system before",
+							"**Participant Interviews:** I wanted to understand pain points and positive findings with users' experiences using the existing reservation system in order to identify opportunities to improve the major workflows",
+							"**Workflow Observation:** I observed the participants attempting to complete predefined common tasks including searching for a campground and campsite and trying to make a reservation for certain dates",
+							"**Usability Testing & Prototype Review:** I asked users to then try the same workflows using various prototypes I came up with to test new ideas and gain better understanding of user needs",
+							"**Post-test Interview:** I recorded additional feedback from participants after completing the workflow and prototype exercises to ensure they had shared all pain points and positive interactions"
 						]
 					}
 				]
-			},
-			{
-				"type": "header",
-				"title": "Solution"
 			},
 			{
 				"background": "light",
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
-						"title": "Key Contributions",
+						"type": "text-image",
+						"title": "Usability Testing",
 						"content": [
-							"**Visual Park Guides:** Implemented visually rich park guides to provide users with a preview of the natural beauty, amenities, and activities available at each state park.",
-							"**Enhances Search Experience:** Enhanced the search functionality to allow users to find available campsites based on preferences such as date, location, and amenities.",
-							"**Mobile-First Design:** Ensured a seamless experience on mobile devices, allowing users to plan and make reservations on the go."
+							{
+								"text": [
+									"**Study Participants**",
+									"As part of the initial interviews I had each participant tell me a little about their frequency of camping, whether or not they had used the WA State Parks camping reservation system before, and how they rated the current experience on a scale of 1 to 10 with any suggestions for improvement."
+								],
+								"image": {
+									"alt": "WA State Parks participants screenshots",
+									"src": {
+										"light": "/wa-sp-participants.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Existing Reservation Workflow**",
+									"Many aspects were reported as outdated or confusing during initial usability testing.",
+									"Participants noted that the experience was fairly text heavy with little to no imagery to help them decide or learn more about campgrounds they were interested in camping in."
+								],
+								"image": {
+									"alt": "WA State Parks reservation screenshots",
+									"src": {
+										"light": "/wa-sp-reservation-flow.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Sketching**",
+									"Taking what I had learned from the initial round of interviews and usability testing, I started creating rough sketches to explore new ideas and continue testing."
+								],
+								"image": {
+									"alt": "WA State Parks sketch screenshots",
+									"src": {
+										"light": "/wa-sp-sketches.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Wireframing**",
+									"I created initial rough wireframes and asked my research participants to again walk through the camping reservation process.",
+									"I created a simple clickable prototype using Adobe XD and had users speak aloud as they completed the same search and reservation tasks."
+								],
+								"image": {
+									"alt": "WA State Parks wireframe screenshots",
+									"src": {
+										"light": "/wa-sp-wireframes.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Final Prototype Features",
+						"content": [
+							{
+								"text": [
+									"**Intentional Navigation**",
+									"I changed the primary landing experience to include calls to action to complete the most common tasks that users visit the site for.",
+									"The expandable mobile menu also reflected the updated information architecture and allowed users to complete tasks from any page on the site."
+								],
+								"image": {
+									"alt": "WA State Parks nav screenshots",
+									"src": {
+										"light": "/wa-sp-navigation.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Improved Search & Discovery**",
+									"I made updates to the search interface and filters including condensing the search elements to maximize mobile screen real estate and making small yet impactful updates to the datepicker component.",
+									"Campground and campsite detail pages were updated with more imagery and compact information that only initially displayed the most important data such as site and occupancy details."
+								],
+								"image": {
+									"alt": "WA State Parks search screenshots",
+									"src": {
+										"light": "/wa-sp-search.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Visually Appealing Details**",
+									"I reworked the design of the regional, state park, and campground detail pages to include maps and images to aid in the education and discovery when researching which places to camp.",
+									"This was one of the most impactful small changes that research participants responded favorably to."
+								],
+								"image": {
+									"alt": "WA State Parks map screenshots",
+									"src": {
+										"light": "/wa-sp-maps.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
 					}
 				]
@@ -2085,6 +2351,48 @@
 			{
 				"type": "header",
 				"title": "Results & Impact"
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"blocks": [
+					{
+						"type": "text-image",
+						"title": "Research Participant Feedback",
+						"content": [
+							{
+								"text": [
+									"**Final Usability Testing Results**",
+									"Across the board all research participants reported that the changes and design updates I suggested greatly improved the user experience of making a camping reservation through Washington State Parks.",
+									"Based on my initial observations, participants upgraded the overall experience from an average 5.2 rating to 9.4."
+								],
+								"image": {
+									"alt": "WA State Parks result screenshots",
+									"src": {
+										"light": "/wa-sp-results.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"background": "light",
+				"type": "container",
+				"center": true,
+				"blocks": [
+					{
+						"type": "text",
+						"title": "Impact",
+						"content": [
+							"Although this project was initially started as an exercise in better understanding user research and usability testing, part way through the process I reached out to representatives from WA State Parks and offered to present my research and prototypes for consideration, and they agreed to meet with me.",
+							"I shared my findings and updated designs, and they were received with great appreciation. The WA State Parks team was highly impressed but ultimately didn't have the funding at the time to undertake redesigning the camping reservation system."
+						]
+					}
+				]
 			},
 			{
 				"background": "dark",
@@ -2098,23 +2406,26 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"Prototyping the new concept for the WA State Parks camping reservation website was an inspiring journey that highlighted the transformative impact of technology on promoting outdoor adventures. As a UX/UI designer, this project allowed me to contribute to the creation of a platform that aims to make camping in Washington's state parks more accessible and enjoyable for everyone."
+										"Prototyping the new concept for the WA State Parks camping reservation website was an inspiring journey that highlighted the transformative impact of user research and how technology can promote outdoor adventures. As a UX designer and researcher, this project allowed me to contribute to the creation of a platform that aims to make camping in Washington's state parks more accessible and enjoyable for everyone.",
+										"It was an especially eye-opening experience for me to listen to others' points of view and either confirm or deny my own personal biases that I have when taking on design or development projects."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming challenges related to integrating visually rich content underscored the need for optimization without compromising website performance."
+										"**Interactivity Goes a Long Way:** Adding simple interactivity such as a map or image gallery can really take simple, boring data to a more consumable and ultimately enjoyable level",
+										"**Listen:** Taking the time to gather opinions and feedback from others is essential",
+										"**Don't Be Afraid to Reach Out:** I was pleasantly surprised how excited the WA State Parks team was to hear new ideas, and it invigorated me to take the same chances with other projects"
 									]
 								},
 								{
 									"type": "text",
 									"title": "Future Recommendations",
 									"content": [
-										"For future development, I recommend continuous user testing and iterative improvements based on user feedback to further refine the user experience."
+										"If I were to continue this project, I would recommend continuing to modernize and update other major aspects of the reservation website including managing existing reservations and other user profile features."
 									]
 								}
 							]
@@ -2137,7 +2448,7 @@
 		},
 		"backgroundImage": "/portfolio.jpg",
 		"coverImage": {
-			"src": "",
+			"src": "/portfolio-cover.png",
 			"width": 1600,
 			"height": 900
 		},
@@ -2156,14 +2467,14 @@
 									"type": "text",
 									"title": "Project Overview",
 									"content": [
-										"As a designer and developer passionate about showcasing my skills and projects, I embarked on the journey of designing and building my own portfolio website. The primary goal was to create a platform that not only reflects my professional abilities but also provides visitors with an engaging and memorable experience."
+										"As someone passionate about showcasing my skills and projects, I embarked on the journey of designing and building my own portfolio website. The primary goal was to create an online experience that not only reflects my professional abilities but also provides visitors with an engaging and memorable experience."
 									]
 								},
 								{
 									"type": "text",
 									"title": "My Role",
 									"content": [
-										"As the sole designer and developer of the project, I was responsible for every aspect of the process, from initial ideation and wireframing to coding and deployment."
+										"As the sole **designer and developer** of the project, I am responsible for every aspect of the process, from initial ideation, conceptualization, asset preparation, and visual and UI design to coding, deployment, bug-squashing, and continued maintenance."
 									]
 								}
 							],
@@ -2173,7 +2484,7 @@
 									"title": "Objectives",
 									"content": [
 										"**Personal Branding:** Develop a portfolio website that effectively communicates my personal brand, style, and approach to design and development.",
-										"**Interactivity:** Prioritize a user-friendly interface and intuitive navigation to ensure visitors can easily explore my work and learn about my skills.",
+										"**Interactivity:** Prioritize a user-friendly interface with a touch of memorable interactivity to ensure visitors want to explore my work and learn about my skills.",
 										"**Showcasing Projects + Technology:** Feature a diverse range of projects with detailed case studies to highlight my expertise and problem-solving capabilities."
 									]
 								}
@@ -2191,9 +2502,9 @@
 						"type": "ordered-list",
 						"title": "Challenges",
 						"content": [
-							"**Outdated Personal Branding:** The existing portfolio did not effectively convey my unique style and personality.",
-							"**Broken Existing Website:** The previous version of my portfolio lacked modern design elements and did not showcase my latest projects adequately.",
-							"**Limited Engagement:** Users were not spending much time on the website, and the bounce rate was higher than desired."
+							"**Outdated Portfolio & Case Studies:** My existing portfolio did not effectively convey my unique style and personality and lacked meaningful detail and explanation in the case studies.",
+							"**Lack of Personal Branding:** As someone who has a degree in graphic design, it pains me that I didn't have personal branding that I'm proud of.",
+							"**Limited Engagement:** No one really knows about my portfolio site, and I didn't have any sort of analytics in place to inform me of usage statistics."
 						]
 					}
 				]
@@ -2207,31 +2518,76 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "text",
-						"title": "Competitive Analysis & Inspiration",
+						"type": "text-image",
+						"title": "Brainstorming & Conceptualization",
 						"content": [
-							"Collaborated with stakeholders to ideate on a design concept that addressed the specific needs of users and captured the spirit of camping in WA State Parks."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Ideation & Branding Conceptualization",
-						"content": [
-							"Collaborated with stakeholders to ideate on a design concept that addressed the specific needs of users and captured the spirit of camping in WA State Parks."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Wireframing & Prototyping",
-						"content": [
-							"Translated design concepts into wireframes, outlining the structure and user flow of the prototype, ensuring a streamlined reservation process."
-						]
-					},
-					{
-						"type": "text",
-						"title": "Prototyping",
-						"content": [
-							"Developed an interactive prototype to simulate user interactions, incorporating feedback from potential users and stakeholders before the final design."
+							{
+								"text": [
+									"**Competitive Inspiration**",
+									"There are plenty of amazing portfolios on the web, but I was especially inspired by various interactions, interfaces, and quirks from the following:",
+									"[Eric Van Holtz](https://vanholtz.co)",
+									"[Lynn Fisher](https://lynnandtonic.com)",
+									"[Miranda Biondi](https://mirandabiondi.com)",
+									"[Wolff Olins](https://www.wolffolins.com)",
+									"[Matt Farley](https://www.wolffolins.com)",
+									"[Lars Olson](https://www.lars-olson.com)",
+									"[Monica Dinculescu](https://meowni.ca)",
+									"[Kilian Peters](https://www.lokkeestudios.com)",
+									"[Cassie Evans](https://www.cassie.codes)"
+								],
+								"image": {
+									"alt": "Portfolio inspiration screenshots",
+									"src": {
+										"light": "/portfolio-inspiration.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Rough Sketches**",
+									"Like most projects, I did my usual brainstorming and sketching in my sketchbook to further flesh out ideas.",
+									"One that I was particularly excited about was making some sort of interactive collage."
+								],
+								"image": {
+									"alt": "Portfolio sketch screenshots",
+									"src": {
+										"light": "/portfolio-sketches.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Personal Branding**",
+									"I've long had the idea to \"borrow\" inspiration from a logomark created by Paul Rand for one of the titans of the design world, the classic [IBM rebus](https://www.ibm.com/design/language/ibm-logos/rebus).",
+									"I love the simplicity and effectiveness of such a lasting visual, and my initials are a perfect fit to riff on the famous design."
+								],
+								"image": {
+									"alt": "Portfolio branding screenshots",
+									"src": {
+										"light": "/portfolio-branding.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Collage & Color Studies**",
+									"After doing a mini photo shoot with a number of sentimental items around my house and office, I started experimenting with different collage layouts and derived a color palette from the images to carry through to the user interface."
+								],
+								"image": {
+									"alt": "Portfolio collage screenshots",
+									"src": {
+										"light": "/portfolio-collage.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
 					}
 				]
@@ -2245,18 +2601,129 @@
 				"type": "container",
 				"blocks": [
 					{
-						"type": "unordered-list",
-						"title": "Key Contributions",
+						"type": "text-image",
+						"title": "Key Features",
 						"content": [
-							"**Personal Branding:** Implemented a consistent visual identity, including a logo and color scheme, to reinforce my personal brand.",
-							"**Project Showcases:** Created detailed case studies for key projects, emphasizing the problem-solving process, design thinking, and development skills.",
-							"**Interactive Elements:** Integrated subtle animations and interactive elements to engage users and create a memorable browsing experience."
+							{
+								"text": [
+									"**Subtly Interactive Imagery**",
+									"I knew I wanted to make the collage in the landing section more memorable, and one way to do that was to add interactivity subtle enough to entertain visitors without being completely distracting from the rest of the projects or case studies."
+								],
+								"image": {
+									"alt": "Portfolio tilt image screenshots",
+									"src": {
+										"light": "/portfolio-tilt.gif"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Integrated Email Form**",
+									"My previous portfolios have lacked more intentional methods for contacting me other than email.",
+									"By integrating with the incredibly easy to set up Web3Forms API, I was able to build a simple [contact form](/#contact) that is tailored to send messages how I prefer to be contacted."
+								],
+								"image": {
+									"alt": "Portfolio contact screenshots",
+									"src": {
+										"light": "/portfolio-contact.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							},
+							{
+								"text": [
+									"**Dead Simple CI/CD**",
+									"Deciding to deploy my portfolio using Vercel has made continuous development and deployment a breeze because of their integrations with GitHub and great documentation for Next.js projects.",
+									"I also installed and now use the free tiers of Vercels analytics and speed insights packages to learn more about the usage and performance stats of my portfolio."
+								],
+								"image": {
+									"alt": "Portfolio CI/CD screenshots",
+									"src": {
+										"light": "/portfolio-cicd.png"
+									},
+									"width": 2160,
+									"height": 1620
+								}
+							}
 						]
 					},
 					{
-						"type": "unordered-list",
+						"type": "image-blocks",
 						"title": "Technology Highlights",
-						"content": ["**#1:** Foo", "**#2:** Bar", "**#3:** Baz"]
+						"content": [
+							{
+								"href": "https://nextjs.org",
+								"image": {
+									"alt": "Next.js logo",
+									"src": {
+										"light": "/next_light.png",
+										"dark": "/next_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "The React Framework",
+								"text": "I explored and benefitted from a lot of the features with Next.js version 14, one of the top frameworks to integrate with React"
+							},
+							{
+								"href": "https://www.typescriptlang.org",
+								"image": {
+									"alt": "TypeScript logo",
+									"src": {
+										"light": "/typescript_light.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Intentional Code Design",
+								"text": "I treated my portfolio the same as any other TypeScript project I've worked on, benefitting from the type-checking, debugging, and other features of the language"
+							},
+							{
+								"href": "https://tailwindcss.com",
+								"image": {
+									"alt": "Tailwind CSS logo",
+									"src": {
+										"light": "/tailwind_light.png",
+										"dark": "/tailwind_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Utility-First CSS",
+								"text": "I used this portfolio as a deep-dive into the benefits and quirks of using Tailwind CSS, especially helpful for enabling dark mode"
+							},
+							{
+								"href": "https://vercel.com",
+								"image": {
+									"alt": "Vercel logo",
+									"src": {
+										"light": "/vercel_light.png",
+										"dark": "/vercel_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Top-Notch DX",
+								"text": "This site is deployed and hosted on Vercel, chosen for its ease of use and amazing developer experience for a project this size"
+							},
+							{
+								"href": "https://web3forms.com/",
+								"image": {
+									"alt": "Web3Forms logo",
+									"src": {
+										"light": "/web3forms_light.png",
+										"dark": "/web3forms_dark.png"
+									},
+									"width": 720,
+									"height": 405
+								},
+								"title": "Modern Contact Forms",
+								"text": "Integrating with the Web3Forms API made my custom contact form incredibly easy to configure, test, and use"
+							}
+						]
 					}
 				]
 			},
@@ -2273,16 +2740,15 @@
 						"type": "unordered-list",
 						"title": "Metrics",
 						"content": [
-							"**User Engagement:** Increased by 50%, reflected in longer average session durations and lower bounce rates.",
-							"**Portfolio Views:** Experienced a 40% increase, indicating heightened interest in exploring multiple projects.",
-							"**Contact Form Submissions:** Saw a 25% increase in inquiries from potential collaborators and employers."
+							"**TBD:** Now that I have basic analytics incorporated into my portfolio site, I'm excited to track the usage and site performance over time."
 						]
 					},
 					{
 						"type": "text",
 						"title": "Impact",
 						"content": [
-							"The redesigned portfolio website successfully elevated my online presence, creating a positive impression and providing a platform for effectively showcasing my skills and projects."
+							"I know this redesigned portfolio website will successfully elevate my online presence (because I haven't had a functional one for a couple years). I look forward to creating a positive impression and providing a stable website for effectively showcasing my skills and projects.",
+							"On a personal level it also feels great to finally have built a site that exemplifies my creative and technical skill set and is configured in a way that will allow me to easily make updates in the future."
 						]
 					}
 				]
@@ -2299,16 +2765,18 @@
 									"type": "text",
 									"title": "Reflection",
 									"content": [
-										"Designing and building my own portfolio website was a fulfilling endeavor that allowed me to express my personal brand and capabilities in a digital space. As the sole designer and developer, this project reinforced the importance of continuous improvement, creativity, and user-centric design principles in creating a compelling online showcase."
+										"Designing and building my own portfolio website was a fulfilling experience that allowed me to express my personal brand and capabilities in a digital space. As the sole designer and developer, this project reinforced the importance of continuous improvement, creativity, and user-centric design principles in creating a compelling online showcase."
 									]
 								}
 							],
 							"col2": [
 								{
-									"type": "text",
+									"type": "unordered-list",
 									"title": "Lessons Learned",
 									"content": [
-										"Overcoming challenges related to balancing design aesthetics with performance optimization emphasized the need for careful consideration and testing."
+										"**Content Is the Hardest Part:** I'm grateful for all the marketing folks and copywriters I've worked with in the past - generating content is HARD",
+										"**Documentation Is Your Friend:** Well-written documentation can make even the most complex technologies easily approachable",
+										"**The Web is Ever-Changing:** New technologies are coming and going every day, and a personal portfolio is a great way to stay on top of the latest trends and frameworks"
 									]
 								},
 								{
