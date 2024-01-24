@@ -11,6 +11,7 @@ import boeingDark from '@public/boeing_dark.png'
 import highSeasLight from '@public/high-seas_light.png'
 import highSeasDark from '@public/high-seas_dark.png'
 import Button from '@/lib/Button'
+import ScrollAnimation from './ScrollAnimation'
 
 export default function ResumeSection() {
 	return (
@@ -18,56 +19,58 @@ export default function ResumeSection() {
 			id="resume"
 			className="transition-colors w-full h-auto bg-white dark:bg-grey-blue py-16 md:py-32 scroll-mt-16"
 		>
-			<div className="container w-full h-full flex flex-col gap-16 items-center justify-center">
-				<h2 className="text-xl md:text-2xl font-medium text-center mx-auto max-w-lg">
-					I&apos;m grateful to have worked alongside amazing people at industry-leading, world-changing
-					companies:
-				</h2>
-				<div className="flex items-center justify-center flex-wrap gap-8 md:gap-12">
-					<Link href="https://www.theproscloset.com" target="_blank">
-						<ThemeImage alt="TPC logo" srcLight={tpcLight} srcDark={tpcDark} className="w-48 h-auto" />
-					</Link>
-					<Link href="https://www.starbucks.com" target="_blank">
-						<ThemeImage
-							alt="Starbucks logo"
-							srcLight={starbucksLight}
-							srcDark={starbucksDark}
-							className="w-48 h-auto"
-						/>
-					</Link>
-					<Link href="https://www.microsoft.com" target="_blank">
-						<ThemeImage
-							alt="Microsoft logo"
-							srcLight={microsoftLight}
-							srcDark={microsoftDark}
-							className="w-48 h-auto"
-						/>
-					</Link>
-					<Link href="https://www.boeing.com" target="_blank">
-						<ThemeImage
-							alt="Boeing logo"
-							srcLight={boeingLight}
-							srcDark={boeingDark}
-							className="w-48 h-auto"
-						/>
-					</Link>
-					<Link href="https://highseas.com" target="_blank">
-						<ThemeImage
-							alt="High Seas logo"
-							srcLight={highSeasLight}
-							srcDark={highSeasDark}
-							className="w-48 h-auto"
-						/>
-					</Link>
+			<ScrollAnimation classNameInView="animate-fade-in" classNameNotInView="opacity-0">
+				<div className="container w-full h-full flex flex-col gap-16 items-center justify-center">
+					<h2 className="text-xl md:text-2xl font-medium text-center mx-auto max-w-lg">
+						I&apos;m grateful to have worked alongside amazing people at industry-leading, world-changing
+						companies:
+					</h2>
+					<div className="flex items-center justify-center flex-wrap gap-8 md:gap-12">
+						<Link href="https://www.theproscloset.com" target="_blank">
+							<ThemeImage alt="TPC logo" srcLight={tpcLight} srcDark={tpcDark} className="w-48 h-auto" />
+						</Link>
+						<Link href="https://www.starbucks.com" target="_blank">
+							<ThemeImage
+								alt="Starbucks logo"
+								srcLight={starbucksLight}
+								srcDark={starbucksDark}
+								className="w-48 h-auto"
+							/>
+						</Link>
+						<Link href="https://www.microsoft.com" target="_blank">
+							<ThemeImage
+								alt="Microsoft logo"
+								srcLight={microsoftLight}
+								srcDark={microsoftDark}
+								className="w-48 h-auto"
+							/>
+						</Link>
+						<Link href="https://www.boeing.com" target="_blank">
+							<ThemeImage
+								alt="Boeing logo"
+								srcLight={boeingLight}
+								srcDark={boeingDark}
+								className="w-48 h-auto"
+							/>
+						</Link>
+						<Link href="https://highseas.com" target="_blank">
+							<ThemeImage
+								alt="High Seas logo"
+								srcLight={highSeasLight}
+								srcDark={highSeasDark}
+								className="w-48 h-auto"
+							/>
+						</Link>
+					</div>
+					<Button
+						href="https://drive.google.com/file/d/1LKmlhusey6vC3NRcg_3iTnJ5NARl46lv/view"
+						size="large"
+						target="_blank"
+					>
+						View My Résumé
+					</Button>
 				</div>
-				<Button
-					href="https://drive.google.com/file/d/1LKmlhusey6vC3NRcg_3iTnJ5NARl46lv/view"
-					size="large"
-					target="_blank"
-				>
-					View My Résumé
-				</Button>
-			</div>
+			</ScrollAnimation>
 		</section>
 	)
 }

@@ -169,6 +169,7 @@ const config: Config = {
 		extend: {
 			animation: {
 				'scale-up-down': 'scale-up-down 1050ms infinite ease-in-out',
+				'fade-in': 'fade-in 750ms ease-in-out',
 			},
 			fontFamily: {
 				sans: ['scandia-web', 'sans-serif'],
@@ -180,6 +181,16 @@ const config: Config = {
 					},
 					'20%': {
 						transform: 'scaleY(1.0)',
+					},
+				},
+				'fade-in': {
+					from: {
+						transform: 'translateY(100px)',
+						opacity: '0',
+					},
+					to: {
+						transform: 'translateY(0)',
+						opacity: '1',
 					},
 				},
 			},
