@@ -19,7 +19,7 @@ export default function ResumeSection() {
 			id="resume"
 			className="transition-colors w-full h-auto bg-white dark:bg-grey-blue py-16 md:py-32 scroll-mt-16"
 		>
-			<ScrollAnimation classNameInView="animate-fade-in" classNameNotInView="opacity-0">
+			<ScrollAnimation classNameInView="animate-fade-in">
 				<div className="container w-full h-full flex flex-col gap-16 items-center justify-center">
 					<h2 className="text-xl md:text-2xl font-medium text-center mx-auto max-w-lg">
 						I&apos;m grateful to have worked alongside amazing people at industry-leading, world-changing

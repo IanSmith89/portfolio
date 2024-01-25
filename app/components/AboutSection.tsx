@@ -10,14 +10,14 @@ export default function AboutSection() {
 			id="about-me"
 			className="transition-colors w-full bg-teal dark:bg-indigo py-16 lg:py-32 scroll-mt-16 overflow-y-hidden"
 		>
-			<ScrollAnimation classNameInView="animate-fade-in" classNameNotInView="opacity-0">
+			<ScrollAnimation classNameInView="animate-fade-in">
 				<div className="container">
 					<div className="grid md:grid-cols-2 gap-6 items-end md:gap-10 lg:gap-24">
 						<div>
 							<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">About Me</h2>
 							<Markdown
 								text="Hi! I'm Ian, and I'm a human-centered software engineer and designer. I have a background in
-							graphic design that always influences my approach to technical problem-solving. I love taking on complex issues and creating novel, delightful solutions."
+							graphic design that influences my approach to technical problem-solving. I love taking on complex issues and creating novel, delightful solutions."
 							/>
 							<Markdown text="I've worked alongside incredible human beings at design agencies, consulting groups, startups, and global Fortune 500 companies in industries including real estate, biotechnology, retail, government, and e-commerce." />
 							<Markdown text="I believe that technology has the power to positively impact all aspects of society, and I enjoy constantly learning new and creative ways to make that happen." />

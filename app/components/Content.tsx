@@ -80,12 +80,12 @@ export default function Content({ block }: ContentProps) {
 							key={i}
 							className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-10 mb-12 md:mb-16"
 						>
-							<div className="flex flex-col justify-center h-full">
+							<div className="flex flex-col justify-center h-full order-2 md:order-none">
 								{c.text.map((p) => (
 									<Markdown key={p} text={p} />
 								))}
 							</div>
-							<div className="lg:col-span-2 xl:col-span-3">
+							<div className="lg:col-span-2 xl:col-span-3 order-1 md:order-none">
 								<ThemeImage
 									alt={c.image.alt || ''}
 									srcLight={c.image.src.light}
