@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { NAV_ROUTES } from '@/utils/constants'
 import EyeJayEsLogo from '@/lib/EyeJayEsLogo'
+import ScrollAnimation from './ScrollAnimation'
 
 const DarkModeSwitch = dynamic(() => import('@/lib/DarkModeSwitch'), { ssr: false })
 
@@ -33,18 +34,26 @@ export default function MobileMenu() {
 						isOpen ? 'opacity-1' : 'opacity-0'
 					}`}
 				>
-					<div className="absolute m-auto inset-0 left-6 flex flex-col gap-8 justify-center">
-						{NAV_ROUTES.map(({ href, title }) => (
-							<Link
-								key={title}
-								className="transition-colors text-indigo dark:text-teal text-6xl font-bold"
-								href={href}
-								onClick={handleLinkClick}
-							>
-								{title}
-							</Link>
-						))}
-					</div>
+					{isOpen ? (
+						<div className="absolute m-auto inset-0 left-6 flex flex-col gap-8 justify-center">
+							{NAV_ROUTES.map(({ href, title }, i) => (
+								<ScrollAnimation
+									key={title}
+									classNameInView={`transition-all translate-x-0 duration-700 delay-[${i * 200}ms]`}
+									classNameNotInView="-translate-x-8 opacity-0"
+									triggerOnce={false}
+								>
+									<Link
+										className="transition-colors text-indigo dark:text-teal text-6xl font-bold"
+										href={href}
+										onClick={handleLinkClick}
+									>
+										{title}
+									</Link>
+								</ScrollAnimation>
+							))}
+						</div>
+					) : null}
 					<DarkModeSwitch />
 				</div>
 			</div>
