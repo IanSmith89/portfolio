@@ -11,6 +11,15 @@ const config: Config = {
 	future: {
 		hoverOnlyWhenSupported: true,
 	},
+	safelist: [
+		'delay-[200ms]',
+		'delay-[400ms]',
+		'delay-[600ms]',
+		'delay-[800ms]',
+		'delay-[1000ms]',
+		'delay-[1200ms]',
+		'delay-[1400ms]',
+	],
 	theme: {
 		colors: {
 			transparent: 'transparent',
