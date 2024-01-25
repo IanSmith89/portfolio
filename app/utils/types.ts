@@ -57,6 +57,7 @@ export interface TextImageBlock extends BaseBlock {
 }
 
 export type TwoColumnBlock = {
+	title?: string
 	content: {
 		col1: ContentBlocks
 		col2: ContentBlocks

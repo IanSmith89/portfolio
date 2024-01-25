@@ -12,22 +12,26 @@ export interface ScrollAnimationProps extends IntersectionOptions {
 export default function ScrollAnimation({
 	children,
 	classNameInView,
-	classNameNotInView = 'opacity-0',
-	threshold = 0,
+	classNameNotInView = 'opacity-0 translate-y-[32px] md:translate-y-[64px]',
+	rootMargin = '-64px 0px 0px 0px',
+	triggerOnce = true,
 	...options
 }: ScrollAnimationProps) {
-	const { ref, inView, entry } = useInView({
+	const { ref, inView } = useInView({
 		...options,
-		threshold,
+		rootMargin,
+		triggerOnce,
 	})
-	const [hasEntered, setHasEntered] = useState<boolean>(false)
 
-	useEffect(() => {
-		if (entry?.boundingClientRect.top && entry.boundingClientRect.top < 0) setHasEntered(!entry?.isIntersecting)
-	}, [entry])
+	// Exploration for re-triggering animation after scrolling to top
+	// const [hasEntered, setHasEntered] = useState<boolean>(false)
+
+	// useEffect(() => {
+	// 	if (entry?.boundingClientRect.top && entry.boundingClientRect.top < 0) setHasEntered(!entry?.isIntersecting)
+	// }, [entry])
 
 	return (
-		<div ref={ref} className={inView || hasEntered ? classNameInView : classNameNotInView}>
+		<div ref={ref} className={inView ? classNameInView : classNameNotInView}>
 			{children}
 		</div>
 	)

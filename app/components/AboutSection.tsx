@@ -10,7 +10,7 @@ export default function AboutSection() {
 			id="about-me"
 			className="transition-colors w-full bg-teal dark:bg-indigo py-16 lg:py-32 scroll-mt-16 overflow-y-hidden"
 		>
-			<ScrollAnimation classNameInView="animate-fade-in">
+			<ScrollAnimation classNameInView="transition-all translate-y-0 duration-700">
 				<div className="container">
 					<div className="grid md:grid-cols-2 gap-6 items-end md:gap-10 lg:gap-24">
 						<div>

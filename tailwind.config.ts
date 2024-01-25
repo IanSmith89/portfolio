@@ -11,6 +11,15 @@ const config: Config = {
 	future: {
 		hoverOnlyWhenSupported: true,
 	},
+	safelist: [
+		'delay-[200ms]',
+		'delay-[400ms]',
+		'delay-[600ms]',
+		'delay-[800ms]',
+		'delay-[1000ms]',
+		'delay-[1200ms]',
+		'delay-[1400ms]',
+	],
 	theme: {
 		colors: {
 			transparent: 'transparent',
@@ -169,7 +178,6 @@ const config: Config = {
 		extend: {
 			animation: {
 				'scale-up-down': 'scale-up-down 1050ms infinite ease-in-out',
-				'fade-in': 'fade-in 750ms ease-in-out',
 			},
 			fontFamily: {
 				sans: ['scandia-web', 'sans-serif'],
@@ -181,16 +189,6 @@ const config: Config = {
 					},
 					'20%': {
 						transform: 'scaleY(1.0)',
-					},
-				},
-				'fade-in': {
-					from: {
-						transform: 'translateY(100px)',
-						opacity: '0',
-					},
-					to: {
-						transform: 'translateY(0)',
-						opacity: '1',
 					},
 				},
 			},
