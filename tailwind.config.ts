@@ -177,12 +177,23 @@ const config: Config = {
 		},
 		extend: {
 			animation: {
+				'fade-in': 'fade-in 300ms ease-in-out',
 				'scale-up-down': 'scale-up-down 1050ms infinite ease-in-out',
 			},
 			fontFamily: {
 				sans: ['scandia-web', 'sans-serif'],
 			},
 			keyframes: {
+				'fade-in': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(100%)',
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)',
+					},
+				},
 				'scale-up-down': {
 					'0%, 40%, 100%': {
 						transform: 'scaleY(0.1)',

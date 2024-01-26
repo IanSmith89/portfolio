@@ -5,6 +5,7 @@ import Providers from '@/components/Providers'
 import Footer from '@/components/Footer'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import FeedbackSurvey from '@/components/FeedbackSurvey'
 
 export const metadata: Metadata = {
 	title: 'Ian J. Smith | UX Engineer & Designer',
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					<Header />
 					<main>{children}</main>
 					<Footer />
+					<FeedbackSurvey />
 				</Providers>
 				<Analytics />
 				<SpeedInsights />
