@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Image, { ImageProps, StaticImageData } from 'next/image'
 
-type ThemeImageProps = Omit<ImageProps, 'src' | 'priority' | 'loading'> & {
+type ThemeImageProps = Omit<ImageProps, 'src' | 'loading'> & {
 	srcLight: StaticImageData | string
 	srcDark?: StaticImageData | string
 }

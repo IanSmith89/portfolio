@@ -24,7 +24,13 @@ export default function AboutSection() {
 							<Markdown text="I'm a big fan of ska, Lego, most outdoor activities, listening to and making music, cooking for friends and family, and spending time with my wife, dog, and cat at our home in Denver, CO." />
 						</div>
 						<div className="relative aspect-[83/150] -mb-16 lg:-mb-32 max-h-96 md:max-h-[720px] w-full">
-							<Image alt="" src={me} className="object-contain object-center h-auto w-full" fill />
+							<Image
+								alt=""
+								src={me}
+								className="object-contain object-center h-auto w-full"
+								fill
+								sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw"
+							/>
 							<Circle
 								className="absolute top-[8%] left-1/2 -translate-x-1/2 h-[21.5%] md:w-[39.5%] lg:w-[41%]"
 								circleClassName="fill-orange dark:fill-yellow"

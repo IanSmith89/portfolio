@@ -4,7 +4,8 @@ import Blob from '@/lib/Blob'
 import Flash from '@/lib/Flash'
 import LinedBlob from '@/lib/LinedBlob'
 import Circle from '@/lib/Circle'
-import macbook from '@public/macbook.svg'
+import macbookLight from '@public/macbook_light.png'
+import macbookDark from '@public/macbook_dark.png'
 import housePlantTall from '@public/house-plant-tall.svg'
 import housePlantShort from '@public/house-plant-short.svg'
 import eye from '@public/eye.png'
@@ -23,6 +24,7 @@ import me from '@public/me.png'
 import TiltImage from '@/lib/TiltImage'
 import Button from '@/lib/Button'
 import DownArrowIcon from '@/lib/DownArrowIcon'
+import ThemeImage from '@/lib/ThemeImage'
 
 export default function LandingSection() {
 	return (
@@ -50,7 +52,7 @@ export default function LandingSection() {
 						/>
 						<Circle
 							className="absolute top-[63.2%] left-[20.3%] w-[28.6%]"
-							circleClassName="fill-red mix-blend-hard-light opacity-70 dark:opacity-50"
+							circleClassName="fill-red/70 dark:fill-red/50 mix-blend-hard-light"
 						/>
 						<TiltImage
 							className="absolute top-[29.45%] left-[31.23%] h-[34.2%] w-auto"
@@ -85,7 +87,13 @@ export default function LandingSection() {
 							}}
 						/>
 						<LinedBlob className="absolute top-[22%] left-[17.45%] w-[75.4%]" />
-						<Image priority alt="" src={macbook} className="absolute top-[22.23%] left-[5%] w-[90%]" />
+						<ThemeImage
+							priority
+							alt=""
+							srcLight={macbookLight}
+							srcDark={macbookDark}
+							className="absolute top-[22.23%] left-[5%] w-[90%]"
+						/>
 						<Image priority alt="" src={me} className="absolute top-[31%] left-[52%] h-[69%] w-auto" />
 						<Circle
 							className="absolute top-[36.45%] left-[63.77%] w-[15.2%]"
