@@ -6,7 +6,7 @@ export enum ENVIRONMENT {
 	development = 'development',
 }
 
-export const isProduction = process.env.VERCEL_ENV === ENVIRONMENT.production
+export const IS_PROD = process.env.VERCEL_ENV === ENVIRONMENT.production
 
 export const NAV_ROUTES = [
 	{
@@ -31,7 +31,7 @@ export const WEB_FORM_KEY = '5602ac20-bcd3-48da-bd9e-51ddde3b01df'
 
 export const PROJECTS_URL = '/projects'
 
-export const ORIGIN = isProduction
+export const ORIGIN = IS_PROD
 	? 'https://ianjsmith.com'
 	: `${process.env.VERCEL_ENV === 'preview' ? 'https://' : 'http://'}${process.env.VERCEL_URL}`
 
@@ -55,10 +55,10 @@ export const METADATA: Metadata = {
 	},
 	referrer: 'origin-when-cross-origin',
 	robots: {
-		follow: isProduction,
-		index: isProduction,
-		noarchive: !isProduction,
-		nocache: !isProduction,
+		follow: IS_PROD,
+		index: IS_PROD,
+		noarchive: !IS_PROD,
+		nocache: !IS_PROD,
 	},
 	title: {
 		default: DEFAULT_TITLE,
