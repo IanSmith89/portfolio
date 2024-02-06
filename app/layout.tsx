@@ -6,11 +6,19 @@ import Footer from '@/components/Footer'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import FeedbackSurvey from '@/components/FeedbackSurvey'
+import { SEO } from './utils/constants'
 
 export const metadata: Metadata = {
-	title: 'Ian J. Smith | Software Engineer & UX Designer',
-	description:
-		"Welcome to the portfolio site for Ian J. Smith, a human-centered software engineer and creative technologist. Explore a diverse showcase of projects highlighting Ian's contributions to design and development.",
+	title: SEO.title,
+	description: SEO.description,
+	metadataBase: process.env.NEXT_PUBLIC_VERCEL_URL ? new URL(process.env.NEXT_PUBLIC_VERCEL_URL) : undefined,
+	openGraph: {
+		type: 'website',
+		url: process.env.NEXT_PUBLIC_VERCEL_URL,
+		title: SEO.title,
+		description: SEO.description,
+		siteName: 'ianjsmith.com',
+	},
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

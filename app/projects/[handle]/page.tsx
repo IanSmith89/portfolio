@@ -17,22 +17,38 @@ type ProjectPageProps = {
 export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata | undefined> {
 	const project = projects.find(({ handle }) => handle === params.handle)
 
-	if (project)
+	if (project) {
+		const title = `${project.title.long.text}: ${project.title.long.subtitle} | Ian J. Smith - Software Engineer & UX Designer`
+		const { description } = project
+
 		return {
-			title: `${project.title.long.text}: ${project.title.long.subtitle} | Ian J. Smith - Software Engineer & UX Designer`,
-			description: project.description,
+			title,
+			description,
+			openGraph: {
+				title,
+				description,
+				images: [
+					{
+						url: project.coverImage.src,
+						height: project.coverImage.height,
+						width: project.coverImage.width,
+					},
+				],
+			},
 		}
+	}
 }
 
 export default function ProjectPage({ params }: ProjectPageProps) {
 	let previousProjectIndex: number = projects.length - 1
 	let nextProjectIndex: number = 0
-	const project: Project | undefined = (projects as Project[]).find(({ handle }, i) => {
-		if (handle === params.handle) {
+	const project = (projects as Project[]).find(({ handle }, i) => {
+		const isProject = handle === params.handle
+		if (isProject) {
 			if (i - 1 > -1) previousProjectIndex = i - 1
 			if (i + 1 !== projects.length) nextProjectIndex = i + 1
-			return true
 		}
+		return isProject
 	})
 
 	if (!project) notFound()
