@@ -5,7 +5,7 @@ import projects from '@/data/projects.json'
 export default function sitemap(): MetadataRoute.Sitemap {
 	return [
 		{
-			url: process.env.NEXT_PUBLIC_VERCEL_URL,
+			url: process.env.VERCEL_URL,
 			lastModified: new Date(),
 			changeFrequency: 'yearly',
 			priority: 1,
@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		...projects.map(
 			(project) =>
 				({
-					url: `${process.env.NEXT_PUBLIC_VERCEL_URL}${PROJECTS_URL}/${project.handle}`,
+					url: `${process.env.VERCEL_URL}${PROJECTS_URL}/${project.handle}`,
 					lastModified: new Date(),
 					changeFrequency: 'monthly',
 					priority: 0.8,

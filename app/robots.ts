@@ -5,11 +5,11 @@ export default function robots(): MetadataRoute.Robots {
 		userAgent: '*',
 	}
 
-	if (process.env.NEXT_PUBLIC_VERCEL_ENV === 'production') rules.allow = '/'
+	if (process.env.VERCEL_ENV === 'production') rules.allow = '/'
 	else rules.disallow = '/'
 
 	return {
 		rules,
-		sitemap: `${process.env.NEXT_PUBLIC_VERCEL_URL}/sitemap.xml`,
+		sitemap: `${process.env.VERCEL_URL}/sitemap.xml`,
 	}
 }

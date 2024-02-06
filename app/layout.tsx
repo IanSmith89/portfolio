@@ -11,10 +11,10 @@ import { SEO } from './utils/constants'
 export const metadata: Metadata = {
 	title: SEO.title,
 	description: SEO.description,
-	metadataBase: process.env.NEXT_PUBLIC_VERCEL_URL ? new URL(process.env.NEXT_PUBLIC_VERCEL_URL) : undefined,
+	metadataBase: process.env.VERCEL_URL ? new URL(process.env.VERCEL_URL) : undefined,
 	openGraph: {
 		type: 'website',
-		url: process.env.NEXT_PUBLIC_VERCEL_URL,
+		url: process.env.VERCEL_URL,
 		title: SEO.title,
 		description: SEO.description,
 		siteName: 'ianjsmith.com',
