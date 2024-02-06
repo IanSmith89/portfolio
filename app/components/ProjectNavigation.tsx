@@ -12,7 +12,7 @@ export type ProjectNavigationProps = {
 
 export default function ProjectNavigation({ previousProject, nextProject }: ProjectNavigationProps) {
 	const spanClasses =
-		'transition-all group-hover:bg-orange dark:group-hover:bg-yellow box-decoration-clone py-1 px-3 group-hover:shadow-md'
+		'transition-all group-hover:bg-orange group-focus-visible:bg-orange dark:group-hover:bg-yellow dark:group-focus-visible:bg-yellow box-decoration-clone py-1 px-3 group-hover:shadow-md group-focus-visible:shadow-md'
 
 	return (
 		<section className="grid grid-cols-2 h-[25vh]">
@@ -27,12 +27,12 @@ export default function ProjectNavigation({ previousProject, nextProject }: Proj
 				<div className="relative mr-4 md:mr-8 lg:mr-12">
 					<p className="text-xs md:text-sm opacity-70 mb-1">PREVIOUS PROJECT:</p>
 					<div>
-						<h4 className="text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo dark:group-hover:text-indigo text-xl sm:text-3xl md:text-5xl font-medium">
+						<h4 className="text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo group-focus-visible:text-indigo dark:group-hover:text-indigo dark:group-focus-visible:text-indigo text-xl sm:text-3xl md:text-5xl font-medium">
 							<span className={spanClasses + ' -mr-3 text-right leading-[1.3]'}>
 								{previousProject.title.short.text}
 							</span>
 						</h4>
-						<p className="text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo dark:group-hover:text-indigo text-right">
+						<p className="text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo group-focus-visible:text-indigo dark:group-hover:text-indigo dark:group-focus-visible:text-indigo text-right">
 							<span className={spanClasses + ' -mr-3 text-right'}>
 								{previousProject.title.short.subtitle}
 							</span>
@@ -48,10 +48,10 @@ export default function ProjectNavigation({ previousProject, nextProject }: Proj
 				<div className="relative ml-4 md:ml-8 lg:ml-12">
 					<p className="text-xs md:text-sm opacity-70 mb-1">NEXT PROJECT:</p>
 					<div>
-						<h4 className="text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo dark:group-hover:text-indigo text-xl sm:text-3xl md:text-5xl font-medium">
+						<h4 className="text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo group-focus-visible:text-indigo dark:group-hover:text-indigo dark:group-focus-visible:text-indigo text-xl sm:text-3xl md:text-5xl font-medium">
 							<span className={spanClasses + ' -ml-3 leading-[1.3]'}>{nextProject.title.short.text}</span>
 						</h4>
-						<p className="text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo dark:group-hover:text-indigo">
+						<p className="text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo group-focus-visible:text-indigo dark:group-hover:text-indigo dark:group-focus-visible:text-indigo">
 							<span className={spanClasses + ' -ml-3 '}>{nextProject.title.short.subtitle}</span>
 						</p>
 					</div>

@@ -7,7 +7,7 @@ import Circle from '@/lib/Circle'
 import SolidBlob from '@/lib/SolidBlob'
 import Flash from '@/lib/Flash'
 
-const DarkModeSwitch = dynamic(() => import('../lib/DarkModeSwitch'), {
+const DarkModeSwitch = dynamic(() => import('@/components/DarkModeSwitch'), {
 	ssr: false,
 	loading: () => <div className="w-[100px] h-6" />,
 })
@@ -27,7 +27,7 @@ export default function DesktopMenu() {
 					{NAV_ROUTES.map(({ href, title }, i) => (
 						<Link
 							key={title}
-							className="relative group px-1 font-medium transition-colors text-indigo/70 dark:text-indigo-100/80 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 hover:text-indigo dark:hover:text-white"
+							className="relative group px-1 font-medium transition-colors text-indigo/70 dark:text-indigo-100/80 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 hover:text-indigo dark:hover:text-white focus-visible:text-indigo dark:focus-visible:text-white"
 							href={href}
 						>
 							{i === 0 ? (

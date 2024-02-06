@@ -1,10 +1,10 @@
 'use client'
 
-import { useTheme } from 'next-themes'
-import Switch from './Switch'
-import SunIcon from './SunIcon'
-import MoonIcon from './MoonIcon'
 import { useCallback, useMemo } from 'react'
+import { useTheme } from 'next-themes'
+import Switch from '@/lib/Switch'
+import SunIcon from '@/lib/SunIcon'
+import MoonIcon from '@/lib/MoonIcon'
 
 export default function DarkModeSwitch() {
 	const { systemTheme, theme, setTheme } = useTheme()

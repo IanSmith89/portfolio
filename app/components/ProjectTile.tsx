@@ -12,7 +12,7 @@ export type ProjectTileProps = {
 
 export default function ProjectTile({ backgroundImage, handle, index, title }: ProjectTileProps) {
 	const spanClasses =
-		'group-hover:bg-orange dark:group-hover:bg-yellow box-decoration-clone py-1 group-hover:shadow-md'
+		'group-hover:bg-orange group-focus-visible:bg-orange dark:group-hover:bg-yellow dark:group-focus-visible:bg-yellow box-decoration-clone py-1 group-hover:shadow-md group-focus-visible:shadow-md'
 	let linkClasses = 'relative rounded-2xl overflow-hidden group'
 
 	if (index === 0) linkClasses += ' md:row-span-2'
@@ -31,10 +31,10 @@ export default function ProjectTile({ backgroundImage, handle, index, title }: P
 				src={backgroundImage}
 			/>
 			<div className="absolute w-full h-full flex flex-col items-center justify-center p-6">
-				<h3 className="font-medium text-3xl text-center text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo dark:group-hover:text-indigo">
+				<h3 className="font-medium text-3xl text-center text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo group-focus-visible:text-indigo dark:group-hover:text-indigo dark:group-focus-visible:text-indigo">
 					<span className={spanClasses + ' px-3 leading-[1.33]'}>{title.short.text}</span>
 				</h3>
-				<h4 className="text-center text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo dark:group-hover:text-indigo">
+				<h4 className="text-center text-indigo/80 dark:text-indigo-100/80 group-hover:text-indigo group-focus-visible:text-indigo dark:group-hover:text-indigo dark:group-focus-visible:text-indigo">
 					<span className={spanClasses + ' px-2'}>{title.short.subtitle}</span>
 				</h4>
 			</div>
