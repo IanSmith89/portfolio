@@ -24,9 +24,13 @@ export default function Button({
 	variant = 'solid',
 	...rest
 }: ButtonProps) {
+	const isLink = Boolean(href)
 	const buttonClasses = useMemo<string>(() => {
 		let classes =
-			'transition-colors inline-flex items-center gap-x-2 font-medium rounded-full border disabled:opacity-50 disabled:pointer-events-none outline-none'
+			'transition-colors inline-flex items-center gap-x-2 font-medium rounded-full border disabled:opacity-50 disabled:pointer-events-none'
+
+		if (!isLink)
+			classes += ' outline-none focus-visible:ring focus-visible:ring-indigo dark:focus-visible:ring-teal'
 
 		if (variant === 'outline')
 			classes +=
@@ -43,7 +47,7 @@ export default function Button({
 		if (className) classes += ` ${className}`
 
 		return classes
-	}, [className, size, variant])
+	}, [className, isLink, size, variant])
 
 	const buttonContent = (
 		<>
@@ -53,7 +57,7 @@ export default function Button({
 		</>
 	)
 
-	if (href)
+	if (isLink)
 		return (
 			<Link className={buttonClasses} href={href} target={target}>
 				{buttonContent}

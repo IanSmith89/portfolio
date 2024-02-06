@@ -14,7 +14,7 @@ export default forwardRef(function Input(
 ) {
 	const borderClasses = error
 		? 'border-red focus:border-red focus:ring-red'
-		: 'border-transparent focus:border-indigo focus:ring-indigo dark:focus:border-white dark:focus:ring-white'
+		: 'border-transparent focus:border-indigo focus:ring-indigo dark:focus:border-teal dark:focus:ring-teal'
 
 	return type === 'hidden' ? (
 		<input ref={ref} name={name} type={type} {...rest} />

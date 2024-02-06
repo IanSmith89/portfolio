@@ -7,7 +7,7 @@ export default forwardRef(function Link(
 	{ children, className, href, ...rest }: LinkProps,
 	ref?: React.LegacyRef<HTMLAnchorElement>
 ) {
-	let classes = 'focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo'
+	let classes = 'outline-none focus-visible:ring focus-visible:ring-indigo dark:focus-visible:ring-teal'
 
 	if (className) classes += ` ${className}`
 
