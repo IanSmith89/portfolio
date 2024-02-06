@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import Link from '@/lib/Link'
 import { useMemo } from 'react'
 
 export interface ButtonProps
@@ -26,7 +26,7 @@ export default function Button({
 }: ButtonProps) {
 	const buttonClasses = useMemo<string>(() => {
 		let classes =
-			'transition-colors inline-flex items-center gap-x-2 font-medium rounded-full border disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-2 dark:focus:ring-yellow'
+			'transition-colors inline-flex items-center gap-x-2 font-medium rounded-full border disabled:opacity-50 disabled:pointer-events-none outline-none'
 
 		if (variant === 'outline')
 			classes +=

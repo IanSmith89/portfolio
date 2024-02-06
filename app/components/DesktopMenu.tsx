@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import Link from 'next/link'
+import Link from '@/lib/Link'
 import EyeJayEsLogo from '@/lib/EyeJayEsLogo'
 import { NAV_ROUTES } from '@/utils/constants'
 import Blob from '@/lib/Blob'

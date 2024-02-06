@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/lib/Link'
 import ThemeImage from '@/lib/ThemeImage'
 import tpcLight from '@public/tpc_light.png'
 import tpcDark from '@public/tpc_dark.png'

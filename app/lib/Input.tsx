@@ -10,7 +10,7 @@ export interface InputProps
 
 export default forwardRef(function Input(
 	{ className, error, helperText, label, name, required, type, ...rest }: InputProps,
-	ref: React.LegacyRef<HTMLInputElement> | undefined
+	ref?: React.LegacyRef<HTMLInputElement>
 ) {
 	const borderClasses = error
 		? 'border-red focus:border-red focus:ring-red'

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/lib/Link'
 import { Project } from '@/utils/types'
 import BackArrowIcon from '@/lib/BackArrowIcon'
 import ForwardArrowIcon from '@/lib/ForwardArrowIcon'

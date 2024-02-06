@@ -1,7 +1,7 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import Link from 'next/link'
+import Link from '@/lib/Link'
 import { useState } from 'react'
 import { NAV_ROUTES } from '@/utils/constants'
 import EyeJayEsLogo from '@/lib/EyeJayEsLogo'

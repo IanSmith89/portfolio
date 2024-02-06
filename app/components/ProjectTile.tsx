@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/lib/Link'
 import { PROJECTS_URL } from '@/utils/constants'
 import { Project } from '@/utils/types'
 import ProjectHoverImage from './ProjectHoverImage'
