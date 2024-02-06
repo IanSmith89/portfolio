@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/lib/Link'
 import ReactMarkdown from 'react-markdown'
 
 export type MarkdownProps = {

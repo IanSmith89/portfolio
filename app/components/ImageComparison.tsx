@@ -98,12 +98,14 @@ export default function ImageComparison({ block }: { block: ImageCompareBlock })
 				</div>
 			</div>
 			<Image alt="" src={phone} className="md:hidden relative w-full h-auto pointer-events-none" />
-			<ThemeImage
-				alt=""
-				srcLight={macbookLight}
-				srcDark={macbookDark}
-				className="hidden md:block relative w-full h-auto pointer-events-none"
-			/>
+			<div className="hidden md:block">
+				<ThemeImage
+					alt=""
+					srcLight={macbookLight}
+					srcDark={macbookDark}
+					className="relative w-full h-auto pointer-events-none"
+				/>
+			</div>
 		</div>
 	)
 }

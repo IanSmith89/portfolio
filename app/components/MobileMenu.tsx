@@ -1,13 +1,13 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import Link from 'next/link'
+import Link from '@/lib/Link'
 import { useState } from 'react'
 import { NAV_ROUTES } from '@/utils/constants'
 import EyeJayEsLogo from '@/lib/EyeJayEsLogo'
 import ScrollAnimation from './ScrollAnimation'
 
-const DarkModeSwitch = dynamic(() => import('@/lib/DarkModeSwitch'), { ssr: false })
+const DarkModeSwitch = dynamic(() => import('@/components/DarkModeSwitch'), { ssr: false })
 
 export default function MobileMenu() {
 	const [isOpen, setIsOpen] = useState<boolean>(false)
