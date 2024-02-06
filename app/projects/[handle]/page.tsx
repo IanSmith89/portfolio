@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import projects from '@/data/projects.json'
@@ -7,7 +8,23 @@ import BackArrowIcon from '@/lib/BackArrowIcon'
 import ContainerSection from '@/components/ContainerSection'
 import ProjectNavigation from '@/components/ProjectNavigation'
 
-export default function ProjectPage({ params }: { params: { handle: string } }) {
+type ProjectPageProps = {
+	params: {
+		handle: string
+	}
+}
+
+export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata | undefined> {
+	const project = projects.find(({ handle }) => handle === params.handle)
+
+	if (project)
+		return {
+			title: `${project.title.long.text}: ${project.title.long.subtitle} | Ian J. Smith - Software Engineer & UX Designer`,
+			description: project.description,
+		}
+}
+
+export default function ProjectPage({ params }: ProjectPageProps) {
 	let previousProjectIndex: number = projects.length - 1
 	let nextProjectIndex: number = 0
 	const project: Project | undefined = (projects as Project[]).find(({ handle }, i) => {
