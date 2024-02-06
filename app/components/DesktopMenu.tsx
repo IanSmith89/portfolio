@@ -4,7 +4,7 @@ import EyeJayEsLogo from '@/lib/EyeJayEsLogo'
 import { NAV_ROUTES } from '@/utils/constants'
 import Blob from '@/lib/Blob'
 import Circle from '@/lib/Circle'
-import LinedBlob from '@/lib/LinedBlob'
+import SolidBlob from '@/lib/SolidBlob'
 import Flash from '@/lib/Flash'
 
 const DarkModeSwitch = dynamic(() => import('../lib/DarkModeSwitch'), {
@@ -35,15 +35,15 @@ export default function DesktopMenu() {
 							) : null}
 							{i === 1 ? (
 								<Circle
-									className="transition-opacity opacity-0 group-hover:opacity-70 h-[110%] absolute -top-[4%] -left-1"
+									className="transition-opacity opacity-0 group-hover:opacity-70 h-[110%] absolute top-0 -left-1"
 									circleClassName="fill-red/70 dark:fill-red/50 mix-blend-hard-light"
 								/>
 							) : null}
 							{i === 2 ? (
-								<LinedBlob className="transition-opacity opacity-0 group-hover:opacity-70 h-[110%] absolute -top-[5%] -left-1" />
+								<SolidBlob className="transition-opacity opacity-0 group-hover:opacity-80 h-[110%] absolute top-0 -left-1" />
 							) : null}
 							{i === 3 ? (
-								<Flash className="transition-opacity opacity-0 group-hover:opacity-70 h-[125%] absolute -top-[12.5%] -left-1" />
+								<Flash className="transition-opacity opacity-0 group-hover:opacity-70 h-[133%] absolute -top-0.5 -left-1" />
 							) : null}
 							<span className="relative">{title}</span>
 						</Link>
