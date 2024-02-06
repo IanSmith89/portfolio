@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Block, ContentBlock } from '@/utils/types'
 import Markdown from './Markdown'
 import ThemeImage from '@/lib/ThemeImage'
@@ -6,6 +5,7 @@ import ContentTitle from './ContentTitle'
 import List from '@/lib/List'
 import ImageComparison from './ImageComparison'
 import ScrollAnimation from './ScrollAnimation'
+import Link from '@/lib/Link'
 
 export type ContentProps = {
 	block: ContentBlock

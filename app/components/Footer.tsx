@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/lib/Link'
 import EyeJayEsLogo from '@/lib/EyeJayEsLogo'
 
 export default function Footer() {

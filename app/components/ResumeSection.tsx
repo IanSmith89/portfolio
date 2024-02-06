@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/lib/Link'
 import ThemeImage from '@/lib/ThemeImage'
 import tpcLight from '@public/tpc_light.png'
 import tpcDark from '@public/tpc_dark.png'
@@ -84,7 +84,7 @@ export default function ResumeSection() {
 								key={link.href}
 								classNameInView={`transition-all translate-y-0 duration-700 delay-[${i * 200}ms]`}
 							>
-								<Link href={link.href} target="_blank">
+								<Link className="block" href={link.href} target="_blank">
 									<ThemeImage
 										alt={link.image.alt}
 										srcLight={link.image.src.light}

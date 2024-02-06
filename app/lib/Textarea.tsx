@@ -10,11 +10,11 @@ export interface InputProps
 
 export default forwardRef(function TextArea(
 	{ className, error, helperText, label, name, required, ...rest }: InputProps,
-	ref: React.LegacyRef<HTMLTextAreaElement> | undefined
+	ref?: React.LegacyRef<HTMLTextAreaElement>
 ) {
 	const borderClasses = error
 		? 'border-red focus:border-red focus:ring-red'
-		: 'border-transparent focus:border-indigo focus:ring-indigo dark:focus:border-white dark:focus:ring-white'
+		: 'border-transparent focus:border-indigo focus:ring-indigo dark:focus:border-teal dark:focus:ring-teal'
 
 	return (
 		<div className={`w-full mb-4 ${className}`}>
