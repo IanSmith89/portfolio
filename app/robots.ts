@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { ORIGIN } from '@/utils/constants'
 
 export default function robots(): MetadataRoute.Robots {
 	const rules: MetadataRoute.Robots['rules'] = {
@@ -10,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
 
 	return {
 		rules,
-		sitemap: `${process.env.VERCEL_URL}/sitemap.xml`,
+		sitemap: `${ORIGIN}/sitemap.xml`,
 	}
 }

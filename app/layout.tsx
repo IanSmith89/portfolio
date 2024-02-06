@@ -6,15 +6,15 @@ import Footer from '@/components/Footer'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import FeedbackSurvey from '@/components/FeedbackSurvey'
-import { SEO } from './utils/constants'
+import { ORIGIN, SEO } from '@/utils/constants'
 
 export const metadata: Metadata = {
 	title: SEO.title,
 	description: SEO.description,
-	metadataBase: process.env.VERCEL_URL ? new URL(process.env.VERCEL_URL) : undefined,
+	metadataBase: new URL(ORIGIN),
 	openGraph: {
 		type: 'website',
-		url: process.env.VERCEL_URL,
+		url: ORIGIN,
 		title: SEO.title,
 		description: SEO.description,
 		siteName: 'ianjsmith.com',

@@ -21,6 +21,11 @@ export const WEB_FORM_KEY = '5602ac20-bcd3-48da-bd9e-51ddde3b01df'
 
 export const PROJECTS_URL = '/projects'
 
+export const ORIGIN =
+	process.env.VERCEL_ENV === 'production'
+		? 'https://ianjsmith.com'
+		: `${process.env.VERCEL_ENV === 'preview' ? 'https://' : 'http://'}${process.env.VERCEL_URL}`
+
 export const SEO = {
 	title: 'Ian J. Smith | Software Engineer & UX Designer',
 	description:
