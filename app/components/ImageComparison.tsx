@@ -4,10 +4,12 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { ImageCompareBlock } from '@/utils/types'
 import phone from '@public/phone.svg'
-import macbook from '@public/macbook.svg'
+import macbookLight from '@public/macbook_light.png'
+import macbookDark from '@public/macbook_dark.png'
 import Button from '@/lib/Button'
 import BackArrowIcon from '@/lib/BackArrowIcon'
 import ForwardArrowIcon from '@/lib/ForwardArrowIcon'
+import ThemeImage from '@/lib/ThemeImage'
 
 export default function ImageComparison({ block }: { block: ImageCompareBlock }) {
 	const [rangeValue, setRangeValue] = useState<number>(50)
@@ -96,7 +98,12 @@ export default function ImageComparison({ block }: { block: ImageCompareBlock })
 				</div>
 			</div>
 			<Image alt="" src={phone} className="md:hidden relative w-full h-auto pointer-events-none" />
-			<Image alt="" src={macbook} className="hidden md:block relative w-full h-auto pointer-events-none" />
+			<ThemeImage
+				alt=""
+				srcLight={macbookLight}
+				srcDark={macbookDark}
+				className="hidden md:block relative w-full h-auto pointer-events-none"
+			/>
 		</div>
 	)
 }
