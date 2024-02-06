@@ -1,12 +1,12 @@
 import { MetadataRoute } from 'next'
-import { ORIGIN } from '@/utils/constants'
+import { ORIGIN, isProduction } from '@/utils/constants'
 
 export default function robots(): MetadataRoute.Robots {
 	const rules: MetadataRoute.Robots['rules'] = {
 		userAgent: '*',
 	}
 
-	if (process.env.VERCEL_ENV === 'production') rules.allow = '/'
+	if (isProduction) rules.allow = '/'
 	else rules.disallow = '/'
 
 	return {
