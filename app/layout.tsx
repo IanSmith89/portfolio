@@ -8,8 +8,9 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import FeedbackSurvey from '@/components/FeedbackSurvey'
 
 export const metadata: Metadata = {
-	title: 'Ian J. Smith | UX Engineer & Designer',
-	description: 'The portfolio site for Ian J. Smith.',
+	title: 'Ian J. Smith | Software Engineer & UX Designer',
+	description:
+		"Welcome to the portfolio site for Ian J. Smith, a human-centered software engineer and creative technologist. Explore a diverse showcase of projects highlighting Ian's contributions to design and development.",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
