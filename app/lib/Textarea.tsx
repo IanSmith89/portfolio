@@ -23,8 +23,11 @@ export default forwardRef(function TextArea(
 				<textarea
 					ref={ref}
 					{...rest}
+					aria-describedby={`${name}-helper`}
 					className={`py-3 px-4 block w-full rounded-lg text-sm bg-white/60 hover:bg-white/75 focus:bg-white/75 focus:border dark:bg-white/20 dark:hover:bg-white/25 dark:focus:bg-white/25 ${borderClasses}`}
-				></textarea>
+					id={name}
+					name={name}
+				/>
 				{error ? (
 					<div className="absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3">
 						<svg

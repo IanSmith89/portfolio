@@ -82,7 +82,7 @@ export default function ResumeSection() {
 						{links.map((link, i) => (
 							<ScrollAnimation
 								key={link.href}
-								classNameInView={`transition-all translate-y-0 duration-700 delay-[${i * 200}ms]`}
+								classNameInView={`transition-all translate-y-0 duration-700 delay-[${i * 100}ms]`}
 							>
 								<Link className="block" href={link.href} target="_blank">
 									<ThemeImage
@@ -95,7 +95,7 @@ export default function ResumeSection() {
 							</ScrollAnimation>
 						))}
 					</div>
-					<ScrollAnimation classNameInView="transition-all translate-y-0 duration-700 delay-1000">
+					<ScrollAnimation classNameInView="transition-all translate-y-0 duration-700 delay-[500ms]">
 						<Button
 							href="https://drive.google.com/file/d/1LKmlhusey6vC3NRcg_3iTnJ5NARl46lv/view"
 							size="large"

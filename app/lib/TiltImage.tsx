@@ -16,6 +16,10 @@ export default function TiltImage({
 	className,
 	imageProps: { alt = '', className: imageClassName, ...rest },
 }: TiltProps) {
+	let imageClasses = 'inner-element'
+
+	if (imageClassName) imageClasses += ` ${imageClassName}`
+
 	return (
 		<Tilt
 			className={`tilt-img ${className}`}
@@ -29,7 +33,7 @@ export default function TiltImage({
 		>
 			<Image
 				alt={alt}
-				className={`inner-element ${imageClassName}`}
+				className={imageClasses}
 				placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
 				{...rest}
 			/>

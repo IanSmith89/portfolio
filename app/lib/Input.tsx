@@ -20,15 +20,15 @@ export default forwardRef(function Input(
 		<input ref={ref} name={name} type={type} {...rest} />
 	) : (
 		<div className={`w-full mb-4 ${className}`}>
-			<FormLabel htmlFor={`${name}`}>{label}</FormLabel>
+			<FormLabel htmlFor={name}>{label}</FormLabel>
 			<div className="relative">
 				<input
 					ref={ref}
 					{...rest}
 					aria-describedby={`${name}-helper`}
 					className={`py-3 px-4 block w-full rounded-lg text-sm bg-white/60 hover:bg-white/75 focus:bg-white/75 focus:border dark:bg-white/20 dark:hover:bg-white/25 dark:focus:bg-white/25 ${borderClasses}`}
-					id={`${name}`}
-					name={`${name}`}
+					id={name}
+					name={name}
 					type={type}
 				/>
 				{error ? (

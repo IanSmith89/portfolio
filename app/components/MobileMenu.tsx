@@ -39,7 +39,7 @@ export default function MobileMenu() {
 							{NAV_ROUTES.map(({ href, title }, i) => (
 								<ScrollAnimation
 									key={title}
-									classNameInView={`transition-all translate-x-0 duration-700 delay-[${i * 200}ms]`}
+									classNameInView={`transition-all translate-x-0 duration-700 delay-[${i * 100}ms]`}
 									classNameNotInView="-translate-x-8 opacity-0"
 									triggerOnce={false}
 								>
