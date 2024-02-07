@@ -12,8 +12,11 @@ const config: Config = {
 		hoverOnlyWhenSupported: true,
 	},
 	safelist: [
+		'delay-[100ms]',
 		'delay-[200ms]',
+		'delay-[300ms]',
 		'delay-[400ms]',
+		'delay-[500ms]',
 		'delay-[600ms]',
 		'delay-[800ms]',
 		'delay-[1000ms]',

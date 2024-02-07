@@ -20,7 +20,13 @@ export default function FeedbackSurvey() {
 
 	return isVisible ? (
 		<div className="animate-fade-in max-w-sm md:max-w-xs fixed left-4 md:left-auto bottom-4 right-4 bg-teal-100 dark:bg-grey-blue-800 p-4 rounded-lg shadow-xl flex flex-col">
-			<Button className="absolute top-1 right-0" onClick={handleClose} size="small" variant="ghost">
+			<Button
+				aria-label="Close survey popup"
+				className="absolute top-1 right-0"
+				onClick={handleClose}
+				size="small"
+				variant="ghost"
+			>
 				<CloseIcon className="w-5" />
 			</Button>
 			<h2 className="font-medium text-xl mb-2">Hey There!</h2>
