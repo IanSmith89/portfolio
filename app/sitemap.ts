@@ -11,13 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 1,
 		},
 		...projects.map(
-			(project) =>
-				({
-					url: `${ORIGIN}${PROJECTS_URL}/${project.handle}`,
-					lastModified: new Date(),
-					changeFrequency: 'monthly',
-					priority: 0.8,
-				} as any)
+			(project): MetadataRoute.Sitemap[number] => ({
+				url: `${ORIGIN}${PROJECTS_URL}/${project.handle}`,
+				lastModified: new Date(),
+				changeFrequency: 'monthly',
+				priority: 0.8,
+			})
 		),
 	]
 }
