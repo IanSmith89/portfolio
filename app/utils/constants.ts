@@ -33,7 +33,7 @@ export const PROJECTS_URL = '/projects'
 
 export const ORIGIN = IS_PROD
 	? 'https://ianjsmith.com'
-	: `${process.env.VERCEL_ENV === 'preview' ? 'https://' : 'http://'}${process.env.VERCEL_URL}`
+	: `${process.env.VERCEL_ENV === 'preview' ? 'https://' : 'http://'}${process.env.VERCEL_URL || 'localhost:3000'}`
 
 const description =
 	"Welcome to the portfolio site for Ian J. Smith, a human-centered software engineer, creative technologist, and UX designer. Explore a diverse showcase of projects highlighting Ian's contributions to design and development."

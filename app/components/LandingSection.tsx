@@ -36,7 +36,7 @@ export default function LandingSection() {
 						<TiltImage
 							className="absolute top-[15.5%] left-[19%] w-[21.12%]"
 							imageProps={{
-								priority: true,
+								preload: true,
 								src: eye,
 							}}
 						/>
@@ -46,7 +46,7 @@ export default function LandingSection() {
 							className="absolute top-[80%] left-[16%] w-[21%]"
 							imageProps={{
 								className: 'filter grayscale dark:invert',
-								priority: true,
+								preload: true,
 								src: keyboard,
 							}}
 						/>
@@ -58,7 +58,7 @@ export default function LandingSection() {
 							className="absolute top-[29.45%] left-[31.23%] h-[34.2%] w-auto"
 							imageProps={{
 								className: 'h-full w-auto filter grayscale dark:invert',
-								priority: true,
+								preload: true,
 								src: knight,
 							}}
 						/>
@@ -66,7 +66,7 @@ export default function LandingSection() {
 							className="absolute top-[20%] left-[27%] h-[60%]"
 							imageProps={{
 								className: 'h-full w-auto',
-								priority: true,
+								preload: true,
 								src: snowboard,
 							}}
 						/>
@@ -74,7 +74,7 @@ export default function LandingSection() {
 							className="absolute top-[34%] left-[5.06%] w-[22.8%]"
 							imageProps={{
 								className: 'filter grayscale',
-								priority: true,
+								preload: true,
 								src: microphone,
 							}}
 						/>
@@ -82,19 +82,19 @@ export default function LandingSection() {
 							className="absolute top-[38%] left-[19.77%] h-[32.18%]"
 							imageProps={{
 								className: 'h-full w-auto',
-								priority: true,
+								preload: true,
 								src: arm,
 							}}
 						/>
 						<LinedBlob className="absolute top-[22%] left-[17.45%] w-[75.4%]" />
 						<ThemeImage
-							priority
+							preload
 							alt=""
 							srcLight={macbookLight}
 							srcDark={macbookDark}
 							className="absolute top-[22.23%] left-[5%] w-[90%]"
 						/>
-						<Image priority alt="" src={me} className="absolute top-[31%] left-[52%] h-[69%] w-auto" />
+						<Image preload alt="" src={me} className="absolute top-[31%] left-[52%] h-[69%] w-auto" />
 						<Circle
 							className="absolute top-[36.45%] left-[63.77%] w-[15.2%]"
 							circleClassName="fill-orange dark:fill-yellow"
@@ -103,7 +103,7 @@ export default function LandingSection() {
 							className="absolute top-[54.37%] left-[5.18%] h-[19.54%]"
 							imageProps={{
 								className: 'h-full w-auto',
-								priority: true,
+								preload: true,
 								src: stickman,
 							}}
 						/>
@@ -111,49 +111,49 @@ export default function LandingSection() {
 							className="absolute top-[49.14%] left-[88%] h-[23.22%]"
 							imageProps={{
 								className: 'h-full w-auto',
-								priority: true,
+								preload: true,
 								src: spatula,
 							}}
 						/>
 						<TiltImage
 							className="absolute top-[25.12%] left-[45.94%] w-[8.17%]"
 							imageProps={{
-								priority: true,
+								preload: true,
 								src: sunglasses,
 							}}
 						/>
 						<TiltImage
 							className="absolute top-[29%] left-[47.17%] w-[5.71%]"
 							imageProps={{
-								priority: true,
+								preload: true,
 								src: mouth,
 							}}
 						/>
 						<TiltImage
 							className="absolute top-[13.42%] left-[42.46%] w-[10.32%]"
 							imageProps={{
-								priority: true,
+								preload: true,
 								src: boot,
 							}}
 						/>
 						<TiltImage
 							className="absolute top-[7.83%] left-[53.35%] w-[41.6%]"
 							imageProps={{
-								priority: true,
+								preload: true,
 								src: guitar,
 							}}
 						/>
 						<TiltImage
 							className="absolute top-0 left-[11.35%] w-[16%]"
 							imageProps={{
-								priority: true,
+								preload: true,
 								src: housePlantTall,
 							}}
 						/>
 						<TiltImage
 							className="absolute top-[75.74%] left-[36.64%] w-[10%]"
 							imageProps={{
-								priority: true,
+								preload: true,
 								src: housePlantShort,
 							}}
 						/>

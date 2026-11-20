@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import { IntersectionOptions, useInView } from 'react-intersection-observer'
 
 export interface ScrollAnimationProps extends IntersectionOptions {

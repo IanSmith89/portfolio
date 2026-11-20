@@ -16,7 +16,7 @@ export default function ProjectHoverImage({ sizes, src }: ProjectHoverImageProps
 				fill
 				sizes={sizes}
 			/>
-			<div className="transition-all absolute -inset-1 filter backdrop-blur-sm mix-blend-hard-light bg-indigo-100/70 dark:bg-teal-950/85 group-hover:bg-teal group-focus-visible:bg-teal dark:group-hover:bg-grey-blue/70 dark:group-focus-visible:bg-grey-blue/70 group-hover:backdrop-blur-0 group-focus-visible:backdrop-blur-0" />
+			<div className="transition-all absolute -inset-1 filter backdrop-blur-xs mix-blend-hard-light bg-indigo-100/70 dark:bg-teal-950/85 group-hover:bg-teal group-focus-visible:bg-teal dark:group-hover:bg-grey-blue/70 dark:group-focus-visible:bg-grey-blue/70 group-hover:backdrop-blur-0 group-focus-visible:backdrop-blur-0" />
 		</>
 	)
 }

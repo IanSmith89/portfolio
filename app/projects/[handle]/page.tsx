@@ -10,16 +10,21 @@ import ProjectNavigation from '@/components/ProjectNavigation'
 import { METADATA, ORIGIN, PROJECTS_URL, DEFAULT_TITLE } from '@/utils/constants'
 
 type ProjectPageProps = {
-	params: {
+	params: Promise<{
 		handle: string
-	}
+	}>
+}
+
+export function generateStaticParams() {
+	return projects.map(({ handle }) => ({ handle }))
 }
 
 export async function generateMetadata(
 	{ params }: ProjectPageProps,
 	parent: ResolvingMetadata
 ): Promise<Metadata | undefined> {
-	const project = projects.find(({ handle }) => handle === params.handle)
+	const { handle: projectHandle } = await params
+	const project = projects.find(({ handle }) => handle === projectHandle)
 
 	if (project) {
 		const { description } = project
@@ -48,29 +53,26 @@ export async function generateMetadata(
 	}
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-	let previousProjectIndex: number = projects.length - 1
-	let nextProjectIndex: number = 0
-	const project = (projects as Project[]).find(({ handle }, i) => {
-		const isProject = handle === params.handle
-		if (isProject) {
-			if (i - 1 > -1) previousProjectIndex = i - 1
-			if (i + 1 !== projects.length) nextProjectIndex = i + 1
-		}
-		return isProject
-	})
+export default async function ProjectPage({ params }: ProjectPageProps) {
+	const { handle: projectHandle } = await params
+	const allProjects = projects as Project[]
+	const projectIndex = allProjects.findIndex(({ handle }) => handle === projectHandle)
 
-	if (!project) notFound()
+	if (projectIndex === -1) notFound()
+
+	const project = allProjects[projectIndex]
+	const previousProjectIndex = projectIndex > 0 ? projectIndex - 1 : allProjects.length - 1
+	const nextProjectIndex = projectIndex + 1 < allProjects.length ? projectIndex + 1 : 0
 
 	const { backgroundImage, coverImage, description, sections, title, website } = project
-	const previousProject = projects[previousProjectIndex] as Project
-	const nextProject = projects[nextProjectIndex] as Project
+	const previousProject = allProjects[previousProjectIndex]
+	const nextProject = allProjects[nextProjectIndex]
 
 	return (
 		<>
 			<section className="relative w-full -mt-16">
-				<Image alt="" src={backgroundImage} className="object-cover h-full" fill priority sizes="100vw" />
-				<div className="absolute w-full h-full transition-colors filter backdrop-blur-sm mix-blend-hard-light bg-teal dark:bg-grey-blue/70" />
+				<Image alt="" src={backgroundImage} className="object-cover h-full" fill preload sizes="100vw" />
+				<div className="absolute w-full h-full transition-colors filter backdrop-blur-xs mix-blend-hard-light bg-teal dark:bg-grey-blue/70" />
 				<div className="relative container w-full h-full pt-20">
 					<Button
 						className="-ml-3"
@@ -87,7 +89,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
 								alt={coverImage.alt || ''}
 								src={coverImage.src}
 								className="w-full h-auto"
-								priority
+								preload
 								width={coverImage.width}
 								height={coverImage.height}
 								placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="

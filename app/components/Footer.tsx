@@ -1,15 +1,14 @@
 import Link from '@/lib/Link'
 import EyeJayEsLogo from '@/lib/EyeJayEsLogo'
+import CurrentYear from './CurrentYear'
 
 export default function Footer() {
-	const currentYear = new Date().getFullYear()
-
 	return (
 		<footer className="bg-teal-100 dark:bg-grey-blue text-indigo dark:text-white pt-6 pb-8">
 			<div className="container flex flex-col items-center gap-8">
 				<div className="w-full flex flex-col gap-4 sm:flex-row items-center justify-between">
 					<small className="text-[10px] font-sans text-indigo/70 dark:text-indigo-100/80 max-w-[216px] text-center sm:text-left">
-						&copy; {currentYear} Ian J. Smith, All Rights Reserved. Website designed and built by me &mdash;
+						&copy; <CurrentYear />Ian J. Smith, All Rights Reserved. Website designed and built by me &mdash;
 						inspired by{' '}
 						<Link
 							className="transition-colors underline hover:text-indigo dark:hover:text-white"
