@@ -15,6 +15,10 @@ type ProjectPageProps = {
 	}>
 }
 
+export function generateStaticParams() {
+	return projects.map(({ handle }) => ({ handle }))
+}
+
 export async function generateMetadata(
 	{ params }: ProjectPageProps,
 	parent: ResolvingMetadata
@@ -67,7 +71,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 	return (
 		<>
 			<section className="relative w-full -mt-16">
-				<Image alt="" src={backgroundImage} className="object-cover h-full" fill priority sizes="100vw" />
+				<Image alt="" src={backgroundImage} className="object-cover h-full" fill preload sizes="100vw" />
 				<div className="absolute w-full h-full transition-colors filter backdrop-blur-xs mix-blend-hard-light bg-teal dark:bg-grey-blue/70" />
 				<div className="relative container w-full h-full pt-20">
 					<Button
@@ -85,7 +89,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 								alt={coverImage.alt || ''}
 								src={coverImage.src}
 								className="w-full h-auto"
-								priority
+								preload
 								width={coverImage.width}
 								height={coverImage.height}
 								placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="

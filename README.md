@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ianjsmith.com
 
-## Getting Started
+Personal portfolio site for Ian J. Smith, built with Next.js, React, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Next.js 16](https://nextjs.org/) (App Router, Turbopack) and [React 19](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS v4](https://tailwindcss.com/) (`@tailwindcss/forms`, `@tailwindcss/typography`) and [`next-themes`](https://github.com/pacocoursey/next-themes)
+- `react-hook-form` (contact form via [Web3Forms](https://web3forms.com/)), `react-markdown`, `react-intersection-observer`, `react-parallax-tilt`
+- ESLint 9 (`eslint-config-next`)
+- Hosted on [Vercel](https://vercel.com/) with `@vercel/analytics` and `@vercel/speed-insights`
+
+## Structure
+
+```text
+app/
+├── components/         # Page sections, navigation, forms, and layout UI
+├── data/projects.json  # Project case study content
+├── lib/                # Shared UI primitives, SVG shapes, and icons
+├── projects/[handle]/  # Statically generated case study pages
+├── utils/              # Constants, metadata, helpers, and types
+├── globals.css         # Tailwind v4 theme, utilities, and base styles
+├── layout.tsx          # Root layout
+├── page.tsx            # Home page
+├── robots.ts           # robots.txt (allows indexing in production only)
+└── sitemap.ts          # sitemap.xml
+public/                 # Images and SVG assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Requires Node.js 24+ (see `.nvmrc`).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+nvm use
+npm install
+npm run dev
+```
 
-## Learn More
+The dev server runs at [http://localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+### Scripts
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `npm run dev` - start the local dev server
+- `npm run build` - create a production build
+- `npm run start` - serve the production build locally
+- `npm run lint` - run ESLint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+Deployed via Vercel:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Production (`VERCEL_ENV=production`) sets the canonical origin to `https://ianjsmith.com` and enables search indexing.
+- Preview builds use `VERCEL_URL` over HTTPS with indexing disabled.
+- Local development defaults to `http://localhost:3000`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+[MIT](./LICENSE)
