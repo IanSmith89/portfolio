@@ -4,7 +4,6 @@ import Providers from '@/components/Providers'
 import Footer from '@/components/Footer'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import FeedbackSurvey from '@/components/FeedbackSurvey'
 import { METADATA } from '@/utils/constants'
 
 export const metadata = METADATA
@@ -17,7 +16,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					<Header />
 					<main>{children}</main>
 					<Footer />
-					<FeedbackSurvey />
 				</Providers>
 				<Analytics />
 				<SpeedInsights />

@@ -146,19 +146,7 @@
 
 	--font-sans: 'scandia-web', sans-serif;
 
-	--animate-fade-in: fade-in 300ms ease-in-out;
 	--animate-scale-up-down: scale-up-down 1050ms infinite ease-in-out;
-
-	@keyframes fade-in {
-		from {
-			opacity: 0;
-			transform: translateY(100%);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
 
 	@keyframes scale-up-down {
 		0%,
