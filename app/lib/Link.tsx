@@ -1,21 +1,15 @@
 import NextLink, { LinkProps as NextLinkProps } from 'next/link'
-import { forwardRef } from 'react'
 
-export type LinkProps = Omit<NextLinkProps, 'passHref'> & Omit<React.HTMLProps<HTMLAnchorElement>, 'href'>
+export type LinkProps = NextLinkProps & Omit<React.ComponentPropsWithRef<'a'>, keyof NextLinkProps>
 
-export default forwardRef(function Link(
-	{ children, className, href, ...rest }: LinkProps,
-	ref?: React.LegacyRef<HTMLAnchorElement>
-) {
-	let classes = 'outline-none focus-visible:ring focus-visible:ring-indigo dark:focus-visible:ring-teal'
+export default function Link({ children, className, href, ref, ...rest }: LinkProps) {
+	let classes = 'outline-none focus-visible:ring-3 focus-visible:ring-indigo dark:focus-visible:ring-teal'
 
 	if (className) classes += ` ${className}`
 
 	return (
-		<NextLink href={href} passHref legacyBehavior>
-			<a ref={ref} className={classes} {...rest}>
-				{children}
-			</a>
+		<NextLink ref={ref} href={href} className={classes} {...rest}>
+			{children}
 		</NextLink>
 	)
-})
+}

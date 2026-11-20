@@ -1,17 +1,22 @@
-import { forwardRef } from 'react'
 import FormLabel from './FormLabel'
 
-export interface InputProps
-	extends React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {
+export interface InputProps extends React.ComponentPropsWithRef<'input'> {
 	error?: boolean
 	helperText?: string
 	label?: string
 }
 
-export default forwardRef(function Input(
-	{ className, error, helperText, label, name, required, type, ...rest }: InputProps,
-	ref?: React.LegacyRef<HTMLInputElement>
-) {
+export default function Input({
+	className,
+	error,
+	helperText,
+	label,
+	name,
+	ref,
+	required,
+	type,
+	...rest
+}: InputProps) {
 	const borderClasses = error
 		? 'border-red focus:border-red focus:ring-red'
 		: 'border-transparent focus:border-indigo focus:ring-indigo dark:focus:border-teal dark:focus:ring-teal'
@@ -64,4 +69,4 @@ export default forwardRef(function Input(
 			) : null}
 		</div>
 	)
-})
+}

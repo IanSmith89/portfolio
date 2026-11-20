@@ -30,7 +30,7 @@ export default function Button({
 			'transition-colors inline-flex items-center gap-x-2 font-medium rounded-full border disabled:opacity-50 disabled:pointer-events-none'
 
 		if (!isLink)
-			classes += ' outline-none focus-visible:ring focus-visible:ring-indigo dark:focus-visible:ring-teal'
+			classes += ' outline-none focus-visible:ring-3 focus-visible:ring-indigo dark:focus-visible:ring-teal'
 
 		if (variant === 'outline')
 			classes +=

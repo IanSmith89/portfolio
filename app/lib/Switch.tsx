@@ -25,7 +25,7 @@ export default function Switch({ id, label, onChange, ...rest }: SwitchProps) {
                 
                 focus:ring-transparent focus:ring-offset-transparent
                 
-                focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo dark:focus-visible:ring-teal focus-visible:ring-offset-0 focus-visible:ring-offset-transparent 
+                focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-indigo dark:focus-visible:ring-teal focus-visible:ring-offset-0 focus-visible:ring-offset-transparent 
                 
                 before:inline-block before:w-4 before:h-4 before:bg-orange before:translate-x-0 dark:before:translate-x-full before:rounded-full before:transform before:transition before:ease-in-out before:duration-200 dark:before:bg-yellow hover:before:bg-orange-500 dark:hover:before:bg-yellow/90"
 				onChange={onChange}

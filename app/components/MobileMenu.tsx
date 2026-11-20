@@ -31,7 +31,7 @@ export default function MobileMenu() {
 			<div className={`transition fixed inset-0 w-full h-dvh ${isOpen ? '' : ' pointer-events-none'}`}>
 				<div
 					className={`transition-all absolute inset-0 flex flex-col justify-end pb-6 pl-6 bg-teal-100 dark:bg-grey-blue ${
-						isOpen ? 'opacity-1' : 'opacity-0'
+						isOpen ? 'opacity-100' : 'opacity-0'
 					}`}
 				>
 					{isOpen ? (
